@@ -3115,6 +3115,25 @@
                 "resourcePath": "objects\\obj_Shade\\obj_Shade.yy",
                 "resourceType": "GMObject"
             }
+        },
+        {
+            "Key": "bff1c944-ea6b-497f-891a-f5f5a6262438",
+            "Value": {
+                "id": "55d594b9-e2c3-4b4e-bd2d-d3f6f7c28abd",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "objects\\obj_enemy_parent\\obj_enemy_parent.yy",
+                "resourceType": "GMObject"
+            }
         }
     ],
     "room_order": [
