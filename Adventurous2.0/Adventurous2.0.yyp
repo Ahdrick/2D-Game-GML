@@ -3077,6 +3077,25 @@
                 "resourcePath": "sprites\\spr_key_stat\\spr_key_stat.yy",
                 "resourceType": "GMSprite"
             }
+        },
+        {
+            "Key": "8aba42ca-c570-4935-84bf-ab97104b5499",
+            "Value": {
+                "id": "9cf88352-c6e7-4da7-a29a-aa69b2ec0114",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "scripts\\script_34\\script_34.yy",
+                "resourceType": "GMScript"
+            }
         }
     ],
     "room_order": [
@@ -3118,7 +3137,8 @@
         "f9ac3490-2188-4bad-8bc4-e24db205d832",
         "06fd3122-efdc-4fbf-878a-e60a55f2f74d",
         "3f552102-d6f8-419f-93b4-4737bdc3cf8f",
-        "e4d24f94-9d32-42f5-9c10-b180a26fb2ca"
+        "e4d24f94-9d32-42f5-9c10-b180a26fb2ca",
+        "8aba42ca-c570-4935-84bf-ab97104b5499"
     ],
     "tutorial": ""
 }
