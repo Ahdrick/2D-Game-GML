@@ -1,6 +1,8 @@
 ///Player basics
 
 get_input();
+if(alarm[4] == -1)
+	alarm[4] = 5;
 
 if(!obj_menu.paused)
 {

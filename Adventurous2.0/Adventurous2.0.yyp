@@ -3093,8 +3093,27 @@
                 "resourceCreationConfigs": [
                     "default"
                 ],
-                "resourcePath": "scripts\\script_34\\script_34.yy",
+                "resourcePath": "scripts\\scr_shade\\scr_shade.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "766671f5-f38a-4407-a9af-8faecb6e0001",
+            "Value": {
+                "id": "37f9b8da-9b59-48aa-91c9-53b66e7c607a",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "objects\\obj_Shade\\obj_Shade.yy",
+                "resourceType": "GMObject"
             }
         }
     ],
