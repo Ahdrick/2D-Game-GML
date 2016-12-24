@@ -2,6 +2,7 @@
 Right  = keyboard_check(ord("D"))             || (gamepad_axis_value(0,gp_axislh) > 0);
 Left   = keyboard_check(ord("A"))             || (gamepad_axis_value(0,gp_axislh) < 0);
 Jump   = keyboard_check_pressed(vk_space)     || (gamepad_button_check_pressed(0,gp_face1));
+Shield   = keyboard_check_pressed(vk_shift)   || (gamepad_button_check_pressed(0,gp_face2));
 DashL  = keyboard_check_pressed(ord("W"))     || (gamepad_button_check_pressed(0,gp_shoulderl))
 DashR  = keyboard_check_pressed(ord("E"))	  || (gamepad_button_check_pressed(0,gp_shoulderr));
 Attack = mouse_check_button_pressed(mb_left)  || (gamepad_button_check_pressed(0,gp_shoulderrb));

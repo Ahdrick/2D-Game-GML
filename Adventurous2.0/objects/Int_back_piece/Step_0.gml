@@ -1,7 +1,16 @@
-/// @description Insert description here
-// You can write your code in this editor
-image_alpha -= .01; 
+/// 
+enable_movement_platform_actions(.6,4,5,0,0,0,0);
+move_movement_entity();
 
-if (image_alpha < .10)
+image_alpha -= .02; 
+if (image_alpha < .1)
 	instance_destroy();
-y+= 1;
+y -= vspd;
+x += hspd;
+image_angle += angle;
+
+if(place_meeting(x,y+1,obj_solid))
+{
+	vspd = 0;
+	hspd = 0;
+}

@@ -139,7 +139,7 @@
             "visible": true
         }
     ],
-    "playbackSpeed": 10,
+    "playbackSpeed": 8,
     "playbackSpeedType": 0,
     "sepmasks": false,
     "swatchColours": null,

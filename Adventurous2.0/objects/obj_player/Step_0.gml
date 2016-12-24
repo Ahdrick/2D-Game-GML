@@ -1,8 +1,8 @@
 ///Player basics
+var hspd = hsp[0]+hsp[1];
+var vspd = vsp[0]+vsp[1];
 
 get_input();
-if(alarm[4] == -1)
-	alarm[4] = 5;
 
 if(!obj_menu.paused)
 {
@@ -10,12 +10,19 @@ if(!obj_menu.paused)
 
 	script_execute(state);
 
+	// hollow effect
+	if (vspd != 0){
+		if(alarm[4] == -1)
+			alarm[4] = 5;
+}
+
 	if(Attack && currentEnergy > (100/stamDown)-5)
 	{
 		state = attack_state;
-		script_execute(state);	
+		instance_create_depth(x,y,200, obj_attack_mask);
+		script_execute(state);
 	}
-	if(Potion)
+	if(Potion && numPotion != 0)
 	{
 		state = potion_state;
 		script_execute(state);
@@ -32,8 +39,6 @@ if(!obj_menu.paused)
     object you want using the movement scripts
 */
 
-var hspd = hsp[0]+hsp[1];
-var vspd = vsp[0]+vsp[1];
 
 if(image_index > image_number-3 && state = attack_state)
 	canCombo = true;
@@ -136,3 +141,4 @@ if (vertical_move_input == false && grav == 0) {
 hsp[1] = approach(hsp[1], 0, air_res);
 vsp[1] = approach(vsp[1], 0, air_res);
 }
+

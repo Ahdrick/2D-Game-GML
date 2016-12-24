@@ -5,16 +5,6 @@
     "name": "Int_back_piece",
     "eventList": [
         {
-            "id": "74addc93-b02b-42e5-9e43-a8aaed426beb",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "ced1cc93-3ff2-4539-9c96-234f03585744",
-            "enumb": 0,
-            "eventtype": 4,
-            "m_owner": "3dadac99-627e-4f21-85ee-d9e0563f63cb"
-        },
-        {
             "id": "33c48bec-3290-4f10-8140-b611ecb6a558",
             "modelName": "GMEvent",
             "mvc": "1.0",
@@ -36,7 +26,7 @@
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
-    "parentObjectId": "1fee6610-06f6-4f6b-8ca8-0ca5792c576c",
+    "parentObjectId": "00000000-0000-0000-0000-000000000000",
     "persistent": false,
     "physicsAngularDamping": 0.1,
     "physicsDensity": 0.5,
