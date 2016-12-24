@@ -1,5 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
-Apply_physics(); 
+image_alpha -= .01; 
 
-y-=2;
+if (image_alpha < .10)
+	instance_destroy();
+y+= 1;

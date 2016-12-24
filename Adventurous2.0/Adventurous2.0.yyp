@@ -3267,6 +3267,44 @@
                 "resourcePath": "sprites\\sprite_65\\sprite_65.yy",
                 "resourceType": "GMSprite"
             }
+        },
+        {
+            "Key": "90c54658-2210-4e78-9722-87bbe52bad1c",
+            "Value": {
+                "id": "e605dfa3-7106-40ba-a4d7-3023cdb4e4d2",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "sprites\\spr_pot_mask\\spr_pot_mask.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "58109e89-bd63-41e5-822a-07ab05bb0c5b",
+            "Value": {
+                "id": "33ec609c-b8d2-4fc3-bbb5-a6fb57066091",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "sprites\\sprite_67\\sprite_67.yy",
+                "resourceType": "GMSprite"
+            }
         }
     ],
     "room_order": [
