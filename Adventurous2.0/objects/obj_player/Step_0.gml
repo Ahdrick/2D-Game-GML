@@ -3,10 +3,12 @@ var hspd = hsp[0]+hsp[1];
 var vspd = vsp[0]+vsp[1];
 
 get_input();
+//scr_screen_shake();
 
+//Shake_State = 3; 
 if(!obj_menu.paused)
 {
-	enable_movement_platform_actions(.6,4,5,Right,Left,Jump,0);
+	enable_movement_platform_actions(.6,5,6,Right,Left,Jump,0);
 
 	script_execute(state);
 

@@ -1,9 +1,9 @@
 // initialize variables
 instance_create_depth(x,y,199,obj_player_helm);
-initialize_movement_entity(.4,.43,0,0,obj_solid);
+initialize_movement_entity(.4,.33,0,0,obj_solid);
 // state variable set to movement script
 state         = move_state;
-
+Shake_State =0; // controls camera 
 // initialize health
 maxHealth     = 10;
 currentHealth = 5;

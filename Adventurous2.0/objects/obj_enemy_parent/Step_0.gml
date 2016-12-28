@@ -1,10 +1,11 @@
 ///
 ///Player basics
 
+// if not dead
+if (EnemyState != -1){
+
 		enable_movement_platform_actions(.6,4,3.5,right,left,jump,0);
 		move_movement_entity();
-		
-if (EnemyState != -1){
 		// if close stay still
 		// if far away run towards; 
 		if (object_exists(obj_player))
@@ -46,6 +47,12 @@ if (EnemyState != -1){
 				jump = 0;
 		}
 }
+// If dead 
+	else{
+				enable_movement_platform_actions(.6,4,3.5,0,0,0,0);
+				move_movement_entity();
+				jump = 0;
+				}
 if(death && place_meeting(x,y+1,obj_solid))
 	image_alpha -= .1;
 if(image_alpha < 0)
