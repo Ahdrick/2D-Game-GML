@@ -40,6 +40,7 @@ dashCD        = false;
 dashTimer     = 40;
 numPotion     = 5;
 canDrink      = true;
+flinch	      = false; 
 
 // initialize combos / attacking
 combo		  = 0;

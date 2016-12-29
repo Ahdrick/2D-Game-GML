@@ -5,6 +5,11 @@ var vspd = vsp[0]+vsp[1];
 get_input();
 //scr_screen_shake();
 
+	// flinch 
+	if (flinch == true){
+			if(alarm[5] == -1)
+				alarm[5] = 5;
+		}
 //Shake_State = 3; 
 if(!obj_menu.paused)
 {
@@ -16,6 +21,10 @@ if(!obj_menu.paused)
 	if (vspd != 0){
 		if(alarm[4] == -1)
 			alarm[4] = 5;
+			
+			
+
+
 }
 
 	if(Attack && currentEnergy > (100/stamDown)-5)
