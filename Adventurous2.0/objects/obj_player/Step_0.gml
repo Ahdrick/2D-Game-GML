@@ -21,10 +21,10 @@ if(!obj_menu.paused)
 	if (vspd != 0){
 		if(alarm[4] == -1)
 			alarm[4] = 5;
-			
+	/* what are these spaces for sam? huh?		
 			
 
-
+	*/
 }
 
 	if(Attack && currentEnergy > (100/stamDown)-5)
@@ -129,6 +129,7 @@ y += vspd;
 
 /// Apply gravity
 if (!place_meeting(x, y+1, collision_object)) {
+	sprite_index = spr_player_jump;
     vsp[0] += grav;
 }
 

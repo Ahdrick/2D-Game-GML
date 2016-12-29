@@ -3440,9 +3440,9 @@
             }
         },
         {
-            "Key": "22a93aa5-78cc-453c-bf27-bd03075bb4c8",
+            "Key": "8793a212-6359-4bc4-845d-cb6b5e4fcf99",
             "Value": {
-                "id": "d7c1af2c-db9e-4d6b-aa43-70018d8d7839",
+                "id": "478fe210-c0fd-415d-b101-9b5e72e91cb8",
                 "modelName": "GMResourceInfo",
                 "mvc": "1.0",
                 "configDeltaFiles": [
@@ -3454,7 +3454,7 @@
                 "resourceCreationConfigs": [
                     "default"
                 ],
-                "resourcePath": "sprites\\sprite_70\\sprite_70.yy",
+                "resourcePath": "sprites\\spr_player_jump\\spr_player_jump.yy",
                 "resourceType": "GMSprite"
             }
         },
