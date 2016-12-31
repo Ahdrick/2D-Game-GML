@@ -3,10 +3,17 @@ var hspd = hsp[0]+hsp[1];
 var vspd = vsp[0]+vsp[1];
 
 get_input();
+//scr_screen_shake();
 
+	// flinch 
+	if (flinch == true){
+			if(alarm[5] == -1)
+				alarm[5] = 5;
+		}
+//Shake_State = 3; 
 if(!obj_menu.paused)
 {
-	enable_movement_platform_actions(.6,4,5,Right,Left,Jump,0);
+	enable_movement_platform_actions(.6,5,6,Right,Left,Jump,0);
 
 	script_execute(state);
 
@@ -14,6 +21,10 @@ if(!obj_menu.paused)
 	if (vspd != 0){
 		if(alarm[4] == -1)
 			alarm[4] = 5;
+	/* what are these spaces for sam? huh?		
+			
+
+	*/
 }
 
 	if(Attack && currentEnergy > (100/stamDown)-5)
@@ -118,6 +129,7 @@ y += vspd;
 
 /// Apply gravity
 if (!place_meeting(x, y+1, collision_object)) {
+	sprite_index = spr_player_jump;
     vsp[0] += grav;
 }
 

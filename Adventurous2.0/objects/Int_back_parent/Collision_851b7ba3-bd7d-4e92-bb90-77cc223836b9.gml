@@ -1,5 +1,6 @@
+// create flash
+instance_create_depth(x,y,200,obj_part_flash);
 /// break pot
-
 for(i = 1; i < 4; i++)
 {
 	mypiece = instance_create_depth(x,y,201,Int_back_piece);
