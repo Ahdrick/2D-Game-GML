@@ -1,8 +1,6 @@
 // initialize variables
 instance_create_depth(x,y,199,obj_player_helm);
 initialize_movement_entity(.4,.33,0,0,obj_solid);
-instance_create_depth(x,y,201,obj_camera_controller)
-
 // state variable set to movement script
 state         = move_state;
 Shake_State =0; // controls camera 
