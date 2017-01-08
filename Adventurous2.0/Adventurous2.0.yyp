@@ -3647,6 +3647,25 @@
                 "resourcePath": "objects\\obj_part_flash\\obj_part_flash.yy",
                 "resourceType": "GMObject"
             }
+        },
+        {
+            "Key": "2fbbd558-784a-4cda-9444-208c04890e1f",
+            "Value": {
+                "id": "f9d5ab10-13fa-4dbc-8df2-81161fbd0682",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "objects\\obj_camera_controller\\obj_camera_controller.yy",
+                "resourceType": "GMObject"
+            }
         }
     ],
     "room_order": [
