@@ -13,18 +13,15 @@ get_input();
 //Shake_State = 3; 
 if(!obj_menu.paused)
 {
-	enable_movement_platform_actions(.6,5,6,Right,Left,Jump,0);
-
+//_platform_actions(acceleration, run_speed, jump_height, right_input, left_input,
+	enable_movement_platform_actions(.6,max_run,6,Right,Left,Jump,0);
 	script_execute(state);
 
 	// hollow effect
 	if (vspd != 0){
 		if(alarm[4] == -1)
 			alarm[4] = 5;
-	/* what are these spaces for sam? huh?		
-			
-
-	*/
+	
 }
 
 	if(Attack && currentEnergy > (100/stamDown)-5)
@@ -40,6 +37,14 @@ if(!obj_menu.paused)
 	}
 	if(currentEnergy < 100) && !(stamCD)
 		currentEnergy += stamRegen;
+/// Sam trying to do crap.
+	if (DashL && currentEnergy > (100/stamDown)-5){
+		state = dash_state;
+		script_execute(state);
+		state = move_state; 
+		script_execute(state);
+	}
+
 
 		
 ///move_movement_entity()

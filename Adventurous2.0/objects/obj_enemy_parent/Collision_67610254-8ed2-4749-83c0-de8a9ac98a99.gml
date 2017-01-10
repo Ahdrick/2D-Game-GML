@@ -12,7 +12,7 @@ if (obj_player != -1){
 	}
 }
 // Make the screen slightly shake
-
+obj_camera_controller.Shake_State = 2;
 //if (object_exists(obj_player)) 
 	//obj_player.Shake_State = 3; 
 

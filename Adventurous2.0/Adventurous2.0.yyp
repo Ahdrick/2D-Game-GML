@@ -3666,6 +3666,25 @@
                 "resourcePath": "objects\\obj_camera_controller\\obj_camera_controller.yy",
                 "resourceType": "GMObject"
             }
+        },
+        {
+            "Key": "f2908591-3c96-4423-9287-edf707d49d19",
+            "Value": {
+                "id": "c580c3db-e6e6-4d95-9124-f7553a3447cf",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "scripts\\dash_state\\dash_state.yy",
+                "resourceType": "GMScript"
+            }
         }
     ],
     "room_order": [
@@ -3678,6 +3697,7 @@
         "df6dc481-7cb5-4e8e-9e42-70c1f3c9688f",
         "125741b9-02d3-4019-be0b-01ce464c673c",
         "78d7f779-b6b7-47e2-a3cf-8cc235461d3a",
+        "f2908591-3c96-4423-9287-edf707d49d19",
         "ec2ea04f-2af7-44c4-afd4-47491bace269",
         "acd6a19b-031c-425c-94c0-9bec6b27bad3",
         "d275fa9e-a169-4711-a26e-6e7c7bc22701",

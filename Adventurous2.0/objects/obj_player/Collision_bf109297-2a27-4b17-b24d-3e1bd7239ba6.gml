@@ -21,3 +21,5 @@ add_movement_horizontal_vertical_maxspeed(6*mysign, -6, 6*mysign, -4)
 }
 
 
+// screen shake 
+obj_camera_controller.Shake_State = 1;

@@ -8,22 +8,20 @@ x += ((obj_player.x+offset)-x)/12;
 y += ((obj_player.y-yoffset)-y)/12;
 
 
-/// screen shake THIS WORKS
-if (object_exists(obj_player)){
-	// shake if player is flinched
-	if (obj_player.flinch == true ) {
+
+if (Shake_State == 1) {
 		var shake = random(5); 
 		x +=  shake;
 		y +=  shake;
+		if (alarm[0] == -1)
+			alarm[0] =50;
 	}
-}
+if (Shake_State == 2) {
+		var shake = random(2); 
+		x +=  shake;
+		y +=  shake;
+		if (alarm[0] == -1)
+			alarm[0] =30;
+	}
 
-// THIS DOESNT WORK!!! why? 
-if (object_exists(obj_enemy_parent)){
-	// shake if player is flinched
-		if (obj_enemy_parent.flinch == true ) {
-			var shake = random(15); 
-			x +=  shake;
-			y +=  shake;
-		}
-}
+

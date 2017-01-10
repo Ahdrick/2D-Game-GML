@@ -43,6 +43,7 @@ dashTimer     = 40;
 numPotion     = 5;
 canDrink      = true;
 flinch	      = false; 
+max_run       = 5;
 
 // initialize combos / attacking
 combo		  = 0;
