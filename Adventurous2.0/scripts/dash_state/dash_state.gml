@@ -16,7 +16,7 @@ if(DashL && canCombo && (currentEnergy > ((100/stamDown)-5))){
 	else 
 		 mysign = -1
 	// send back
-	add_movement_horizontal_vertical_maxspeed(9*mysign, -4, 11*mysign, -4)
+	add_movement_horizontal_vertical_maxspeed(10*-mysign, 0, 10*-mysign, 0)
 
 	// effect??? TBD 
 		currentEnergy -= (100/stamDown);

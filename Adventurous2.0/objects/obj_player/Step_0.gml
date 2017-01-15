@@ -29,20 +29,25 @@ if(!obj_menu.paused)
 		state = attack_state;
 		instance_create_depth(x,y,200, obj_attack_mask);
 		script_execute(state);
+			 
 	}
 	if(Potion && numPotion != 0)
 	{
 		state = potion_state;
 		script_execute(state);
+			
 	}
 	if(currentEnergy < 100) && !(stamCD)
 		currentEnergy += stamRegen;
+		
+		
 /// Sam trying to do crap.
 	if (DashL && currentEnergy > (100/stamDown)-5){
 		state = dash_state;
 		script_execute(state);
-		state = move_state; 
-		script_execute(state);
+		
+		//state = move_state; 
+		//script_execute(state);
 	}
 
 
