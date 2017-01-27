@@ -5,6 +5,7 @@ instance_create_depth(x,y,201,obj_camera_controller)
 
 // state variable set to movement script
 state         = move_state;
+draw_state    = "None" // String of state
 Shake_State =0; // controls camera 
 // initialize health
 maxHealth     = 10;

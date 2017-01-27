@@ -1,14 +1,22 @@
 // Stamina Down 
 //hspd		 = 62;
 //max_run      = 8;
+
+
+
 if(DashL && canCombo && (currentEnergy > ((100/stamDown)-5))){
-	// Handle Sprites
+
+
 	sprite_index = spr_player_run;
 	if(Left)
 		image_xscale = -1;
 	if(Right)
 		image_xscale = 1;
-
+		
+		
+		
+		
+		
 	// Check left or right of collison
 	var mysign; 
 	if (image_xscale == 1)
@@ -26,3 +34,5 @@ if(DashL && canCombo && (currentEnergy > ((100/stamDown)-5))){
 			alarm[3] = stamTimer;
 		}
 }
+
+draw_state = "Dash"

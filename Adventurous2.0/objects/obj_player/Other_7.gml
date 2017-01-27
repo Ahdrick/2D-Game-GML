@@ -7,6 +7,10 @@ if(state == potion_state)
 {
 	state = move_state;
 }
+if (state == dash_state)
+	state = move_state;
+
+
 if(currentEnergy < 0)
 	state = move_state;
 script_execute(state);

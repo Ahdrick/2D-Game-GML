@@ -14,3 +14,4 @@ if(Attack && canCombo && (currentEnergy > ((100/stamDown)-5)))
 		alarm[3] = stamTimer;
 	}
 }
+draw_state = "Attack"

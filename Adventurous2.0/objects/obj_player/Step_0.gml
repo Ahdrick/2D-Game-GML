@@ -23,32 +23,34 @@ if(!obj_menu.paused)
 			alarm[4] = 5;
 	
 }
-
-	if(Attack && currentEnergy > (100/stamDown)-5)
-	{
-		state = attack_state;
-		instance_create_depth(x,y,200, obj_attack_mask);
-		script_execute(state);
-			 
-	}
-	if(Potion && numPotion != 0)
-	{
-		state = potion_state;
-		script_execute(state);
+// Attack section
+//if (state ==move_state){}
+		if(Attack && currentEnergy > (100/stamDown)-5)
+		{
+			state = attack_state;
+			instance_create_depth(x,y,200, obj_attack_mask);
+			script_execute(state);
+					 
+		}
+		if(Potion && numPotion != 0)
+		{
+			state = potion_state;
+			script_execute(state);
 			
-	}
-	if(currentEnergy < 100) && !(stamCD)
-		currentEnergy += stamRegen;
+		}
+		if(currentEnergy < 100) && !(stamCD)
+			currentEnergy += stamRegen;
 		
 		
-/// Sam trying to do crap.
-	if (DashL && currentEnergy > (100/stamDown)-5){
-		state = dash_state;
-		script_execute(state);
+	/// Sam trying to do crap.
+	// Dash 
+		if (DashL && currentEnergy > (100/stamDown)-5){
+			state = dash_state;
+			script_execute(state);
 		
-		//state = move_state; 
-		//script_execute(state);
-	}
+			//state = move_state;  /// Sam Added this?
+			//script_execute(state);
+		}
 
 
 		
@@ -60,18 +62,25 @@ if(!obj_menu.paused)
     object you want using the movement scripts
 */
 
+//////////////////////////////////////////////////////
+///// Kyle shouldnt this go into attack state?
+/////////////////////////////////////////////////
+	if(image_index > image_number-3 && state = attack_state)
+		canCombo = true;
+	if(state == attack_state)
+		hspd = hspd/10;
 
-if(image_index > image_number-3 && state = attack_state)
-	canCombo = true;
-if(state == attack_state)
-	hspd = hspd/10;
+//////////////////////////////////////////////////////
+///// Kyle shouldnt this go into move state?
+/////////////////////////////////////////////////
+	if(state != attack_state && state != potion_state && state != dash_state )
+	{
+		image_speed = abs((hspd)/4);
+		if(hspd == 0)
+			sprite_index = spr_player_stand;
+	}
 
-if(state != attack_state && state != potion_state)
-{
-	image_speed = abs((hspd)/4);
-	if(hspd == 0)
-		sprite_index = spr_player_stand;
-}
+
 
 var yslope = 0; // Used to calculate movement along a slope
 
@@ -139,7 +148,8 @@ y += vspd;
 
 /// Apply gravity
 if (!place_meeting(x, y+1, collision_object)) {
-	sprite_index = spr_player_jump;
+	if (state == move_state)
+		sprite_index = spr_player_jump;
     vsp[0] += grav;
 }
 
