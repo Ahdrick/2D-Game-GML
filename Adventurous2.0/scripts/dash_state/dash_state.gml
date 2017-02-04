@@ -7,7 +7,8 @@
 if(DashL && canCombo && (currentEnergy > ((100/stamDown)-5))){
 
 
-	sprite_index = spr_player_run;
+	sprite_index = spr_player_dash;
+	image_speed =.6;
 	if(Left)
 		image_xscale = -1;
 	if(Right)

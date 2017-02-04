@@ -3,6 +3,8 @@
 
 // if not dead
 if (EnemyState != -1){
+	if (distance_to_object(obj_player) < 100)
+		follow = true;
 
 		enable_movement_platform_actions(.6,4,3.5,right,left,jump,0);
 		move_movement_entity();

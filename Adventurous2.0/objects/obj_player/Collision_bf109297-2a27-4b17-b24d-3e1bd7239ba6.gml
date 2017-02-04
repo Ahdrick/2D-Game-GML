@@ -2,7 +2,9 @@
 /// If Hit By Enemy and enemy not dead set flash alarm
 if (other.EnemyState != -1){ 
 	if (flinch == false){
+		sprite_index = spr_player_flinch;
 		flinch = true;
+			instance_create_depth(x,y,-300,obj_blood);
 		if(alarm[5] == -1)
 			alarm[5] = 20;
 	}

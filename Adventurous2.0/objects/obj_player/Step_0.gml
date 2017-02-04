@@ -13,12 +13,13 @@ get_input();
 //Shake_State = 3; 
 if(!obj_menu.paused)
 {
+	image_speed = 1.2;
 //_platform_actions(acceleration, run_speed, jump_height, right_input, left_input,
-	enable_movement_platform_actions(.6,max_run,6,Right,Left,Jump,0);
+	enable_movement_platform_actions(.6,max_run*1.2,6,Right,Left,Jump,0);
 	script_execute(state);
 
 	// hollow effect
-	if (vspd != 0){
+	if (Jump != 0){
 		if(alarm[4] == -1)
 			alarm[4] = 5;
 	
@@ -27,10 +28,11 @@ if(!obj_menu.paused)
 //if (state ==move_state){}
 		if(Attack && currentEnergy > (100/stamDown)-5)
 		{
+		if (flinch ==false){
 			state = attack_state;
 			instance_create_depth(x,y,200, obj_attack_mask);
 			script_execute(state);
-					 
+			}		 
 		}
 		if(Potion && numPotion != 0)
 		{
@@ -149,7 +151,10 @@ y += vspd;
 /// Apply gravity
 if (!place_meeting(x, y+1, collision_object)) {
 	if (state == move_state)
+		if (flinch = false)
 		sprite_index = spr_player_jump;
+		else
+			sprite_index = spr_player_flinch;
     vsp[0] += grav;
 }
 

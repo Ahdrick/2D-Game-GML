@@ -23,4 +23,5 @@ canAttack	  = true;
 left		  = 0;
 right         = 0;
 jump          = 0;
+follow        = false;
 

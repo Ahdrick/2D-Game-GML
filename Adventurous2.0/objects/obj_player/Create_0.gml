@@ -2,7 +2,7 @@
 instance_create_depth(x,y,199,obj_player_helm);
 initialize_movement_entity(.4,.33,0,0,obj_solid);
 instance_create_depth(x,y,201,obj_camera_controller)
-
+instance_create_depth(x,y,300,obj_player_shadow)
 // state variable set to movement script
 state         = move_state;
 draw_state    = "None" // String of state
