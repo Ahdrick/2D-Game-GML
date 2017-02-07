@@ -1,0 +1,32 @@
+{
+    "id": "adeb65b2-d044-41a7-b397-7ae62069ad52",
+    "modelName": "GMFolder",
+    "mvc": "1.1",
+    "name": "adeb65b2-d044-41a7-b397-7ae62069ad52",
+    "children": [
+        "acd6a19b-031c-425c-94c0-9bec6b27bad3",
+        "d275fa9e-a169-4711-a26e-6e7c7bc22701",
+        "6be34e8d-5e34-48e1-9579-98a7ed853556",
+        "9cf94b7e-2a85-4325-bbbb-10c77bc11934",
+        "3734c1a5-f257-4d64-b74f-055090c84551",
+        "b37b032a-e5cc-41b9-a586-9e5319627712",
+        "dffa6e9b-a1a9-4caf-b116-bc4420edbb7f",
+        "159a824a-b8fd-46ea-99b1-131a15f58c82",
+        "e9f57d9e-097b-4280-98e5-ef9977cddc18",
+        "56534e30-0499-4685-8b89-a294759bd5a5",
+        "3e6bd4b0-0987-49cc-b388-4c845488685e",
+        "9c49d3ad-7da3-4355-821c-0535a27b48f9",
+        "723cd5ba-1f8b-4b71-a40a-ec8c176c0cc6",
+        "3a37ff45-a27e-41eb-b829-0996eb97a286",
+        "83baad3f-c207-4f46-a8f3-16108e554e98",
+        "5e700965-b536-4b69-b1ca-9f0ac2e09222",
+        "7bf44c4f-d485-47fc-ad7f-df3dc8cbbe3e",
+        "1716972a-1328-46cd-a596-a1c4ad28bc81",
+        "e131a0a6-0b3a-48b8-949e-813ee4e5b8f5",
+        "5b7107ad-f5e5-4aa9-9b39-6ef7ab2b14cf"
+    ],
+    "filterType": "GMScript",
+    "folderName": "Movment",
+    "isDefaultView": false,
+    "localisedFolderName": ""
+}

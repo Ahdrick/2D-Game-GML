@@ -1,0 +1,2 @@
+/// stamtimer
+stamCD = false;
