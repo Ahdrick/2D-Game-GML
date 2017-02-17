@@ -7,7 +7,9 @@ state         = move_state;
 // initialize health
 maxHealth     = 10;
 currentHealth = 5;
-
+draw_state    = "None" // String of state
+Shake_State   = 0; // controls camera 
+flinch       = false;
 // initialize stats
 
 //END
@@ -32,7 +34,7 @@ luck          = 1;
 luckmulti     = 1;
 
 statMulti     = .03;
-
+max_run       = 3;
 // initialize movement
 gamepad_set_axis_deadzone(0,0.3);
 jumping       = false;

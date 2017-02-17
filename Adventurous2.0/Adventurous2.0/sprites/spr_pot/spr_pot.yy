@@ -1,7 +1,7 @@
 {
     "id": "ae5d457b-c8cf-4dde-af1c-efd576acdaea",
     "modelName": "GMSprite",
-    "mvc": "1.11",
+    "mvc": "1.12",
     "name": "spr_pot",
     "For3D": false,
     "HTile": false,
@@ -125,6 +125,8 @@
             ]
         }
     ],
+    "gridX": 0,
+    "gridY": 0,
     "height": 32,
     "layers": [
         {
@@ -139,6 +141,7 @@
             "visible": true
         }
     ],
+    "origin": 9,
     "playbackSpeed": 16,
     "playbackSpeedType": 0,
     "sepmasks": false,

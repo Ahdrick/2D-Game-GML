@@ -1,7 +1,7 @@
 {
     "id": "824d5ce1-db55-49dd-938c-e63e442a9ba8",
     "modelName": "GMSprite",
-    "mvc": "1.11",
+    "mvc": "1.12",
     "name": "spr_S1_run",
     "For3D": false,
     "HTile": false,
@@ -191,6 +191,8 @@
             ]
         }
     ],
+    "gridX": 0,
+    "gridY": 0,
     "height": 64,
     "layers": [
         {
@@ -205,6 +207,7 @@
             "visible": true
         }
     ],
+    "origin": 9,
     "playbackSpeed": 10,
     "playbackSpeedType": 0,
     "sepmasks": false,

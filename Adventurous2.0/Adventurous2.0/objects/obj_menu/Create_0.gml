@@ -37,7 +37,6 @@ level       = 1;  // your level
 currency    = 0;  // your money
 musicVol    = 5;  // music volume
 SFXVol      = 5;  // sound effect volume
-
 				  // Sprite Index Variables 			  
 maxMenuI    = 9;  //           \/
 menuI		= 0;  //		   \/
@@ -48,6 +47,7 @@ swordEqpd	= 0;  //           \/
 shieldEqpd	= 0;  //           \/
 bookEqpd	= 0;  //           \/
 potionEqpd  = 0;  //		   \/
+keyEqpd     = 0;  //           \/
 menuSpr     = spr_menu_red;
 menuSelSpr  = spr_menu_red_selector;
 menuCubeSpr = spr_menu_red_cube;
@@ -74,6 +74,7 @@ for(i = 0; i < 5; i++)
 		keyOwn[i,j]    = -1;
 	}
 }
+
 for(i = 0; i < 5; i++)
 {
 	for(j = 0; j < 2; j++)
@@ -128,3 +129,4 @@ STR			= 1;  //     \/
 INT			= 1;  //     \/
 DEF			= 1;  //     \/
 LCK			= 1;  //     \/
+

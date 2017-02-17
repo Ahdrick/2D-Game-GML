@@ -134,6 +134,54 @@ if(paused)
 		NavY -= 1;
 	if(selectDown  && NavY < NavMaxY)
 		NavY += 1;
+	
+	if(enter)
+	{
+		switch(menuI)
+		{
+			case 1:
+				if(swordOwn[NavX,NavY] != -1)
+					swordEqpd = swordOwn[NavX,NavY];
+			break;
+			
+			case 2:
+				if(shieldOwn[NavX,NavY] != -1)
+					shieldEqpd = shieldOwn[NavX,NavY];
+			break;
+			
+			case 3:
+				if(bookOwn[NavX,NavY] != -1)
+					bookEqpd = bookOwn[NavX,NavY];
+			break;
+			
+			case 4:
+				if(ringOwn[NavX,NavY] != -1)
+					ringEqpd = ringOwn[NavX,NavY];
+			break;
+			
+			case 5:
+				if(cloakOwn[NavX,NavY] != -1)
+					cloakEqpd = cloakOwn[NavX,NavY];
+			break;
+			
+			case 6:
+				if(helmOwn[NavX,NavY] != -1)
+					helmEqpd = helmOwn[NavX,NavY];
+			break;
+			
+			case 7:
+				if(potionOwn[NavX,NavY] != -1)
+					potionEqpd = potionOwn[NavX,NavY];
+			break;
+			
+			case 8:
+				if(keyOwn[NavX,NavY] != -1)
+					keyEqpd = keyOwn[NavX,NavY];
+			break;
+			
+		}
+		
+	}	
 		
 	// options menu
 	

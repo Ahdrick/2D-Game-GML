@@ -80,3 +80,9 @@ BreakHelm[0] = spr_helm_break_0;
 BreakHelm[1] = spr_helm_break_1;
 BreakHelm[2] = spr_helm_break_2;
 BreakHelm[3] = spr_helm_break_3;
+
+// Flinch helm
+shieldHelm[0] = spr_helm_flinch_0;
+shieldHelm[1] = spr_helm_flinch_1;
+shieldHelm[2] = spr_helm_flinch_2;
+shieldHelm[3] = spr_helm_flinch_3;

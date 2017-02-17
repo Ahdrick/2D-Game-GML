@@ -1,7 +1,7 @@
 /// 
 x = obj_player.x;
 y = obj_player.y;
-
+image_speed =obj_player.image_speed ;
 switch(obj_player.sprite_index)
 {
 	case spr_player_swing_1:

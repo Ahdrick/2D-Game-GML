@@ -1,7 +1,7 @@
 {
     "id": "ccd1399e-2b61-48b4-9dc8-b60b201a9c01",
     "modelName": "GMSprite",
-    "mvc": "1.11",
+    "mvc": "1.12",
     "name": "spr_ring_stat",
     "For3D": false,
     "HTile": false,
@@ -81,6 +81,8 @@
             ]
         }
     ],
+    "gridX": 0,
+    "gridY": 0,
     "height": 100,
     "layers": [
         {
@@ -95,6 +97,7 @@
             "visible": true
         }
     ],
+    "origin": 0,
     "playbackSpeed": 15,
     "playbackSpeedType": 0,
     "sepmasks": false,

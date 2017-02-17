@@ -142,8 +142,8 @@
         }
     ],
     "origin": 9,
-    "playbackSpeed": 8,
-    "playbackSpeedType": 0,
+    "playbackSpeed": 0.125,
+    "playbackSpeedType": 1,
     "sepmasks": false,
     "swatchColours": null,
     "textureGroup": 0,

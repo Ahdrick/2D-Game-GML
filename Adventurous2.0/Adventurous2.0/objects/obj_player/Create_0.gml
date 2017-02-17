@@ -1,12 +1,9 @@
 // initialize variables
-instance_create_depth(x,y,199,obj_player_helm);
-initialize_movement_entity(.4,.33,0,0,obj_solid);
 instance_create_depth(x,y,201,obj_camera_controller)
-instance_create_depth(x,y,300,obj_player_shadow)
+initialize_movement_entity(.2,.43,0,0,obj_solid);
 // state variable set to movement script
 state         = move_state;
-draw_state    = "None" // String of state
-Shake_State =0; // controls camera 
+
 // initialize health
 maxHealth     = 10;
 currentHealth = 5;
@@ -43,8 +40,6 @@ dashCD        = false;
 dashTimer     = 40;
 numPotion     = 5;
 canDrink      = true;
-flinch	      = false; 
-max_run       = 5;
 
 // initialize combos / attacking
 combo		  = 0;
@@ -52,8 +47,19 @@ canCombo	  = true;
 maxCombo	  = 3;
 Attack		  = 0;
 canAttack	  = true;
+blocking      = false;
+canBlock      = true;
+blockState    = 0;
 
 // initialize combo sprite array
 sprCombo[0]	  = spr_player_swing_1;
 sprCombo[1]	  = spr_player_swing_2;
 sprCombo[2]	  = spr_player_swing_3;
+
+sprBlock[0]   = spr_player_shield;
+sprBlock[1]   = spr_player_block;
+sprBlock[2]   = spr_player_break;
+
+instance_create_depth(x,y,198,obj_player_helm);
+instance_create_depth(x,y,199,obj_player_cloak);
+instance_create_depth(x,y,199,obj_player_shield);

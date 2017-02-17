@@ -5,12 +5,14 @@ move_movement_entity();
 image_alpha -= .02; 
 if (image_alpha < .1)
 	instance_destroy();
-y -= vspd;
-x += hspd;
-image_angle += angle;
 
 if(place_meeting(x,y+1,obj_solid))
 {
-	vspd = 0;
-	hspd = 0;
+	image_angle = image_angle;
+	vspd /= 1.6;
+	hspd /= 1.4;
 }
+
+y -= vspd;
+x += hspd;
+image_angle += angle;

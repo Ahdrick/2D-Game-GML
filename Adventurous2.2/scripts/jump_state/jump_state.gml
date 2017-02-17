@@ -32,3 +32,5 @@ if(Attack && currentEnergy > (100/stamDown)-5)
 	instance_create_depth(x,y,200, obj_attack_mask);
 	script_execute(state);
 }
+
+draw_state = "Jump"

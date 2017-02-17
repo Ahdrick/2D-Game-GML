@@ -10,3 +10,4 @@ if((numPotion > 0) && (currentHealth < maxHealth) && (canDrink))
 	image_speed    = 1.4; 
 	alarm[2]       = 60;
 }
+draw_state = "Potion"

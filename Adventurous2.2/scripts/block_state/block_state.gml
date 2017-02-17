@@ -10,3 +10,4 @@ if(canBlock)
 		canBlock     = false;
 	}
 }
+draw_state = "Block"

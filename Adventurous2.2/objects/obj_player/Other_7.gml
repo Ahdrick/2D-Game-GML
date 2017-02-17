@@ -11,6 +11,12 @@ if(state = jump_state)
 {
 	state = move_state;
 }
+
+if (state == dash_state)
+	state = move_state;
+
+
+
 if(state = block_state)
 {
 	if(blockState == 0)

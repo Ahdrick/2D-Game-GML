@@ -5,7 +5,7 @@
     "name": "obj_camera_controller",
     "eventList": [
         {
-            "id": "2ec53494-14af-4905-9c64-536406a87618",
+            "id": "37eac34e-1b80-402a-8546-d1d1620ed4e1",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
@@ -15,23 +15,13 @@
             "m_owner": "2fbbd558-784a-4cda-9444-208c04890e1f"
         },
         {
-            "id": "90bdcf59-15b8-41d3-a766-3055b8fe53b2",
+            "id": "b04c141c-f880-401f-a19b-8acb7ef3835b",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 0,
             "eventtype": 3,
-            "m_owner": "2fbbd558-784a-4cda-9444-208c04890e1f"
-        },
-        {
-            "id": "55d683e5-f4f6-492e-88d7-51ac8928601d",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 0,
-            "eventtype": 2,
             "m_owner": "2fbbd558-784a-4cda-9444-208c04890e1f"
         }
     ],

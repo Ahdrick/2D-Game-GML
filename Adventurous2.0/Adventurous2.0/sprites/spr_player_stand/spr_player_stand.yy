@@ -1,7 +1,7 @@
 {
     "id": "c75465ab-a1b2-4cca-9fa4-52054a83835b",
     "modelName": "GMSprite",
-    "mvc": "1.11",
+    "mvc": "1.12",
     "name": "spr_player_stand",
     "For3D": false,
     "HTile": false,
@@ -15,32 +15,34 @@
     "coltolerance": 0,
     "frames": [
         {
-            "id": "fc9f021b-7823-4a66-ba2e-bf3a4fb08b1e",
+            "id": "37375f46-88dc-4bd5-9dba-c886bca8b043",
             "modelName": "GMSpriteFrame",
             "mvc": "1.0",
             "SpriteId": "c75465ab-a1b2-4cca-9fa4-52054a83835b",
             "compositeImage": {
-                "id": "4dbd0df1-a7b6-49be-8058-9884692ebcb5",
+                "id": "589710e3-c951-42d1-8628-53b360aaa250",
                 "modelName": "GMSpriteImage",
                 "mvc": "1.0",
-                "FrameId": "fc9f021b-7823-4a66-ba2e-bf3a4fb08b1e",
+                "FrameId": "37375f46-88dc-4bd5-9dba-c886bca8b043",
                 "LayerId": "00000000-0000-0000-0000-000000000000"
             },
             "images": [
                 {
-                    "id": "7bdfa638-c4cd-4bbe-954c-31cc476c6a35",
+                    "id": "26fe4c95-9c1c-4bd6-b2b2-f2c21b942dad",
                     "modelName": "GMSpriteImage",
                     "mvc": "1.0",
-                    "FrameId": "fc9f021b-7823-4a66-ba2e-bf3a4fb08b1e",
-                    "LayerId": "3f2a86f3-2e0a-4a06-9a9a-933fe232838a"
+                    "FrameId": "37375f46-88dc-4bd5-9dba-c886bca8b043",
+                    "LayerId": "779bc946-02a5-4006-a793-18a1453407a2"
                 }
             ]
         }
     ],
-    "height": 36,
+    "gridX": 0,
+    "gridY": 0,
+    "height": 64,
     "layers": [
         {
-            "id": "3f2a86f3-2e0a-4a06-9a9a-933fe232838a",
+            "id": "779bc946-02a5-4006-a793-18a1453407a2",
             "modelName": "GMImageLayer",
             "mvc": "1.0",
             "SpriteId": "c75465ab-a1b2-4cca-9fa4-52054a83835b",
@@ -51,13 +53,14 @@
             "visible": true
         }
     ],
+    "origin": 9,
     "playbackSpeed": 15,
     "playbackSpeedType": 0,
     "sepmasks": false,
     "swatchColours": null,
     "textureGroup": 0,
     "type": 0,
-    "width": 15,
-    "xorig": 7,
-    "yorig": 20
+    "width": 64,
+    "xorig": 8,
+    "yorig": 48
 }

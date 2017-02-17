@@ -24,11 +24,11 @@ if(paused)
 			draw_sprite(potionInvt,potionEqpd,menuTLX+273,menuTLY+242);
 			
 			// DRAW ON THE PLAYER 
-			draw_sprite(spr_cloak_display,cloakEqpd,menuTLX+146,menuTLY+125);
+			draw_sprite(spr_cloak_display,cloakEqpd,menuTLX+146,menuTLY+124);
 			draw_sprite(spr_helm_display ,helmEqpd ,menuTLX+168,menuTLY+112);
 			
 			// draw points to spend
-			draw_text(statTLX+125,statTLY+39,PtS);
+			draw_text(statTLX+119,statTLY+39,PtS);
 			
 			// draw point spender icon
 			draw_sprite(menuCubeSpr,0,statTLX-67,statTLY+(18*StI)-1);
@@ -58,10 +58,15 @@ if(paused)
 				for(j = 0; j < 4; j++)
 				{	 
 					if(swordOwn[i,j] != -1)
+					{
 						draw_sprite(swordInvt,swordOwn[i,j],(weapTLX)+(i*46),(weapTLY+7)+(j*56));
+						if(swordOwn[i,j] == swordEqpd)
+							draw_sprite(menuCubeSpr, 0, weapTLX+4+(i*46), weapTLY+4+(j*56));
+					}
 				}
 			if(swordOwn[NavX,NavY] != -1)
 				draw_sprite(spr_sword_stat,swordOwn[NavX,NavY],weapTLX,weapTLY+236);
+				
 		break;
 		
 		////////////////////////////////////Shield List//////////////////////////////////
@@ -73,7 +78,11 @@ if(paused)
 				for(j = 0; j < 4; j++)
 				{
 					if(shieldOwn[i,j] != -1)
-						draw_sprite(shieldInvt,shieldOwn[i,j],(weapTLX+10)+(i*46),(weapTLY+10)+(j*56));
+					{
+						draw_sprite(shieldInvt,shieldOwn[i,j],(weapTLX+8)+(i*46),(weapTLY+6)+(j*56));
+						if(shieldOwn[i,j] == shieldEqpd)
+							draw_sprite(menuCubeSpr, 0, weapTLX+4+(i*46), weapTLY+4+(j*56));
+					}
 				}
 			if(shieldOwn[NavX,NavY] != -1)
 				draw_sprite(spr_shield_stat,shieldOwn[NavX,NavY],weapTLX,weapTLY+234);
@@ -88,7 +97,11 @@ if(paused)
 				for(j = 0; j < 4; j++)
 				{ 
 					if(bookOwn[i,j] != -1)
-						draw_sprite(bookInvt,bookOwn[i,j],(weapTLX+10)+(i*46),(weapTLY+10)+(j*56));
+					{
+						draw_sprite(bookInvt,bookOwn[i,j],(weapTLX+10)+(i*46),(weapTLY+6)+(j*56));
+						if(bookOwn[i,j] == bookEqpd)
+							draw_sprite(menuCubeSpr, 0, weapTLX+4+(i*46), weapTLY+4+(j*56));
+					}
 				}
 			if(shieldOwn[NavX,NavY] != -1)
 				draw_sprite(spr_book_Stat,bookOwn[NavX,NavY],weapTLX,weapTLY+236);
@@ -103,7 +116,11 @@ if(paused)
 				for(j = 0; j < 4; j++)
 				{
 					if(ringOwn[i,j] != -1)
+					{
 						draw_sprite(ringInvt,ringOwn[i,j],(weapTLX+10)+(i*46),(weapTLY+10)+(j*56));
+						if(ringOwn[i,j] == ringEqpd)
+							draw_sprite(menuCubeSpr, 0, weapTLX+4+(i*46), weapTLY+4+(j*56));
+					}
 				}
 			if(ringOwn[NavX,NavY] != -1)
 				draw_sprite(spr_ring_stat,ringOwn[NavX,NavY],weapTLX,weapTLY+236);
@@ -118,7 +135,11 @@ if(paused)
 				for(j = 0; j < 2; j++)
 				{
 					if(cloakOwn[i,j] != -1)
+					{
 						draw_sprite(cloakInvt,cloakOwn[i,j],(cloakTLX+8)+(i*46),(cloakTLY+23)+(j*112));
+						if(cloakOwn[i,j] == cloakEqpd)
+							draw_sprite(menuCubeSpr, 0, weapTLX+5+(i*46), weapTLY+7+(j*56));
+					}
 				}
 			if(cloakOwn[NavX,NavY] != -1)
 				draw_sprite(spr_cloak_stat,cloakOwn[NavX,NavY],weapTLX,weapTLY+236);
@@ -133,7 +154,11 @@ if(paused)
 				for(j = 0; j < 4; j++)
 				{
 					if(helmOwn[i,j] != -1)
+					{
 						draw_sprite(helmInvt,helmOwn[i,j],(weapTLX+10)+(i*46),(weapTLY+10)+(j*56));
+						if(helmOwn[i,j] == helmEqpd)
+							draw_sprite(menuCubeSpr, 0, weapTLX+4+(i*46), weapTLY+4+(j*56));
+					}
 				}
 			if(helmOwn[NavX,NavY] != -1)
 				draw_sprite(spr_helm_stat,helmOwn[NavX,NavY],weapTLX,weapTLY+234);
@@ -148,7 +173,11 @@ if(paused)
 				for(j = 0; j < 4; j++)
 				{ 
 					if(potionOwn[i,j] != -1)
+					{
 						draw_sprite(potionInvt,potionOwn[i,j],(weapTLX+10)+(i*46),(weapTLY+10)+(j*56));
+						if(potionOwn[i,j] == potionEqpd)
+							draw_sprite(menuCubeSpr, 0, weapTLX+4+(i*46), weapTLY+4+(j*56));
+					}
 				}
 			if(potionOwn[NavX,NavY] != -1)
 				draw_sprite(spr_potion_stat,potionOwn[NavX,NavY],weapTLX,weapTLY+236);
@@ -163,7 +192,11 @@ if(paused)
 				for(j = 0; j < 4; j++)
 				{
 					if(keyOwn[i,j] != -1)
+					{
 						draw_sprite(keyInvt,keyOwn[i,j],(weapTLX+10)+(i*46),(weapTLY+10)+(j*56));
+						if(keyOwn[i,j] == keyEqpd)
+							draw_sprite(menuCubeSpr, 0, weapTLX+4+(i*46), weapTLY+4+(j*56));
+					}
 				}
 			if(keyOwn[NavX,NavY] != -1)
 				draw_sprite(spr_key_stat,keyOwn[NavX,NavY],weapTLX,weapTLY+236);

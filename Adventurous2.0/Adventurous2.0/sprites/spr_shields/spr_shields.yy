@@ -1,7 +1,7 @@
 {
     "id": "97102fc7-7221-4fa9-93e0-64f66fafdcd9",
     "modelName": "GMSprite",
-    "mvc": "1.11",
+    "mvc": "1.12",
     "name": "spr_shields",
     "For3D": false,
     "HTile": false,
@@ -103,6 +103,8 @@
             ]
         }
     ],
+    "gridX": 0,
+    "gridY": 0,
     "height": 32,
     "layers": [
         {
@@ -117,6 +119,7 @@
             "visible": true
         }
     ],
+    "origin": 0,
     "playbackSpeed": 0,
     "playbackSpeedType": 0,
     "sepmasks": false,
@@ -124,6 +127,6 @@
     "textureGroup": 0,
     "type": 0,
     "width": 28,
-    "xorig": 2,
-    "yorig": 4
+    "xorig": 0,
+    "yorig": 0
 }

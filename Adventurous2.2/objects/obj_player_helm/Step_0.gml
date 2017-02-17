@@ -50,7 +50,7 @@ if(Phe < PheMax)
 		break;
 
 		case spr_player_flinch:
-			PsI = flinchHelm[Phe];
+			//PsI = flinchHelm[Phe];
 		break;
 	
 		case spr_player_shield:

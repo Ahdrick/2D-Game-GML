@@ -1,7 +1,7 @@
 {
     "id": "b8d109d0-cae8-4c27-8c10-f62a662f41a0",
     "modelName": "GMSprite",
-    "mvc": "1.11",
+    "mvc": "1.12",
     "name": "spr_player_potion",
     "For3D": false,
     "HTile": false,
@@ -213,6 +213,8 @@
             ]
         }
     ],
+    "gridX": 0,
+    "gridY": 0,
     "height": 64,
     "layers": [
         {
@@ -227,7 +229,8 @@
             "visible": true
         }
     ],
-    "playbackSpeed": 8,
+    "origin": 9,
+    "playbackSpeed": 9,
     "playbackSpeedType": 0,
     "sepmasks": false,
     "swatchColours": null,

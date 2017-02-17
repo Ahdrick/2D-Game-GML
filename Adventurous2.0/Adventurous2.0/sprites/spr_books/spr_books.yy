@@ -1,7 +1,7 @@
 {
     "id": "f37dfef2-cc67-471c-8158-3299b9c6d69f",
     "modelName": "GMSprite",
-    "mvc": "1.11",
+    "mvc": "1.12",
     "name": "spr_books",
     "For3D": false,
     "HTile": false,
@@ -103,6 +103,8 @@
             ]
         }
     ],
+    "gridX": 0,
+    "gridY": 0,
     "height": 32,
     "layers": [
         {
@@ -117,6 +119,7 @@
             "visible": true
         }
     ],
+    "origin": 0,
     "playbackSpeed": 0,
     "playbackSpeedType": 0,
     "sepmasks": false,
@@ -125,5 +128,5 @@
     "type": 0,
     "width": 24,
     "xorig": 0,
-    "yorig": 2
+    "yorig": 0
 }

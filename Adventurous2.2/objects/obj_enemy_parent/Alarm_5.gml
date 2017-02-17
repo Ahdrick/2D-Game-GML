@@ -1,0 +1,2 @@
+/// Flinch
+flinch = false;
