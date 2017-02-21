@@ -1,7 +1,7 @@
 /// block_state()
 if(canBlock)
 {
-	image_speed = 20;
+	image_speed = 1;
 	sprite_index     = sprBlock[blockState];
 	
 	if(currentEnergy < 0)

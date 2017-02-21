@@ -20,10 +20,13 @@ if(DashL && canDash && (currentEnergy > ((100/stamDown)-5))){
 	else 
 		 mysign = -1
 	// send back
-	//var mySpeed = hsp[0]+hsp[1];
 	hsp[0] = 0;
 	hsp[1] = 0;
-	add_movement_horizontal_vertical((8*-image_xscale),0);
+	if (vsp[0] == 0 && 	vsp[1] == 0)
+		add_movement_horizontal_vertical((10*-image_xscale),0);
+	
+	else
+		add_movement_horizontal_vertical((5*-image_xscale),0);
 	
 	// effect??? TBD 
 	currentEnergy -= (100/stamDown);
