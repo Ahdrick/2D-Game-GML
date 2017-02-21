@@ -2,13 +2,12 @@
 //hspd		 = 62;
 //max_run      = 8;
 
+if(DashL && canDash && (currentEnergy > ((100/stamDown)-5))){
 
-
-if(DashL && canCombo && (currentEnergy > ((100/stamDown)-5))){
-
-
+	canDash = false;
 	sprite_index = spr_player_dash;
-	image_speed =.6;
+	image_index = 0;
+	
 	if(Left)
 		image_xscale = -1;
 	if(Right)
@@ -21,15 +20,25 @@ if(DashL && canCombo && (currentEnergy > ((100/stamDown)-5))){
 	else 
 		 mysign = -1
 	// send back
-	add_movement_horizontal_vertical_maxspeed(10*-mysign, 0, 10*-mysign, 0)
-
+	//var mySpeed = hsp[0]+hsp[1];
+	hsp[0] = 0;
+	hsp[1] = 0;
+	add_movement_horizontal_vertical((8*-image_xscale),0);
+	
 	// effect??? TBD 
-		currentEnergy -= (100/stamDown);
-		if(currentEnergy < 0)
-		{
-			stamCD   = true;
-			alarm[3] = stamTimer;
-		}
+	currentEnergy -= (100/stamDown);
+	if(currentEnergy < 0)
+	{
+		stamCD   = true;
+		alarm[3] = stamTimer;
+	}
+
+}
+if(Jump)
+{
+	canDash = true;
+	state = move_state;
+	script_execute(state);	
 }
 
 draw_state = "Dash"

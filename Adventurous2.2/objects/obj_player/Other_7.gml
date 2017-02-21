@@ -1,7 +1,8 @@
-if (state == attack_state)
+if(state == attack_state)
 {
 	state     = move_state;
-	alarm[1]  = 15;
+	canCombo = true;
+	alarm[1]  = 10;
 }
 if(state == potion_state)
 {
@@ -12,18 +13,15 @@ if(state = jump_state)
 	state = move_state;
 }
 
-if (state == dash_state)
+if(state == dash_state)
+{
 	state = move_state;
-
-
-
+	canDash = true;
+}
 if(state = block_state)
 {
 	if(blockState == 0)
-	{
 		blockState = 1;
-		
-	}
 	state = move_state;
 }
 if(currentEnergy < 0)

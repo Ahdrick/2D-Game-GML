@@ -5,17 +5,21 @@ var vspd = vsp[0]+vsp[1];
 get_input();
 //scr_screen_shake();
 
-	// flinch 
-	if (flinch == true){
-			if(alarm[5] == -1)
-				alarm[5] = 5;
-		}
+// flinch 
+if (flinch == true)
+{
+	if(alarm[5] == -1)
+		alarm[5] = 5;
+}
+	
 //Shake_State = 3; 
 if(!obj_menu.paused)
 {
 	image_speed = 1.2;
 //_platform_actions(acceleration, run_speed, jump_height, right_input, left_input,
-	enable_movement_platform_actions(.6,max_run*1.2,6,Right,Left,Jump,0);
+	
+	if(state != dash_state)
+		enable_movement_platform_actions(.6,max_run*1.2,4.7,Right,Left,Jump,0);
 	script_execute(state);
 
 	// hollow effect
@@ -27,23 +31,20 @@ if(!obj_menu.paused)
 // Attack section
 		if(Attack && currentEnergy > (100/stamDown)-5)
 		{
-		if (flinch ==false){
-			state = attack_state;
-			instance_create_depth(x,y,200, obj_attack_mask);
-			script_execute(state);
+			if (flinch == false){
+				state = attack_state;
+				instance_create_depth(x,y,200, obj_attack_mask);
+				script_execute(state);
 			}		 
 		}
 		if(Potion && numPotion != 0)
 		{
 			state = potion_state;
-			script_execute(state);
-			
+			script_execute(state);		
 		}
 		if(currentEnergy < 100) && !(stamCD)
 			currentEnergy += stamRegen;
-		
-		if(image_index > image_number-3 && state = attack_state)
-			canCombo = true;
+
 		if(state == attack_state || state == block_state)
 			hspd = hspd/8;
 
@@ -57,10 +58,10 @@ if(!obj_menu.paused)
 		
 		
 	/// Sam trying to do crap.Dash 
-		if (DashL && currentEnergy > (100/stamDown)-5){
+		if (DashL && currentEnergy > (100/stamDown)-5)
+		{
 			state = dash_state;
 			script_execute(state);
-
 		}
 
 
@@ -76,15 +77,14 @@ if(!obj_menu.paused)
 //////////////////////////////////////////////////////
 ///// Kyle shouldnt this go into attack state?
 /////////////////////////////////////////////////
-	if(image_index > image_number-3 && state = attack_state)
-		canCombo = true;
+
 	if(state == attack_state)
 		hspd = hspd/10;
 
 //////////////////////////////////////////////////////
 ///// Kyle shouldnt this go into move state?
 /////////////////////////////////////////////////
-	if(state != attack_state && state != potion_state && state != dash_state )
+	if(state == move_state)
 	{
 		image_speed = abs((hspd)/4);
 		if(hspd == 0)
@@ -160,8 +160,8 @@ y += vspd;
 /// Apply gravity
 if (!place_meeting(x, y+1, collision_object)) {
 	if (state == move_state)
-		if (flinch = false)
-		sprite_index = spr_player_jump;
+		if (flinch == false)
+			sprite_index = spr_player_jump;
 		else
 			sprite_index = spr_player_flinch;
     vsp[0] += grav;

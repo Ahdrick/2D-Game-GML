@@ -6,8 +6,8 @@ if(sprite_index != spr_player_jump)
 	sprite_index = spr_player_jump;
 	image_speed = 0;
 }
-
-if(vspd < 0     && vspd < -0.5)
+/*
+if(vspd > 0     && vspd < -0.5)
 	image_index = 1;
 if(vspd >= -0.5 && vspd <= 0)
 	image_index = 2;
@@ -23,7 +23,7 @@ if(vspd > 1 && !place_meeting(x,y+1,obj_solid))
 if(place_meeting(x,y+1,obj_solid))
 {
 	image_index = 6;
-	image_speed = 15;
+	image_speed = 1;
 }
 
 if(Attack && currentEnergy > (100/stamDown)-5)

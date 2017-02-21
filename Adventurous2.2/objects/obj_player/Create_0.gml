@@ -9,7 +9,7 @@ maxHealth     = 10;
 currentHealth = 5;
 draw_state    = "None" // String of state
 Shake_State   = 0; // controls camera 
-flinch       = false;
+flinch        = false;
 // initialize stats
 
 //END
@@ -17,7 +17,7 @@ stamCD        = false;
 stamTimer     = 50;
 stamina       = 5;
 stamDown      = 3;
-stamRegen     = 1;
+stamRegen     = 20;
 maxEnergy     = 100;
 currentEnergy = maxEnergy;
 //STR
@@ -34,11 +34,13 @@ luck          = 1;
 luckmulti     = 1;
 
 statMulti     = .03;
-max_run       = 3;
+max_run       = 2;
 // initialize movement
 gamepad_set_axis_deadzone(0,0.3);
+
 jumping       = false;
 dashCD        = false;
+canDash       = true;
 dashTimer     = 40;
 numPotion     = 5;
 canDrink      = true;
@@ -46,6 +48,7 @@ canDrink      = true;
 // initialize combos / attacking
 combo		  = 0;
 canCombo	  = true;
+combod        = false;
 maxCombo	  = 3;
 Attack		  = 0;
 canAttack	  = true;
@@ -62,6 +65,5 @@ sprBlock[0]   = spr_player_shield;
 sprBlock[1]   = spr_player_block;
 sprBlock[2]   = spr_player_break;
 
-instance_create_depth(x,y,198,obj_player_helm);
-instance_create_depth(x,y,199,obj_player_cloak);
-instance_create_depth(x,y,199,obj_player_shield);
+
+instance_create_depth(x,y,199,obj_player_cloths);
