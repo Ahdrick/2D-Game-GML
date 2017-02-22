@@ -29,41 +29,45 @@ if(!obj_menu.paused)
 	
 }
 // Attack section
-		if(Attack && currentEnergy > (100/stamDown)-5)
-		{
-			if (flinch == false){
-				state = attack_state;
-				instance_create_depth(x,y,200, obj_attack_mask);
-				script_execute(state);
-			}		 
-		}
-		if(Potion && numPotion != 0)
-		{
-			state = potion_state;
-			script_execute(state);		
-		}
-		if(currentEnergy < 100) && !(stamCD)
-			currentEnergy += stamRegen;
+	if(Attack && currentEnergy > (100/stamDown)-5)
+{
+	if (flinch == false){
+		state = attack_state;
+		instance_create_depth(x,y,200, obj_attack_mask);
+		script_execute(state);
+	}		 
+}
+if(Potion && numPotion != 0)
+{
+	state = potion_state;
+	script_execute(state);		
+}
+if(currentEnergy < 100) && !(stamCD)
+	currentEnergy += stamRegen;
 
-		if(state == attack_state || state == block_state)
-			hspd = hspd/8;
+if(state == attack_state)
+	hspd = hspd/8;
 
 // Blcoking 
-		if(Block && currentEnergy > 5)
-		{
-			blocking = true;
-			state = block_state;
-			script_execute(state);		
-		}
-		
-		
-	/// Sam trying to do crap.Dash 
-		if (DashL && currentEnergy > (100/stamDown)-5)
-		{
-			state = dash_state;
-			script_execute(state);
-		}
+if(Block && canBlock && currentEnergy > 5)
+{
 
+	state = block_state;
+	script_execute(state);		
+}
+if(!Block && state == block_state)
+{
+	state = move_state;
+	script_execute(state);
+}
+/// Sam trying to do crap.Dash 
+if (DashL && currentEnergy > (100/stamDown)-5)
+{
+	state = dash_state;
+	script_execute(state);
+}
+if(currentEnergy > (100/stamDown))
+	canBlock = true;
 
 		
 ///move_movement_entity()
@@ -161,7 +165,11 @@ y += vspd;
 if (!place_meeting(x, y+1, collision_object)) {
 	if (state == move_state)
 		if (flinch == false)
-			sprite_index = spr_player_jump;
+		{
+			state = jump_state;
+			script_execute(state);
+			//sprite_index = spr_player_jump;
+		}
 		else
 			sprite_index = spr_player_flinch;
     vsp[0] += grav;

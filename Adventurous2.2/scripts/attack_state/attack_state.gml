@@ -14,9 +14,10 @@ if(Attack && canCombo && currentEnergy > (100/stamDown)-5)
 		alarm[3] = stamTimer;
 	}
 }
-if(!canCombo && image_index > (image_number - 4) && sprite_index == sprCombo[1])
-	canCombo = true;
+
 if(!canCombo && image_index > (image_number - 5) && sprite_index == sprCombo[0])
+	canCombo = true;
+if(!canCombo && image_index > (image_number - 4) && sprite_index == sprCombo[1])
 	canCombo = true;
 if(!canCombo && image_index > (image_number - 2) && sprite_index == sprCombo[2])
 	canCombo = true;

@@ -15,8 +15,7 @@
         "60e7650e-c766-49b8-820f-fc8aec3c7790",
         "3324b7c2-ca32-4572-9965-be7233861db3",
         "fa3f87d6-8c6f-4c69-ae53-c69f56cf2197",
-        "7a47437e-852e-42d3-ba91-319ef7fe5ed7",
-        "f2b3afd8-0310-44aa-9258-c96e2e74a0a4"
+        "7a47437e-852e-42d3-ba91-319ef7fe5ed7"
     ],
     "filterType": "GMSprite",
     "folderName": "Gold Legion Helm",

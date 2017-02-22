@@ -17,7 +17,7 @@ stamCD        = false;
 stamTimer     = 50;
 stamina       = 5;
 stamDown      = 3;
-stamRegen     = 20;
+stamRegen     = .2;
 maxEnergy     = 100;
 currentEnergy = maxEnergy;
 //STR

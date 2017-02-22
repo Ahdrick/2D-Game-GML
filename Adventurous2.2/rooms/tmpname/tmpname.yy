@@ -1564,8 +1564,8 @@
                     "m_originalParentID": "00000000-0000-0000-0000-000000000000",
                     "m_serialiseFrozen": false,
                     "name": "inst_363F1FE8",
-                    "x": 3712,
-                    "y": 768,
+                    "x": 1504,
+                    "y": 864,
                     "IsDnD": false,
                     "colour": {
                         "Value": 4294967295
@@ -1588,8 +1588,8 @@
                     "m_originalParentID": "00000000-0000-0000-0000-000000000000",
                     "m_serialiseFrozen": false,
                     "name": "inst_54D5C625",
-                    "x": 3456,
-                    "y": 896,
+                    "x": 1088,
+                    "y": 864,
                     "IsDnD": false,
                     "colour": {
                         "Value": 4294967295
@@ -2505,7 +2505,7 @@
             "mvc": "1.0",
             "hborder": 200,
             "hport": 1050,
-            "hspeed": 10,
+            "hspeed": 4,
             "hview": 250,
             "inherit": false,
             "objId": "2fbbd558-784a-4cda-9444-208c04890e1f",
