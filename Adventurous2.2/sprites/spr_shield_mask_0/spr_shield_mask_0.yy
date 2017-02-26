@@ -1,7 +1,7 @@
 {
     "id": "8b1b19d1-1e09-4e80-b797-eb9095c9854e",
     "modelName": "GMSprite",
-    "mvc": "1.0",
+    "mvc": "1.12",
     "name": "spr_shield_mask_0",
     "For3D": false,
     "HTile": false,

@@ -13,5 +13,52 @@ draw_sprite(spr_health_bar,0,35,35);
 //draw_text(20,120,obj_player.hsp[0] +"Hsp[0]")
 
 
-
+if keyboard_check_pressed(vk_tab)
+   {
+   msg = get_string("What Does your Heart Long for:", "Pot");
+   
+   if (msg == "Health")
+		obj_player.currentHealth =5;
+		
+   if (msg == "Death")
+		obj_player.currentHealth =0;
+		
+	if (msg == "Enemy")
+		instance_create_depth(obj_player.x,obj_player.y,300, obj_enemy_parent)
+		
+	if (msg == "Genocide"){
+		if (instance_exists(obj_enemy_parent)){
+			with (obj_enemy_parent){
+				instance_destroy()
+				}
+		}		
+	}
+		
+	if (msg == "Pot"){
+		instance_create_depth(obj_player.x,obj_player.y-40,300, Int_back_parent)
+		instance_create_depth(obj_player.x -30,obj_player.y-40,300, Int_back_parent)
+		instance_create_depth(obj_player.x +30,obj_player.y-40,300, Int_back_parent)
+		instance_create_depth(obj_player.x -100,obj_player.y-40,300, Int_back_parent)
+		instance_create_depth(obj_player.x +100,obj_player.y-40,300, Int_back_parent)
+	}
+		
+	if (msg == "Mob"){
+		instance_create_depth(obj_player.x+100,obj_player.y-100,300, obj_enemy_parent)
+		instance_create_depth(obj_player.x-100,obj_player.y-100,300, obj_enemy_parent)
+		instance_create_depth(obj_player.x+150,obj_player.y-100,300, obj_enemy_parent)
+		instance_create_depth(obj_player.x-150,obj_player.y-100,300, obj_enemy_parent)
+	}
+	
+	if (msg == "Sanic"){
+		obj_player.max_run= 5;
+	}
+	if (msg == "Restart"){
+		room_restart();
+	}
+	
+		
+   }
 //Draw Enemy HealthBar
+
+
+

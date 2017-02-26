@@ -15,7 +15,7 @@ if (flinch == true)
 //Shake_State = 3; 
 if(!obj_menu.paused)
 {
-	image_speed = 1.2;
+	image_speed = 1.4;
 //_platform_actions(acceleration, run_speed, jump_height, right_input, left_input,
 	
 	if(state != dash_state)
