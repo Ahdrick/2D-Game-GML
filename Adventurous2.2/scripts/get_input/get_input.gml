@@ -1,7 +1,7 @@
 /// get_input()
 Right  = keyboard_check(ord("D"))             || (gamepad_axis_value(0,gp_axislh) > 0);
 Left   = keyboard_check(ord("A"))             || (gamepad_axis_value(0,gp_axislh) < 0);
-Block  = mouse_check_button(mb_right)         || (gamepad_button_check(0,gp_face2));
+Block  = mouse_check_button(mb_right)         || (gamepad_button_check(0,gp_face2)) || keyboard_check_direct(vk_alt)  ;;
 Jump   = keyboard_check_pressed(vk_space)     || (gamepad_button_check_pressed(0,gp_face1));
 DashL  = keyboard_check_pressed(ord("Q"))     || (gamepad_button_check_pressed(0,gp_shoulderl))
 DashR  = keyboard_check_pressed(ord("E"))	  || (gamepad_button_check_pressed(0,gp_shoulderr));
