@@ -7,11 +7,11 @@
     "HTile": false,
     "VTile": false,
     "bbox_bottom": 34,
-    "bbox_left": 2,
-    "bbox_right": 18,
-    "bbox_top": 0,
+    "bbox_left": 6,
+    "bbox_right": 13,
+    "bbox_top": 1,
     "bboxmode": 2,
-    "colkind": 1,
+    "colkind": 0,
     "coltolerance": 0,
     "frames": [
         {
@@ -58,6 +58,7 @@
     "playbackSpeedType": 0,
     "sepmasks": false,
     "swatchColours": null,
+    "swfPrecision": 0,
     "textureGroup": 0,
     "type": 0,
     "width": 21,

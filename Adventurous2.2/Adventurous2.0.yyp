@@ -111,6 +111,14 @@
             }
         },
         {
+            "Key": "0956e506-d74d-4071-aab2-87cfa39ade03",
+            "Value": {
+                "id": "dceca634-69d6-4cab-95e5-1dce1518745a",
+                "resourcePath": "objects\\obj_blood_1\\obj_blood_1.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "0b7077a2-7cde-4e03-9b3b-493b53a23681",
             "Value": {
                 "id": "ab2bb314-743b-4ef6-bfec-ed1985c85682",
@@ -316,6 +324,14 @@
                 "id": "0bc63da6-b5d8-47d4-87c9-ea185ff25e78",
                 "resourcePath": "sprites\\spr_helm_swing2_0\\spr_helm_swing2_0.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "1e1aa94b-62bc-4330-83a5-344b5f567281",
+            "Value": {
+                "id": "05ac7e38-2dfe-4055-bf9e-bfc0f46d2ed7",
+                "resourcePath": "scripts\\scr_check_slope_feet\\scr_check_slope_feet.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -628,6 +644,14 @@
                 "id": "b97db2dc-83df-4e9d-a19c-40edcc4ab0d8",
                 "resourcePath": "sprites\\spr_sword_swing2_1\\spr_sword_swing2_1.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "39cb7e17-537b-4c39-b85b-09065fcfb5cf",
+            "Value": {
+                "id": "d7ed956f-28ab-44e0-91fb-494470ec0658",
+                "resourcePath": "objects\\obj_enemy_parent_1\\obj_enemy_parent_1.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -2423,6 +2447,14 @@
             }
         },
         {
+            "Key": "d552450b-dea6-45fe-8fb9-a60fc83c5482",
+            "Value": {
+                "id": "b059b604-e6ab-4201-b5c3-e6e7604ebc06",
+                "resourcePath": "sprites\\spr_blood\\spr_blood.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "d7c3a050-bfef-429a-80cb-706b51de76fb",
             "Value": {
                 "id": "ddd5f2b5-9970-4935-aa44-cb55332855a7",
@@ -2506,7 +2538,7 @@
             "Key": "e3bbea19-0a48-4cfa-99ee-2f89c2cb79c4",
             "Value": {
                 "id": "c527b355-0eea-41e7-a1a8-e9c1a2987c07",
-                "resourcePath": "sprites\\spr_blood\\spr_blood.yy",
+                "resourcePath": "sprites\\spr_blood_1\\spr_blood_1.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -2892,6 +2924,7 @@
         "2e39a718-c2da-4c48-b27e-2b1c66f50781",
         "51e35bf3-37b7-4b9c-881e-28e92ff8f548",
         "96700ecf-b15e-452b-8271-d0c5afff4b02",
+        "1e1aa94b-62bc-4330-83a5-344b5f567281",
         "acd6a19b-031c-425c-94c0-9bec6b27bad3",
         "d275fa9e-a169-4711-a26e-6e7c7bc22701",
         "6be34e8d-5e34-48e1-9579-98a7ed853556",

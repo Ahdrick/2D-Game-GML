@@ -31,8 +31,15 @@ if keyboard_check_pressed(vk_tab)
 			with (obj_enemy_parent){
 				instance_destroy()
 				}
-		}		
+		}
 	}
+		
+	if (msg == "Dark"){
+		instance_create_depth(obj_player.x +30,obj_player.y,300, obj_enemy_parent_1)
+		obj_player.Cursed = true;}
+		
+				
+	
 		
 	if (msg == "Pot"){
 		instance_create_depth(obj_player.x,obj_player.y-40,300, Int_back_parent)

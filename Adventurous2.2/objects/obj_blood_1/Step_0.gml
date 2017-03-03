@@ -10,4 +10,5 @@ image_speed =.4
 		instance_destroy();
 image_angle = rando; 
 
-	draw_sprite_ext(sprite_index,-1,x,y,1,1,rando,c_white,1)
+image_blend = c_yellow;
+draw_sprite_ext(sprite_index,-1,x,y,1,1,rando,image_blend  ,1)

@@ -13,6 +13,7 @@ flinch        = false;
 // initialize stats
 
 //END
+Cursed        = false;
 stamCD        = false;
 stamTimer     = 50;
 stamina       = 5;

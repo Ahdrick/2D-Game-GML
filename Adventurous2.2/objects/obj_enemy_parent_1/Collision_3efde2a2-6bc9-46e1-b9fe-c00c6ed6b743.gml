@@ -1,6 +1,7 @@
 /// 
 if (EnemyState != -1){
-	sprite_index = spr_S1_death;
+	sprite_index = spr_player_death;
+	image_speed =.2;
 	EnemyState= -1;
 }
 

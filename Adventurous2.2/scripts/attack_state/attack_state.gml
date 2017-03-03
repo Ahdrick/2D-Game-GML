@@ -1,6 +1,7 @@
 /// attack_State()
 if(Attack && canCombo && currentEnergy > (100/stamDown)-5)
 {
+	instance_create_depth(x,y,200, obj_attack_mask);
 	image_speed    = 1.4;
 	image_index    = 0;
 	sprite_index   = sprCombo[combo];

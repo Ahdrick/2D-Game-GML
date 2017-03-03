@@ -17,11 +17,11 @@ if(!obj_menu.paused)
 {
 	image_speed = 1.4;
 //_platform_actions(acceleration, run_speed, jump_height, right_input, left_input,
-	
-	if(state != dash_state)
-		enable_movement_platform_actions(.6,max_run*1.2,4.7,Right,Left,Jump,0);
-	script_execute(state);
-
+	if (flinch == false ){
+		if(state != dash_state)
+			enable_movement_platform_actions(.6,max_run*1.2,4.7,Right,Left,Jump,0);
+		script_execute(state);
+	}
 	// hollow effect
 	if (Jump != 0){
 		if(alarm[4] == -1)
@@ -33,7 +33,6 @@ if(!obj_menu.paused)
 {
 	if (flinch == false){
 		state = attack_state;
-		instance_create_depth(x,y,200, obj_attack_mask);
 		script_execute(state);
 	}		 
 }
@@ -197,3 +196,8 @@ vsp[1] = approach(vsp[1], 0, air_res);
 }
 
 
+if (Cursed == true ){
+	if (!instance_exists( obj_enemy_parent_1))
+		instance_create_depth(obj_player.x +100,obj_player.y- 100,300, obj_enemy_parent_1)
+		
+}
