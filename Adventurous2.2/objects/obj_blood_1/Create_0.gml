@@ -1,4 +1,4 @@
-/// @description Insert description here
+
 
 MyBloodDonor = obj_blood;
 rando = irandom(350)
