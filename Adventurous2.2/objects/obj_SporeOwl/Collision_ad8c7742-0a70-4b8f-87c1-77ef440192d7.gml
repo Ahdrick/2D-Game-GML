@@ -2,7 +2,9 @@
 if (EnemyState != -1){
 	sprite_index = spr_SporeOwl_Death;
 	image_speed =.2;
-	EnemyState= -1;
+	currentHealth -=1;
+	if (currentHealth < 1 )
+		EnemyState= -1;
 }
 
 if (obj_player != -1){ 

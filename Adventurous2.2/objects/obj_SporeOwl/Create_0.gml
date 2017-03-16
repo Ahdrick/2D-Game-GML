@@ -9,7 +9,7 @@ initialize_movement_entity(.4,.43,0,0,obj_solid);
 depth		  = 201; 
 // initialize health
 maxHealth     = 10;
-currentHealth = 5;
+currentHealth = 10;
 
 // initialize stats
 death         = false; 

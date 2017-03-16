@@ -12,21 +12,6 @@ if (EnemyState != -1){
 		{
 			if (distance_to_object(obj_player) < 600 && distance_to_object(obj_player) > 25)
 			{
-				if (obj_player.x < x && place_meeting(x,y+1, obj_solid))
-				{
-					left  = 1;
-					right = 0;
-				}
-				else if(obj_player.x > x && place_meeting(x,y+1, obj_solid))
-				{
-					left  = 0;
-					right = 1;
-				}
-				else
-				{
-					right = 0;
-					left  = 0;
-				}
 				sprite_index = spr_SporeOwl_Agro;
 
 				if(left)
@@ -40,7 +25,6 @@ if (EnemyState != -1){
 				if (EnemyState != -1 && canAttack)
 				{
 					canAttack = false;
-					jump = 1;
 				sprite_index = spr_SporeOwl_Agro;
 					image_index  = 0; 
 					if(alarm[1] == -1)
@@ -61,3 +45,5 @@ if(death && place_meeting(x,y+1,obj_solid))
 	image_alpha -= .1;
 if(image_alpha < 0)
 	instance_destroy();
+	
+

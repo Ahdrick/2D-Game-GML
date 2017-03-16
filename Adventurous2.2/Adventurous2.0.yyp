@@ -783,6 +783,14 @@
             }
         },
         {
+            "Key": "40527bba-8638-4e02-8821-d485c7cdcc8d",
+            "Value": {
+                "id": "1ac13d02-2858-4009-9a0c-242535c64fd8",
+                "resourcePath": "objects\\obj_spore\\obj_spore.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "40605625-6e90-440c-ba06-e74a5725466f",
             "Value": {
                 "id": "970b3ea7-9e39-464f-b480-f258fe6cc282",
@@ -875,6 +883,14 @@
             "Value": {
                 "id": "bd6fdb31-ddac-4621-9202-704330f82b55",
                 "resourcePath": "sprites\\spr_sword_jump_1\\spr_sword_jump_1.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "4a0a2a2c-2280-4127-a75d-365af5dc1b2b",
+            "Value": {
+                "id": "95175ddc-c580-41d0-afe7-0490f6673b39",
+                "resourcePath": "sprites\\spr_enemy_health3\\spr_enemy_health3.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -1895,6 +1911,14 @@
             }
         },
         {
+            "Key": "9a29ccd4-8015-4aac-a9aa-c7f7fd846e2c",
+            "Value": {
+                "id": "1ff03904-ac30-41f9-8c0f-8bf4b9b81e62",
+                "resourcePath": "scripts\\scr_enemy_gui\\scr_enemy_gui.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "9ba7a310-caac-4a83-b843-1d8d71fd9b5f",
             "Value": {
                 "id": "52801e56-824e-4897-a72f-9090d7f6b5e6",
@@ -2175,6 +2199,14 @@
             }
         },
         {
+            "Key": "b9637434-d833-423b-8fcc-040dc06edd7a",
+            "Value": {
+                "id": "6f9d82f4-dcea-42e6-9c4b-8bddbe794816",
+                "resourcePath": "sprites\\spr_enemy_health1\\spr_enemy_health1.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "ba3d5470-17a6-4f10-8f2a-e06154607335",
             "Value": {
                 "id": "7f20b493-4290-4ec8-a8f3-e0b62d1aa892",
@@ -2268,6 +2300,14 @@
                 "id": "7cf41488-a276-4301-b4a5-ab5032f6ad34",
                 "resourcePath": "sprites\\spr_cloak_break_1\\spr_cloak_break_1.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "c28b3829-a041-4a91-adbe-dd1584f6db24",
+            "Value": {
+                "id": "a5b5b57d-dd7c-4905-a2c9-5161586f6eb5",
+                "resourcePath": "views\\c28b3829-a041-4a91-adbe-dd1584f6db24.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
@@ -2439,6 +2479,14 @@
             }
         },
         {
+            "Key": "cf533460-6026-44ee-ab82-0d178d68022d",
+            "Value": {
+                "id": "30a61ee6-bebc-4928-9ac5-b9de35eded3e",
+                "resourcePath": "sprites\\spr_enemy_health2\\spr_enemy_health2.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "d09c6d8a-490d-49d3-8e41-67b0ec556626",
             "Value": {
                 "id": "77ec0c7f-d9d9-4e46-af25-744618f64fcd",
@@ -2516,6 +2564,14 @@
                 "id": "e36b72a4-4992-4490-9d06-b231ef8153b0",
                 "resourcePath": "views\\d32a8767-77da-4e47-b3c1-8d85461ff2e4.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "d38d00ae-cdd4-4b98-824c-166c9072eca8",
+            "Value": {
+                "id": "405a721d-9325-43ff-896d-0a3c4a863871",
+                "resourcePath": "objects\\obj_part_flash\\obj_part_flash.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -3036,7 +3092,8 @@
         "3f552102-d6f8-419f-93b4-4737bdc3cf8f",
         "e4d24f94-9d32-42f5-9c10-b180a26fb2ca",
         "2c87db5f-e375-4d88-af58-b51adaae1313",
-        "8aba42ca-c570-4935-84bf-ab97104b5499"
+        "8aba42ca-c570-4935-84bf-ab97104b5499",
+        "9a29ccd4-8015-4aac-a9aa-c7f7fd846e2c"
     ],
     "tutorial": ""
 }
