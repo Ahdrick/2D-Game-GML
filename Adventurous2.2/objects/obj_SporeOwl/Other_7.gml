@@ -1,4 +1,9 @@
 /// Death equels true
+if (sprite_index == spr_SporeOwl_Scream)
+{
+	sprite_index = spr_SporeOwl_Idle2;
+}
+
 if (sprite_index == spr_SporeOwl_Death)
 {
 	if (death == false){

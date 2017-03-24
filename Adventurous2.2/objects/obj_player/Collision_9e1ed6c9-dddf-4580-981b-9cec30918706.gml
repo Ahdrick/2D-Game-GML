@@ -27,6 +27,10 @@ if (other.EnemyState != -1){
 	
 		else
 			add_movement_horizontal_vertical((3*-image_xscale),0);
+			
+			
+		// screen shake 
+		obj_camera_controller.Shake_State = 1;
 
 	}
 
@@ -42,5 +46,3 @@ if (other.EnemyState != -1){
 }
 
 
-// screen shake 
-obj_camera_controller.Shake_State = 1;

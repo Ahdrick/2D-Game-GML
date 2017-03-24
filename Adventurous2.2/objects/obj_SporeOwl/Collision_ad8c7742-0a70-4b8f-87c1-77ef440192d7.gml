@@ -1,10 +1,13 @@
 /// 
 if (EnemyState != -1){
-	sprite_index = spr_SporeOwl_Death;
+	sprite_index = spr_SporeOwl_Scream;
 	image_speed =.2;
 	currentHealth -=1;
-	if (currentHealth < 1 )
+		alarm[1] = 335;
+	if (currentHealth < 1 ){
 		EnemyState= -1;
+		sprite_index = spr_SporeOwl_Death;
+		}
 }
 
 if (obj_player != -1){ 

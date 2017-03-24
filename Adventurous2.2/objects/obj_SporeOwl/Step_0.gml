@@ -1,36 +1,48 @@
 ///
 ///Player basics
-
-image_blend= c_black;
-draw_sprite_ext(sprite_index,-1,x,y,image_xscale,image_yscale,image_angle,c_black,1)
+//image_blend= c_black;
+//draw_sprite_ext(sprite_index,-1,x,y,image_xscale,image_yscale,image_angle,c_black,1)
 if (EnemyState != -1){
+		
 
+				
+		if (obj_player.x < x){	
+				image_xscale = 1;
+			}
+		else {
+				image_xscale = -1;
+			}	
+			
 		enable_movement_platform_actions(.6,3,6.5,right,left,jump,0);
+		
 		move_movement_entity();
 		// if close stay still
 		// if far away run towards; 
 		if (object_exists(obj_player))
 		{
-			if (distance_to_object(obj_player) < 600 && distance_to_object(obj_player) > 25)
+			if (distance_to_object(obj_player) > 125)
 			{
-				sprite_index = spr_SporeOwl_Agro;
-
-				if(left)
-					image_xscale = 1;
-				if(right)
-					image_xscale = -1;
+				sprite_index = spr_SporeOwl_Idle2;
+				//canAttack = true;	 
+			}
+		
+			if (distance_to_object(obj_player) < 125 && distance_to_object(obj_player) > 75)
+			{
+				sprite_index = spr_SporeOwl_Idle1;
 				canAttack = true;	 
 			}
-			if(distance_to_object(obj_player) <= 25)
+			if(distance_to_object(obj_player) <= 75)
 			{
-				if (EnemyState != -1 && canAttack)
-				{
-					canAttack = false;
-				sprite_index = spr_SporeOwl_Agro;
+			
+				    sprite_index = spr_SporeOwl_Agro;
 					image_index  = 0; 
+					if (canAttack == true){
 					if(alarm[1] == -1)
-						alarm[1] = 5;
-				}
+						alarm[1] = 45;
+					sprite_index = spr_SporeOwl_Scream;
+						}
+					else 
+						sprite_index = spr_SporeOwl_Scream2;
 			}
 			else
 				jump = 0;

@@ -7,6 +7,7 @@ flinch      = false;
 initialize_movement_entity(.4,.43,0,0,obj_solid);
 // state variable set to movement script
 depth		  = 201; 
+myalphy       = 1;
 // initialize health
 maxHealth     = 10;
 currentHealth = 10;
