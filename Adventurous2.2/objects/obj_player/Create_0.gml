@@ -10,7 +10,11 @@ currentHealth = 5;
 draw_state    = "None" // String of state
 Shake_State   = 0; // controls camera 
 flinch        = false;
+
 // initialize stats
+Poisoned      = 0;
+Iced          = 5;
+Fired         = 0;
 
 //END
 Cursed        = false;
