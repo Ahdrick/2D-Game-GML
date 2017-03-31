@@ -26,19 +26,19 @@ if (EnemyState != -1){
 				//canAttack = true;	 
 			}
 		
-			if (distance_to_object(obj_player) < 125 && distance_to_object(obj_player) > 75)
+			if (distance_to_object(obj_player) < 125 && distance_to_object(obj_player) > 100)
 			{
 				sprite_index = spr_SporeOwl_Idle1;
 				canAttack = true;	 
 			}
-			if(distance_to_object(obj_player) <= 75)
+			if(distance_to_object(obj_player) <= 100)
 			{
 			
 				    sprite_index = spr_SporeOwl_Agro;
 					image_index  = 0; 
 					if (canAttack == true){
 					if(alarm[1] == -1)
-						alarm[1] = 45;
+						alarm[1] = 35;
 					sprite_index = spr_SporeOwl_Scream;
 						}
 					else 

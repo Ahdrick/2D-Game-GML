@@ -13,7 +13,7 @@ flinch        = false;
 
 // initialize stats
 Poisoned      = 0;
-Iced          = 5;
+Iced          = 0;
 Fired         = 0;
 
 //END

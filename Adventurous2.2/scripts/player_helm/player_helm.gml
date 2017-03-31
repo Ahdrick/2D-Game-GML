@@ -54,6 +54,10 @@ if(Phe < PheMax)
 		case spr_player_death:
 			PHsI = deathHelm[Phe];
 		break;
+		
+		default:
+			PHsI = deathHelm[Phe];
+		break;
 	}
 }
 else

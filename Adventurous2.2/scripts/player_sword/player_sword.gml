@@ -55,6 +55,10 @@ if(Pswe < PswMax)
 		case spr_player_death:
 			PSWsI = deathSword[Pswe];
 		break;
+		
+		default: 
+			PHsI = deathHelm[Phe];
+		break;
 	}
 }
 else

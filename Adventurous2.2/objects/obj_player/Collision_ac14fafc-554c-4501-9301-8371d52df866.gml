@@ -7,6 +7,7 @@
 	else if (flinch == false){
 		sprite_index = spr_player_flinch;
 		flinch = true;
+		Set_Poisoned();
 			instance_create_depth(x,y,-300,obj_blood);
 		if(alarm[5] == -1)
 			alarm[5] = 20;

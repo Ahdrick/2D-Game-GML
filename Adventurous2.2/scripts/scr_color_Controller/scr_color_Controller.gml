@@ -32,13 +32,17 @@ if (object_exists(obj_attack_mask)){
 }
 if (object_exists(obj_blood)){
 	with (obj_blood){
-		draw_sprite_ext(sprite_index, image_index, x, y, image_xscale, image_yscale, image_angle, c_gray, myalpha);
+		draw_sprite_ext(sprite_index, image_index, x, y, image_xscale, image_yscale, image_angle, c_dkgray, myalpha);
 	}
 }
+
+
 if (object_exists(obj_blood_1)){
 	with (obj_blood_1){
 		draw_sprite_ext(sprite_index, image_index, x, y, image_xscale, image_yscale, image_angle, c_gray, myalpha);
 	}
+	
+	
 }
 
 gpu_set_blendmode(bm_normal);

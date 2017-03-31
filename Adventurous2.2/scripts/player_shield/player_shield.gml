@@ -16,5 +16,8 @@ if(Pse < PsMax)
 		case spr_player_break:
 			PSsI = breakShield[Pse];
 		break;
+		
+		default:
+			PSsI = breakShield[Pse];
 	}
 }

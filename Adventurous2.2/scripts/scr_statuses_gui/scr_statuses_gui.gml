@@ -1,6 +1,6 @@
 scr_color_Controller();
 
-/*
+
 if (Iced > 0){
 	draw_sprite_ext(spr_statuses, 1, x+16, y-74, image_xscale, image_yscale, image_angle, image_blend, image_alpha);
 	var healthy3 = (Fired)/ 5; 
@@ -23,4 +23,3 @@ if (Poisoned >0){
 	draw_sprite_ext(spr_statuses_bar, 0, x-15, y-34,  healthy*2,3, image_angle, image_blend, image_alpha);
 
 	}
-*/
