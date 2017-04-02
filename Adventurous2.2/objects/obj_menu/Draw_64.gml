@@ -129,7 +129,7 @@ if(paused)
 		/////////////////////////////////Cloak List///////////////////////////////////////
 		case 5:
 			NavMaxX = 4;
-			NavMaxY = 2;
+			NavMaxY = 1;
 			draw_sprite(menuSelSpr,1,cloakTLX+(NavX*46),cloakTLY+(NavY*112));
 			for(i = 0; i < 5; i++)
 				for(j = 0; j < 2; j++)
