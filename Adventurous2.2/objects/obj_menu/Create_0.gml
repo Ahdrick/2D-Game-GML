@@ -107,6 +107,8 @@ helmOwn[0,0] = 0;
 helmOwn[1,0] = 1;
 helmOwn[2,0] = 2;
 helmOwn[3,0] = 3;
+helmOwn[4,0] = 4; // sam added this
+helmOwn[0,1] = 5; // sammy
 
 ringOwn[0,0] = 0;
 ringOwn[1,0] = 1;
@@ -120,6 +122,8 @@ cloakOwn[1,0] = 3;
 cloakOwn[2,0] = 2;
 cloakOwn[3,0] = 1;
 cloakOwn[4,0] = 0;
+cloakOwn[0,1] = 5; // Sammy
+cloakOwn[1,1] = 4; // Sammy
 
 menuTheme   = 1;
 				  // Stat Levels

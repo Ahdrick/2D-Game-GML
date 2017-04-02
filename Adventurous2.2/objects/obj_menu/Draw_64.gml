@@ -129,7 +129,7 @@ if(paused)
 		/////////////////////////////////Cloak List///////////////////////////////////////
 		case 5:
 			NavMaxX = 4;
-			NavMaxY = 1;
+			NavMaxY = 2;
 			draw_sprite(menuSelSpr,1,cloakTLX+(NavX*46),cloakTLY+(NavY*112));
 			for(i = 0; i < 5; i++)
 				for(j = 0; j < 2; j++)
@@ -150,8 +150,8 @@ if(paused)
 			NavMaxX = 4;
 			NavMaxY = 3;
 			draw_sprite(menuSelSpr,0,weapTLX+(NavX*46),weapTLY+(NavY*56));
-			for(i = 0; i < 5; i++)
-				for(j = 0; j < 4; j++)
+			for(i = 0; i < 5; i++) // Sam Added one
+				for(j = 0; j < 4; j++) // Sam Added one.
 				{
 					if(helmOwn[i,j] != -1)
 					{

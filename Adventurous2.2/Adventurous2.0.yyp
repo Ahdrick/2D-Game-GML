@@ -122,7 +122,7 @@
             "Key": "09c0fd34-67e1-4a9b-a3eb-ece723d8f637",
             "Value": {
                 "id": "a3d2513f-c5a2-4c67-86a8-62765a5b78a8",
-                "resourcePath": "sprites\\spr_helm_heal_N1\\spr_helm_heal_N1.yy",
+                "resourcePath": "sprites\\spr_helm_potion_N1\\spr_helm_potion_N1.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -378,7 +378,7 @@
             "Key": "1efb54ec-be21-4aa9-8074-1777a9dde5f7",
             "Value": {
                 "id": "4f88e10b-fa61-4880-aadb-322544cb1f67",
-                "resourcePath": "sprites\\spr_cloak_heal_N1\\spr_cloak_heal_N1.yy",
+                "resourcePath": "sprites\\spr_cloak_potion_N1\\spr_cloak_potion_N1.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -1802,7 +1802,7 @@
             "Key": "89a650c0-66c8-4778-acb8-bf15837b9743",
             "Value": {
                 "id": "1057f1b7-f215-41cd-8d5d-f476fedbd260",
-                "resourcePath": "sprites\\spr_cloak_backdash_N1\\spr_cloak_backdash_N1.yy",
+                "resourcePath": "sprites\\spr_cloak_dash_N1\\spr_cloak_dash_N1.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -1842,7 +1842,7 @@
             "Key": "8aab4a5a-9250-4660-9d8d-e8c10fb2a3f9",
             "Value": {
                 "id": "ec08dad8-2c37-4ea7-8d35-7fb993dbdae4",
-                "resourcePath": "sprites\\spr_cloak_shield3_N1\\spr_cloak_shield3_N1.yy",
+                "resourcePath": "sprites\\spr_cloak_break_N1\\spr_cloak_break_N1.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -2874,7 +2874,7 @@
             "Key": "d7667dc4-8910-4fdc-bb1b-f25495643b04",
             "Value": {
                 "id": "c9b82ec3-a19e-4904-b699-30a2742f715e",
-                "resourcePath": "sprites\\spr_cloak_shield1_N1\\spr_cloak_shield1_N1.yy",
+                "resourcePath": "sprites\\spr_cloak_shield_N1\\spr_cloak_shield_N1.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -3282,7 +3282,7 @@
             "Key": "f5639ab1-dfc7-4025-983e-959d63816e1d",
             "Value": {
                 "id": "aaa57455-6591-4685-abba-e1a104d25ac4",
-                "resourcePath": "sprites\\spr_cloak_shield2_N1\\spr_cloak_shield2_N1.yy",
+                "resourcePath": "sprites\\spr_cloak_block_N1\\spr_cloak_block_N1.yy",
                 "resourceType": "GMSprite"
             }
         },

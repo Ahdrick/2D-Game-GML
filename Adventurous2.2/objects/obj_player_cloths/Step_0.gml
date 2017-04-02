@@ -4,9 +4,9 @@ x      = obj_player.x;
 y      = obj_player.y;
 
 Pce    = obj_menu.cloakEqpd;
-PcMax  = 3;
+PcMax  = 5; // sam changed this
 Phe    = obj_menu.helmEqpd;
-PheMax = 5; // sam changed this
+PheMax = 6; // sam changed this
 Pse    = obj_menu.shieldEqpd;
 PsMax  = 4;
 Pswe   = obj_menu.swordEqpd;

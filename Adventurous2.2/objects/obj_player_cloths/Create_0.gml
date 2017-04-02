@@ -16,6 +16,20 @@ for(i = 0; i < 3; i++)
 	deathCloak[i]  = asset_get_index(("spr_cloak_death_"  + string(i)));
 	dashCloak[i]   = asset_get_index(("spr_cloak_dash_"   + string(i)));
 }
+	standCloak[4]  = spr_cloak_stand_N1;
+	runCloak[4]    = spr_cloak_run_N1;
+	jumpCloak[4]   = spr_cloak_jump_N1;
+	potionCloak[4] = spr_cloak_potion_N1;
+	swing1Cloak[4] = spr_cloak_swing1_N1;
+	swing2Cloak[4] = spr_cloak_swing2_N1;
+	swing3Cloak[4] = spr_cloak_swing3_N1;
+	shieldCloak[4] = spr_cloak_shield_N1;
+	blockCloak[4]  = spr_cloak_block_N1;
+	breakCloak[4]  = spr_cloak_break_N1;
+	flinchCloak[4] = spr_cloak_flinch_N1;
+	deathCloak[4]  = spr_cloak_death_N1;
+	dashCloak[4]   = spr_cloak_dash_N1;
+	
 for(i = 0; i < 4; i++)
 {
 	standHelm[i]  = asset_get_index(("spr_helm_stand_"  + string(i)));
@@ -35,7 +49,7 @@ for(i = 0; i < 4; i++)
 	standHelm[5]  = spr_helm_stand_N1;
 	runHelm[5]    = spr_helm_run_N1;
 	jumpHelm[5]   = spr_helm_jump_N1;
-	potionHelm[5] = spr_helm_heal_N1;
+	potionHelm[5] = spr_helm_potion_N1;
 	swing1Helm[5] = spr_helm_swing1_N1;
 	swing2Helm[5] = spr_helm_swing2_N1;
 	swing3Helm[5] = spr_helm_swing3_N1;
