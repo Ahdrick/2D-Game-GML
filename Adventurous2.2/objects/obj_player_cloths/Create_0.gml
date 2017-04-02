@@ -32,6 +32,21 @@ for(i = 0; i < 4; i++)
 	deathHelm[i]  = asset_get_index(("spr_helm_death_"  + string(i)));
 	dashHelm[i]   = asset_get_index(("spr_helm_dash_"   + string(i)));
 }
+	standHelm[5]  = spr_helm_stand_N1;
+	runHelm[5]    = spr_helm_run_N1;
+	jumpHelm[5]   = spr_helm_jump_N1;
+	potionHelm[5] = spr_helm_heal_N1;
+	swing1Helm[5] = spr_helm_swing1_N1;
+	swing2Helm[5] = spr_helm_swing2_N1;
+	swing3Helm[5] = spr_helm_swing3_N1;
+	shieldHelm[5] = spr_helm_shield_N1;
+	blockHelm[5]  = spr_helm_block_N1;
+	breakHelm[5]  = spr_helm_break_N1;
+	flinchHelm[5] = spr_helm_flinch_N1;
+	deathHelm[5]  = spr_helm_death_N1;
+	dashHelm[5]   = spr_helm_dash_N1;
+
+
 for(i = 1; i < 2; i++)
 {
 	standSword[i]  = asset_get_index(("spr_sword_stand_"  + string(i)));
@@ -47,6 +62,7 @@ for(i = 1; i < 2; i++)
 	flinchSword[i] = asset_get_index(("spr_sword_flinch_" + string(i)));
 	deathSword[i]  = asset_get_index(("spr_sword_death_"  + string(i)));
 }
+
 for(i = 0; i < 1; i++)
 {
 
@@ -70,5 +86,5 @@ PiI  = obj_player.image_index;
 
 PCsI = 0;
 Pce  = 0;
-PHsI = 0;
-Phe  = 0;
+PHsI = 5;
+Phe  = 5;

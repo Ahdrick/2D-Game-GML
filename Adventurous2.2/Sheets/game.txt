@@ -1,0 +1,16 @@
+Idle
+ Run
+ Swing1
+ Swing2 
+Swing3
+ Heal 
+Jump 
+Flinch 
+Death 
+Pull up
+ shield
+ Blocking with shield
+ Broken guard 
+Backdash 
+Climb
+ Jump attack (when used should instantly starts going downward)

@@ -14,8 +14,7 @@
 
 	// Subtract health
 
-	// Add knock back
-		var mysign; 
+	/*
 		if (image_xscale == 1)
 			 mysign = 1; 
 		else 
@@ -28,7 +27,7 @@
 	
 		else
 			add_movement_horizontal_vertical((3*-image_xscale),0);
-				// screen shake 
+				// screen shake */
 	obj_camera_controller.Shake_State = 1;
 
 	}
