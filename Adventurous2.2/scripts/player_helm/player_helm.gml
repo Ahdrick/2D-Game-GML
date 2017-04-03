@@ -9,55 +9,59 @@ if(Phe < PheMax)
 	{
 		case spr_player_stand:
 			PHsI = standHelm[Phe];
-		break;
+			break;
 
 		case spr_player_run:
 			PHsI = runHelm[Phe];
-		break;
+			break;
 
 		case spr_player_swing_1:
 			PHsI = swing1Helm[Phe];
-		break;
+			break;
 	
 		case spr_player_swing_2:
 			PHsI = swing2Helm[Phe];
-		break;
+			break;
 	
 		case spr_player_swing_3:
 			PHsI = swing3Helm[Phe];
-		break;
+			break;
 	
 		case spr_player_potion:
 			PHsI = potionHelm[Phe];
-		break;
+			break;
 	
 		case spr_player_jump:
 			PHsI = jumpHelm[Phe];
-		break;
+			break;
 
 		case spr_player_flinch:
-			//PHsI = flinchHelm[Phe];
-		break;
+			PHsI = flinchHelm[Phe];
+			break;
 	
 		case spr_player_shield:
 			PHsI = shieldHelm[Phe];
-		break;
+			break;
 	
 		case spr_player_block:
 			PHsI = blockHelm[Phe];
-		break;
+			break;
 	
 		case spr_player_break:
 			PHsI = breakHelm[Phe];
-		break;
+			break;
 	
 		case spr_player_death:
 			PHsI = deathHelm[Phe];
-		break;
-		
+			break;
+			
+		case spr_player_dash:
+			PHsI = dashHelm[Phe];
+			break;
+			
 		default:
 			PHsI = deathHelm[Phe];
-		break;
+			break;
 	}
 }
 else

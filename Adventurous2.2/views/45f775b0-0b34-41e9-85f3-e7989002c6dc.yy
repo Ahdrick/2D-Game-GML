@@ -15,12 +15,11 @@
         "e41bed61-0027-40ce-9b1e-e4caeb75e889",
         "d7667dc4-8910-4fdc-bb1b-f25495643b04",
         "f5639ab1-dfc7-4025-983e-959d63816e1d",
-        "1b7bb939-a87b-4e2f-af1e-6fe445f9db67",
-        "8aab4a5a-9250-4660-9d8d-e8c10fb2a3f9",
-        "8621e772-d3f4-4282-9ba6-0e73e5283dc9",
-        "b4d7f8c3-4a68-4601-9a0f-43a2849c2a3a",
         "89a650c0-66c8-4778-acb8-bf15837b9743",
-        "d1725ea0-a2ec-40b0-8cb1-10433b116996"
+        "8aab4a5a-9250-4660-9d8d-e8c10fb2a3f9",
+        "1b7bb939-a87b-4e2f-af1e-6fe445f9db67",
+        "8621e772-d3f4-4282-9ba6-0e73e5283dc9",
+        "b4d7f8c3-4a68-4601-9a0f-43a2849c2a3a"
     ],
     "filterType": "GMSprite",
     "folderName": "Cloak",

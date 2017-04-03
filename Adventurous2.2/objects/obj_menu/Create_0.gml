@@ -40,8 +40,8 @@ SFXVol      = 5;  // sound effect volume
 				  // Sprite Index Variables 			  
 maxMenuI    = 9;  //           \/
 menuI		= 0;  //		   \/
-helmEqpd	= 0;  //           \/
-cloakEqpd	= 0;  //           \/
+helmEqpd	= 5;  //           \/
+cloakEqpd	= 4;  //           \/
 ringEqpd	= 0;  //           \/
 swordEqpd	= 0;  //           \/
 shieldEqpd	= 0;  //           \/

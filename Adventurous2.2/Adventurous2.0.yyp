@@ -1802,7 +1802,7 @@
             "Key": "89a650c0-66c8-4778-acb8-bf15837b9743",
             "Value": {
                 "id": "1057f1b7-f215-41cd-8d5d-f476fedbd260",
-                "resourcePath": "sprites\\spr_cloak_dash_N1\\spr_cloak_dash_N1.yy",
+                "resourcePath": "sprites\\spr_cloak_break_N1\\spr_cloak_break_N1.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -1842,7 +1842,7 @@
             "Key": "8aab4a5a-9250-4660-9d8d-e8c10fb2a3f9",
             "Value": {
                 "id": "ec08dad8-2c37-4ea7-8d35-7fb993dbdae4",
-                "resourcePath": "sprites\\spr_cloak_break_N1\\spr_cloak_break_N1.yy",
+                "resourcePath": "sprites\\spr_cloak_dash_N1\\spr_cloak_dash_N1.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -2370,7 +2370,7 @@
             "Key": "b4d7f8c3-4a68-4601-9a0f-43a2849c2a3a",
             "Value": {
                 "id": "3950489a-c1a8-4bfb-96bc-86585082f40e",
-                "resourcePath": "sprites\\spr_cloak_taunt_N1\\spr_cloak_taunt_N1.yy",
+                "resourcePath": "sprites\\spr_cloak_spell_N1\\spr_cloak_spell_N1.yy",
                 "resourceType": "GMSprite"
             }
         },
