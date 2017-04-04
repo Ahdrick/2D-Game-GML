@@ -2682,7 +2682,7 @@
             "Key": "cd609127-3fbf-40c4-abda-087acaba06d3",
             "Value": {
                 "id": "e335cf40-d765-42b6-946d-80a98fd5e3bd",
-                "resourcePath": "sprites\\spr_swing_mask3\\spr_swing_mask3.yy",
+                "resourcePath": "sprites\\spr_swing_mask1\\spr_swing_mask1.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -3298,7 +3298,7 @@
             "Key": "f5e47117-d2db-492c-979b-e3f0a4542596",
             "Value": {
                 "id": "b98a7d78-0b54-41ec-94e7-9669ee35f500",
-                "resourcePath": "sprites\\spr_swing_mask1\\spr_swing_mask1.yy",
+                "resourcePath": "sprites\\spr_swing_mask3\\spr_swing_mask3.yy",
                 "resourceType": "GMSprite"
             }
         },

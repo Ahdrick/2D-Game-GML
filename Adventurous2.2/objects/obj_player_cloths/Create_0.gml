@@ -15,7 +15,7 @@ for(i = 0; i < 3; i++)
 	flinchCloak[i] = asset_get_index(("spr_cloak_flinch_" + string(i)));
 	deathCloak[i]  = asset_get_index(("spr_cloak_death_"  + string(i)));
 	dashCloak[i]   = asset_get_index(("spr_cloak_dash_"   + string(i)));
-}
+}// delete this code after you change the name 
 	standCloak[4]  = spr_cloak_stand_N1;
 	runCloak[4]    = spr_cloak_run_N1;
 	jumpCloak[4]   = spr_cloak_jump_N1;

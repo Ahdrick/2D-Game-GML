@@ -12,9 +12,9 @@ PsMax  = 4;
 Pswe   = obj_menu.swordEqpd;
 PswMax = 2;
 
-PxS  = obj_player.image_xscale;
-PiS  = obj_player.image_speed;
-PiI  = obj_player.image_index;
+PxS  = obj_player.image_xscale; // PxS = players x scale
+PiS  = obj_player.image_speed; // PiS = player image speed
+PiI  = obj_player.image_index; // PiI = player image index
 
 player_cloak(Pce,PcMax);
 player_helm(Phe,PheMax);
