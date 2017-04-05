@@ -82,7 +82,7 @@ if(currentEnergy > (100/stamDown))
 /////////////////////////////////////////////////
 
 	if(state == attack_state)
-		hspd = hspd/10;
+		hspd = hspd/2;
 
 //////////////////////////////////////////////////////
 ///// Kyle shouldnt this go into move state?

@@ -1,6 +1,8 @@
 // Stand array for different s stand
+PcMax = 1;
+PheMax = 1;
 
-for(i = 0; i < 3; i++)
+for(i = 0; i < PcMax; i++)
 {
 	standCloak[i]  = asset_get_index(("spr_cloak_stand_"  + string(i)));
 	runCloak[i]    = asset_get_index(("spr_cloak_run_"    + string(i)));
@@ -15,22 +17,10 @@ for(i = 0; i < 3; i++)
 	flinchCloak[i] = asset_get_index(("spr_cloak_flinch_" + string(i)));
 	deathCloak[i]  = asset_get_index(("spr_cloak_death_"  + string(i)));
 	dashCloak[i]   = asset_get_index(("spr_cloak_dash_"   + string(i)));
-}// delete this code after you change the name 
-	standCloak[4]  = spr_cloak_stand_N1;
-	runCloak[4]    = spr_cloak_run_N1;
-	jumpCloak[4]   = spr_cloak_jump_N1;
-	potionCloak[4] = spr_cloak_potion_N1;
-	swing1Cloak[4] = spr_cloak_swing1_N1;
-	swing2Cloak[4] = spr_cloak_swing2_N1;
-	swing3Cloak[4] = spr_cloak_swing3_N1;
-	shieldCloak[4] = spr_cloak_shield_N1;
-	blockCloak[4]  = spr_cloak_block_N1;
-	breakCloak[4]  = spr_cloak_break_N1;
-	flinchCloak[4] = spr_cloak_flinch_N1;
-	deathCloak[4]  = spr_cloak_death_N1;
-	dashCloak[4]   = spr_cloak_dash_N1;
+}
+
 	
-for(i = 0; i < 4; i++)
+for(i = 0; i < PheMax; i++)
 {
 	standHelm[i]  = asset_get_index(("spr_helm_stand_"  + string(i)));
 	runHelm[i]    = asset_get_index(("spr_helm_run_"    + string(i)));
@@ -46,20 +36,6 @@ for(i = 0; i < 4; i++)
 	deathHelm[i]  = asset_get_index(("spr_helm_death_"  + string(i)));
 	dashHelm[i]   = asset_get_index(("spr_helm_dash_"   + string(i)));
 }
-	standHelm[5]  = spr_helm_stand_N1;
-	runHelm[5]    = spr_helm_run_N1;
-	jumpHelm[5]   = spr_helm_jump_N1;
-	potionHelm[5] = spr_helm_potion_N1;
-	swing1Helm[5] = spr_helm_swing1_N1;
-	swing2Helm[5] = spr_helm_swing2_N1;
-	swing3Helm[5] = spr_helm_swing3_N1;
-	shieldHelm[5] = spr_helm_shield_N1;
-	blockHelm[5]  = spr_helm_block_N1;
-	breakHelm[5]  = spr_helm_break_N1;
-	flinchHelm[5] = spr_helm_flinch_N1;
-	deathHelm[5]  = spr_helm_death_N1;
-	dashHelm[5]   = spr_helm_dash_N1;
-
 
 for(i = 1; i < 2; i++)
 {

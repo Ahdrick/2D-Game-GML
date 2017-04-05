@@ -3,9 +3,10 @@ if(obj_player.Left && offset > 0)
 	offset = offset * -1;
 if(obj_player.Right && offset < 0)
 	offset = (offset * -1);
-
-x += ceil(((obj_player.x+offset)-x)/12);
+	
+x += ceil((((obj_player.x-5)+offset)-x)/10);
 y += ceil(((obj_player.y-yoffset)-y)/4);
+
 
 if (Shake_State == 0)
 	room_speed = 60; 

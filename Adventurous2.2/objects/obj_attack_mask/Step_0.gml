@@ -2,17 +2,17 @@
 x = obj_player.x;
 y = obj_player.y;
 image_speed =obj_player.image_speed ;
-switch(obj_player.sprite_index)
+switch(obj_player_cloths.sprite_index)
 {
-	case spr_player_swing_1:
+	case spr_cloak_swing1_0:
 		sprite = spr_swing_mask1;
 	break;
 	
-	case spr_player_swing_2:
+	case spr_cloak_swing2_0:
 		sprite = spr_swing_mask2;
 	break;
 	
-	case spr_player_swing_3:
+	case spr_cloak_swing3_0:
 		sprite = spr_swing_mask3;
 	break;
 }
