@@ -1,11 +1,13 @@
 /// jump_state(vspd)
+mask_index = spr_player_mask;
 vspd = vsp[0]+vsp[1];
-
 if(sprite_index != spr_player_jump)
 {
-	image_index = 0;
-	sprite_index = spr_player_jump;
-	image_speed = 0;
+
+
+		image_index = 0;
+		sprite_index = spr_player_jump;
+		image_speed = 0;
 }
 
 if(vspd < 0     && vspd < -0.5)

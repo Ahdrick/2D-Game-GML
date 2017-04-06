@@ -1,4 +1,5 @@
 /// block_state()
+mask_index = spr_player_mask;
 if(canBlock)
 { 
 	if(blockState == 0)

@@ -1,3 +1,4 @@
+mask_index = spr_player_mask;
 if (flinch ==false )
 	sprite_index = spr_player_run;
 else 

@@ -1,9 +1,23 @@
 ///Player basics
 var hspd = hsp[0]+hsp[1];
 var vspd = vsp[0]+vsp[1];
-
+mask_index = spr_player_mask;
 get_input();
 //scr_screen_shake();
+
+
+if place_meeting(x+1,y,obj_solid)
+	if place_meeting(x+1,y-1,obj_solid)==0{
+		x += 1;
+		y-=1; 
+	}
+if place_meeting(x+3,y,obj_solid)
+	if place_meeting(x+3,y-3,obj_solid)==0{
+		x += 3;
+		y-=3; 
+	}
+
+
 
 // flinch 
 if (flinch == true)

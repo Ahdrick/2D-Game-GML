@@ -15,7 +15,8 @@
         "557abe04-4694-49c7-808e-fc29679aee5b",
         "380c5810-0794-4c9d-af9c-bcb90c8c06be",
         "79c176d6-96b4-409a-9007-e44cbb41ea66",
-        "14b852c4-96a5-4e3d-a9cb-ce003e1d307d"
+        "14b852c4-96a5-4e3d-a9cb-ce003e1d307d",
+        "515a38b9-7274-4078-a099-4b3671ab7879"
     ],
     "filterType": "GMSprite",
     "folderName": "Bamboo Sword",

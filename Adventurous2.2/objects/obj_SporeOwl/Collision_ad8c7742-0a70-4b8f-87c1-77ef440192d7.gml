@@ -26,12 +26,3 @@ obj_camera_controller.Shake_State = 2;
 
 myblood =instance_create_depth(x,y,200,obj_blood_1);
 myblood.MyBloodDonor = 2; 
-
-var mysign; 
-// Check left or right of collison
-if (x > other.x)
-	 mysign = 1; 
-else 
-	 mysign = -1
-// send back
-add_movement_horizontal_vertical_maxspeed(3*mysign, -3, 3*mysign, -4)

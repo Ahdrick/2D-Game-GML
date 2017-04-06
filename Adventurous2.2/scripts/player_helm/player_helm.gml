@@ -60,7 +60,7 @@ if(Phe < PheMax)
 			break;
 			
 		default:
-			PHsI = deathHelm[Phe];
+			PHsI = standHelm[Phe];
 			break;
 	}
 }

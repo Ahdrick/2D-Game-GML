@@ -1,5 +1,5 @@
 /// potion_state()
-
+mask_index = spr_player_mask;
 if((numPotion > 0) && (currentHealth < maxHealth) && (canDrink))
 {
 	canDrink       = false;

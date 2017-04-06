@@ -1,7 +1,7 @@
 // Stamina Down 
 //hspd		 = 62;
 //max_run      = 8;
-
+mask_index = spr_player_mask;
 if(DashL && canDash && (currentEnergy > ((100/stamDown)-5))){
 
 	canDash = false;

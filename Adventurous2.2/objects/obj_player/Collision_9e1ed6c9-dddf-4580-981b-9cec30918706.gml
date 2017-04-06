@@ -3,6 +3,8 @@ if (other.EnemyState != -1){
 
 	if (state == block_state){
 			// if blocking knocking back enemy ?
+	} else if (state == dash_state){
+			// if blocking knocking back enemy ?
 	}
 	else if (flinch == false){
 		sprite_index = spr_player_flinch;

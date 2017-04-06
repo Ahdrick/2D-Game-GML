@@ -56,8 +56,13 @@ if(Pswe < PswMax)
 			PSWsI = deathSword[Pswe];
 		break;
 		
+		case spr_player_dash:
+			PSWsI = dashSword[Pswe];
+		break;
+	
+		
 		default: 
-			PHsI = deathHelm[Phe];
+			PHsI = standSword[Pswe];
 		break;
 	}
 }

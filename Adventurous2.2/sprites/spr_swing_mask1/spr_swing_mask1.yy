@@ -11,7 +11,7 @@
     "bbox_right": 58,
     "bbox_top": 14,
     "bboxmode": 2,
-    "colkind": 1,
+    "colkind": 0,
     "coltolerance": 0,
     "frames": [
         {
@@ -232,7 +232,7 @@
     "origin": 9,
     "playbackSpeed": 10,
     "playbackSpeedType": 0,
-    "sepmasks": false,
+    "sepmasks": true,
     "swatchColours": null,
     "swfPrecision": 0,
     "textureGroup": 0,

@@ -4,13 +4,13 @@
 	if (state == block_state){
 			// if blocking knocking back enemy ?
 	}
-	else if (flinch == false){
-		sprite_index = spr_player_flinch;
-		flinch = true;
+//	else if (flinch == false){
+//		sprite_index = spr_player_flinch;
+		//flinch = true;
 		Set_Poisoned();
-			instance_create_depth(x,y,-300,obj_blood);
-		if(alarm[5] == -1)
-			alarm[5] = 20;
+		//	instance_create_depth(x,y,-300,obj_blood);
+	//	if(alarm[5] == -1)
+	//		alarm[5] = 20;
 
 	// Subtract health
 
@@ -28,9 +28,9 @@
 		else
 			add_movement_horizontal_vertical((3*-image_xscale),0);
 				// screen shake */
-	obj_camera_controller.Shake_State = 1;
+	//obj_camera_controller.Shake_State = 1;
 
-	}
+//wwwwww	}
 
 
 

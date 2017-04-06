@@ -16,6 +16,6 @@ switch(obj_player_cloths.sprite_index)
 		sprite = spr_swing_mask3;
 	break;
 }
-image_xscale = obj_player.image_xscale;
+image_xscale = -obj_player.image_xscale;
 sprite_index = sprite;
 image_index  = obj_player.image_index;

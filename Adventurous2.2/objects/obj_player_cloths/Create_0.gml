@@ -22,6 +22,7 @@ for(i = 0; i < PcMax; i++)
 	
 for(i = 0; i < PheMax; i++)
 {
+	dashHelm[i]  = asset_get_index(("spr_helm_dash_"  + string(i)));
 	standHelm[i]  = asset_get_index(("spr_helm_stand_"  + string(i)));
 	runHelm[i]    = asset_get_index(("spr_helm_run_"    + string(i)));
 	jumpHelm[i]   = asset_get_index(("spr_helm_jump_"   + string(i)));
@@ -34,7 +35,6 @@ for(i = 0; i < PheMax; i++)
 	breakHelm[i]  = asset_get_index(("spr_helm_break_"  + string(i)));
 	flinchHelm[i] = asset_get_index(("spr_helm_flinch_" + string(i)));
 	deathHelm[i]  = asset_get_index(("spr_helm_death_"  + string(i)));
-	dashHelm[i]   = asset_get_index(("spr_helm_dash_"   + string(i)));
 }
 
 for(i = 1; i < 2; i++)
@@ -51,6 +51,7 @@ for(i = 1; i < 2; i++)
 	breakSword[i]  = asset_get_index(("spr_sword_break_"  + string(i)));
 	flinchSword[i] = asset_get_index(("spr_sword_flinch_" + string(i)));
 	deathSword[i]  = asset_get_index(("spr_sword_death_"  + string(i)));
+	dashSword[i]   = asset_get_index(("spr_sword_dash_"  + string(i)));
 }
 
 for(i = 0; i < 1; i++)
