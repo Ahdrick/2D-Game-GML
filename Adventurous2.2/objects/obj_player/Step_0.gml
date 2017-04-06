@@ -11,10 +11,10 @@ if place_meeting(x+1,y,obj_solid)
 		x += 1;
 		y-=1; 
 	}
-if place_meeting(x+3,y,obj_solid)
-	if place_meeting(x+3,y-3,obj_solid)==0{
-		x += 3;
-		y-=3; 
+if place_meeting(x-1,y,obj_solid)
+	if place_meeting(x-1,y-1,obj_solid)==0{
+		x -= 1;
+		y -=1; 
 	}
 
 
@@ -145,7 +145,7 @@ if (place_meeting(x+hspd, y, collision_object)) {
         // Update the horizontal speeds
 	    hspd = 0;
 	    hsp[0] = 0;
-	    hsp[1] = -(hsp[1])*bounce;
+	    hsp[1] = -(hsp[1])*bounce*2;
         
         // Stop bounce at low values
         if (abs(hsp[1]) < 1) hsp[1] = 0;

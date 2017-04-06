@@ -1,6 +1,6 @@
 // initialize variables
 instance_create_depth(x,y,201,obj_camera_controller)
-initialize_movement_entity(.2,.43,0,0,obj_solid);
+initialize_movement_entity(.2,.9,0,0,obj_solid);
 // state variable set to movement script
 state         = move_state;
 
