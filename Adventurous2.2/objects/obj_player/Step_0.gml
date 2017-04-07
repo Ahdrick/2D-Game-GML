@@ -3,7 +3,22 @@ var hspd = hsp[0]+hsp[1];
 var vspd = vsp[0]+vsp[1];
 mask_index = spr_player_mask;
 get_input();
-//scr_screen_shake();
+
+
+//Sam Trying to fix hit boxxx???
+
+if place_meeting(decimal_bbox_right(),y-1, obj_solid){
+	   y	-=1; 
+       vspd = 0;
+	   vsp[0] =0;
+	   vsp[1] =0;
+		}
+if place_meeting(decimal_bbox_left(),y-1, obj_solid){
+	   y	-=1; 
+       vspd = 0;
+	   vsp[0] =0;
+	   vsp[1] =0;
+		}
 
 
 if place_meeting(x+1,y,obj_solid)
@@ -16,6 +31,7 @@ if place_meeting(x-1,y,obj_solid)
 		x -= 1;
 		y -=1; 
 	}
+
 
 
 
@@ -175,15 +191,17 @@ y += vspd;
 
 
 /// Apply gravity
-if (!place_meeting(x, y+1, collision_object)) {
+if (!place_meeting(x, y+1, collision_object))  {
 	if (state == move_state)
 		if (flinch == false)
 		{
+		if (!place_meeting(x, y+15, collision_object)) {
 			state = jump_state;
 			script_execute(state);
-			//sprite_index = spr_player_jump;
+			//sprite_index = spr_player_jump;}
+			}
 		}
-		else
+		else 
 			sprite_index = spr_player_flinch;
     vsp[0] += grav;
 }

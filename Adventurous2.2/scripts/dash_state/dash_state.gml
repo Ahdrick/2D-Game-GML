@@ -7,7 +7,7 @@ if(DashL && canDash && (currentEnergy > ((100/stamDown)-5))){
 	canDash = false;
 	sprite_index = spr_player_dash;
 	image_index = 0;
-	
+	image_speed =.2;
 	if(Left)
 		image_xscale = -1;
 	if(Right)
@@ -20,8 +20,8 @@ if(DashL && canDash && (currentEnergy > ((100/stamDown)-5))){
 	else 
 		 mysign = -1
 	// send back
-	hsp[0] = 0;
-	hsp[1] = 0;
+//	hsp[0] = 0;
+//	hsp[1] = 0;
 	if (vsp[0] == 0 && 	vsp[1] == 0)
 		add_movement_horizontal_vertical((10*-image_xscale),0);
 	
