@@ -19,7 +19,8 @@
         "4c2b1c55-1f72-4f8b-ba25-b388a62ba740",
         "33cc1898-a6ef-4cab-973f-420bcd674b58",
         "2751f3be-e09f-4091-b22c-3b75d65af1e1",
-        "564c34f5-2886-4757-a9d4-8fb4c1258ead"
+        "564c34f5-2886-4757-a9d4-8fb4c1258ead",
+        "fb2f0f2e-00b1-42d2-8b5f-ca5b2e766426"
     ],
     "filterType": "GMSprite",
     "folderName": "Helm",
