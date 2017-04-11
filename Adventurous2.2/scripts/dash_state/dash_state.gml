@@ -3,7 +3,15 @@
 //max_run      = 8;
 mask_index = spr_player_mask;
 if(DashL && canDash && (currentEnergy > ((100/stamDown)-5))){
-
+/// creating the sexy shade(PCsI,PiI,x,y,PxS,1,0,-1,1);
+	myf = instance_create_depth(x,y,depth, obj_Shade_1);
+	myf.sprite_index =obj_player_cloths.PCsI;
+	myf.image_index =image_index;
+	myd = instance_create_depth(x,y,depth, obj_Shade_1);
+	myd.sprite_index =obj_player_cloths.PHsI;
+	myd.image_index =image_index;
+	
+	
 	canDash = false;
 	sprite_index = spr_player_dash;
 	image_index = 0;
@@ -22,7 +30,9 @@ if(DashL && canDash && (currentEnergy > ((100/stamDown)-5))){
 	// send back
 //	hsp[0] = 0;
 //	hsp[1] = 0;
-	if (vsp[0] == 0 && 	vsp[1] == 0)
+
+	
+   if (vsp[0] == 0 && 	vsp[1] == 0)
 		add_movement_horizontal_vertical((10*-image_xscale),0);
 	
 	else
