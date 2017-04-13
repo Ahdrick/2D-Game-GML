@@ -5,6 +5,7 @@ initialize_movement_entity(.2,.9,0,0,obj_solid);
 // state variable set to movement script
 state			 = move_state;
 collision_object = obj_solid;
+ fade =0
 // initialize health
 maxHealth     = 10;
 currentHealth = 5;
@@ -13,9 +14,9 @@ Shake_State   = 0; // controls camera
 flinch        = false;
 
 // initialize stats
-Poisoned      = 5;
-Iced          = 5;
-Fired         = 5;
+Poisoned      = 0;
+Iced          = 0;
+Fired         = 0;
 
 //END
 Cursed        = false;

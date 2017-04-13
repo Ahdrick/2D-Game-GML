@@ -1,6 +1,7 @@
 // Stand array for different s stand
-PcMax = 1;
+PcMax  = 1;
 PheMax = 1;
+fade   = 0;
 
 for(i = 0; i < PcMax; i++)
 {

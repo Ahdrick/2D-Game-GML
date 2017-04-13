@@ -30,6 +30,10 @@ if keyboard_check_pressed(vk_tab)
 	if (msg == "Owl")
 		instance_create_depth(obj_player.x+200,obj_player.y-200,300, obj_SporeOwl)
 		
+	if (msg == "Mold")
+		instance_create_depth(obj_player.x+200,obj_player.y-200,300, obj_MoldKnight)
+		
+		
 	if (msg == "Genocide"){
 		if (instance_exists(obj_enemy_parent)){
 			with (obj_enemy_parent){

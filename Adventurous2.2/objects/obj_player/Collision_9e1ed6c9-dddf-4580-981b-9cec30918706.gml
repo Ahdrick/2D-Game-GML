@@ -1,4 +1,5 @@
 /// If Hit By Enemy and enemy not dead set flash alarm
+if (currentHealth > -1){
 if (other.EnemyState != -1){ 
 
 	if (state == block_state){
@@ -9,6 +10,7 @@ if (other.EnemyState != -1){
 	else if (flinch == false){
 		sprite_index = spr_player_flinch;
 		flinch = true;
+		currentHealth -=1; 
 			instance_create_depth(x,y,-300,obj_blood);
 		if(alarm[5] == -1)
 			alarm[5] = 20;
@@ -47,4 +49,4 @@ if (other.EnemyState != -1){
 //add_movement_horizontal_vertical_maxspeed(6*mysign, -6, 6*mysign, -4)
 }
 
-
+}

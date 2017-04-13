@@ -26,6 +26,9 @@ if(state == block_state)
 		image_index = 6;
 	}
 }
+
+
+
 if(currentEnergy < 0)
 	state = move_state;
 

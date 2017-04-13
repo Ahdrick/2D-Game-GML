@@ -1,5 +1,4 @@
 /// attack_State()
-mask_index = spr_player_mask;
 if(Attack && canCombo && currentEnergy > (100/stamDown)-5)
 {
 	instance_create_depth(x,y,200, obj_attack_mask);

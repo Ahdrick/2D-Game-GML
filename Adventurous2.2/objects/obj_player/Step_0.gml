@@ -1,7 +1,10 @@
 ///Player basics
+
 var hspd = hsp[0]+hsp[1];
 var vspd = vsp[0]+vsp[1];
-mask_index = spr_player_mask;
+mask_index = spr_player_mask
+
+// if hero is dead dont grab input...if he is alive grab it
 get_input();
 
 
@@ -31,7 +34,14 @@ if place_meeting(x-1,y,obj_solid)
 		x -= 1;
 		y -=1; 
 	}
-
+	
+// Check if the hero is dead! 
+if (currentHealth <1){
+	state = dead_state;
+	script_execute(state);
+	if (!instance_exists(obj_death))
+		instance_create_depth(x,y,-10000,obj_death)
+	}
 
 
 
@@ -39,11 +49,11 @@ if place_meeting(x-1,y,obj_solid)
 if (flinch == true)
 {
 	if(alarm[5] == -1)
-		alarm[5] = 5;
+		alarm[5] = 3;
 }
 	
 //Shake_State = 3; 
-if(!obj_menu.paused)
+if(!obj_menu.paused && (currentHealth >0))
 {
 	image_speed = 1.4;
 //_platform_actions(acceleration, run_speed, jump_height, right_input, left_input,
