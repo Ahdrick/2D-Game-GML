@@ -4,7 +4,7 @@ if(left)
 if(right)
 	image_xscale = -1;
 
-image_speed = 1.4;
+image_speed = .4;
 
 // if not dead
 if (EnemyState != -1){
@@ -84,3 +84,12 @@ if(death && place_meeting(x,y+1,obj_solid))
 if(image_alpha < 0)
 	instance_destroy();
 
+// calculate mask
+if (sprite_index == spr_Attack1)
+{
+mask_index =spr_Attack1;
+} else if (sprite_index == spr_Attack2){
+mask_index =spr_Attack2;
+}
+else 
+mask_index =spr_run;

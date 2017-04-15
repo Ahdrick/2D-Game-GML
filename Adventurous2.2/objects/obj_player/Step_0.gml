@@ -8,15 +8,15 @@ mask_index = spr_player_mask
 get_input();
 
 
-//Sam Trying to fix hit boxxx???
+/*Sam Trying to fix hit boxxx???
 
-if place_meeting(decimal_bbox_right(),y-1, obj_solid){
+if place_meeting(decimal_bbox_right(),y, obj_solid){
 	   y	-=1; 
        vspd = 0;
 	   vsp[0] =0;
 	   vsp[1] =0;
 		}
-if place_meeting(decimal_bbox_left(),y-1, obj_solid){
+if place_meeting(decimal_bbox_left(),y, obj_solid){
 	   y	-=1; 
        vspd = 0;
 	   vsp[0] =0;
@@ -25,16 +25,16 @@ if place_meeting(decimal_bbox_left(),y-1, obj_solid){
 
 
 if place_meeting(x+1,y,obj_solid)
-	if place_meeting(x+1,y-1,obj_solid)==0{
+	if place_meeting(x+1,y,obj_solid)==0{
 		x += 1;
 		y-=1; 
 	}
 if place_meeting(x-1,y,obj_solid)
-	if place_meeting(x-1,y-1,obj_solid)==0{
+	if place_meeting(x-1,y,obj_solid)==0{
 		x -= 1;
 		y -=1; 
 	}
-	
+*/	
 // Check if the hero is dead! 
 if (currentHealth <1){
 	state = dead_state;
