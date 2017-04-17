@@ -25,4 +25,7 @@ if (x > other.x)
 else 
 	 mysign = -1
 // send back
-add_movement_horizontal_vertical_maxspeed(3*mysign, -3, 3*mysign, -4)
+if (jump ==0)
+	add_movement_horizontal_vertical_maxspeed(3*mysign, -3, 3*mysign, -4)
+else
+	add_movement_horizontal_vertical_maxspeed(3*mysign, -3, 0, 0)

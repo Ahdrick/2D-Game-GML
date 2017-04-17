@@ -319,6 +319,14 @@
             }
         },
         {
+            "Key": "19395cd9-7772-470d-9ae5-0c161176b7fd",
+            "Value": {
+                "id": "e2145151-4bb3-4708-8e34-ebb607cbf8d3",
+                "resourcePath": "sprites\\spr_houndknight_attack1\\spr_houndknight_attack1.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "1b7bb939-a87b-4e2f-af1e-6fe445f9db67",
             "Value": {
                 "id": "fa2bf74f-fc7a-44a0-80e9-2b74a53e2a11",
@@ -367,6 +375,14 @@
             }
         },
         {
+            "Key": "1fbadb8a-45eb-4f14-9cc2-16db94dcf2f8",
+            "Value": {
+                "id": "186d0df6-b6c0-47e2-b35c-0d4ad9914d0e",
+                "resourcePath": "sprites\\spr_houndknight_run\\spr_houndknight_run.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "1fee6610-06f6-4f6b-8ca8-0ca5792c576c",
             "Value": {
                 "id": "7e950b31-9fe3-4040-8d7a-d9ce0dc8faf9",
@@ -388,6 +404,14 @@
                 "id": "6c2d3db2-71a4-4ecd-a4a1-d3550498b74c",
                 "resourcePath": "views\\2140b172-3b8b-4d77-91cd-c61880d681a2.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "21cb8ffa-d6fa-4849-a65d-50d73629854c",
+            "Value": {
+                "id": "cca3315e-7d89-487c-bbf0-b5a3f7f93540",
+                "resourcePath": "sprites\\spr_houndknight_attack2\\spr_houndknight_attack2.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -780,6 +804,14 @@
                 "id": "970b3ea7-9e39-464f-b480-f258fe6cc282",
                 "resourcePath": "sprites\\MG_2_2\\MG_2_2.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "409f6713-4975-4748-990e-97e7f0dfbdd2",
+            "Value": {
+                "id": "110d4c1f-1000-4e3e-8b1e-c1b4adc3471f",
+                "resourcePath": "views\\409f6713-4975-4748-990e-97e7f0dfbdd2.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
@@ -1263,6 +1295,14 @@
             }
         },
         {
+            "Key": "71ab9309-24d9-401b-b1ad-f320f7946e0a",
+            "Value": {
+                "id": "35adcfc5-d227-4925-adc7-833cf246df87",
+                "resourcePath": "sprites\\spr_houndknight_death\\spr_houndknight_death.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "723cd5ba-1f8b-4b71-a40a-ec8c176c0cc6",
             "Value": {
                 "id": "62b911bb-5b8d-4e79-9139-5e749fb9059b",
@@ -1711,6 +1751,14 @@
             }
         },
         {
+            "Key": "9636abec-cab5-42e1-aed7-04d2d8c2a5e5",
+            "Value": {
+                "id": "2e96bf98-701a-4a76-b9c7-ba6ce7dc1e05",
+                "resourcePath": "sprites\\spr_houndknight_idle\\spr_houndknight_idle.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "96700ecf-b15e-452b-8271-d0c5afff4b02",
             "Value": {
                 "id": "10503505-7663-4b61-a639-ba4c778ce380",
@@ -1927,6 +1975,14 @@
             }
         },
         {
+            "Key": "acf71ad2-53af-47d3-8132-a90e74555ce7",
+            "Value": {
+                "id": "fa8474c1-53b6-4940-a704-ac42be530ba7",
+                "resourcePath": "objects\\obj_red_blood\\obj_red_blood.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "ad4ca399-34df-449b-98c8-cfa52794c1ab",
             "Value": {
                 "id": "a956fe9d-6d04-440e-b322-f827ef448e57",
@@ -1980,6 +2036,14 @@
                 "id": "a41e228d-5e55-462e-bb84-7f63eb5a6cf6",
                 "resourcePath": "sprites\\spr_hound_idle1\\spr_hound_idle1.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "b240430e-56a3-4ba4-aa0f-1c1609617ba9",
+            "Value": {
+                "id": "31d8ece0-0653-4755-9d61-e0390d3f654d",
+                "resourcePath": "objects\\obj_houndknight\\obj_houndknight.yy",
+                "resourceType": "GMObject"
             }
         },
         {

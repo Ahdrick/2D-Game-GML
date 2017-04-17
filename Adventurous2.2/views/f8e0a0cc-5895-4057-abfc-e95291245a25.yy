@@ -9,7 +9,8 @@
         "7469786a-fa5d-46e0-921e-2466e62437f7",
         "39645086-0ca1-4914-8554-e3a56dd7864d",
         "3d9fdd6f-3cfe-4d98-ae11-64f30aff3681",
-        "9eb0fbb0-ba3c-4419-ba26-1fbb212deed3"
+        "9eb0fbb0-ba3c-4419-ba26-1fbb212deed3",
+        "409f6713-4975-4748-990e-97e7f0dfbdd2"
     ],
     "filterType": "GMSprite",
     "folderName": "Hound",

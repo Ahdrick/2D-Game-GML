@@ -26,6 +26,9 @@ if keyboard_check_pressed(vk_tab)
 	if (msg == "Hound")
 		instance_create_depth(obj_player.x+200,obj_player.y-200,300, obj_hound)
 		
+	if (msg == "Houndknight")
+		instance_create_depth(obj_player.x+200,obj_player.y-200,300, obj_houndknight)
+		
 		
 	if (msg == "Enemy")
 		instance_create_depth(obj_player.x,obj_player.y,300, obj_enemy_parent)
