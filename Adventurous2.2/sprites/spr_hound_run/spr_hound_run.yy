@@ -37,6 +37,50 @@
             ]
         },
         {
+            "id": "d849c96f-fdce-4de2-85de-af72d248ba22",
+            "modelName": "GMSpriteFrame",
+            "mvc": "1.0",
+            "SpriteId": "c486ca47-7080-485a-85bf-02ae6f6c9ae3",
+            "compositeImage": {
+                "id": "47bf2743-4a3b-4cef-b257-80f05eff1a5f",
+                "modelName": "GMSpriteImage",
+                "mvc": "1.0",
+                "FrameId": "d849c96f-fdce-4de2-85de-af72d248ba22",
+                "LayerId": "00000000-0000-0000-0000-000000000000"
+            },
+            "images": [
+                {
+                    "id": "e632fd67-b865-4393-af6a-31a8b3b73086",
+                    "modelName": "GMSpriteImage",
+                    "mvc": "1.0",
+                    "FrameId": "d849c96f-fdce-4de2-85de-af72d248ba22",
+                    "LayerId": "c913bac8-40f0-4e01-b196-10ebc451309f"
+                }
+            ]
+        },
+        {
+            "id": "ee8dee47-15ed-4886-b777-4ab6e099c9b6",
+            "modelName": "GMSpriteFrame",
+            "mvc": "1.0",
+            "SpriteId": "c486ca47-7080-485a-85bf-02ae6f6c9ae3",
+            "compositeImage": {
+                "id": "f70dde10-18b4-448d-851d-5533c69d2729",
+                "modelName": "GMSpriteImage",
+                "mvc": "1.0",
+                "FrameId": "ee8dee47-15ed-4886-b777-4ab6e099c9b6",
+                "LayerId": "00000000-0000-0000-0000-000000000000"
+            },
+            "images": [
+                {
+                    "id": "985cb9ce-d649-4278-bfef-15f76b6131d5",
+                    "modelName": "GMSpriteImage",
+                    "mvc": "1.0",
+                    "FrameId": "ee8dee47-15ed-4886-b777-4ab6e099c9b6",
+                    "LayerId": "c913bac8-40f0-4e01-b196-10ebc451309f"
+                }
+            ]
+        },
+        {
             "id": "79d30a30-1457-4512-9d60-3e9dbf98db5c",
             "modelName": "GMSpriteFrame",
             "mvc": "1.0",
@@ -186,7 +230,7 @@
         }
     ],
     "origin": 9,
-    "playbackSpeed": 15,
+    "playbackSpeed": 7,
     "playbackSpeedType": 0,
     "sepmasks": false,
     "swatchColours": null,

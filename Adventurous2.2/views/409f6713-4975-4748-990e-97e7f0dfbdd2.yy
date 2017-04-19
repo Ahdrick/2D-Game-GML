@@ -8,8 +8,7 @@
         "9636abec-cab5-42e1-aed7-04d2d8c2a5e5",
         "19395cd9-7772-470d-9ae5-0c161176b7fd",
         "21cb8ffa-d6fa-4849-a65d-50d73629854c",
-        "71ab9309-24d9-401b-b1ad-f320f7946e0a",
-        "9e8134ef-cb9b-4505-8d87-b2b4996dd22c"
+        "71ab9309-24d9-401b-b1ad-f320f7946e0a"
     ],
     "filterType": "GMSprite",
     "folderName": "HoundKnight",
