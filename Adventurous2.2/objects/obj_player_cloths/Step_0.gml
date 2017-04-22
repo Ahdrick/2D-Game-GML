@@ -11,11 +11,20 @@ Pse    = obj_menu.shieldEqpd;
 PsMax  = 4;
 Pswe   = obj_menu.swordEqpd;
 PswMax = 2;
-
-PxS  = obj_player.image_xscale; // PxS = players x scale
-PiS  = obj_player.image_speed; // PiS = player image speed
-PiI  = obj_player.image_index; // PiI = player image index
-
+if (obj_player.currentHealth <= 0 ){
+	if (image_index  < image_number -2)
+		PiS  =.3;
+	else 
+		PiS  = 0; 
+}
+if (obj_player.currentHealth > 0 ){
+	PxS  = obj_player.image_xscale; // PxS = players x scale
+	PiS  = obj_player.image_speed; // PiS = player image speed
+	PiI  = obj_player.image_index; // PiI = player image index
+}
+else 
+	PiS  = 0; 
+	
 player_cloak(Pce,PcMax);
 player_helm(Phe,PheMax);
 player_shield(Pse,PsMax);

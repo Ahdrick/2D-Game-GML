@@ -51,11 +51,20 @@ if (flinch == true)
 	if(alarm[5] == -1)
 		alarm[5] = 3;
 }
-	
+if (currentHealth <0)
+	Death = true;
+
+// Check if dead 
+if (currentHealth < 0){	
+	if (Death = false)
+		image_speed = .2;
+	else 
+		image_speed = 0;
+}
 //Shake_State = 3; 
 if(!obj_menu.paused && (currentHealth >0))
 {
-	image_speed = 1.4;
+image_speed = 1.4;
 //_platform_actions(acceleration, run_speed, jump_height, right_input, left_input,
 	if (flinch == false ){
 		if(state != dash_state)

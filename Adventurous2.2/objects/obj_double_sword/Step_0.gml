@@ -22,7 +22,7 @@ switch(obj_player_cloths.sprite_index)
 	break;
 }*/
 //image_xscale = -obj_player.image_xscale;
-image_xscale = obj_player_cloths.PxS;
+image_xscale = -obj_player_cloths.PxS;
 sprite_index = sprite;
 image_index  = obj_player_cloths.PiI;
 //image_index  = obj_player.image_index;

@@ -27,7 +27,7 @@ if(state == block_state)
 	}
 }
 
-
+// Check if dead
 
 if(currentEnergy < 0)
 	state = move_state;

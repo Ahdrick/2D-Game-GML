@@ -24,19 +24,25 @@ if(DashL && canDash && (currentEnergy > ((100/stamDown)-5))){
 	// Check left or right of collison
 	var mysign; 
 	if (image_xscale == 1)
-		 mysign = 1; 
+		 mysign = -1; 
 	else 
-		 mysign = -1
+		 mysign = 1
 	// send back
 //	hsp[0] = 0;
 //	hsp[1] = 0;
-
+		hsp[0] = 0;
+		hsp[1] = 0;
+		// send back
+		//vsp[0] = 0;
+		//vsp[1] = 0;
 	
-   if (vsp[0] == 0 && 	vsp[1] == 0)
-		add_movement_horizontal_vertical((10*-image_xscale),0);
+  if (vsp[0] == 0 && 	vsp[1] == 0)
+		//add_movement_horizontal_vertical((10*-image_xscale),0);
+		add_movement_horizontal_vertical_maxspeed(3*mysign, -3, 3*mysign, -4)
 	
 	else
-		add_movement_horizontal_vertical((5*-image_xscale),0);
+	add_movement_horizontal_vertical_maxspeed(3*mysign, -3, 3*mysign, -4)
+	//	add_movement_horizontal_vertical((7*-image_xscale), -1);
 	
 	// effect??? TBD 
 	currentEnergy -= (100/stamDown);

@@ -2015,6 +2015,14 @@
             }
         },
         {
+            "Key": "af7e8c3d-6119-425d-8278-acd991088ba2",
+            "Value": {
+                "id": "e6a92a3c-9c9b-4d19-8951-8305443a2219",
+                "resourcePath": "objects\\obj_double_sword\\obj_double_sword.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "afba2a23-2ca4-484d-861b-65d3c8d2daa4",
             "Value": {
                 "id": "8e49841f-c62c-4bf3-8ab1-20a638c36a8e",

@@ -44,7 +44,7 @@ statMulti     = .03;
 max_run       = 2;
 // initialize movement
 gamepad_set_axis_deadzone(0,0.3);
-
+Death		  = false;
 jumping       = false;
 dashCD        = false;
 canDash       = true;

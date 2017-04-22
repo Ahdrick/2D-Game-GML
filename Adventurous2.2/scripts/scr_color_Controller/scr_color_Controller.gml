@@ -51,9 +51,14 @@ if (object_exists(obj_blood)){
 if (object_exists(obj_blood_1)){
 	with (obj_blood_1){
 		draw_sprite_ext(sprite_index, image_index, x, y, image_xscale, image_yscale, image_angle, c_gray, myalpha);
-	}
-	
-	
+	}	
 }
+
+if (object_exists(obj_double_sword)){
+	with (obj_double_sword){
+		draw_sprite_ext(sprite_index, image_index, x, y, image_xscale, image_yscale, image_angle, c_gray, myalpha);
+	}
+}
+
 
 gpu_set_blendmode(bm_normal);

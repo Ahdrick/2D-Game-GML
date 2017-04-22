@@ -10,8 +10,8 @@ initialize_movement_entity(.4,.43,0,0,obj_solid);
 depth		  = 201; 
 myalphy       = 1;
 // initialize health
-maxHealth     = 20;
-currentHealth = 20;
+maxHealth     = 80;
+currentHealth = 80;
 
 // initialize stats
 death         = false; 
