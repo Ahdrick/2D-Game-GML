@@ -23,6 +23,14 @@ if keyboard_check_pressed(vk_tab)
    if (msg == "Death")
 		obj_player.currentHealth =0;
 		
+	if (msg == "Item")
+		instance_create_depth(obj_player.x+200,obj_player.y-200,300, obj_chest_Item)
+		
+			
+	if (msg == "Chest")
+		instance_create_depth(obj_player.x+200,obj_player.y-200,300, obj_chest1)
+		
+		
 	if (msg == "Hound")
 		instance_create_depth(obj_player.x+200,obj_player.y-200,300, obj_hound)
 		

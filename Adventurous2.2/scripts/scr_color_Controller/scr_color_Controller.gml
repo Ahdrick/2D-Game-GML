@@ -47,6 +47,12 @@ if (object_exists(obj_blood)){
 	}
 }
 
+if (object_exists(obj_chest_Item)){
+	with (obj_chest_Item){
+		draw_sprite_ext(sprite_index, image_index, x, y, image_xscale, image_yscale, image_angle, c_black, myalpha);
+	}
+}
+
 
 if (object_exists(obj_blood_1)){
 	with (obj_blood_1){
