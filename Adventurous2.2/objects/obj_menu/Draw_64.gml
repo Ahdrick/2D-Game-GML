@@ -1,6 +1,6 @@
 draw_set_font(fnt_minecraft);
 draw_set_color(col);
-display_set_gui_size(obj_display_manager.ideal_width,obj_display_manager.ideal_height);
+display_set_gui_size(obj_camera_controller.ideal_width,obj_camera_controller.ideal_height);
 if(paused)
 {
 	draw_sprite_ext(spr_menu_overlay,0,0,0,4,4,0,-1,1);

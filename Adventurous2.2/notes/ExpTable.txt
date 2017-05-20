@@ -1,0 +1,15 @@
+Experience reference table
+
+Basic enemy - 5
+Hard  enemy - 10
+Boss  enemy - 20-50
+
+Level 1 0    - 100    At >100 xp Ding lvl 2
+Level 2 100  - 300    At >300 xp Ding lvl 3
+Level 3 300  - 600    At >600 xp Ding lvl 4
+Level 4 600  - 1000   At >1000 xp Ding lvl 5
+Level 5 1000 - 1500   At >1500 xp Ding lvl 6
+Level 6 1500 - 2100   At >2100 xp Ding lvl 7
+Level 7 2100 - 2800   At >2800 xp Ding lvl 8
+Level 8 2800 - 3600   At >3600 xp Ding lvl 9
+Level 9 3600 - 5000   At >5000 xp Ding lvl 10
