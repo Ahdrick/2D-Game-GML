@@ -20,15 +20,20 @@ if keyboard_check_pressed(vk_tab)
    if (msg == "Health")
 		obj_player.currentHealth =5;
 		
+	  if (msg == "Godmode")
+		obj_player.currentHealth =100;
+		
    if (msg == "Death")
 		obj_player.currentHealth =0;
 		
 	if (msg == "Item")
 		instance_create_depth(obj_player.x+200,obj_player.y-200,300, obj_chest_Item)
 		
-			
 	if (msg == "Chest")
 		instance_create_depth(obj_player.x+200,obj_player.y-200,300, obj_chest1)
+		
+	if (msg == "Rotknight_sword")
+		instance_create_depth(obj_player.x+200,obj_player.y-200,300, obj_RotKnight_sword)
 		
 		
 	if (msg == "Hound")
