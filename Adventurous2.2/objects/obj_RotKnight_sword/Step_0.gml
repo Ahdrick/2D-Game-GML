@@ -4,6 +4,8 @@ if (currentHealth <1 ){
 	sprite_index = spr_death;
 	jump =0;
 	EnemyState = -1;
+	enable_movement_platform_actions(.6,4,3.5,0,0,0,0);
+	move_movement_entity();
 	}
 	
 if(left)
