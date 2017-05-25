@@ -5,7 +5,7 @@ initialize_movement_entity(.2,.9,0,0,obj_solid);
 // state variable set to movement script
 state			 = move_state;
 collision_object = obj_solid;
- fade =0
+fade             = 0;
 // initialize health
 maxHealth     = 10;
 currentHealth = 5;
