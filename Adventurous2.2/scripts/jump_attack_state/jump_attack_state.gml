@@ -1,14 +1,14 @@
 image_speed =.2; 
 image_index = spr_player_jump_attack;
 
-if(Attack && canCombo && currentEnergy > (100/stamDown)-5)
+if(Attack && canCombo && curStam > (stamDown -1))
 {
 	instance_create_depth(x,y,200, obj_attack_mask);
 	image_speed    = 1.4;
 	image_index    = 0;
 	sprite_index   = sprCombo[combo];
 	combo          = (combo+1)%maxCombo;
-	currentEnergy -= (100/stamDown);
+	curStam        -= stamDown;
 	canCombo       = false;
 	
 	if(currentEnergy < 0)

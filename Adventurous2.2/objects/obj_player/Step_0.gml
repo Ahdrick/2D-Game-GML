@@ -7,65 +7,25 @@ mask_index = spr_player_mask
 // if hero is dead dont grab input...if he is alive grab it
 get_input();
 
-
-/*Sam Trying to fix hit boxxx???
-
-if place_meeting(decimal_bbox_right(),y, obj_solid){
-	   y	-=1; 
-       vspd = 0;
-	   vsp[0] =0;
-	   vsp[1] =0;
-		}
-if place_meeting(decimal_bbox_left(),y, obj_solid){
-	   y	-=1; 
-       vspd = 0;
-	   vsp[0] =0;
-	   vsp[1] =0;
-		}
-
-
-if place_meeting(x+1,y,obj_solid)
-	if place_meeting(x+1,y,obj_solid)==0{
-		x += 1;
-		y-=1; 
-	}
-if place_meeting(x-1,y,obj_solid)
-	if place_meeting(x-1,y,obj_solid)==0{
-		x -= 1;
-		y -=1; 
-	}
-*/	
 // Check if the hero is dead! 
-if (currentHealth <1){
+if (currentHealth < 1 && state != dead_state){
 	state = dead_state;
 	script_execute(state);
 	if (!instance_exists(obj_death))
 		instance_create_depth(x,y,-10000,obj_death)
-	}
-
-
-
+}
 // flinch 
-if (flinch == true)
+if (flinch == true && state != dead_state)
 {
 	if(alarm[5] == -1)
 		alarm[5] = 3;
 }
-if (currentHealth <0)
-	Death = true;
 
-// Check if dead 
-if (currentHealth < 0){	
-	if (Death = false)
-		image_speed = .2;
-	else 
-		image_speed = 0;
-}
 //Shake_State = 3; 
-if(!obj_menu.paused && (currentHealth >0))
+if(!obj_menu.paused && (currentHealth > 0))
 {
-image_speed = 1.4;
-//_platform_actions(acceleration, run_speed, jump_height, right_input, left_input,
+	image_speed = 1.4;
+	//_platform_actions(acceleration, run_speed, jump_height, right_input, left_input,
 	if (flinch == false ){
 		if(state != dash_state)
 			enable_movement_platform_actions(.6,max_run*1.2,4.7,Right,Left,Jump,0);
@@ -78,9 +38,10 @@ image_speed = 1.4;
 	
 }
 // Attack section
-	if(Attack && currentEnergy > (100/stamDown)-5)
+if(Attack && curStam > (stamDown - 1))
 {
-	if (flinch == false){
+	if (flinch == false)
+	{
 		state = attack_state;
 		script_execute(state);
 	}		 
@@ -90,16 +51,15 @@ if(Potion && numPotion != 0)
 	state = potion_state;
 	script_execute(state);		
 }
-if(currentEnergy < 100) && !(stamCD)
-	currentEnergy += stamRegen;
+if((curStam < stamPool) && !Block && !(stamCD))
+	curStam += stamRegen;
 
 if(state == attack_state)
 	hspd = hspd/8;
 
 // Blcoking 
-if(Block && canBlock && currentEnergy > 5)
+if(Block && canBlock && curStam > blockStamDown)
 {
-
 	state = block_state;
 	script_execute(state);		
 }
@@ -109,12 +69,12 @@ if(!Block && state == block_state)
 	script_execute(state);
 }
 /// Sam trying to do crap.Dash 
-if (DashL && currentEnergy > (100/stamDown)-5)
+if (DashL && curStam > dashStamDown)
 {
 	state = dash_state;
 	script_execute(state);
 }
-if(currentEnergy > (100/stamDown))
+if(curStam > blockStamDown)
 	canBlock = true;
 
 		
@@ -129,21 +89,8 @@ if(currentEnergy > (100/stamDown))
 //////////////////////////////////////////////////////
 ///// Kyle shouldnt this go into attack state?
 /////////////////////////////////////////////////
-
 	if(state == attack_state)
 		hspd = hspd/2;
-
-//////////////////////////////////////////////////////
-///// Kyle shouldnt this go into move state?
-/////////////////////////////////////////////////
-	if(state == move_state)
-	{
-		image_speed = abs((hspd)/4);
-		if(hspd == 0)
-			sprite_index = spr_player_stand;
-	}
-
-
 
 var yslope = 0; // Used to calculate movement along a slope
 
@@ -217,7 +164,6 @@ if (!place_meeting(x, y+1, collision_object))  {
 		if (!place_meeting(x, y+15, collision_object)) {
 			state = jump_state;
 			script_execute(state);
-			//sprite_index = spr_player_jump;}
 			}
 		}
 		else 

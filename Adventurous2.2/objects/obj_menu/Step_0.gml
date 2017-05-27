@@ -61,8 +61,20 @@ if(paused)
 				case 0:
 					if(HP < 10)
 					{
+						player.maxHealth++;
+						player.currentHealth++;
 						HP++;
-						PtS--;						
+						PtS--;					
+						if(HP == 3)
+						{
+							player.maxHealth++;
+							player.currentHealth++;
+						}
+						if(HP == 6)
+							player.betterPotions = true;
+						if(HP == 10)
+							player.healthSyphon = true;
+							
 					}
 				break;
 				
@@ -71,8 +83,20 @@ if(paused)
 					{
 						END++;
 						PtS--;
-						player.stamDown  += (player.stamina   *player.statMulti);
-						player.stamRegen += (player.stamina   *player.statMulti);			
+						player.stamPool += 5;		
+						if(END == 3)
+						{
+							player.max_run = 1.7;
+							player.spriteSpeed = 1.9;
+						}
+						if(END == 6)
+						{
+							player.stamDown--;
+							player.dashStamDown -= 2;
+							player.blockStamDown--;
+						}
+						if(END == 10)
+							player.stamRegen += .02;
 					}
 				break;
 				
@@ -209,5 +233,14 @@ if(paused)
 				menuTheme += 1;
 		}
 	}
+}
+// Levelup algo
+if(EXP > gap)
+{
+	level++;
+	PtS++;
+	prevGap = gap;
+	gap = level*100;
+	gap+= prevGap;
 }
 	

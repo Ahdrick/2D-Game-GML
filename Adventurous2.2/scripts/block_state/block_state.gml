@@ -21,7 +21,7 @@ if(canBlock)
 		instance_create_depth(x,y,199,obj_shield_mask);
 	}
 
-	if(currentEnergy < 0 && blockState != 2)
+	if(curStam < 0 && blockState != 2)
 	{
 		blockState   = 2;
 		canBlock     = false;
@@ -35,7 +35,7 @@ if(instance_exists(obj_shield_mask))
 		image_index = 0;
 		blockState  = 1;
 		add_movement_horizontal_vertical((3*-image_xscale),0);
-		currentEnergy -= (100/stamDown);
+		curStam     -= stamDown;
 	}
 //draw_state = "Block"
 //blockState 0 starting to block

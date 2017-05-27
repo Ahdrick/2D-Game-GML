@@ -7,8 +7,9 @@ state			 = move_state;
 collision_object = obj_solid;
 fade             = 0;
 // initialize health
-maxHealth     = 10;
+maxHealth     = 5;
 currentHealth = 5;
+healthSyphon  = false;
 draw_state    = "None" // String of state
 Shake_State   = 0; // controls camera 
 flinch        = false;
@@ -22,11 +23,13 @@ Fired         = 0;
 Cursed        = false;
 stamCD        = false;
 stamTimer     = 50;
-stamina       = 5;
-stamDown      = 3;
-stamRegen     = .2;
-maxEnergy     = 100;
-currentEnergy = maxEnergy;
+stamina       = 1;
+dashStamDown  = 12;
+blockStamDown = 10;
+stamDown      = 7;
+stamRegen     = .1;
+stamPool      = 20;
+curStam       = stamPool;
 //STR
 strength      = 1;
 strpow        = 1;
@@ -41,7 +44,8 @@ luck          = 1;
 luckmulti     = 1;
 
 statMulti     = .03;
-max_run       = 2;
+max_run       = 1.5;
+spriteSpeed   = 1.8;
 // initialize movement
 gamepad_set_axis_deadzone(0,0.3);
 Death		  = false;
@@ -51,6 +55,7 @@ canDash       = true;
 dashTimer     = 40;
 numPotion     = 5;
 canDrink      = true;
+betterPotions = false;
 
 // initialize combos / attacking
 combo		  = 0;

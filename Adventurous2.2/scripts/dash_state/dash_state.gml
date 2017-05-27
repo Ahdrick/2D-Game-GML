@@ -2,7 +2,15 @@
 //hspd		 = 62;
 //max_run      = 8;
 mask_index = spr_player_mask;
-if(DashL && canDash && (currentEnergy > ((100/stamDown)-5))){
+if(DashL && canDash && (curStam > dashStamDown-1)){
+
+	curStam -= dashStamDown;
+	if(curStam < 0)
+	{
+		stamCD   = true;
+		alarm[3] = stamTimer;
+	}
+	
 /// creating the sexy shade(PCsI,PiI,x,y,PxS,1,0,-1,1);
 	myf = instance_create_depth(x,y,depth, obj_Shade_1);
 	myf.sprite_index =obj_player_cloths.PCsI;
@@ -45,12 +53,7 @@ if(DashL && canDash && (currentEnergy > ((100/stamDown)-5))){
 	//	add_movement_horizontal_vertical((7*-image_xscale), -1);
 	
 	// effect??? TBD 
-	currentEnergy -= (100/stamDown);
-	if(currentEnergy < 0)
-	{
-		stamCD   = true;
-		alarm[3] = stamTimer;
-	}
+
 
 }
 if(Jump)

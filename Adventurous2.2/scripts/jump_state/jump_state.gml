@@ -3,11 +3,9 @@ mask_index = spr_player_mask;
 vspd = vsp[0]+vsp[1];
 if(sprite_index != spr_player_jump)
 {
-
-
-		image_index = 0;
-		sprite_index = spr_player_jump;
-		image_speed = 0;
+	image_index = 0;
+	sprite_index = spr_player_jump;
+	image_speed = 0;
 }
 
 if(vspd < 0     && vspd < -0.5)
@@ -29,7 +27,7 @@ if(place_meeting(x,y+1,obj_solid))
 	image_speed = 9;
 }
 
-if(Attack && currentEnergy > (100/stamDown)-5)
+if(Attack && curStam > (stamDown - 1))
 {
 	state = attack_state
 	instance_create_depth(x,y,200, obj_attack_mask);

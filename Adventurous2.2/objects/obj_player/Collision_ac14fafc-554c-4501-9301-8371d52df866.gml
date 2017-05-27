@@ -1,10 +1,7 @@
-
-
-	if (state == block_state){
+if (state == block_state){
 	
-	}
-
-		Set_Poisoned();
+}
+Set_Poisoned();
 	
 
 

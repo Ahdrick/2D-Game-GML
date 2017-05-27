@@ -1,11 +1,13 @@
 /// draw the GUI
 draw_sprite(spr_health_bar,0,35,35);
 draw_sprite(spr_energy_bar,0,35,60);
-
+draw_text(200,200,obj_player.image_speed);
+draw_text(200,220,obj_player.image_index);
+draw_text(200,240,obj_player.state);
 for(i = 0; i < obj_player.currentHealth; i++)
 	draw_sprite(spr_health_block,0,(39+(i*10)),38);
 	
-draw_sprite_stretched(spr_energy_block,0,39,62, ((obj_player.currentEnergy/1.3)*2),8);
+draw_sprite_stretched(spr_energy_block,0,39,62, (obj_player.curStam*4),8);
 
 draw_sprite(spr_health_bar,0,35,35);
 
@@ -15,7 +17,7 @@ draw_sprite(spr_health_bar,0,35,35);
 
 if keyboard_check_pressed(vk_tab)
    {
-   msg = get_string("What Does your Heart Long for:", "Pot");
+   msg = get_string("What Does your Heart Long for:", "Death");
    
    if (msg == "Health")
 		obj_player.currentHealth =5;

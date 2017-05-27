@@ -20,7 +20,7 @@ menuTLX     = (middleW-menuW); // top left of menu corner X
 menuTLY     = (middleH-menuH); // top left of menu corner Y
 statTLX     = (menuTLX+154);   // top left stat square X 
 statTLY     = (menuTLY+304);   // top left stat square Y
-PtS         = 35;			   // points to spend
+PtS         = 9;			   // points to spend
 StI         = 0;			   // stat to increase selector
 NavX        = 0;			   // selector sprite position X
 NavY        = 0;			   // selector sprite position Y
@@ -133,4 +133,7 @@ STR			= 1;  //     \/
 INT			= 1;  //     \/
 DEF			= 1;  //     \/
 LCK			= 1;  //     \/
+EXP         = 0;
 
+gap         = 0;
+prevGap		= 0;

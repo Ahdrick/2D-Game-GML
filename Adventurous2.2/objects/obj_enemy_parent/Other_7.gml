@@ -7,7 +7,6 @@ if(sprite_index == spr_S1_death)
 		//instance_create_depth(x,y,-300, obj_effect_blanks);
 		
 		death = true;	
-		scr_item_drop();
 	}
 }
 

@@ -1,7 +1,6 @@
 ///player_helm
 Pswe   = argument0;
 PswMax = argument1;
-Pswe = 1;
 
 if(Pswe < PswMax)
 {
