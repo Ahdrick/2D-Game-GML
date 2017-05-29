@@ -8,9 +8,30 @@ else
 {
 	if(state == attack_state)
 	{
-		state     = move_state;
-		canCombo  = true;
-		alarm[1]  = 10;
+
+		if(combo < comboCount)
+		{
+			if(sprite_index != sprCombo[combo])
+			{
+				image_index  = 0;
+				sprite_index = sprCombo[combo];
+				curStam -= stamDown;
+			}
+			combo++;
+		}
+		else 
+		{
+			state = move_state 
+			script_execute(state);
+			combo = 0;
+			comboCount = 0;
+		}
+		if(curStam < 0)
+		{
+			stamCD   = true;
+			alarm[3] = stamTimer;
+		}
+		
 	}
 	if(state == potion_state)
 	{
@@ -20,7 +41,6 @@ else
 	{
 		state = move_state;
 	}
-
 	if(state == dash_state)
 	{
 		state = move_state;

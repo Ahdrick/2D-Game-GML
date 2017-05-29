@@ -1,6 +1,6 @@
 ///Player basics
 
-var hspd = hsp[0]+hsp[1];
+hspd = hsp[0]+hsp[1];
 var vspd = vsp[0]+vsp[1];
 mask_index = spr_player_mask
 
@@ -24,7 +24,8 @@ if (flinch == true && state != dead_state)
 //Shake_State = 3; 
 if(!obj_menu.paused && (currentHealth > 0))
 {
-	image_speed = 1.4;
+	if(state != dash_state)
+		image_speed = 1.4;
 	//_platform_actions(acceleration, run_speed, jump_height, right_input, left_input,
 	if (flinch == false ){
 		if(state != dash_state)
@@ -37,15 +38,30 @@ if(!obj_menu.paused && (currentHealth > 0))
 			alarm[4] = 5;
 	
 }
-// Attack section
+// Attack
 if(Attack && curStam > (stamDown - 1))
 {
 	if (flinch == false)
 	{
 		state = attack_state;
 		script_execute(state);
-	}		 
+	}
+	if(comboCount == 0 && sprite_index != sprCombo[combo])
+	{
+		sprite_index = sprCombo[combo];
+		image_index  = 0;
+		curStam      = curStam - stamDown;
+		combo++;
+		if(curStam < 0)
+		{
+			stamCD   = true;
+			alarm[3] = stamTimer;
+		}
+	}
+	if(comboCount < 3)
+		comboCount+=1;
 }
+// Potions
 if(Potion && numPotion != 0)
 {
 	state = potion_state;
@@ -53,11 +69,7 @@ if(Potion && numPotion != 0)
 }
 if((curStam < stamPool) && !Block && !(stamCD))
 	curStam += stamRegen;
-
-if(state == attack_state)
-	hspd = hspd/8;
-
-// Blcoking 
+// Blocking
 if(Block && canBlock && curStam > blockStamDown)
 {
 	state = block_state;
@@ -68,29 +80,14 @@ if(!Block && state == block_state)
 	state = move_state;
 	script_execute(state);
 }
-/// Sam trying to do crap.Dash 
-if (DashL && curStam > dashStamDown)
+/// Dash
+if(DashL && curStam > dashStamDown && place_meeting(x,y+1,collision_object))
 {
 	state = dash_state;
 	script_execute(state);
 }
 if(curStam > blockStamDown)
 	canBlock = true;
-
-		
-///move_movement_entity()
-/*
-    This script updates the position of the movement entity
-    according to its horizontal speeds and vertical speeds.
-    This script should be called at the end of the STEP EVENT for each
-    object you want using the movement scripts
-*/
-
-//////////////////////////////////////////////////////
-///// Kyle shouldnt this go into attack state?
-/////////////////////////////////////////////////
-	if(state == attack_state)
-		hspd = hspd/2;
 
 var yslope = 0; // Used to calculate movement along a slope
 

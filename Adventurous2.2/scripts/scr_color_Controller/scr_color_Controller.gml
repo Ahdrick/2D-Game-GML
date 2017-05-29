@@ -35,12 +35,12 @@ var myalpha = choose(1,.9,.8,.7)
 //}
 
 
-
+/*
 if (object_exists(obj_attack_mask)){
 	with (obj_attack_mask){
 		draw_sprite_ext(sprite_index, image_index, x, y, image_xscale, image_yscale, image_angle, c_gray, myalpha);
 	}
-}
+}*/
 if (object_exists(obj_blood)){
 	with (obj_blood){
 		draw_sprite_ext(sprite_index, image_index, x, y, image_xscale, image_yscale, image_angle, c_dkgray, myalpha);

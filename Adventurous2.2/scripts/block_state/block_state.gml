@@ -2,6 +2,8 @@
 mask_index = spr_player_mask;
 if(canBlock)
 { 
+	combo		= 0;
+	comboCount  = 0;
 	if(blockState == 0)
 	{
 		hsp[0] = 0;
@@ -25,6 +27,9 @@ if(canBlock)
 	{
 		blockState   = 2;
 		canBlock     = false;
+		sprite_index = sprBlock[blockState];
+		if(sprite_index == sprBlock[blockState] && image_index == image_number -1)
+			canBlock = true;
 	}
 }
 

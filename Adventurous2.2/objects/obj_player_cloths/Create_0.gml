@@ -2,7 +2,7 @@
 PcMax  = 1;
 PheMax = 1;
 fade   = 0;
-
+instance_create_depth(x,y,depth-1,obj_player_helm_overlay);
 for(i = 0; i < PcMax; i++)
 {
 	standCloak[i]  = asset_get_index(("spr_cloak_stand_"  + string(i)));
@@ -19,7 +19,6 @@ for(i = 0; i < PcMax; i++)
 	deathCloak[i]  = asset_get_index(("spr_cloak_death_"  + string(i)));
 	dashCloak[i]   = asset_get_index(("spr_cloak_dash_"   + string(i)));
 }
-
 	
 for(i = 0; i < PheMax; i++)
 {

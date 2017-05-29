@@ -1,9 +1,8 @@
 /// draw the GUI
 draw_sprite(spr_health_bar,0,35,35);
 draw_sprite(spr_energy_bar,0,35,60);
-draw_text(200,200,obj_player.image_speed);
-draw_text(200,220,obj_player.image_index);
-draw_text(200,240,obj_player.state);
+draw_text(300,300,obj_player.comboCount);
+draw_text(260,300,obj_player.combo);
 for(i = 0; i < obj_player.currentHealth; i++)
 	draw_sprite(spr_health_block,0,(39+(i*10)),38);
 	

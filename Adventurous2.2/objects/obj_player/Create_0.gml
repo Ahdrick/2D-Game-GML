@@ -6,21 +6,23 @@ initialize_movement_entity(.2,.9,0,0,obj_solid);
 state			 = move_state;
 collision_object = obj_solid;
 fade             = 0;
+hspd             = 0;
+draw_state       = "None" // String of state
+Shake_State		 = 0;     // controls camera 
+
 // initialize health
 maxHealth     = 5;
 currentHealth = 5;
 healthSyphon  = false;
-draw_state    = "None" // String of state
-Shake_State   = 0; // controls camera 
 flinch        = false;
 
 // initialize stats
 Poisoned      = 0;
 Iced          = 0;
 Fired         = 0;
+Cursed        = false;
 
 //END
-Cursed        = false;
 stamCD        = false;
 stamTimer     = 50;
 stamina       = 1;
@@ -30,6 +32,8 @@ stamDown      = 7;
 stamRegen     = .1;
 stamPool      = 20;
 curStam       = stamPool;
+distance      = 12;
+
 //STR
 strength      = 1;
 strpow        = 1;
@@ -60,6 +64,7 @@ betterPotions = false;
 // initialize combos / attacking
 combo		  = 0;
 canCombo	  = true;
+comboCount    = 0;
 combod        = false;
 maxCombo	  = 3;
 Attack		  = 0;

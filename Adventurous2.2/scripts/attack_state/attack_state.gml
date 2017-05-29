@@ -1,4 +1,11 @@
-/// attack_State()		
+/// attack_state		
+if(!instance_exists(obj_attack_mask))
+	instance_create_depth(x,y,depth,obj_attack_mask);
+	
+if(state == attack_state)
+	hspd = hspd/16;
+
+/*
 if(Attack && canCombo && curStam > (stamDown - 1))
 {
 	instance_create_depth(x,y,200, obj_attack_mask);
@@ -13,10 +20,3 @@ if(Attack && canCombo && curStam > (stamDown - 1))
 		alarm[3] = stamTimer;
 	}
 }
-
-if(!canCombo && image_index > (image_number - 2) && sprite_index == sprCombo[0])
-	canCombo = true;
-if(!canCombo && image_index > (image_number - 3) && sprite_index == sprCombo[1])
-	canCombo = true;
-if(!canCombo && image_index > (image_number - 5) && sprite_index == sprCombo[2])
-	canCombo = true;
