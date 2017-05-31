@@ -21,7 +21,7 @@ Poisoned      = 0;
 Iced          = 0;
 Fired         = 0;
 Cursed        = false;
-
+Dead          = false;
 //END
 stamCD        = false;
 stamTimer     = 50;
