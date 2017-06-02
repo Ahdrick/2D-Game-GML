@@ -2,7 +2,7 @@
 if (Dead == false){
 	if (currentHealth > -1){
 		if (other.EnemyState != -1){ 
-		   if(flinch == false)
+		   if(flinch == false && state != dead_state)
 			{
 				sprite_index = spr_player_flinch;
 				flinch = true;
