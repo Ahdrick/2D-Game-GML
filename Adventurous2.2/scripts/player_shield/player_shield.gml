@@ -17,6 +17,13 @@ if(Pse < PsMax)
 			PSsI = breakShield[Pse];
 		break;
 		
+		case spr_player_death: {
+			PSsI =  breakShield[Pse];
+			image_alpha =0;
+			}
+		break;
+		
+		
 		default:
 			PSsI = breakShield[Pse];
 	}

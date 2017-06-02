@@ -1,3 +1,4 @@
+
 with (other){
 	var mysign; 
 	// Check left or right of collison
