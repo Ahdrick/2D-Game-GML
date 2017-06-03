@@ -1,6 +1,6 @@
 var current    = argument[0]; // Current value
-var Vertical   = argument[1]; //  typical value 3
-var Horizontal = argument[2] // typical value 3
+var Vertical   = argument[1]; // typical value 3
+var Horizontal = argument[2]  // typical value 3
 var blood_type = argument[0]; // obj_blood_1
 
 /// knock back

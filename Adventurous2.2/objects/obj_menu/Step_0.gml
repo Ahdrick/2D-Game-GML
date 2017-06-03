@@ -61,8 +61,8 @@ if(paused)
 				case 0:
 					if(HP < 10)
 					{
-						player.maxHealth++;
-						player.currentHealth++;
+						player.maxHealth+=10;
+						player.currentHealth+=10;
 						HP++;
 						PtS--;					
 						if(HP == 3)

@@ -11,8 +11,8 @@ draw_state       = "None" // String of state
 Shake_State		 = 0;     // controls camera 
 
 // initialize health
-maxHealth     = 5;
-currentHealth = 5;
+maxHealth     = 50;
+currentHealth = 50;
 healthSyphon  = false;
 flinch        = false;
 
@@ -50,6 +50,7 @@ luckmulti     = 1;
 statMulti     = .03;
 max_run       = 1.5;
 spriteSpeed   = 1.8;
+
 // initialize movement
 gamepad_set_axis_deadzone(0,0.3);
 Death		  = false;

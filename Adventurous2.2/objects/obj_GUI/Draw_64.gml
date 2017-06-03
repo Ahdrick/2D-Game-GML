@@ -3,9 +3,9 @@ draw_sprite(spr_health_bar,0,35,35);
 draw_sprite(spr_energy_bar,0,35,60);
 draw_text(300,300,obj_player.comboCount);
 draw_text(260,300,obj_player.combo);
-for(i = 0; i < obj_player.currentHealth; i++)
-	draw_sprite(spr_health_block,0,(39+(i*10)),38);
-	
+//for(i = 0; i < obj_player.currentHealth; i++)
+	//draw_sprite(spr_health_block,0,(39+(i*10)),38);
+draw_sprite_stretched(spr_health_block,0,39,38, (obj_player.currentHealth),8);	
 draw_sprite_stretched(spr_energy_block,0,39,62, (obj_player.curStam*4),8);
 
 draw_sprite(spr_health_bar,0,35,35);
@@ -19,13 +19,13 @@ if keyboard_check_pressed(vk_tab)
    msg = get_string("What Does your Heart Long for:", "Death");
    
    if (msg == "Health")
-		obj_player.currentHealth =5;
+		obj_player.currentHealth = 50;
 		
 	  if (msg == "Godmode")
-		obj_player.currentHealth =100;
+		obj_player.currentHealth = 100;
 		
    if (msg == "Death")
-		obj_player.currentHealth =0;
+		obj_player.currentHealth = 0;
 		
 	if (msg == "Item")
 		instance_create_depth(obj_player.x+200,obj_player.y-200,300, obj_chest_Item)
