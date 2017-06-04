@@ -43,7 +43,7 @@ if (object_exists(obj_attack_mask)){
 }*/
 if (object_exists(obj_blood)){
 	with (obj_blood){
-		draw_sprite_ext(sprite_index, image_index, x, y, image_xscale, image_yscale, image_angle, c_dkgray, myalpha);
+		draw_sprite_ext(sprite_index, image_index, x, y, image_xscale, image_yscale, image_angle, c_red, myalpha);
 	}
 }
 

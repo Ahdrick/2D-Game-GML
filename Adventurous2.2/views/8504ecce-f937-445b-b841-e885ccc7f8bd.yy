@@ -12,7 +12,8 @@
         "5beb14ae-5764-49cc-b931-ebd790171641",
         "c0c5ca07-a5a3-4cbf-ba3f-8e5890e0da41",
         "a050261d-2ae3-442d-a16b-ce6f41ecf734",
-        "e55a02f1-87ab-40a0-8f73-93dac3599c61"
+        "e55a02f1-87ab-40a0-8f73-93dac3599c61",
+        "da0e2189-25d1-40ca-b226-30f78dd2f65d"
     ],
     "filterType": "GMScript",
     "folderName": "Enemy AI",

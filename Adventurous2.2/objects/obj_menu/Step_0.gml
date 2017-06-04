@@ -91,12 +91,15 @@ if(paused)
 						}
 						if(END == 6)
 						{
+							player.max_run = 2.1;
 							player.stamDown--;
 							player.dashStamDown -= 2;
 							player.blockStamDown--;
 						}
-						if(END == 10)
+						if(END == 10){
+							player.max_run = 2.7;
 							player.stamRegen += .02;
+							}
 					}
 				break;
 				
@@ -105,7 +108,7 @@ if(paused)
 					{
 						STR++;
 						PtS--;
-						player.strpow    += (player.strength  *player.statMulti);
+						player.strpow    += (player.strength *16*player.statMulti);
 					}
 				break;
 				
