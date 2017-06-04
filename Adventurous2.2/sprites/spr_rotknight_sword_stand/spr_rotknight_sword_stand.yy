@@ -2,7 +2,7 @@
     "id": "5904ae0a-6d29-4d45-a930-c9b2d721512e",
     "modelName": "GMSprite",
     "mvc": "1.12",
-    "name": "rotknight_sword_stand",
+    "name": "spr_rotknight_sword_stand",
     "For3D": false,
     "HTile": false,
     "VTile": false,

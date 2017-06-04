@@ -2,7 +2,7 @@
     "id": "f577c500-452e-4574-8004-148ce32311ca",
     "modelName": "GMSprite",
     "mvc": "1.12",
-    "name": "rotknight_sword_attack1",
+    "name": "spr_rotknight_sword_attack1",
     "For3D": false,
     "HTile": false,
     "VTile": false,

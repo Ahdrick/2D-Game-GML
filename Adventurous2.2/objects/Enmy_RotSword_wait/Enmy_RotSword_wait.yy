@@ -2,7 +2,7 @@
     "id": "abebf419-933c-4057-95fe-88bfd3498e7d",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "Enmy_hound_wait",
+    "name": "Enmy_RotSword_wait",
     "eventList": [
         {
             "id": "43cd29f4-64f5-4f68-aebd-2b697fdac80c",
@@ -43,6 +43,16 @@
             "enumb": 0,
             "eventtype": 4,
             "m_owner": "abebf419-933c-4057-95fe-88bfd3498e7d"
+        },
+        {
+            "id": "97bf852e-1e20-4c85-8b6b-66fee61f5e44",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 8,
+            "m_owner": "abebf419-933c-4057-95fe-88bfd3498e7d"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
@@ -61,6 +71,6 @@
     "physicsShapePoints": null,
     "physicsStartAwake": true,
     "solid": false,
-    "spriteId": "b1e5ad10-8eae-43ad-8206-90779320c940",
+    "spriteId": "5904ae0a-6d29-4d45-a930-c9b2d721512e",
     "visible": true
 }

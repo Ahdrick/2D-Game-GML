@@ -2,7 +2,7 @@
     "id": "1014bd48-bf81-424f-a365-8c37e621ed3d",
     "modelName": "GMSprite",
     "mvc": "1.12",
-    "name": "rotknight_sword_walk",
+    "name": "spr_rotknight_sword_walk",
     "For3D": false,
     "HTile": false,
     "VTile": false,

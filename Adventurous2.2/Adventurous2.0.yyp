@@ -266,7 +266,7 @@
             "Key": "1014bd48-bf81-424f-a365-8c37e621ed3d",
             "Value": {
                 "id": "e979f736-1887-43df-9c11-145f1fd4d488",
-                "resourcePath": "sprites\\rotknight_sword_walk\\rotknight_sword_walk.yy",
+                "resourcePath": "sprites\\spr_rotknight_sword_walk\\spr_rotknight_sword_walk.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -722,7 +722,7 @@
             "Key": "2fb85be1-df97-43f9-8a83-c7a541e8e8d4",
             "Value": {
                 "id": "888db0c4-f8b0-493f-b2a0-489e8fcb8683",
-                "resourcePath": "sprites\\rotknight_sword_death\\rotknight_sword_death.yy",
+                "resourcePath": "sprites\\spr_rotknight_sword_death\\spr_rotknight_sword_death.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -1298,7 +1298,7 @@
             "Key": "5904ae0a-6d29-4d45-a930-c9b2d721512e",
             "Value": {
                 "id": "7289a82c-6dca-49ce-a776-67107016fcef",
-                "resourcePath": "sprites\\rotknight_sword_stand\\rotknight_sword_stand.yy",
+                "resourcePath": "sprites\\spr_rotknight_sword_stand\\spr_rotknight_sword_stand.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -2338,7 +2338,7 @@
             "Key": "a2db7843-4794-4c3b-8303-8154a5bdb9c7",
             "Value": {
                 "id": "ff50e708-52ea-4da8-933f-33f99c44fd15",
-                "resourcePath": "sprites\\rotknight_sword_idle\\rotknight_sword_idle.yy",
+                "resourcePath": "sprites\\spr_rotknight_sword_idle\\spr_rotknight_sword_idle.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -2410,7 +2410,7 @@
             "Key": "abebf419-933c-4057-95fe-88bfd3498e7d",
             "Value": {
                 "id": "ddee1184-3bdc-44c4-a671-48406ca67f2b",
-                "resourcePath": "objects\\Enmy_hound_wait\\Enmy_hound_wait.yy",
+                "resourcePath": "objects\\Enmy_RotSword_wait\\Enmy_RotSword_wait.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -3466,7 +3466,7 @@
             "Key": "f577c500-452e-4574-8004-148ce32311ca",
             "Value": {
                 "id": "557feaa8-e477-4cae-9207-0be869cddc52",
-                "resourcePath": "sprites\\rotknight_sword_attack1\\rotknight_sword_attack1.yy",
+                "resourcePath": "sprites\\spr_rotknight_sword_attack1\\spr_rotknight_sword_attack1.yy",
                 "resourceType": "GMSprite"
             }
         },

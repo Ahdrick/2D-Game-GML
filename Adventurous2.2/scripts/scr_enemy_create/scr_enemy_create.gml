@@ -32,7 +32,7 @@ Stalk         = false;
 HealOverTime  = false;
 
 // Sprites
-
+/*
 spr_attack1		  = spr_player_swing_1;
 spr_attack2		  = spr_player_swing_1;
 spr_attack3		  = spr_player_swing_1;
@@ -42,8 +42,10 @@ spr_idle2         = spr_player_swing_1;
 spr_standup       = spr_player_swing_1;
 spr_run           = spr_player_swing_1;
 
-sprite_index   = spr_idle1;
-sprCombo[0]	  = spr_Attack1;
-sprCombo[1]	  = spr_Attack2;
-sprCombo[2]	  = spr_Attack2;
-sprCombo[3]	  = spr_Attack1;
+sprite_index  = spr_idle1;
+
+sprCombo[0]	  = spr_attack1	;
+sprCombo[1]	  = spr_attack2;
+sprCombo[2]	  = spr_attack2;
+sprCombo[3]	  = spr_attack1;
+*/ 

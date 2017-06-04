@@ -2,7 +2,7 @@
     "id": "2fb85be1-df97-43f9-8a83-c7a541e8e8d4",
     "modelName": "GMSprite",
     "mvc": "1.12",
-    "name": "rotknight_sword_death",
+    "name": "spr_rotknight_sword_death",
     "For3D": false,
     "HTile": false,
     "VTile": false,

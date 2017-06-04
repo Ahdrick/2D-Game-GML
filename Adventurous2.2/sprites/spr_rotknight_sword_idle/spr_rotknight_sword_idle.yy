@@ -2,7 +2,7 @@
     "id": "a2db7843-4794-4c3b-8303-8154a5bdb9c7",
     "modelName": "GMSprite",
     "mvc": "1.12",
-    "name": "rotknight_sword_idle",
+    "name": "spr_rotknight_sword_idle",
     "For3D": false,
     "HTile": false,
     "VTile": false,
