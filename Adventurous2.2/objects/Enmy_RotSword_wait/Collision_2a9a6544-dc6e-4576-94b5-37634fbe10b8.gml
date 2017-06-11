@@ -1,2 +1,3 @@
 // stuff
-scr_Enemy_Collision_WAttack();
+if (currentHealth > 0) 
+	scr_Enemy_Collision_WAttack();

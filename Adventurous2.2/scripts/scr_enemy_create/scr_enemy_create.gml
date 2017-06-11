@@ -8,9 +8,6 @@ myalphy     = .3;
 initialize_movement_entity(.4,.43,0,0,obj_solid);
 // state variable set to movement script
 depth		  = 201; 
-// initialize health
-maxHealth     = 10;
-currentHealth = 5;
 
 // initialize stats
 death         = false; 

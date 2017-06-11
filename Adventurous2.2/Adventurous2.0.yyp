@@ -1055,6 +1055,14 @@
             }
         },
         {
+            "Key": "46dab721-8391-4122-a7ba-77893a0f5073",
+            "Value": {
+                "id": "f7eca86e-fbc2-4649-b0ba-c221c3512d43",
+                "resourcePath": "scripts\\scr_Enemy_stats\\scr_Enemy_stats.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "47e69b13-cdec-4edc-8ebd-eafb5aa22fde",
             "Value": {
                 "id": "a475e4db-e4ee-4416-8299-6a84758e501a",
@@ -3627,7 +3635,6 @@
         "2c87db5f-e375-4d88-af58-b51adaae1313",
         "8aba42ca-c570-4935-84bf-ab97104b5499",
         "f55d060c-d80e-4d3d-a430-6e6a95821d83",
-        "9a29ccd4-8015-4aac-a9aa-c7f7fd846e2c",
         "cb925411-2040-4833-9a05-98e3aa00d1b8",
         "30761271-d690-4e82-a1d2-98fbd77adc00",
         "18642063-df8f-4c17-aaba-caa34690a94f",
@@ -3635,11 +3642,13 @@
         "192e8c9a-49ab-43e3-a11a-906900bc9b0e",
         "e14b6d36-0824-44df-a578-b3b2310aa1d4",
         "cb4d387d-b47a-4b7e-a038-0593855dcfff",
+        "9a29ccd4-8015-4aac-a9aa-c7f7fd846e2c",
         "5beb14ae-5764-49cc-b931-ebd790171641",
         "c0c5ca07-a5a3-4cbf-ba3f-8e5890e0da41",
         "a050261d-2ae3-442d-a16b-ce6f41ecf734",
         "e55a02f1-87ab-40a0-8f73-93dac3599c61",
         "da0e2189-25d1-40ca-b226-30f78dd2f65d",
+        "46dab721-8391-4122-a7ba-77893a0f5073",
         "d60b82df-0a4f-4c5b-aadd-709a867a2c11"
     ],
     "tutorial": ""
