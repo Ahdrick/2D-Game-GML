@@ -43,6 +43,7 @@ if(paused)
 		break;
 		case 2:
 			draw_sprite(spr_menu_settings_panel,0,rightPanelTLX,PanelTLY);
+			draw_sprite(spr_menu_rectangle_selector,0,optionX,optionY);
 		break;
 		default:
 		break;
