@@ -6,7 +6,159 @@ if(pause && !paused)
 	paused = 1;
 else if(pause && paused)
 	paused = 0;
-// if the game is paused ... do this
+	
+if(paused)
+{
+	// Changes the right panel RB and LB
+	if(MenuL && rightPanel != 0)
+		rightPanel--;
+	if(MenuR && rightPanel != 2)
+		rightPanel++;
+
+	// Navigates the inventory
+	if(rightPanel == 0)
+	{	
+		if(selectLeft  && NavX > 0)
+			NavX -= 1;
+		if(selectRight && NavX < NavMaxX)
+			NavX += 1;
+		if(selectUp    && NavY > 0)
+			NavY -= 1;
+		if(selectDown  && NavY < NavMaxY)
+			NavY += 1;
+			
+		invGapX = (invGapXSize*NavX);
+		invGapY = (invGapYSize*NavY);
+		
+		// Adjusts for uneven math 
+		if(NavY == 2)
+			invGapY -= 1;
+			
+		// Switches to the inventory info page and back
+		if(info)
+		{
+			leftPanel++;
+			leftPanel = leftPanel%2;	
+		}
+	}
+	if(rightPanel == 1)
+	{
+		if(selectDown && StI < 5)
+			StI += 1;
+		if(selectUp   && StI > 0)
+			StI -= 1;
+			
+		statGapY = (statGapYSize*StI);
+		switch(StI)
+		{
+			case 0:
+				statSpend = HP;
+			break;
+			case 1:
+				statSpend = END;
+			break;
+			case 2:
+				statSpend = STR;
+			break;
+			case 3:
+				statSpend = INT;
+			break;
+			case 4:
+				statSpend = DEF;
+			break;
+			case 5:
+				statSpend = LCK;
+			break;
+		}
+			statSelGap = (statSpend*pointGapXSize);
+		if(enter && PtS > 0)
+		{
+			switch(StI)
+			{
+				case 0:
+					if(HP < 10)
+					{
+						player.maxHealth+=10;
+						player.currentHealth+=10;
+						HP++;
+						PtS--;					
+						if(HP == 3)
+						{
+							player.maxHealth++;
+							player.currentHealth++;
+						}
+						if(HP == 6)
+							player.betterPotions = true;
+						if(HP == 10)
+							player.healthSyphon = true;
+							
+					}
+				break;
+				
+				case 1:
+					if(END < 10)
+					{
+						END++;
+						PtS--;
+						player.stamPool += 5;		
+						if(END == 3)
+						{
+							player.max_run = 1.7;
+							player.spriteSpeed = 1.9;
+						}
+						if(END == 6)
+						{
+							player.max_run = 2.1;
+							player.stamDown--;
+							player.dashStamDown -= 2;
+							player.blockStamDown--;
+						}
+						if(END == 10){
+							player.max_run = 2.7;
+							player.stamRegen += .02;
+							}
+					}
+				break;
+				
+				case 2:
+					if(STR < 10)
+					{
+						STR++;
+						PtS--;
+						player.strpow    += (player.strength * 16 * player.statMulti);
+					}
+				break;
+				
+				case 3:
+					if(INT < 10)
+					{
+						INT++;
+						PtS--;				
+						player.intelpow  += (player.intellect * player.statMulti);
+					}
+				break;
+				
+				case 4:
+					if(DEF < 10)
+					{
+						DEF++;
+						PtS--;						
+					}
+				break;
+				
+				case 5:
+					if(LCK < 10)
+					{
+						LCK++;
+						PtS--;
+						player.luck      += (player.luckmulti * player.statMulti);		
+					}
+				break;			
+			}
+		}
+	}
+}
+/*
 if(paused)
 {
 	switch(menuTheme)

@@ -10,7 +10,6 @@
     "inheritLayers": false,
     "instanceCreationOrderIDs": [
         "c1d009a2-3271-444f-9d28-56996aa8196c",
-        "3a2e0c7c-7131-42cb-859a-8fa6f33f4b04",
         "bf64dd37-d8b7-489a-8470-21353da9a63a",
         "a6ca16ac-0b92-43d3-a713-f3d078e520e8",
         "890c0880-1aea-42c6-8ec8-80445b36189b",
@@ -416,7 +415,7 @@
             "depth": 300,
             "grid_x": 1,
             "grid_y": 1,
-            "hierarchyFrozen": true,
+            "hierarchyFrozen": false,
             "hierarchyVisible": true,
             "inheritLayerDepth": false,
             "inheritLayerSettings": false,
@@ -426,7 +425,7 @@
                 
             ],
             "m_parentID": "00000000-0000-0000-0000-000000000000",
-            "m_serialiseFrozen": true,
+            "m_serialiseFrozen": false,
             "name": "InvisBounds",
             "userdefined_depth": false,
             "visible": true,
@@ -451,30 +450,6 @@
                     "inheritCode": false,
                     "name_with_no_file_rename": "inst_570E033A",
                     "objId": "c9e4a09d-3088-4a89-850c-65cdd69c9c20",
-                    "rotation": 0,
-                    "scaleX": 1,
-                    "scaleY": 1
-                },
-                {
-                    "id": "3a2e0c7c-7131-42cb-859a-8fa6f33f4b04",
-                    "modelName": "GMRInstance",
-                    "mvc": "1.0",
-                    "ignore": false,
-                    "inheritItemSettings": false,
-                    "m_originalParentID": "00000000-0000-0000-0000-000000000000",
-                    "m_serialiseFrozen": false,
-                    "name": "inst_297EB8B9",
-                    "x": 96,
-                    "y": 96,
-                    "IsDnD": false,
-                    "colour": {
-                        "Value": 4294967295
-                    },
-                    "creationCodeFile": "",
-                    "creationCodeType": "",
-                    "inheritCode": false,
-                    "name_with_no_file_rename": "inst_297EB8B9",
-                    "objId": "7b0f1b23-df95-4658-ab30-ac315c87433e",
                     "rotation": 0,
                     "scaleX": 1,
                     "scaleY": 1

@@ -1,5 +1,6 @@
 /// creation code
 /// sets aspect ratio
+
 ideal_width = 0;
 ideal_height = 1000;
 
@@ -33,3 +34,4 @@ Shake_State = 0;
 follow = obj_player;
 x2 = x+20;
 y2 = y;
+instance_create_depth(x,y,depth,obj_menu);

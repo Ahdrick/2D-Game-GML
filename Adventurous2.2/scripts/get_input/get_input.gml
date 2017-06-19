@@ -9,6 +9,7 @@ Attack = mouse_check_button_pressed(mb_left)  || (gamepad_button_check_pressed(0
 Potion = keyboard_check_pressed(ord("F"))     || (gamepad_button_check_pressed(0,gp_padd));
 pause  = keyboard_check_pressed(ord("P"))     || (gamepad_button_check_pressed(0,gp_start));
 enter  = keyboard_check_pressed(vk_enter)     || (gamepad_button_check_pressed(0,gp_face1));
+info   = keyboard_check_pressed(ord("X"))     || (gamepad_button_check_pressed(0,gp_face4));
 selectDown  = keyboard_check_pressed(ord("S"))|| (gamepad_button_check_pressed(0,gp_padd));
 selectUp    = keyboard_check_pressed(ord("W"))|| (gamepad_button_check_pressed(0,gp_padu));
 selectLeft  = keyboard_check_pressed(ord("A"))|| (gamepad_button_check_pressed(0,gp_padl));
