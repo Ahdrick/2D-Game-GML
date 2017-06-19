@@ -178,7 +178,7 @@
             "Key": "0ab755f4-651f-4d81-99f6-59a755ce355e",
             "Value": {
                 "id": "2d351248-5e09-4f14-abab-1087082f9e60",
-                "resourcePath": "sprites\\sprite_198\\sprite_198.yy",
+                "resourcePath": "sprites\\spr_rotknight_shield_attack1\\spr_rotknight_shield_attack1.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -498,7 +498,7 @@
             "Key": "24b626be-0c82-4e09-bfad-56d30ad5ff49",
             "Value": {
                 "id": "a06e1dbf-cf39-4ae8-926c-83279c0f7ad2",
-                "resourcePath": "sprites\\sprite_209\\sprite_209.yy",
+                "resourcePath": "sprites\\spr_rotknight_spear_sheild\\spr_rotknight_spear_sheild.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -906,7 +906,7 @@
             "Key": "3f17e35d-da89-4f35-848d-c8ec3ccaa0eb",
             "Value": {
                 "id": "c44e4362-dbd4-4107-8ee8-c7bfe6c25449",
-                "resourcePath": "sprites\\sprite_197\\sprite_197.yy",
+                "resourcePath": "sprites\\spr_rotknight_shield_walk\\spr_rotknight_shield_walk.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -1202,7 +1202,7 @@
             "Key": "55fc275d-4cc4-4e22-8a65-5f4a70b5ccad",
             "Value": {
                 "id": "2eaf1130-e2fc-4d9d-9fe6-5b80696024ba",
-                "resourcePath": "sprites\\sprite_202\\sprite_202.yy",
+                "resourcePath": "sprites\\spr_rotknight_shield_break\\spr_rotknight_shield_break.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -1282,7 +1282,7 @@
             "Key": "5d9d3e67-77d0-443d-9ab0-d174d6b89603",
             "Value": {
                 "id": "61ae6c0d-2c39-4f84-9521-b6f79c9fc08b",
-                "resourcePath": "sprites\\sprite_196\\sprite_196.yy",
+                "resourcePath": "sprites\\spr_rotknight_shield_idle\\spr_rotknight_shield_idle.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -1351,6 +1351,14 @@
             }
         },
         {
+            "Key": "61001e52-2bfc-45d1-ac86-0f9477fdc17e",
+            "Value": {
+                "id": "7fd4d73f-1259-47a0-9bcc-60a2a1d94135",
+                "resourcePath": "objects\\Enmy_rotknight_spear\\Enmy_rotknight_spear.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "6115615f-4997-479f-88f0-ebf18e1f1fe6",
             "Value": {
                 "id": "5d0181c9-d284-48d9-a3e2-fd964a21812f",
@@ -1410,7 +1418,7 @@
             "Key": "65fd7a60-37f9-4255-abd8-e082e9c4827b",
             "Value": {
                 "id": "6e5819e4-c2cb-4ec8-912e-ec90c311af88",
-                "resourcePath": "sprites\\sprite_210\\sprite_210.yy",
+                "resourcePath": "sprites\\spr_rotknight_spear_break\\spr_rotknight_spear_break.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -1538,7 +1546,7 @@
             "Key": "7105d342-e2fc-440e-a985-738108d02f8a",
             "Value": {
                 "id": "09c0394e-404e-474a-b36e-e2d4b0315923",
-                "resourcePath": "sprites\\sprite_206\\sprite_206.yy",
+                "resourcePath": "sprites\\spr_rotknight_spear_attack1\\spr_rotknight_spear_attack1.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -2098,7 +2106,7 @@
             "Key": "979dccf3-11ad-4998-a1f6-390580947b89",
             "Value": {
                 "id": "815be0c5-4c92-41a0-980e-42d6e4c1a5ec",
-                "resourcePath": "sprites\\sprite_207\\sprite_207.yy",
+                "resourcePath": "sprites\\spr_rotknight_spear_stand\\spr_rotknight_spear_stand.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -2482,7 +2490,7 @@
             "Key": "b3df00f5-4ee5-434e-a909-aeaf207196f2",
             "Value": {
                 "id": "4246cc1a-107f-4861-84f9-0542765ad90d",
-                "resourcePath": "sprites\\spr_rotknight_death\\spr_rotknight_death.yy",
+                "resourcePath": "sprites\\spr_rotknight_spear_death\\spr_rotknight_spear_death.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -2682,7 +2690,7 @@
             "Key": "c5fe7477-8945-4674-8d19-d83518960357",
             "Value": {
                 "id": "d2793e89-0cdd-47ae-a4d1-7e5f3ef71a38",
-                "resourcePath": "sprites\\sprite_201\\sprite_201.yy",
+                "resourcePath": "sprites\\spr_rotknight_shield_block\\spr_rotknight_shield_block.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -2706,7 +2714,7 @@
             "Key": "c898014d-6214-454e-9f00-26dcab6c4cea",
             "Value": {
                 "id": "d4c088f8-5383-45f5-97fd-7b43f9395d16",
-                "resourcePath": "sprites\\sprite_205\\sprite_205.yy",
+                "resourcePath": "sprites\\spr_rotknight_spear_walk2\\spr_rotknight_spear_walk2.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -2778,7 +2786,7 @@
             "Key": "cc307e96-427e-4bf3-afb2-f233bf19f444",
             "Value": {
                 "id": "56be4572-c832-4e4a-b689-e7dcf73a026b",
-                "resourcePath": "sprites\\sprite_199\\sprite_199.yy",
+                "resourcePath": "sprites\\spr_rotknight_shield_stand\\spr_rotknight_shield_stand.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -3074,7 +3082,7 @@
             "Key": "e1f18746-7b5c-41e1-aca6-6ca4da2b75bb",
             "Value": {
                 "id": "40750adf-8482-4cbb-aa49-24f41ecfce79",
-                "resourcePath": "sprites\\sprite_203\\sprite_203.yy",
+                "resourcePath": "sprites\\spr_rotknight_spear_idle\\spr_rotknight_spear_idle.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -3098,7 +3106,7 @@
             "Key": "e3e11184-0c40-45ed-a3b6-fd0d5b42b017",
             "Value": {
                 "id": "1dee555c-42ef-4724-a75d-44498dcce038",
-                "resourcePath": "sprites\\sprite_204\\sprite_204.yy",
+                "resourcePath": "sprites\\spr_rotknight_spear_walk\\spr_rotknight_spear_walk.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -3146,7 +3154,7 @@
             "Key": "e8bebf1b-e8ef-4169-9b56-ae0038d5e388",
             "Value": {
                 "id": "16deb200-dc0f-4bd5-afe6-e2e4d65f20f7",
-                "resourcePath": "sprites\\sprite_200\\sprite_200.yy",
+                "resourcePath": "sprites\\spr_rotknight_shield_death\\spr_rotknight_shield_death.yy",
                 "resourceType": "GMSprite"
             }
         },
