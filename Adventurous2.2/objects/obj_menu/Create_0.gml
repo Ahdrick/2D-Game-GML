@@ -40,6 +40,10 @@ statSelectorX = rightPanelTLX+86;
 statSelectorY = PanelTLY+53;
 statSpend     = 0;
 statSelGap    = 0;
+
+optionX = rightPanelTLX+86;
+optionY = PanelTLY+53;
+
 							   // Main Stat Menu 
 PtS         = 9;			   // points to spend
 StI         = 0;			   // stat to increase selector
