@@ -16,6 +16,8 @@ if(paused)
 		rightPanel++;
 
 	// Navigates the inventory
+	if(rightPanel != 0)
+		leftPanel = 0;
 	if(rightPanel == 0)
 	{	
 		if(selectLeft  && NavX > 0)
@@ -158,6 +160,16 @@ if(paused)
 		}
 	}
 }
+// Levelup algo
+if(EXP > gap)
+{
+	level++;
+	PtS++;
+	prevGap = gap;
+	gap = level*100;
+	gap+= prevGap;
+}
+
 /*
 if(paused)
 {
@@ -389,13 +401,5 @@ if(paused)
 		}
 	}
 }
-// Levelup algo
-if(EXP > gap)
-{
-	level++;
-	PtS++;
-	prevGap = gap;
-	gap = level*100;
-	gap+= prevGap;
-}
+
 	
