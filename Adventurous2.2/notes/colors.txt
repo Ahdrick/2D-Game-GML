@@ -1,0 +1,8 @@
+orange  #c06a4a
+orange2 #b26247
+orange3 #9e5945
+pink    #ce2c5a
+pin2    #cf435a
+pink3   #f62763
+pink4   #d61a68
+tan     #8b7171

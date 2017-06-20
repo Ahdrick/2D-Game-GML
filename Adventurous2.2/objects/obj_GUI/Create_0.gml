@@ -1,0 +1,1 @@
+gold = make_color_rgb(207,150,83);

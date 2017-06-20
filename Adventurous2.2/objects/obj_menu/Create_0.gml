@@ -41,8 +41,18 @@ statSelectorY = PanelTLY+53;
 statSpend     = 0;
 statSelGap    = 0;
 
-optionX = rightPanelTLX+86;
-optionY = PanelTLY+53;
+volX         = rightPanelTLX+109;
+volY         = PanelTLY+52;
+volGapXSize  = 6;
+volGapYSize  = 20;
+volGapX      = 0;
+volGapY      = 0;
+themeX       = rightPanelTLX+109;
+themeY       = PanelTLY+92;
+themeGap     = 0;
+themeGapSize = 6;
+theme        = 0;
+optionSelect = 0;
 
 							   // Main Stat Menu 
 PtS         = 9;			   // points to spend
@@ -54,7 +64,7 @@ NavMaxY     = 2;			   // set max nav edge based on window Y
 
 			      // Global Variables
 paused      = 0;  // is the game paused
-level       = 1;  // your level
+level       = 34;  // your level
 currency    = 0;  // your money
 musicVol    = 5;  // music volume
 SFXVol      = 5;  // sound effect volume
@@ -63,7 +73,7 @@ SFXVol      = 5;  // sound effect volume
 helmEqpd	= 0;  //           \/
 cloakEqpd	= 0;  //           \/
 ringEqpd	= 0;  //           \/
-swordEqpd	= 0;  //           \/
+weaponEqpd	= 0;  //           \/
 shieldEqpd	= 0;  //           \/
 bookEqpd	= 0;  //           \/
 potionEqpd  = 0;  //		   \/
@@ -81,11 +91,12 @@ EXP         = 0;
 gap         = 0; // Used for Leveling up
 prevGap		= 0; //      \/
 
-/*
-red         =  make_color_rgb(222,44,90);  
-gold        =  make_color_rgb(207,150,83);   
-blue        =  make_color_rgb(83,206,207); 
-purple      =  make_color_rgb(121,83,207); 
-white       =  make_color_rgb(255,255,255); 
+orange0     =  make_color_rgb(192,106,74);    
+orange1     =  make_color_rgb(178,98,71);   
+orange2     =  make_color_rgb(158,89,69); 
+pink0       =  make_color_rgb(206,44,90); 
+pink1       =  make_color_rgb(207,67,90);
+pink2       =  make_color_rgb(246,39,99);
+pink3       =  make_color_rgb(214,26,104);
+tan0        =  make_color_rgb(139,113,113); 
 col         =  0;
-*/

@@ -1,13 +1,16 @@
 /// draw the GUI
-draw_sprite(spr_health_bar,0,20,20);
-draw_sprite(spr_energy_bar,0,20,40);
+/*
 draw_text(300,300,obj_player.comboCount);
 draw_text(260,300,obj_player.combo);
 draw_text(460,200,obj_player.strpow);
-//for(i = 0; i < obj_player.currentHealth; i++)
-	//draw_sprite(spr_health_block,0,(39+(i*10)),38);
-draw_sprite_stretched(spr_health_block,0,23,21, (obj_player.currentHealth),4);	
-draw_sprite_stretched(spr_energy_block,0,23,41, (obj_player.curStam*3),4);
+*/
+
+draw_sprite(spr_gui_bar,0,20,20);
+draw_sprite_stretched(spr_health_block,0,24,22, (obj_player.currentHealth),6);	
+draw_sprite_stretched(spr_energy_block,0,24,36, (obj_player.curStam*3),6);
+draw_set_font(fnt_pixel);
+draw_set_color(gold);
+draw_text(36,44,obj_menu.currency);
 
 //draw_text(20,100,obj_player.hsp[1] +"Hsp[1]")
 //draw_text(20,120,obj_player.hsp[0] +"Hsp[0]")

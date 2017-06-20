@@ -1,4 +1,4 @@
-draw_set_font(fnt_minecraft);
+draw_set_font(fnt_pixel);
 //draw_set_color(col);
 if(paused)
 {
@@ -7,12 +7,20 @@ if(paused)
 	{
 		case 0:
 			draw_sprite(spr_menu_character_panel,0,leftPanelTLX,PanelTLY);
+			draw_sprite(spr_weapons,weaponEqpd, leftPanelTLX+152, PanelTLY+49);
+			draw_sprite(spr_helms,  helmEqpd,   leftPanelTLX+36, PanelTLY+49);
+			draw_sprite(spr_cloaks, cloakEqpd,  leftPanelTLX+36, PanelTLY+102);
+			draw_sprite(spr_shields,shieldEqpd, leftPanelTLX+152, PanelTLY+102);
+			draw_sprite(spr_potions,potionEqpd, leftPanelTLX+152, PanelTLY+155);
+			draw_sprite(spr_rings,  ringEqpd,   leftPanelTLX+36, PanelTLY+155);
+			draw_sprite(spr_rings,  ringEqpd,   leftPanelTLX+75, PanelTLY+155);
+			draw_sprite(spr_books,  bookEqpd,   leftPanelTLX+114, PanelTLY+155);
+			draw_set_color(tan0);
+			draw_text(leftPanelTLX+68,PanelTLY+27,level);
 		break;
 		
 		case 1:
 			draw_sprite(spr_menu_weapon_stats_panel,0,leftPanelTLX,PanelTLY);
-		break;
-		default:
 		break;
 	}
 	switch(rightPanel)
@@ -38,14 +46,21 @@ if(paused)
 				draw_sprite(spr_menu_point,0,statPointX+(i*pointGapXSize),statPointY+(pointGapYSize*4));
 			for(i = 0; i < LCK; i++)
 				draw_sprite(spr_menu_point,0,statPointX+(i*pointGapXSize),statPointY+(pointGapYSize*5));
-				
-			draw_sprite(spr_menu_point_selector,0,statSelectorX+(statSelGap), statSelectorY + statGapY);
+			if(statSpend < 10)	
+				draw_sprite(spr_menu_point_selector,0,statSelectorX+(statSelGap), statSelectorY + statGapY);
 		break;
 		case 2:
 			draw_sprite(spr_menu_settings_panel,0,rightPanelTLX,PanelTLY);
-			draw_sprite(spr_menu_rectangle_selector,0,optionX,optionY);
-		break;
-		default:
+			for(i = 0; i < musicVol; i++)
+				draw_sprite(spr_menu_point,0,statPointX+23+(i*pointGapXSize),statPointY-16+(pointGapYSize));
+			for(i = 0; i < SFXVol; i++)
+				draw_sprite(spr_menu_point,0,statPointX+23+(i*pointGapXSize),statPointY-11+(pointGapYSize*2));
+			if(optionSelect == 2)
+				draw_sprite(spr_menu_point_selector,0,themeX + themeGap, themeY);
+			else if(optionSelect == 0 && musicVol == 10 || optionSelect == 1 && SFXVol == 10)
+				draw_sprite(spr_menu_point_selector,0,volX + volGapX - volGapXSize ,volY + volGapY);
+			else
+				draw_sprite(spr_menu_point_selector,0,volX + volGapX,volY + volGapY);
 		break;
 	}
 }

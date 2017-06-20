@@ -9,7 +9,7 @@ Phe    = obj_menu.helmEqpd;
 PheMax = 1; // sam changed this
 Pse    = obj_menu.shieldEqpd;
 PsMax  = 4;
-Pswe   = obj_menu.swordEqpd;
+Pswe   = obj_menu.weaponEqpd;
 PswMax = 2;
 
 PxS  = obj_player.image_xscale; // PxS = players x scale
