@@ -17,3 +17,5 @@ obj_camera_controller.Shake_State = 2;
 // make blood or spark effect particles
 myblood =instance_create_depth(x,y,200,obj_blood_1);
 myblood.MyBloodDonor = 2; 
+var myalpha = random(1)
+draw_sprite_ext(sprite_index,-1,x,y,image_xscale,image_yscale,image_angle,c_red,myalpha)

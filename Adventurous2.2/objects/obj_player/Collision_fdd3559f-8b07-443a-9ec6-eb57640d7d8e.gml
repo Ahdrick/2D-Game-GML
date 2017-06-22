@@ -13,7 +13,7 @@ if (Dead == false){
 				// Subtract health
 				// Add knock back
 				var mysign; 
-				if (image_xscale == 1)
+				if (x > other.x)
 						mysign = 1; 
 				else 
 						mysign = -1
@@ -21,9 +21,9 @@ if (Dead == false){
 				hsp[0] = 0;
 				hsp[1] = 0;
 				if (vsp[0] == 0 && 	vsp[1] == 0)
-					add_movement_horizontal_vertical((5*-image_xscale),1);
+					add_movement_horizontal_vertical((4*mysign ),-1);
 				else
-					add_movement_horizontal_vertical((3*-image_xscale),1);
+					add_movement_horizontal_vertical((4*mysign ),-1);
 				// screen shake 
 				obj_camera_controller.Shake_State = 1;
 			}

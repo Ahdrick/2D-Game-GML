@@ -1,5 +1,5 @@
 /// Create Me;
-scr_Enemy_stats();
+scr_Enemy_stats(10,10,1,10);
 scr_enemy_create();
 //Overwrite Some values Inherited;
 spr_attack1		  =  spr_rotknight_spear_attack1;
