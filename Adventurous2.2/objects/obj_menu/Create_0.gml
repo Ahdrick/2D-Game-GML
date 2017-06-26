@@ -100,3 +100,18 @@ pink2       =  make_color_rgb(246,39,99);
 pink3       =  make_color_rgb(214,26,104);
 tan0        =  make_color_rgb(139,113,113); 
 col         =  0;
+
+
+for(i = 0; i < 5; i++)
+	for(j = 0; j < 2; j++)
+		weapOwn[i,j] = -1;
+weapOwn[0,0] = 0;
+weapOwn[1,0] = 1;
+weapOwn[2,0] = 2;
+weapOwn[3,0] = 3;
+weapOwn[4,0] = 0;
+weapOwn[0,1] = 1;
+weapOwn[1,1] = 2;
+weapOwn[2,1] = 3;
+weapOwn[3,1] = 0;
+weapOwn[4,1] = 1;
