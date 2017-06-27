@@ -101,10 +101,21 @@ pink3       =  make_color_rgb(214,26,104);
 tan0        =  make_color_rgb(139,113,113); 
 col         =  0;
 
+weapPlace   = 0;
+shieldPlace = 1;
+helmPlace   = 2;
+cloakPlace  = 3;
+bookPlace   = 4;
+potionPlace = 5;
+ringPlace   = 6;
+topSpot     = -1;
+bottomSpot  = -1;
 
 for(i = 0; i < 5; i++)
 	for(j = 0; j < 2; j++)
 		weapOwn[i,j] = -1;
+// testing inventory 
+
 weapOwn[0,0] = 0;
 weapOwn[1,0] = 1;
 weapOwn[2,0] = 2;
