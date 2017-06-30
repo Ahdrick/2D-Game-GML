@@ -91,30 +91,27 @@ EXP         = 0;
 gap         = 0; // Used for Leveling up
 prevGap		= 0; //      \/
 
-orange0     =  make_color_rgb(192,106,74);    
-orange1     =  make_color_rgb(178,98,71);   
-orange2     =  make_color_rgb(158,89,69); 
-pink0       =  make_color_rgb(206,44,90); 
-pink1       =  make_color_rgb(207,67,90);
-pink2       =  make_color_rgb(246,39,99);
-pink3       =  make_color_rgb(214,26,104);
-tan0        =  make_color_rgb(139,113,113); 
-col         =  0;
+orange0     = make_color_rgb(192,106,74);    
+orange1     = make_color_rgb(178,98,71);   
+orange2     = make_color_rgb(158,89,69); 
+pink0       = make_color_rgb(206,44,90); 
+pink1       = make_color_rgb(207,67,90);
+pink2       = make_color_rgb(246,39,99);
+pink3       = make_color_rgb(214,26,104);
+tan0        = make_color_rgb(139,113,113); 
+col         = 0;
 
-weapPlace   = 0;
-shieldPlace = 1;
-helmPlace   = 2;
-cloakPlace  = 3;
-bookPlace   = 4;
-potionPlace = 5;
-ringPlace   = 6;
-topSpot     = -1;
-bottomSpot  = -1;
+topRow      = 0; 
 
+
+for(i = 0; i < 13; i++)
+	for(j = 0; j < 13; j++)
+
+/*
 for(i = 0; i < 5; i++)
 	for(j = 0; j < 2; j++)
 		weapOwn[i,j] = -1;
-// testing inventory 
+*/// testing inventory 
 
 weapOwn[0,0] = 0;
 weapOwn[1,0] = 1;

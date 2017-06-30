@@ -28,6 +28,10 @@ if(paused)
 			NavY -= 1;
 		if(selectDown  && NavY < NavMaxY)
 			NavY += 1;
+		if(selectDown  && NavY == NavMaxY && topRow < 11)
+			topRow++;
+		if(selectRight && NavX == NavMaxX && topRow > 0)
+			topRow--;
 			
 		invGapX = (invGapXSize*NavX);
 		invGapY = (invGapYSize*NavY);

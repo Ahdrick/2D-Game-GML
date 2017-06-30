@@ -29,11 +29,18 @@ if(paused)
 			draw_sprite(spr_menu_inventory_panel,0,rightPanelTLX,PanelTLY);
 			draw_sprite(spr_menu_rectangle_selector,0,invSelectX + invGapX,invSelectY + invGapY);
 			// draw inventory
-			for(i = 0; i < 5; i++) // colls
-				for(j = 0; j < 2; j++)	 // rows
-					if(weapOwn[i,j] != -1)
-						draw_sprite(spr_weapons,weapOwn[i,j],(invSelectX+1)+(i*invGapXSize),(invSelectY+1)+(j*invGapYSize));
-
+			switch(topRow)
+			{
+				case 0: // weapons
+					for(i = 0; i < 5; i++) // colls
+						for(j = 0; j < 2; j++)	 // rows
+							if(weapOwn[i,j] != -1)
+								draw_sprite(spr_weapons,weapOwn[i,j],
+										   (invSelectX+1)+(i*invGapXSize),
+										   (invSelectY+1)+(j*invGapYSize));
+				break;
+			}
+			
 			//if(weapOwn[NavX,NavY] != -1)
 				//draw sword text
 		break;
