@@ -61,7 +61,6 @@ NavX        = 0;			   // selector sprite position X
 NavY        = 0;			   // selector sprite position Y
 NavMaxX     = 4;			   // set max nav edge based on window X
 NavMaxY     = 2;			   // set max nav edge based on window Y
-
 			      // Global Variables
 paused      = 0;  // is the game paused
 level       = 34;  // your level
@@ -102,24 +101,17 @@ tan0        = make_color_rgb(139,113,113);
 col         = 0;
 
 topRow      = 0; 
+middleRow   = 0;
+bottomRow   = 0;
 
-
-for(i = 0; i < 13; i++)
+for(i = 0; i < 7; i++)
 	for(j = 0; j < 13; j++)
+		inventory[i,j] = 1;
 
-/*
-for(i = 0; i < 5; i++)
-	for(j = 0; j < 2; j++)
-		weapOwn[i,j] = -1;
-*/// testing inventory 
-
-weapOwn[0,0] = 0;
-weapOwn[1,0] = 1;
-weapOwn[2,0] = 2;
-weapOwn[3,0] = 3;
-weapOwn[4,0] = 0;
-weapOwn[0,1] = 1;
-weapOwn[1,1] = 2;
-weapOwn[2,1] = 3;
-weapOwn[3,1] = 0;
-weapOwn[4,1] = 1;
+spr_inventory[0] = spr_helms;
+spr_inventory[1] = spr_cloaks;
+spr_inventory[2] = spr_weapons;
+spr_inventory[3] = spr_shields;
+spr_inventory[4] = spr_books;
+spr_inventory[5] = spr_potions;
+spr_inventory[6] = spr_rings;
