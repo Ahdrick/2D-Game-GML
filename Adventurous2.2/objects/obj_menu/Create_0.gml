@@ -104,9 +104,9 @@ topRow      = 0;
 middleRow   = 0;
 bottomRow   = 0;
 
-for(i = 0; i < 7; i++)
+for(i = 0; i < 5; i++)
 	for(j = 0; j < 13; j++)
-		inventory[i,j] = 1;
+		inventory[i,j] = 0;
 
 spr_inventory[0] = spr_helms;
 spr_inventory[1] = spr_cloaks;
@@ -115,3 +115,4 @@ spr_inventory[3] = spr_shields;
 spr_inventory[4] = spr_books;
 spr_inventory[5] = spr_potions;
 spr_inventory[6] = spr_rings;
+spr_inventory[7] = spr_rings;
