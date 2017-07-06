@@ -2,7 +2,7 @@
     "id": "abebf419-933c-4057-95fe-88bfd3498e7d",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "Enmy_RotSword_wait",
+    "name": "Enmy_rotsword",
     "eventList": [
         {
             "id": "43cd29f4-64f5-4f68-aebd-2b697fdac80c",

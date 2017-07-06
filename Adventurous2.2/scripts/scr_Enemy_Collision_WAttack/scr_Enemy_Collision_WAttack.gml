@@ -9,7 +9,7 @@ if (EnemyState != -1){
 		}
 }
 
-scr_enemy_knockback(.70*obj_player.strpow,.70*obj_player.strpow,.70*obj_player.strpow,.70*obj_player.strpow,)
+scr_Enemy_knockback(.70*obj_player.strpow,.70*obj_player.strpow,.70*obj_player.strpow,.70*obj_player.strpow,)
 
 // Make the screen slightly shake
 obj_camera_controller.Shake_State = 2;

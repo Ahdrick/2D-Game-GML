@@ -35,8 +35,8 @@ if keyboard_check_pressed(vk_tab)
 	if (msg == "Chest")
 		instance_create_depth(obj_player.x+200,obj_player.y-200,300, obj_chest1)
 		
-	if (msg == "Rotknight_sword")
-		instance_create_depth(obj_player.x+200,obj_player.y-200,300, obj_RotKnight_sword)	
+	if (msg == "Rotsword")
+		instance_create_depth(obj_player.x+200,obj_player.y-200,300, Enmy_rotsword)	
 		
 	if (msg == "Hound")
 		instance_create_depth(obj_player.x+200,obj_player.y-200,300, obj_hound)
@@ -54,7 +54,7 @@ if keyboard_check_pressed(vk_tab)
 		instance_create_depth(obj_player.x+200,obj_player.y-200,300, obj_SporeOwl)
 		
 	if (msg == "Mold")
-		instance_create_depth(obj_player.x+200,obj_player.y-200,300, obj_MoldKnight)
+		instance_create_depth(obj_player.x+200,obj_player.y-200,300, Enmy_mold)
 			
 	if (msg == "Genocide"){
 		if (instance_exists(obj_enemy_parent))

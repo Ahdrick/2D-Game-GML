@@ -8,6 +8,7 @@ myalphy     = .3;
 initialize_movement_entity(.4,.43,0,0,obj_solid);
 // state variable set to movement script
 depth		  = 201; 
+image_speed   = 1.9;
 DeathAlpha    = 1;
 // initialize stats
 death         = false; 
