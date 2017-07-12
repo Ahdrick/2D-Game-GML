@@ -191,6 +191,14 @@
             }
         },
         {
+            "Key": "0bd72295-c3b9-483b-a795-6be7efdb9886",
+            "Value": {
+                "id": "3bb026d9-21e0-4f4b-8aec-3480773b9a8c",
+                "resourcePath": "sprites\\Antlerbrute_idle1\\Antlerbrute_idle1.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "0c0765b1-d5b3-4a63-81c1-687b54d105b0",
             "Value": {
                 "id": "ce0cb90a-f790-4cd1-958d-415ba0aeee6e",
@@ -220,6 +228,14 @@
                 "id": "b307d28f-0f72-4dab-b2f9-831804c2b054",
                 "resourcePath": "views\\0e002cd3-96bc-4b25-a6ec-2341d2196ce4.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "0e698714-687a-4e29-9f6e-bee65d64aa47",
+            "Value": {
+                "id": "ccf9f317-b80b-4f6c-90a6-c740080b96d3",
+                "resourcePath": "sprites\\Antlerbrute_break\\Antlerbrute_break.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -276,6 +292,14 @@
                 "id": "21d99c0c-8a8e-4a4f-901d-a8961fe38e1d",
                 "resourcePath": "objects\\obj_solid_45_1\\obj_solid_45_1.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "14ae8b52-8c4a-4ebb-a279-af7f057ab167",
+            "Value": {
+                "id": "d7cdc0ff-082d-449c-80f9-7253b95be5ec",
+                "resourcePath": "sprites\\AntlerMage_stand\\AntlerMage_stand.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -559,6 +583,14 @@
             }
         },
         {
+            "Key": "2681c40b-49a4-434a-95a9-c63c834f652d",
+            "Value": {
+                "id": "08e8d0b3-8e96-4a97-a35b-ab054188a97a",
+                "resourcePath": "sprites\\Antlerbrute_death\\Antlerbrute_death.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "2751f3be-e09f-4091-b22c-3b75d65af1e1",
             "Value": {
                 "id": "be655301-657c-48a5-a7b2-55ae33432e7c",
@@ -775,6 +807,14 @@
             }
         },
         {
+            "Key": "35454e7e-33da-48bb-9ff4-f9bbf5877888",
+            "Value": {
+                "id": "bebe245c-d869-420c-b034-28ce8bce9d2b",
+                "resourcePath": "sprites\\AntlerMage_attack1\\AntlerMage_attack1.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "35890f0a-8734-46e8-97ac-d5b3e51581fd",
             "Value": {
                 "id": "dd0c5ca8-811b-45da-b513-6838c0cbb504",
@@ -788,6 +828,14 @@
                 "id": "086502fa-98e9-4383-8195-ade0e70f7eb9",
                 "resourcePath": "views\\36132226-267b-4fd7-b868-cf6b4baf9d04.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "36ae3bb2-3d6c-4d81-baec-6f0a8000673f",
+            "Value": {
+                "id": "1c557100-60b2-4497-9a7d-aac477b3b6c7",
+                "resourcePath": "scripts\\scr_Enemy_stand\\scr_Enemy_stand.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -835,6 +883,14 @@
             "Value": {
                 "id": "176fadec-0c0a-4743-8571-52122ed800ef",
                 "resourcePath": "sprites\\spr_S1_death\\spr_S1_death.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "3a77062a-134b-4146-a009-8669bafdc8fd",
+            "Value": {
+                "id": "323d40ef-d19c-415d-8ce5-3aa5ae200abe",
+                "resourcePath": "sprites\\AntlerMage_attack2\\AntlerMage_attack2.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -975,6 +1031,14 @@
             }
         },
         {
+            "Key": "445cd5d6-fda9-43f6-8f3c-5b3ccde698f7",
+            "Value": {
+                "id": "f9f6a93e-4649-47a0-a2f3-363eafa49bc6",
+                "resourcePath": "sprites\\Antlerbrute_walk2\\Antlerbrute_walk2.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "446c11c2-4dd8-4160-a5eb-87761cb4a23c",
             "Value": {
                 "id": "2f435727-1a91-4464-bb85-8d3ab8365fc2",
@@ -1100,6 +1164,14 @@
                 "id": "65b21b42-1b1c-45e1-a025-89daf31bdb26",
                 "resourcePath": "views\\4bac8fc3-f605-44aa-b056-699969f0a0d8.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "4bbb580f-1cb0-440d-bfed-aefa482e9a90",
+            "Value": {
+                "id": "76a9b21b-740f-4a9b-92a3-a847a4140f1f",
+                "resourcePath": "sprites\\Antlerbrute_block\\Antlerbrute_block.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -1311,6 +1383,14 @@
             }
         },
         {
+            "Key": "5dd2f8f4-7685-4e0a-b801-dd5d67732610",
+            "Value": {
+                "id": "79a894f2-5a65-4ef3-9fb0-91b3d177f3fc",
+                "resourcePath": "sprites\\AntlerMage_death\\AntlerMage_death.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "5e700965-b536-4b69-b1ca-9f0ac2e09222",
             "Value": {
                 "id": "99743dcc-eaeb-4dbe-aa07-bf158cd37c00",
@@ -1420,6 +1500,14 @@
                 "id": "190fa42f-9de4-4549-af2d-3e7c88c82755",
                 "resourcePath": "views\\63ff49d8-30f4-452d-b7bf-076aef7e9c4b.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "64a4be2f-26e0-4f50-81f4-5ee1d7f67e3a",
+            "Value": {
+                "id": "3cf6b36c-6979-4d2d-bcee-fc79b74b4ab9",
+                "resourcePath": "sprites\\Antlerbrute_attack2\\Antlerbrute_attack2.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -1555,6 +1643,14 @@
             "Value": {
                 "id": "9349433a-823e-466a-9e6b-d4aa9ca70f98",
                 "resourcePath": "sprites\\spr_helm_break_0\\spr_helm_break_0.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "700e6154-f7c9-41d0-b85a-198d90e4c234",
+            "Value": {
+                "id": "c153f6cd-69cb-45e0-bfb1-fcd02962bc25",
+                "resourcePath": "sprites\\AntlerMage_idle\\AntlerMage_idle.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -2271,6 +2367,14 @@
             }
         },
         {
+            "Key": "9fabd03e-5634-4f9d-a7d8-a372773b7f3c",
+            "Value": {
+                "id": "0afe5888-1cb5-4bfc-b02c-f06463d13736",
+                "resourcePath": "sprites\\Antlerbrute_walk1\\Antlerbrute_walk1.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "a050261d-2ae3-442d-a16b-ce6f41ecf734",
             "Value": {
                 "id": "baadf63c-6db5-4f4b-bd3c-ddefea829c39",
@@ -2431,6 +2535,22 @@
             }
         },
         {
+            "Key": "afc6c42f-f659-4e7b-949e-479c8290206f",
+            "Value": {
+                "id": "2244ae94-4999-4200-8993-808bdb0d359c",
+                "resourcePath": "sprites\\Antlerbrute_attack1\\Antlerbrute_attack1.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "b0530cc4-4091-4430-b7b5-fa309a93f614",
+            "Value": {
+                "id": "76cd16a2-c87a-40e6-9d70-23df2094fece",
+                "resourcePath": "objects\\Enmy_spore\\Enmy_spore.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "b095cf97-0bcb-482f-9b8e-d8f896339eba",
             "Value": {
                 "id": "cc096028-df71-4fd5-8b1d-a603b9458fc6",
@@ -2540,6 +2660,14 @@
                 "id": "aed240d6-68f7-4c30-97e4-e103df42ec39",
                 "resourcePath": "views\\b62f33f3-c6a7-4aea-b352-58a6f79ffff3.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "b6c82a75-0594-4e52-bcc9-7d1fc3f2737f",
+            "Value": {
+                "id": "8ffa6427-d8ea-4219-8a64-5609b5e310ee",
+                "resourcePath": "sprites\\Antlerbrute_stand2\\Antlerbrute_stand2.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -2831,6 +2959,14 @@
             }
         },
         {
+            "Key": "cdd1ff78-390f-4031-82f2-a185189e40fa",
+            "Value": {
+                "id": "8dc2c901-5eb6-483a-a2f6-d05074f2f786",
+                "resourcePath": "sprites\\AntlerMage_walk\\AntlerMage_walk.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "ce288fdb-444e-4ef2-86cc-bdde711b6c3b",
             "Value": {
                 "id": "f5a27a3b-b64b-4610-b8d8-3bdc4f75c318",
@@ -2999,11 +3135,27 @@
             }
         },
         {
+            "Key": "d7ede4a0-bafe-4b3e-a5ab-2356fe34e8d7",
+            "Value": {
+                "id": "428f6ac8-2626-4b46-a0e1-8a077d28cbdc",
+                "resourcePath": "sprites\\Antlerbrute_stand\\Antlerbrute_stand.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "d8786742-33f7-4088-9335-75bb22ad59a5",
             "Value": {
                 "id": "f047e59a-7196-463b-862f-177c1ae5f86e",
                 "resourcePath": "sprites\\spr_sword_climb_0\\spr_sword_climb_0.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "d924e9c3-cc8b-48b9-be7f-879ce5bcbfe5",
+            "Value": {
+                "id": "55a493c2-86f2-4a0a-90d6-04b22c89abd7",
+                "resourcePath": "views\\d924e9c3-cc8b-48b9-be7f-879ce5bcbfe5.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
@@ -3199,6 +3351,14 @@
             }
         },
         {
+            "Key": "ec070c8e-b621-401d-a801-880f82b4e7ee",
+            "Value": {
+                "id": "ed724e8d-fd02-405a-8c2c-4fc0571d3e5c",
+                "resourcePath": "views\\ec070c8e-b621-401d-a801-880f82b4e7ee.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "ec2ea04f-2af7-44c4-afd4-47491bace269",
             "Value": {
                 "id": "be304527-b45b-4eed-aa53-6c53fb31381d",
@@ -3367,6 +3527,14 @@
             }
         },
         {
+            "Key": "f5f8a216-9247-404a-a946-54ed19c1369b",
+            "Value": {
+                "id": "32d723be-98a8-45ec-8bcd-598f4ff995bd",
+                "resourcePath": "sprites\\Antlerbrute_idle2\\Antlerbrute_idle2.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "f612e48c-cec1-4734-bb0b-8f19b3a9870c",
             "Value": {
                 "id": "8db44680-0680-400d-a57c-54e814d18f90",
@@ -3529,6 +3697,7 @@
         "e55a02f1-87ab-40a0-8f73-93dac3599c61",
         "da0e2189-25d1-40ca-b226-30f78dd2f65d",
         "46dab721-8391-4122-a7ba-77893a0f5073",
+        "36ae3bb2-3d6c-4d81-baec-6f0a8000673f",
         "d60b82df-0a4f-4c5b-aadd-709a867a2c11"
     ],
     "tutorial": ""

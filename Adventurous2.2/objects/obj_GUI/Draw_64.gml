@@ -51,7 +51,7 @@ if keyboard_check_pressed(vk_tab)
 		instance_create_depth(obj_player.x,obj_player.y,300, obj_enemy_parent)
 					
 	if (msg == "Owl")
-		instance_create_depth(obj_player.x+200,obj_player.y-200,300, obj_SporeOwl)
+		instance_create_depth(obj_player.x+200,obj_player.y-200,300, Enmy_spore)
 		
 	if (msg == "Mold")
 		instance_create_depth(obj_player.x+200,obj_player.y-200,300, Enmy_mold)
