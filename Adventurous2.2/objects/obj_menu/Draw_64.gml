@@ -28,9 +28,6 @@ if(paused)
 		case 0:
 			draw_sprite(spr_menu_inventory_panel,0,rightPanelTLX,PanelTLY);
 			draw_sprite(spr_menu_rectangle_selector,0,invSelectX + invGapX,invSelectY + invGapY);
-			draw_text(100,100,topRow);
-			draw_text(100,120,middleRow);
-			draw_text(100,140,bottomRow);
 			// draw inventory
 			for(i = 0; i < 5; i++)			
 			{

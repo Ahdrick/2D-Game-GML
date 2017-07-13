@@ -20,19 +20,25 @@ if(paused)
 		leftPanel = 0;
 	if(rightPanel == 0)
 	{	
+		if(selectDown  && NavY == 1 && topRow < 11)
+			topRow++;
+		
 		if(selectLeft  && NavX > 0)
 			NavX -= 1;
 		if(selectRight && NavX < NavMaxX)
-			NavX += 1;
-		if(selectUp    && NavY > 0)
-			NavY -= 1;
-		if(selectDown  && NavY < NavMaxY)
+			NavX += 1;		
+		if(selectDown  && NavY == 0 && topRow == 0)
 			NavY += 1;
-		if(selectDown  && NavY == NavMaxY && topRow < 11)
-			topRow++;
-		if(selectUp    && NavY == 0 && topRow > 0) 
+		if(selectUp    && NavY == 2 && topRow == 11)
+			NavY -= 1;
+		if(selectUp    && NavY == 1 && topRow == 0)
+			NavY -= 1;
+		if(selectDown  && NavY == 1 && topRow == 11)
+			NavY += 1;
+			
+		if(selectUp    && NavY == 1 && topRow > 0) 
 			topRow--;
-	
+		
 		middleRow = topRow + 1;
 		bottomRow = topRow + 2;
 		
