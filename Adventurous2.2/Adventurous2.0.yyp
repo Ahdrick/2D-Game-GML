@@ -103,6 +103,14 @@
             }
         },
         {
+            "Key": "06bebf65-e269-499a-a231-2818b2ef9af0",
+            "Value": {
+                "id": "f9ecf4ec-7298-4e23-9b63-a5cc05e824b0",
+                "resourcePath": "sprites\\spr_fungusknight_idle\\spr_fungusknight_idle.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "06cd4177-1301-406e-aa9c-66c8a791d494",
             "Value": {
                 "id": "e476b986-2f15-4d53-9e81-5070b653afbb",
@@ -194,7 +202,7 @@
             "Key": "0bd72295-c3b9-483b-a795-6be7efdb9886",
             "Value": {
                 "id": "3bb026d9-21e0-4f4b-8aec-3480773b9a8c",
-                "resourcePath": "sprites\\Antlerbrute_idle1\\Antlerbrute_idle1.yy",
+                "resourcePath": "sprites\\spr_Antlerbrute_idle1\\spr_Antlerbrute_idle1.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -215,14 +223,6 @@
             }
         },
         {
-            "Key": "0d44ecd7-16f9-4de1-83e1-e97aed5b6d6f",
-            "Value": {
-                "id": "e64c4c54-6b24-42ae-890e-c48ce88cb061",
-                "resourcePath": "objects\\Enmy_hound_wait\\Enmy_hound_wait.yy",
-                "resourceType": "GMObject"
-            }
-        },
-        {
             "Key": "0e002cd3-96bc-4b25-a6ec-2341d2196ce4",
             "Value": {
                 "id": "b307d28f-0f72-4dab-b2f9-831804c2b054",
@@ -234,7 +234,7 @@
             "Key": "0e698714-687a-4e29-9f6e-bee65d64aa47",
             "Value": {
                 "id": "ccf9f317-b80b-4f6c-90a6-c740080b96d3",
-                "resourcePath": "sprites\\Antlerbrute_break\\Antlerbrute_break.yy",
+                "resourcePath": "sprites\\spr_Antlerbrute_break\\spr_Antlerbrute_break.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -298,7 +298,7 @@
             "Key": "14ae8b52-8c4a-4ebb-a279-af7f057ab167",
             "Value": {
                 "id": "d7cdc0ff-082d-449c-80f9-7253b95be5ec",
-                "resourcePath": "sprites\\AntlerMage_stand\\AntlerMage_stand.yy",
+                "resourcePath": "sprites\\spr_AntlerMage_stand\\spr_AntlerMage_stand.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -391,6 +391,14 @@
             }
         },
         {
+            "Key": "18d570ce-42ec-42ec-9eeb-4c70c462d5a3",
+            "Value": {
+                "id": "6b2c0a91-8a54-4d98-88ff-bc315ba34651",
+                "resourcePath": "sprites\\spr_Antlerhunter_death\\spr_Antlerhunter_death.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "191b9a2a-a12a-4e76-82e1-50602f49f318",
             "Value": {
                 "id": "bc125b09-ac80-44b6-8cc1-ec5813d75d1a",
@@ -415,6 +423,14 @@
             }
         },
         {
+            "Key": "19cd941e-61ca-428f-8cf8-585f8f114de5",
+            "Value": {
+                "id": "13b45b62-dba1-4983-869b-a986196dadca",
+                "resourcePath": "sprites\\spr_fungusknight_attack1\\spr_fungusknight_attack1.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "1b7bb939-a87b-4e2f-af1e-6fe445f9db67",
             "Value": {
                 "id": "fa2bf74f-fc7a-44a0-80e9-2b74a53e2a11",
@@ -428,6 +444,14 @@
                 "id": "e05511e8-39ae-408b-8e42-2bed81583e64",
                 "resourcePath": "sprites\\spr_shield_block_0\\spr_shield_block_0.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "1ccdbc85-320e-41f6-8795-4780f2243e18",
+            "Value": {
+                "id": "f4d5d7ba-18f2-4d0f-aa13-32c3811ac9d7",
+                "resourcePath": "objects\\Enmy_antlerhunter\\Enmy_antlerhunter.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -586,8 +610,16 @@
             "Key": "2681c40b-49a4-434a-95a9-c63c834f652d",
             "Value": {
                 "id": "08e8d0b3-8e96-4a97-a35b-ab054188a97a",
-                "resourcePath": "sprites\\Antlerbrute_death\\Antlerbrute_death.yy",
+                "resourcePath": "sprites\\spr_Antlerbrute_death\\spr_Antlerbrute_death.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "26b5c0c6-6d3c-44ca-bb9e-f5abeb02d8bc",
+            "Value": {
+                "id": "ec30a86a-9e67-421b-a2dc-5b9b3103be46",
+                "resourcePath": "views\\26b5c0c6-6d3c-44ca-bb9e-f5abeb02d8bc.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
@@ -644,6 +676,14 @@
                 "id": "47b24cbf-47f7-4dd7-831d-7f7001891d9e",
                 "resourcePath": "sprites\\spr_helm_run_0\\spr_helm_run_0.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "29ba87f7-03d0-4f88-ba5a-401de5b9cc3a",
+            "Value": {
+                "id": "45822ca2-d88b-4a0e-bd33-0a1823f8b69f",
+                "resourcePath": "views\\29ba87f7-03d0-4f88-ba5a-401de5b9cc3a.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
@@ -767,6 +807,14 @@
             }
         },
         {
+            "Key": "322c379f-712a-4257-a6d0-291a8d1a529d",
+            "Value": {
+                "id": "804cb6d5-7973-471f-8c80-024cef74ae56",
+                "resourcePath": "sprites\\spr_fungusknight_idle2\\spr_fungusknight_idle2.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "3253b650-ab63-4952-8300-0dbd0dd2d822",
             "Value": {
                 "id": "8726a7c3-def2-45d4-9540-8db4872b0ccd",
@@ -810,7 +858,7 @@
             "Key": "35454e7e-33da-48bb-9ff4-f9bbf5877888",
             "Value": {
                 "id": "bebe245c-d869-420c-b034-28ce8bce9d2b",
-                "resourcePath": "sprites\\AntlerMage_attack1\\AntlerMage_attack1.yy",
+                "resourcePath": "sprites\\spr_AntlerMage_attack1\\spr_AntlerMage_attack1.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -890,7 +938,7 @@
             "Key": "3a77062a-134b-4146-a009-8669bafdc8fd",
             "Value": {
                 "id": "323d40ef-d19c-415d-8ce5-3aa5ae200abe",
-                "resourcePath": "sprites\\AntlerMage_attack2\\AntlerMage_attack2.yy",
+                "resourcePath": "sprites\\spr_AntlerMage_attack2\\spr_AntlerMage_attack2.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -1034,7 +1082,7 @@
             "Key": "445cd5d6-fda9-43f6-8f3c-5b3ccde698f7",
             "Value": {
                 "id": "f9f6a93e-4649-47a0-a2f3-363eafa49bc6",
-                "resourcePath": "sprites\\Antlerbrute_walk2\\Antlerbrute_walk2.yy",
+                "resourcePath": "sprites\\spr_Antlerbrute_walk2\\spr_Antlerbrute_walk2.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -1170,7 +1218,7 @@
             "Key": "4bbb580f-1cb0-440d-bfed-aefa482e9a90",
             "Value": {
                 "id": "76a9b21b-740f-4a9b-92a3-a847a4140f1f",
-                "resourcePath": "sprites\\Antlerbrute_block\\Antlerbrute_block.yy",
+                "resourcePath": "sprites\\spr_Antlerbrute_block\\spr_Antlerbrute_block.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -1220,6 +1268,14 @@
                 "id": "4aab29fe-4775-451c-aea5-5d82d3636538",
                 "resourcePath": "views\\4e97d41a-6752-42cf-8558-01ada9f645d9.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "4f575be2-721c-4126-a122-3c3340ba6a8e",
+            "Value": {
+                "id": "4397bef8-a07b-4e3d-bbbd-c541da482a5f",
+                "resourcePath": "sprites\\spr_fungusknight_attack2\\spr_fungusknight_attack2.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -1351,6 +1407,14 @@
             }
         },
         {
+            "Key": "599eb226-e8af-444d-aac2-61af8ba0c212",
+            "Value": {
+                "id": "b5335c5f-8bd0-42b0-a166-824f7427f956",
+                "resourcePath": "sprites\\spr_enmy_spear\\spr_enmy_spear.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "5b7107ad-f5e5-4aa9-9b39-6ef7ab2b14cf",
             "Value": {
                 "id": "6881a428-7407-48c2-8510-8288e2df6699",
@@ -1386,7 +1450,7 @@
             "Key": "5dd2f8f4-7685-4e0a-b801-dd5d67732610",
             "Value": {
                 "id": "79a894f2-5a65-4ef3-9fb0-91b3d177f3fc",
-                "resourcePath": "sprites\\AntlerMage_death\\AntlerMage_death.yy",
+                "resourcePath": "sprites\\spr_AntlerMage_death\\spr_AntlerMage_death.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -1506,8 +1570,16 @@
             "Key": "64a4be2f-26e0-4f50-81f4-5ee1d7f67e3a",
             "Value": {
                 "id": "3cf6b36c-6979-4d2d-bcee-fc79b74b4ab9",
-                "resourcePath": "sprites\\Antlerbrute_attack2\\Antlerbrute_attack2.yy",
+                "resourcePath": "sprites\\spr_Antlerbrute_attack2\\spr_Antlerbrute_attack2.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "64b99e2c-bab3-408a-b13c-8752236655f9",
+            "Value": {
+                "id": "9e26b3fb-3311-42d4-8de9-c692ef42763b",
+                "resourcePath": "views\\64b99e2c-bab3-408a-b13c-8752236655f9.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
@@ -1650,7 +1722,7 @@
             "Key": "700e6154-f7c9-41d0-b85a-198d90e4c234",
             "Value": {
                 "id": "c153f6cd-69cb-45e0-bfb1-fcd02962bc25",
-                "resourcePath": "sprites\\AntlerMage_idle\\AntlerMage_idle.yy",
+                "resourcePath": "sprites\\spr_AntlerMage_idle\\spr_AntlerMage_idle.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -1943,6 +2015,14 @@
             }
         },
         {
+            "Key": "86613912-62d7-436e-a9c4-862b0d7a1457",
+            "Value": {
+                "id": "ebdedd3b-e30b-4636-9ce2-451ea47236c6",
+                "resourcePath": "sprites\\spr_Antlerhunter_stand\\spr_Antlerhunter_stand.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "86ca426e-db1b-485a-96ba-f6692db651a7",
             "Value": {
                 "id": "79058131-b856-4c4f-be1c-3d1d276463dc",
@@ -2167,11 +2247,27 @@
             }
         },
         {
+            "Key": "930df815-1228-4a99-80a0-139283728605",
+            "Value": {
+                "id": "42b0baeb-f7f2-40a2-8979-f88029d7025d",
+                "resourcePath": "sprites\\spr_Antlerhunter_attack2\\spr_Antlerhunter_attack2.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "9435113c-3bb6-470b-abde-604fe0ee98b9",
             "Value": {
                 "id": "9dd461a6-991d-49f5-a583-ac1b9a5bd19e",
                 "resourcePath": "views\\9435113c-3bb6-470b-abde-604fe0ee98b9.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "946af592-1d2c-4b01-a043-22c0587f6ad0",
+            "Value": {
+                "id": "98d42d82-22fc-4856-8da9-f2aa3f5e0511",
+                "resourcePath": "objects\\Enmy_hound1\\Enmy_hound1.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -2255,6 +2351,14 @@
             }
         },
         {
+            "Key": "995b29d8-d9a9-4df3-a66b-26b7f1d26d97",
+            "Value": {
+                "id": "faa44df9-431f-4b26-a505-caf52123bfe0",
+                "resourcePath": "sprites\\spr_fungusknight_walk\\spr_fungusknight_walk.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "9989c16c-5c59-47db-8617-295a6be0598c",
             "Value": {
                 "id": "51df4975-647d-459f-90b8-d3020b0fe5a8",
@@ -2292,6 +2396,14 @@
                 "id": "95d44eab-17b3-4d91-93e1-219b187303f7",
                 "resourcePath": "scripts\\dead_state\\dead_state.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "9aabfd9b-d780-47c0-81dc-72ed6feed665",
+            "Value": {
+                "id": "d99aef22-8f30-4b05-963d-90fedb6109bd",
+                "resourcePath": "sprites\\spr_Antlerhunter_walk\\spr_Antlerhunter_walk.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -2370,7 +2482,7 @@
             "Key": "9fabd03e-5634-4f9d-a7d8-a372773b7f3c",
             "Value": {
                 "id": "0afe5888-1cb5-4bfc-b02c-f06463d13736",
-                "resourcePath": "sprites\\Antlerbrute_walk1\\Antlerbrute_walk1.yy",
+                "resourcePath": "sprites\\spr_Antlerbrute_walk1\\spr_Antlerbrute_walk1.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -2443,6 +2555,14 @@
             "Value": {
                 "id": "ca992ee2-3d18-46fb-a8f0-6cae4ac739ea",
                 "resourcePath": "sprites\\spr_player_block\\spr_player_block.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "aa31612a-f997-4e62-9165-000db6961b7c",
+            "Value": {
+                "id": "653adac1-964f-4818-bbbd-4751f4e48195",
+                "resourcePath": "sprites\\spr_Antlerhunter_idle1\\spr_Antlerhunter_idle1.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -2538,7 +2658,7 @@
             "Key": "afc6c42f-f659-4e7b-949e-479c8290206f",
             "Value": {
                 "id": "2244ae94-4999-4200-8993-808bdb0d359c",
-                "resourcePath": "sprites\\Antlerbrute_attack1\\Antlerbrute_attack1.yy",
+                "resourcePath": "sprites\\spr_Antlerbrute_attack1\\spr_Antlerbrute_attack1.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -2666,7 +2786,7 @@
             "Key": "b6c82a75-0594-4e52-bcc9-7d1fc3f2737f",
             "Value": {
                 "id": "8ffa6427-d8ea-4219-8a64-5609b5e310ee",
-                "resourcePath": "sprites\\Antlerbrute_stand2\\Antlerbrute_stand2.yy",
+                "resourcePath": "sprites\\spr_Antlerbrute_stand2\\spr_Antlerbrute_stand2.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -2783,6 +2903,14 @@
             }
         },
         {
+            "Key": "c1812992-ce64-4115-9f0e-f00deb21a661",
+            "Value": {
+                "id": "3f065b01-b9a2-45dd-ba6a-851f82b8f264",
+                "resourcePath": "sprites\\spr_Antlerhunter_attack1\\spr_Antlerhunter_attack1.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "c25576d9-114e-43d5-875f-a7114e686a90",
             "Value": {
                 "id": "c3420df2-ee68-4c87-93bc-38be491eeee4",
@@ -2796,6 +2924,14 @@
                 "id": "a5b5b57d-dd7c-4905-a2c9-5161586f6eb5",
                 "resourcePath": "views\\c28b3829-a041-4a91-adbe-dd1584f6db24.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "c2b5353a-b7f9-438c-8191-bbf6b8dff621",
+            "Value": {
+                "id": "a0b510ad-0096-4c9d-8d36-5d431dbe617d",
+                "resourcePath": "sprites\\spr_fungusknight_stand\\spr_fungusknight_stand.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -2962,7 +3098,7 @@
             "Key": "cdd1ff78-390f-4031-82f2-a185189e40fa",
             "Value": {
                 "id": "8dc2c901-5eb6-483a-a2f6-d05074f2f786",
-                "resourcePath": "sprites\\AntlerMage_walk\\AntlerMage_walk.yy",
+                "resourcePath": "sprites\\spr_AntlerMage_walk\\spr_AntlerMage_walk.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -3138,7 +3274,7 @@
             "Key": "d7ede4a0-bafe-4b3e-a5ab-2356fe34e8d7",
             "Value": {
                 "id": "428f6ac8-2626-4b46-a0e1-8a077d28cbdc",
-                "resourcePath": "sprites\\Antlerbrute_stand\\Antlerbrute_stand.yy",
+                "resourcePath": "sprites\\spr_Antlerbrute_stand\\spr_Antlerbrute_stand.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -3311,6 +3447,14 @@
             }
         },
         {
+            "Key": "e5d2193d-a72f-42d5-849a-d30326200d89",
+            "Value": {
+                "id": "b98e4bbf-3eaa-4f43-9e84-1e8c24e36b5d",
+                "resourcePath": "views\\e5d2193d-a72f-42d5-849a-d30326200d89.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "e77f72b2-10f8-4b2c-977f-7c8457761007",
             "Value": {
                 "id": "76501a50-b57f-4174-a00a-054b125248f9",
@@ -3347,6 +3491,14 @@
             "Value": {
                 "id": "57df9cad-e727-42c5-bf71-638e4b061360",
                 "resourcePath": "sprites\\spr_bounds_22_5\\spr_bounds_22_5.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "ebe45cfb-24e0-4f5c-af1a-8eb655fc260c",
+            "Value": {
+                "id": "f0f2b7b0-bfe2-4ee8-ab6e-a57e73b2b20f",
+                "resourcePath": "sprites\\spr_fungusknight_death\\spr_fungusknight_death.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -3530,7 +3682,7 @@
             "Key": "f5f8a216-9247-404a-a946-54ed19c1369b",
             "Value": {
                 "id": "32d723be-98a8-45ec-8bcd-598f4ff995bd",
-                "resourcePath": "sprites\\Antlerbrute_idle2\\Antlerbrute_idle2.yy",
+                "resourcePath": "sprites\\spr_Antlerbrute_idle2\\spr_Antlerbrute_idle2.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -3556,6 +3708,14 @@
                 "id": "a91de369-e84a-433c-899c-c008dc402657",
                 "resourcePath": "sprites\\spr_sword_run_0\\spr_sword_run_0.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "f86dc30c-0fb7-459b-8507-fdc8883b0fd1",
+            "Value": {
+                "id": "fc91f8ec-6ec6-48d9-8c68-33176420606a",
+                "resourcePath": "objects\\Enmy_fungus\\Enmy_fungus.yy",
+                "resourceType": "GMObject"
             }
         },
         {

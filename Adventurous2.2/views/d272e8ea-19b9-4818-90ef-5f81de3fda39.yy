@@ -14,7 +14,7 @@
         "c63c5bcd-e908-4933-87b9-88968b670d68"
     ],
     "filterType": "GMSprite",
-    "folderName": "SporeOwl",
+    "folderName": "Spore",
     "isDefaultView": false,
     "localisedFolderName": ""
 }

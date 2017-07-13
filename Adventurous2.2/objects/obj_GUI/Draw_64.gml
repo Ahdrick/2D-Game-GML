@@ -39,7 +39,7 @@ if keyboard_check_pressed(vk_tab)
 		instance_create_depth(obj_player.x+200,obj_player.y-200,300, Enmy_rotsword)	
 		
 	if (msg == "Hound")
-		instance_create_depth(obj_player.x+200,obj_player.y-200,300, obj_hound)
+		instance_create_depth(obj_player.x+200,obj_player.y-200,300, Enmy_hound1)
 		
 	if (msg == "Dblsword")
 		instance_create_depth(obj_player.x+200,obj_player.y-200,300, obj_double_sword)
@@ -52,6 +52,12 @@ if keyboard_check_pressed(vk_tab)
 					
 	if (msg == "Owl")
 		instance_create_depth(obj_player.x+200,obj_player.y-200,300, Enmy_spore)
+		
+	if (msg == "Fungus")
+		instance_create_depth(obj_player.x+200,obj_player.y-200,300, Enmy_fungus)
+		
+	if (msg == "Antlerhunter")
+		instance_create_depth(obj_player.x+200,obj_player.y-200,300, Enmy_antlerhunter)
 		
 	if (msg == "Mold")
 		instance_create_depth(obj_player.x+200,obj_player.y-200,300, Enmy_mold)

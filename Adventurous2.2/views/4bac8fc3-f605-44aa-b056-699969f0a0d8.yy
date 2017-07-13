@@ -15,7 +15,7 @@
         "8f48e90e-bc86-444a-95a0-daa878c54a49"
     ],
     "filterType": "GMSprite",
-    "folderName": " RotKnight_Spear",
+    "folderName": "RotKnight_Spear",
     "isDefaultView": false,
     "localisedFolderName": ""
 }

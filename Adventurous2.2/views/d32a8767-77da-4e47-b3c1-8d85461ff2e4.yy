@@ -7,7 +7,7 @@
         "57eef9ad-c3a8-4736-a334-7fbb5f4707e0"
     ],
     "filterType": "GMSprite",
-    "folderName": "style one",
+    "folderName": "Tiki",
     "isDefaultView": false,
     "localisedFolderName": ""
 }
