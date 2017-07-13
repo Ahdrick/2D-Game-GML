@@ -28,18 +28,24 @@ if(paused)
 		case 0:
 			draw_sprite(spr_menu_inventory_panel,0,rightPanelTLX,PanelTLY);
 			draw_sprite(spr_menu_rectangle_selector,0,invSelectX + invGapX,invSelectY + invGapY);
+			draw_text(100,100,topRow);
+			draw_text(100,120,middleRow);
+			draw_text(100,140,bottomRow);
 			// draw inventory
-			for(i = 0; i < 5; i++)
-				for(j = 0; j < 5; j++)				
-					if(inventory[floor(topRow/2)] != -1)
-					{
-						draw_sprite(spr_inventory[floor(topRow/2)],inventory[i,j],
-							(invSelectX+1)+(i*invGapXSize),(invSelectY+1));
-						draw_sprite(spr_inventory[floor(middleRow/2)],inventory[i,j],
-							(invSelectX+1)+(i*invGapXSize),(invSelectY+1)+(invGapYSize));
-						draw_sprite(spr_inventory[floor(bottomRow/2)],inventory[i,j],
-							(invSelectX+1)+(i*invGapXSize),(invSelectY+1)+(2*invGapYSize));
-					}
+			for(i = 0; i < 5; i++)			
+			{
+				if(inventory[topRow,i] != -1)
+					draw_sprite(spr_inventory[floor(topRow/2)],inventory[topRow,i],
+						(invSelectX+1)+(i*invGapXSize),(invSelectY+1));
+						
+				if(inventory[middleRow,i] != -1)
+					draw_sprite(spr_inventory[floor(middleRow/2)],inventory[middleRow,i],
+						(invSelectX+1)+(i*invGapXSize),(invSelectY+1)+(invGapYSize));
+						
+				if(inventory[bottomRow,i] != -1)
+					draw_sprite(spr_inventory[floor(bottomRow/2)],inventory[bottomRow,i],
+						(invSelectX+1)+(i*invGapXSize),(invSelectY+1)+(2*invGapYSize));
+			}		
 		break;
 		case 1:
 			draw_sprite(spr_menu_player_stats_panel,0,rightPanelTLX,PanelTLY);

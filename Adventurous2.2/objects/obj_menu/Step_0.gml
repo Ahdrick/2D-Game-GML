@@ -28,11 +28,11 @@ if(paused)
 			NavY -= 1;
 		if(selectDown  && NavY < NavMaxY)
 			NavY += 1;
-		if(selectDown  && NavY == NavMaxY && topRow < 13)
+		if(selectDown  && NavY == NavMaxY && topRow < 11)
 			topRow++;
-		if(selectUp && NavY == 0 && topRow > 0) 
+		if(selectUp    && NavY == 0 && topRow > 0) 
 			topRow--;
-			
+	
 		middleRow = topRow + 1;
 		bottomRow = topRow + 2;
 		

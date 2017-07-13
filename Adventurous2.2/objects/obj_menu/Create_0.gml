@@ -63,13 +63,13 @@ NavMaxX     = 4;			   // set max nav edge based on window X
 NavMaxY     = 2;			   // set max nav edge based on window Y
 			      // Global Variables
 paused      = 0;  // is the game paused
-level       = 34;  // your level
+level       = 1;  // your level
 currency    = 0;  // your money
 musicVol    = 5;  // music volume
 SFXVol      = 5;  // sound effect volume
 
 				  // Sprite Index Variables 			  
-helmEqpd	= 0;  //           \/
+helmEqpd	= 1;  //           \/
 cloakEqpd	= 0;  //           \/
 ringEqpd	= 0;  //           \/
 weaponEqpd	= 0;  //           \/
@@ -101,12 +101,17 @@ tan0        = make_color_rgb(139,113,113);
 col         = 0;
 
 topRow      = 0; 
-middleRow   = 0;
-bottomRow   = 0;
+middleRow   = 1;
+bottomRow   = 2;
 
-for(i = 0; i < 5; i++)
-	for(j = 0; j < 13; j++)
-		inventory[i,j] = 0;
+for(i = 0; i < 14; i++)
+	for(j = 0; j < 5; j++)
+		inventory[i,j] = -1;
+
+inventory[0,0] = 0;
+inventory[2,0] = 0;
+inventory[4,0] = 0;
+inventory[6,0] = 0;
 
 spr_inventory[0] = spr_helms;
 spr_inventory[1] = spr_cloaks;

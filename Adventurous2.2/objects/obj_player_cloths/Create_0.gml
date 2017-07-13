@@ -1,6 +1,6 @@
 // Stand array for different s stand
 PcMax  = 1;
-PheMax = 1;
+PheMax = 2;
 fade   = 0;
 instance_create_depth(x,y,depth-1,obj_player_helm_overlay);
 for(i = 0; i < PcMax; i++)
@@ -22,7 +22,7 @@ for(i = 0; i < PcMax; i++)
 	
 for(i = 0; i < PheMax; i++)
 {
-	dashHelm[i]  = asset_get_index(("spr_helm_dash_"  + string(i)));
+	dashHelm[i]   = asset_get_index(("spr_helm_dash_"  + string(i)));
 	standHelm[i]  = asset_get_index(("spr_helm_stand_"  + string(i)));
 	runHelm[i]    = asset_get_index(("spr_helm_run_"    + string(i)));
 	jumpHelm[i]   = asset_get_index(("spr_helm_jump_"   + string(i)));
@@ -69,7 +69,7 @@ y      = obj_player.y;
 Pce    = obj_menu.cloakEqpd;
 PcMax  = 3;
 Phe    = obj_menu.helmEqpd;
-PheMax = 4;
+PheMax = 2;
 
 PxS  = obj_player.image_xscale;
 PiS  = obj_player.image_speed;
@@ -78,4 +78,4 @@ PiI  = obj_player.image_index;
 PCsI = 0;
 Pce  = 0;
 PHsI = 5;
-Phe  = 5;
+Phe  = 0;
