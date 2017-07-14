@@ -42,7 +42,11 @@ if(paused)
 				if(inventory[bottomRow,i] != -1)
 					draw_sprite(spr_inventory[floor(bottomRow/2)],inventory[bottomRow,i],
 						(invSelectX+1)+(i*invGapXSize),(invSelectY+1)+(2*invGapYSize));
-			}		
+			}
+			if(topRow >= 1)
+				draw_sprite(spr_menu_arrow_up,0,rightPanelTLX+98,PanelTLY+28);
+			if(topRow <= 10)
+				draw_sprite_ext(spr_menu_arrow_up,0,rightPanelTLX+98,PanelTLY+207,1,-1,0,-1,1);
 		break;
 		case 1:
 			draw_sprite(spr_menu_player_stats_panel,0,rightPanelTLX,PanelTLY);

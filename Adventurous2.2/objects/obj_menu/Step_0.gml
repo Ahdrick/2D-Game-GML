@@ -20,25 +20,70 @@ if(paused)
 		leftPanel = 0;
 	if(rightPanel == 0)
 	{	
+		//deals with navigating inventory
+		if(selectDown  && NavY == 1 && topRow == 11)
+			NavY += 1;
 		if(selectDown  && NavY == 1 && topRow < 11)
 			topRow++;
-		
 		if(selectLeft  && NavX > 0)
 			NavX -= 1;
 		if(selectRight && NavX < NavMaxX)
 			NavX += 1;		
-		if(selectDown  && NavY == 0 && topRow == 0)
-			NavY += 1;
-		if(selectUp    && NavY == 2 && topRow == 11)
-			NavY -= 1;
 		if(selectUp    && NavY == 1 && topRow == 0)
 			NavY -= 1;
-		if(selectDown  && NavY == 1 && topRow == 11)
+		if(selectDown  && NavY == 0 && topRow == 0)
 			NavY += 1;
-			
 		if(selectUp    && NavY == 1 && topRow > 0) 
 			topRow--;
+		if(selectUp    && NavY == 2 && topRow == 11)
+			NavY -= 1;
 		
+		if(enter && (inventory[NavY,NavX] != -1 || inventory[middleRow,NavX] != -1))
+		{
+			if(topRow == 0)
+			{
+				helmEqpd = helmEqpd ^^ inventory[NavY,NavX];
+				inventory[NavY,NavX] = helmEqpd ^^ inventory[NavY,NavX];
+				helmEqpd = helmEqpd ^^ inventory[NavY,NavX];
+			}
+			if(middleRow == 2 || middleRow == 3)
+			{
+				cloakEqpd = cloakEqpd ^^ inventory[middleRow,NavX];
+				inventory[middleRow,NavX] = cloakEqpd ^^ inventory[middleRow,NavX];
+				cloakEqpd = cloakEqpd ^^ inventory[middleRow,NavX];
+			}
+			else if(middleRow == 4 || middleRow == 5)
+			{
+				weaponEqpd = weaponEqpd ^^ inventory[middleRow,NavX];
+				inventory[middleRow,NavX] = weaponEqpd ^^ inventory[middleRow, NavX];
+				weaponEqpd = weaponEqpd ^^ inventory[middleRow,NavX];
+			}
+			else if(middleRow == 6 || middleRow == 7)
+			{
+				shieldEqpd = shieldEqpd  ^^ inventory[middleRow,NavX];
+				inventory[middleRow,NavX] = shieldEqpd ^^ inventory[middleRow, NavX];
+				shieldEqpd = shieldEqpd ^^ inventory[middleRow,NavX];
+			}	
+			else if(middleRow == 8 || middleRow == 9)
+			{
+				bookdEqpd = bookEqpd  ^^ inventory[middleRow,NavX];
+				inventory[middleRow,NavX] = bookEqpd ^^ inventory[middleRow, NavX];
+				bookEqpd = bookEqpd ^^ inventory[middleRow,NavX];
+			}	
+						
+			else if(middleRow == 10 || middleRow == 11)
+			{
+				potionEqpd = potionEqpd  ^^ inventory[middleRow,NavX];
+				inventory[middleRow,NavX] = potionEqpd ^^ inventory[middleRow, NavX];
+				potionEqpd = potionEqpd ^^ inventory[middleRow,NavX];
+			}	
+				
+			else if(middleRow == 12 || NavY == NavMaxY)
+				ringEqpd = ringEqpd  ^^ inventory[middleRow,NavX];
+				inventory[middleRow,NavX] = ringEqpd ^^ inventory[middleRow, NavX];
+				ringEqpd = ringEqpd ^^ inventory[middleRow,NavX];
+
+		}
 		middleRow = topRow + 1;
 		bottomRow = topRow + 2;
 		

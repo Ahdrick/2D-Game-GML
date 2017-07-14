@@ -55,7 +55,7 @@ theme        = 0;
 optionSelect = 0;
 
 							   // Main Stat Menu 
-PtS         = 9;			   // points to spend
+PtS         = 19;			   // points to spend
 StI         = 0;			   // stat to increase selector
 NavX        = 0;			   // selector sprite position X
 NavY        = 0;			   // selector sprite position Y
@@ -72,6 +72,7 @@ SFXVol      = 5;  // sound effect volume
 helmEqpd	= 1;  //           \/
 cloakEqpd	= 0;  //           \/
 ringEqpd	= 0;  //           \/
+ringEqpd1	= 0;  //           \/
 weaponEqpd	= 0;  //           \/
 shieldEqpd	= 0;  //           \/
 bookEqpd	= 0;  //           \/
@@ -108,10 +109,13 @@ for(i = 0; i < 14; i++)
 	for(j = 0; j < 5; j++)
 		inventory[i,j] = -1;
 
-inventory[0,0] = 0;
-inventory[2,0] = 0;
-inventory[4,0] = 0;
-inventory[6,0] = 0;
+inventory[0,0] = 1;
+inventory[2,0] = 1;
+inventory[4,0] = 1;
+inventory[6,0] = 1;
+inventory[8,0] = 1;
+inventory[10,0] = 1;
+inventory[12,0] = 1;
 
 spr_inventory[0] = spr_helms;
 spr_inventory[1] = spr_cloaks;
