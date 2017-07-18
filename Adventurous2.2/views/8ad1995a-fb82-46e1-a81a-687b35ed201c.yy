@@ -15,7 +15,8 @@
         "b0530cc4-4091-4430-b7b5-fa309a93f614",
         "f86dc30c-0fb7-459b-8507-fdc8883b0fd1",
         "946af592-1d2c-4b01-a043-22c0587f6ad0",
-        "1ccdbc85-320e-41f6-8795-4780f2243e18"
+        "1ccdbc85-320e-41f6-8795-4780f2243e18",
+        "ae2785ab-d172-47b8-a88e-5f29e56b9b6a"
     ],
     "filterType": "GMObject",
     "folderName": "NewEnemies",

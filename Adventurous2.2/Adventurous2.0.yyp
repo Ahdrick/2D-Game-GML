@@ -2623,6 +2623,14 @@
             }
         },
         {
+            "Key": "ae2785ab-d172-47b8-a88e-5f29e56b9b6a",
+            "Value": {
+                "id": "41edf403-ccc1-4dff-a9a0-8db23f72c8ad",
+                "resourcePath": "objects\\Enmy_houndknight\\Enmy_houndknight.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "ae5d457b-c8cf-4dde-af1c-efd576acdaea",
             "Value": {
                 "id": "74913d37-d92b-40c6-b0f2-079a4c774b6f",
