@@ -1871,6 +1871,14 @@
             }
         },
         {
+            "Key": "7c4bb5bc-084b-40cb-a01e-17208c6cb39a",
+            "Value": {
+                "id": "1e14fd7c-2c14-4529-9ec8-1b470324b1a6",
+                "resourcePath": "objects\\obj_Enemy_weapon_parent\\obj_Enemy_weapon_parent.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "7c757277-c085-4a34-916e-5323b5f35cc7",
             "Value": {
                 "id": "b3ea2ea3-9d83-4e70-b5bf-8c24b6ba1186",
@@ -3607,6 +3615,14 @@
             }
         },
         {
+            "Key": "f237a3f9-1fba-4c12-8ecc-97a0827b3d7c",
+            "Value": {
+                "id": "a0268bad-9dd2-46b9-ad5d-a7b2c1b52d56",
+                "resourcePath": "objects\\obj_Enemy_spear1\\obj_Enemy_spear1.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "f24a3100-e5a0-4f5c-aff0-ac49e344c54c",
             "Value": {
                 "id": "c14c0319-1f04-4a8a-aad8-b800a95efabb",
@@ -3628,6 +3644,14 @@
                 "id": "77798835-696f-4f96-9d96-c8d7279e2c15",
                 "resourcePath": "sprites\\spr_books\\spr_books.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "f3f4ef40-589e-422e-9f12-7d7c2954c475",
+            "Value": {
+                "id": "31848e78-0659-44bb-b0ed-b64c4b643c71",
+                "resourcePath": "scripts\\scr_throw_spear\\scr_throw_spear.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -3866,6 +3890,7 @@
         "da0e2189-25d1-40ca-b226-30f78dd2f65d",
         "46dab721-8391-4122-a7ba-77893a0f5073",
         "36ae3bb2-3d6c-4d81-baec-6f0a8000673f",
+        "f3f4ef40-589e-422e-9f12-7d7c2954c475",
         "d60b82df-0a4f-4c5b-aadd-709a867a2c11"
     ],
     "tutorial": ""
