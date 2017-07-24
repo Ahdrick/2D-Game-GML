@@ -116,6 +116,13 @@ inventory[6,0] = 1;
 inventory[8,0] = 1;
 inventory[10,0] = 1;
 inventory[12,0] = 1;
+inventory[1,0] = 0;
+inventory[3,0] = 0;
+inventory[5,0] = 0;
+inventory[7,0] = 0;
+inventory[9,0] = 0;
+inventory[11,0] = 0;
+inventory[13,0] = 0;
 
 spr_inventory[0] = spr_helms;
 spr_inventory[1] = spr_cloaks;

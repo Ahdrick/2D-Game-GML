@@ -13,7 +13,7 @@ if(paused)
 			draw_sprite(spr_shields,shieldEqpd, leftPanelTLX+152, PanelTLY+102);
 			draw_sprite(spr_potions,potionEqpd, leftPanelTLX+152, PanelTLY+155);
 			draw_sprite(spr_rings,  ringEqpd,   leftPanelTLX+36, PanelTLY+155);
-			draw_sprite(spr_rings,  ringEqpd,   leftPanelTLX+75, PanelTLY+155);
+			draw_sprite(spr_rings,  ringEqpd1,  leftPanelTLX+75, PanelTLY+155);
 			draw_sprite(spr_books,  bookEqpd,   leftPanelTLX+114, PanelTLY+155);
 			draw_set_color(tan0);
 			draw_text(leftPanelTLX+68,PanelTLY+27,level);
@@ -28,6 +28,8 @@ if(paused)
 		case 0:
 			draw_sprite(spr_menu_inventory_panel,0,rightPanelTLX,PanelTLY);
 			draw_sprite(spr_menu_rectangle_selector,0,invSelectX + invGapX,invSelectY + invGapY);
+			draw_text(200,200,inventory[middleRow,NavX]);
+			draw_text(200,260,cloakEqpd);
 			// draw inventory
 			for(i = 0; i < 5; i++)			
 			{

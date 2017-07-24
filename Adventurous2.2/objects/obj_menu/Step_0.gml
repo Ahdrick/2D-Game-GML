@@ -40,23 +40,24 @@ if(paused)
 		
 		if(enter && (inventory[NavY,NavX] != -1 || inventory[middleRow,NavX] != -1))
 		{
-			if(topRow == 0)
+			var swap = -1;
+			if(topRow == 0 || middleRow == 1)
 			{
-				helmEqpd = helmEqpd ^^ inventory[NavY,NavX];
-				inventory[NavY,NavX] = helmEqpd ^^ inventory[NavY,NavX];
-				helmEqpd = helmEqpd ^^ inventory[NavY,NavX];
+				swap = helmEqpd;
+				helmEqpd = inventory[topRow,NavX];
+				inventory[topRow,NavX] = swap;
 			}
 			if(middleRow == 2 || middleRow == 3)
 			{
-				cloakEqpd = cloakEqpd ^^ inventory[middleRow,NavX];
-				inventory[middleRow,NavX] = cloakEqpd ^^ inventory[middleRow,NavX];
-				cloakEqpd = cloakEqpd ^^ inventory[middleRow,NavX];
+				swap = cloakEqpd;
+				cloakEqpd = inventory[middleRow,NavX];
+				inventory[middleRow,NavX] = swap;
 			}
 			else if(middleRow == 4 || middleRow == 5)
 			{
-				weaponEqpd = weaponEqpd ^^ inventory[middleRow,NavX];
-				inventory[middleRow,NavX] = weaponEqpd ^^ inventory[middleRow, NavX];
-				weaponEqpd = weaponEqpd ^^ inventory[middleRow,NavX];
+				swap = weaponEqpd;
+				weaponEqpd = inventory[middleRow, NavX];
+				inventory[middleRow,NavX] = swap;
 			}
 			else if(middleRow == 6 || middleRow == 7)
 			{
