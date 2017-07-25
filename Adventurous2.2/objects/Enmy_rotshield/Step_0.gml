@@ -1,11 +1,11 @@
-if (currentHealth > 0) {
-	scr_Enemy_WalkWStalk(3);
-	}
-else 
-	scr_Enemy_DeathNoFade();
-/// Wait Walk
-
-// Jump Alarm
-
-
-// Death
+// If dead
+if (currentHealth < 0) 
+	scr_Enemy_DeathFade();
+else {
+	if (sprite_index = spr_run)
+		scr_Enemy_WalkWOutStalk();
+	else if ((sprite_index = spr_runbackwards))
+		scr_Enemy_WalkWOutStalkBackwards();
+	else 
+		scr_Enemy_stand();
+}

@@ -38,6 +38,12 @@ if keyboard_check_pressed(vk_tab)
 	if (msg == "Rotsword")
 		instance_create_depth(obj_player.x+200,obj_player.y-200,300, Enmy_rotsword)	
 		
+	if (msg == "Rotspear")
+		instance_create_depth(obj_player.x+200,obj_player.y-200,300, Enmy_rotspear)	
+		
+	if (msg == "Rotshield")
+		instance_create_depth(obj_player.x+200,obj_player.y-200,300, Enmy_rotshield)	
+		
 	if (msg == "Hound")
 		instance_create_depth(obj_player.x+200,obj_player.y-200,300, Enmy_hound1)
 		

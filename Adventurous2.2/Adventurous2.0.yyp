@@ -455,6 +455,14 @@
             }
         },
         {
+            "Key": "1e083d9e-3283-4e68-890b-ab2d2c193086",
+            "Value": {
+                "id": "01cdaa63-2e88-4546-b520-f50c2c23357e",
+                "resourcePath": "objects\\Enmy_antlerhunter1\\Enmy_antlerhunter1.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "1e1aa94b-62bc-4330-83a5-344b5f567281",
             "Value": {
                 "id": "05ac7e38-2dfe-4055-bf9e-bfc0f46d2ed7",
@@ -951,6 +959,14 @@
             }
         },
         {
+            "Key": "3c6d0952-9912-4b7f-b07f-42904c4ff568",
+            "Value": {
+                "id": "a36f6925-3753-426e-8bcb-b82901d96de0",
+                "resourcePath": "scripts\\scr_Enemy_WalkWOutStalkBackwards\\scr_Enemy_WalkWOutStalkBackwards.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "3caca371-b4b8-4c06-b0b1-44f7fabc21a8",
             "Value": {
                 "id": "eeb30081-359c-49ea-bdcf-7a913bc96b70",
@@ -1287,6 +1303,14 @@
             }
         },
         {
+            "Key": "501e7316-87bf-4047-80af-9e0d8e61a7bc",
+            "Value": {
+                "id": "7146ad11-b391-4d07-bbd4-56da37388bfc",
+                "resourcePath": "objects\\Enmy_rotsword\\Enmy_rotsword.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "50e4ace6-e64f-49ec-9b2a-60d5134adcae",
             "Value": {
                 "id": "664ea33c-4d01-48d5-84ad-306e84c326aa",
@@ -1508,14 +1532,6 @@
                 "id": "358b0e3e-0b43-455f-af67-581ee929be3f",
                 "resourcePath": "sprites\\spr_key_stat\\spr_key_stat.yy",
                 "resourceType": "GMSprite"
-            }
-        },
-        {
-            "Key": "61001e52-2bfc-45d1-ac86-0f9477fdc17e",
-            "Value": {
-                "id": "7fd4d73f-1259-47a0-9bcc-60a2a1d94135",
-                "resourcePath": "objects\\Enmy_rotspear\\Enmy_rotspear.yy",
-                "resourceType": "GMObject"
             }
         },
         {
@@ -2207,14 +2223,6 @@
             }
         },
         {
-            "Key": "90ae99ca-90e8-4158-b2c8-ffbd0d48bfd1",
-            "Value": {
-                "id": "28a64682-4820-4ec1-ae3d-313d1c69c3da",
-                "resourcePath": "objects\\Enmy_rotshield\\Enmy_rotshield.yy",
-                "resourceType": "GMObject"
-            }
-        },
-        {
             "Key": "90c54658-2210-4e78-9722-87bbe52bad1c",
             "Value": {
                 "id": "e605dfa3-7106-40ba-a4d7-3023cdb4e4d2",
@@ -2591,14 +2599,6 @@
             }
         },
         {
-            "Key": "abebf419-933c-4057-95fe-88bfd3498e7d",
-            "Value": {
-                "id": "ddee1184-3bdc-44c4-a671-48406ca67f2b",
-                "resourcePath": "objects\\Enmy_rotsword\\Enmy_rotsword.yy",
-                "resourceType": "GMObject"
-            }
-        },
-        {
             "Key": "acd6a19b-031c-425c-94c0-9bec6b27bad3",
             "Value": {
                 "id": "9c716262-496d-4951-a439-c75c5db3597c",
@@ -2651,6 +2651,14 @@
             "Value": {
                 "id": "e6a92a3c-9c9b-4d19-8951-8305443a2219",
                 "resourcePath": "objects\\obj_double_sword\\obj_double_sword.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "af96c132-d3ad-4b5f-a69c-d380d0fab94a",
+            "Value": {
+                "id": "53c09aea-0832-4fdf-9b90-959a9a2eb139",
+                "resourcePath": "objects\\Enmy_rotshield\\Enmy_rotshield.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -2972,6 +2980,14 @@
                 "id": "188df275-aa00-4a38-bc83-08dbbc032c21",
                 "resourcePath": "sprites\\spr_hound_run\\spr_hound_run.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "c4cdec42-0d94-43a7-b365-26b2295477f6",
+            "Value": {
+                "id": "5032d711-4280-4e0e-a259-571429d63383",
+                "resourcePath": "objects\\Enmy_rotspear\\Enmy_rotspear.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -3891,6 +3907,7 @@
         "46dab721-8391-4122-a7ba-77893a0f5073",
         "36ae3bb2-3d6c-4d81-baec-6f0a8000673f",
         "f3f4ef40-589e-422e-9f12-7d7c2954c475",
+        "3c6d0952-9912-4b7f-b07f-42904c4ff568",
         "d60b82df-0a4f-4c5b-aadd-709a867a2c11"
     ],
     "tutorial": ""

@@ -6,10 +6,6 @@ if (currentHealth <1 ){
 	}
 	
 if (obj_player.currentHealth >1){
-	if(left)
-		image_xscale = 1;
-	if(right)
-		image_xscale = -1;
 
 	image_speed = .6;
 

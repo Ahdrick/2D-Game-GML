@@ -1,0 +1,1 @@
+scr_throw_spear(); 
