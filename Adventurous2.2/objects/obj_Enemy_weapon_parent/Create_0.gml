@@ -1,5 +1,5 @@
 // Stats
-damage=0; 
+Damage=0; 
 
 // Programming related
 grounded = false ; // Touching the ground

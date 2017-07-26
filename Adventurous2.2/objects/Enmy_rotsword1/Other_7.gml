@@ -1,22 +1,11 @@
 /// This Determine Behahaviour
 
 if (currentHealth > 0) {
-		
-	// change direction 
-		if (x > obj_player.x){
-				image_xscale = 1;
-			}
-		else{
-				image_xscale = -1;
-			}
-	// Should I enter combo?
-	if (distance_to_object(obj_player) > 100)
+	if (distance_to_object(obj_player) > 50)
 		sprite_index = sprCombo[mycombo];
-	else {
+	else 
 		sprite_index = sprCombo2[mycombo]	
-			}
-			
-		
+
 	if (mycombo < Combo_length)
 		mycombo+=1;
 	else 
@@ -32,10 +21,6 @@ if (currentHealth > 0) {
 		
 	if (sprite_index = spr_attack2)
 		alarm[1] = 40;
-		
-			
-
 	}
 else 
 		sprite_index = spr_death;
-	

@@ -7,7 +7,7 @@ if (Dead == false){
 				{
 					sprite_index = spr_player_flinch;
 					flinch = true;
-					currentHealth -=1; 
+					currentHealth -=other.Damage; 
 					instance_create_depth(x,y,-300,obj_blood);
 					if(alarm[5] == -1)
 						alarm[5] = 20;
@@ -19,6 +19,8 @@ if (Dead == false){
 					else 
 							mysign = -1
 					// send back
+					vsp[0] = 0;
+					vsp[1] = 0;
 					hsp[0] = 0;
 					hsp[1] = 0;
 					if (vsp[0] == 0 && 	vsp[1] == 0)
@@ -28,6 +30,7 @@ if (Dead == false){
 					// screen shake 
 					obj_camera_controller.Shake_State = 1;
 				}
+				
 			}
 		}
 	}

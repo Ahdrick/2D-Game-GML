@@ -1,16 +1,16 @@
 /// Create Me;
 scr_Enemy_stats(10,10,1,10);
 scr_enemy_create();
-spr_attack1		  =  spr_rotknight_sword_attack1;
-spr_attack2		  =  spr_rotknight_sword_attack1;
-spr_attack3		  =  spr_rotknight_sword_attack1;
-spr_death    	  =  spr_rotknight_sword_death;
-spr_idle1         =  spr_rotknight_sword_idle;
-spr_idle2         =  spr_rotknight_sword_idle;
-spr_stand         =  spr_rotknight_sword_stand;
-spr_run           =  spr_rotknight_sword_walk;
-spr_runbackwards  =  spr_rotknight_sword_walk;
-spr_break         =  spr_rotknight_spear_break
+spr_attack1		  =  spr_AntlerMage_attack1;
+spr_attack2		  =  spr_AntlerMage_attack2;
+spr_attack3		  =  spr_AntlerMage_attack1;
+spr_death    	  =  spr_AntlerMage_death;
+spr_idle1         =  spr_AntlerMage_idle;
+spr_idle2         =  spr_AntlerMage_idle;
+spr_stand         =  spr_AntlerMage_stand;
+spr_run           =  spr_AntlerMage_walk;
+spr_runbackwards  =  spr_AntlerMage_walk;
+spr_break         =  spr_AntlerMage_stand
 image_speed       =	 1.9;
 
 

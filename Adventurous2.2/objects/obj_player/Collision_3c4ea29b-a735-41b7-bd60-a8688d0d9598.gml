@@ -6,7 +6,7 @@ if (Dead == false){
 			{
 				sprite_index = spr_player_flinch;
 				flinch = true;
-				currentHealth -=1; 
+				currentHealth -=other.Damage; 
 				instance_create_depth(x,y,-300,obj_blood);
 				if(alarm[5] == -1)
 					alarm[5] = 20;

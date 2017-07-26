@@ -1306,7 +1306,7 @@
             "Key": "501e7316-87bf-4047-80af-9e0d8e61a7bc",
             "Value": {
                 "id": "7146ad11-b391-4d07-bbd4-56da37388bfc",
-                "resourcePath": "objects\\Enmy_rotsword\\Enmy_rotsword.yy",
+                "resourcePath": "objects\\Enmy_rotsword1\\Enmy_rotsword1.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -1572,6 +1572,14 @@
                 "id": "0863e57f-e3b9-4a5d-9186-5f2db7e305cc",
                 "resourcePath": "views\\62aabc0f-76c0-4b41-9187-2d218996b13e.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "638d5387-73da-479f-8d3e-189da16c0e1a",
+            "Value": {
+                "id": "d23a1e81-b2db-431c-86b8-b6ba46bb0e9f",
+                "resourcePath": "objects\\Enmy_antlermage\\Enmy_antlermage.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -1900,6 +1908,14 @@
                 "id": "b3ea2ea3-9d83-4e70-b5bf-8c24b6ba1186",
                 "resourcePath": "views\\7c757277-c085-4a34-916e-5323b5f35cc7.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "7d2b1726-a4ce-4d81-908f-280749dff91d",
+            "Value": {
+                "id": "26471eed-13ee-4170-9f8a-6e1185868ff7",
+                "resourcePath": "objects\\Enmy_rotsword\\Enmy_rotsword.yy",
+                "resourceType": "GMObject"
             }
         },
         {

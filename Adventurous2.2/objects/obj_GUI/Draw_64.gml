@@ -12,6 +12,28 @@ draw_set_font(fnt_pixel);
 draw_set_color(gold);
 draw_text(36,44,obj_menu.currency);
 
+
+draw_text(6,74,("X Enemy Hit "));
+draw_text(86,74,Combo_stat);
+
+draw_text(6,64,("Damage Given "));
+draw_text(86,64,Damage_Given_stat);
+
+//draw_text(26,94,("Grade "));
+//draw_text(56,94,Grade_stat);
+
+draw_text(6,84,("Time "));
+draw_text(86,84,Time_stat);
+
+draw_text(6,94,("Hero Attack "));
+draw_text(86,94,obj_player.strpow);
+
+if (instance_exists(Enmy_hound1)){
+	enemy=instance_nearest(x,y,Enmy_hound1)
+	draw_text(6,104,("Enemy Health "));
+	draw_text(86,104,enemy.currentHealth);
+	
+	}
 //draw_text(20,100,obj_player.hsp[1] +"Hsp[1]")
 //draw_text(20,120,obj_player.hsp[0] +"Hsp[0]")
 
@@ -64,6 +86,9 @@ if keyboard_check_pressed(vk_tab)
 		
 	if (msg == "Antlerhunter")
 		instance_create_depth(obj_player.x+200,obj_player.y-200,300, Enmy_antlerhunter)
+	
+	if (msg == "Antlermage")
+		instance_create_depth(obj_player.x+200,obj_player.y-200,300, Enmy_antlermage)
 		
 	if (msg == "Mold")
 		instance_create_depth(obj_player.x+200,obj_player.y-200,300, Enmy_mold)

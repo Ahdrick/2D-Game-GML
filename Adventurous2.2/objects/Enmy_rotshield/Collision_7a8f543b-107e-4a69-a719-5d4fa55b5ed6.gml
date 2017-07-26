@@ -1,5 +1,5 @@
 // stuff
-if (currentHealth > 0) {
+if (currentHealth > -1) {
 	if (sprite_index = spr_block){
 		with (obj_player){
 			if(alarm[5] == -1)
