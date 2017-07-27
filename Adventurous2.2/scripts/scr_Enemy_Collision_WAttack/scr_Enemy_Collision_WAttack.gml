@@ -1,13 +1,14 @@
 /// 
 if (EnemyState != -1){
 	//sprite_index = spr_SporeOwl_Scream;
-	currentHealth -= obj_player.strpow;
+	currentHealth -= round(obj_player.strpow);
 	// Added combo
 	obj_GUI.Combo_stat		  +=1;
 	obj_GUI.Damage_Given_stat += obj_player.strpow;;
 		//alarm[1] = 135;
-	if (currentHealth < 1 ){
+	if (currentHealth <= 0 ){
 		EnemyState= -1;
+		currentHealth = -10;
 		sprite_index = spr_death;
 		}
 }
