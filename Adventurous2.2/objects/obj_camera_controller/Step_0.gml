@@ -1,17 +1,12 @@
 /// Step event follow the player cooly
 if(!obj_menu.paused)
 {
-	x +=(x2-x)/16;
+	x +=(x2-x)/10;
 	y +=(y2-y)/10;
 
 	if(follow != noone)
 	{
-		if(follow.Left)
-			x2 = follow.x-50;
-		if(follow.Right)
-			x2 = follow.x+70;
-		if(!follow.Left && !follow.Right)
-			x2 = follow.x+20;
+		x2 = follow.x+20;
 		y2 = follow.y-40;
 	}
 

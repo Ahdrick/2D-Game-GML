@@ -165,7 +165,8 @@ if(paused)
 					{
 						END++;
 						PtS--;
-						player.stamPool += 5;		
+						player.stamPool += 1;	
+							
 						if(END == 3)
 						{
 							player.max_run = 1.7;
@@ -173,15 +174,13 @@ if(paused)
 						}
 						if(END == 6)
 						{
-							player.max_run = 2.1;
 							player.stamDown--;
 							player.dashStamDown -= 2;
 							player.blockStamDown--;
 						}
-						if(END == 10){
-							player.max_run = 2.7;
-							player.stamRegen += .02;
-							}
+						if(END == 10)
+							player.stamRegen += .005;
+
 					}
 				break;
 				
