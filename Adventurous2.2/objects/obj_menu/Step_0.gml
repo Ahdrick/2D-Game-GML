@@ -83,8 +83,8 @@ if(paused)
 				ringEqpd = ringEqpd  ^^ inventory[middleRow,NavX];
 				inventory[middleRow,NavX] = ringEqpd ^^ inventory[middleRow, NavX];
 				ringEqpd = ringEqpd ^^ inventory[middleRow,NavX];
-
 		}
+		
 		middleRow = topRow + 1;
 		bottomRow = topRow + 2;
 		
