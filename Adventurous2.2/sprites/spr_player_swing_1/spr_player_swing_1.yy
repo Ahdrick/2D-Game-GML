@@ -164,7 +164,7 @@
         }
     ],
     "origin": 9,
-    "playbackSpeed": 8,
+    "playbackSpeed": 10,
     "playbackSpeedType": 0,
     "sepmasks": false,
     "swatchColours": null,
