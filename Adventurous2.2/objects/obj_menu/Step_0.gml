@@ -61,9 +61,13 @@ if(paused)
 			}
 			else if(middleRow == 6 || middleRow == 7)
 			{
-				shieldEqpd = shieldEqpd  ^^ inventory[middleRow,NavX];
-				inventory[middleRow,NavX] = shieldEqpd ^^ inventory[middleRow, NavX];
-				shieldEqpd = shieldEqpd ^^ inventory[middleRow,NavX];
+				//shieldEqpd = shieldEqpd  ^^ inventory[middleRow,NavX];
+				//inventory[middleRow,NavX] = shieldEqpd ^^ inventory[middleRow, NavX];
+				//shieldEqpd = shieldEqpd ^^ inventory[middleRow,NavX];
+				
+				swap = shieldEqpd;
+				shieldEqpd = inventory[middleRow, NavX];
+				inventory[middleRow,NavX] = swap;
 			}	
 			else if(middleRow == 8 || middleRow == 9)
 			{

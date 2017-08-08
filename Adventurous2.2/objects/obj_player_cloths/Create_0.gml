@@ -1,6 +1,6 @@
 // Stand array for different s stand
 PcMax  = 1;
-PheMax = 2;
+PheMax = 3;
 fade   = 0;
 instance_create_depth(x,y,depth-1,obj_player_helm_overlay);
 for(i = 0; i < PcMax; i++)
@@ -54,7 +54,7 @@ for(i = 0; i < 1; i++)
 	dashSword[i]   = asset_get_index(("spr_sword_dash_"  + string(i)));
 }
 
-for(i = 0; i < 2; i++)
+for(i = 0; i < 4; i++)
 {
 
 	shieldShield[i] = asset_get_index(("spr_shield_shield_" + string(i)));
