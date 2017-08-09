@@ -62,13 +62,17 @@ if(paused)
 			}
 			else if(middleRow == 6 || middleRow == 7)
 			{
-				//shieldEqpd = shieldEqpd  ^^ inventory[middleRow,NavX];
-				//inventory[middleRow,NavX] = shieldEqpd ^^ inventory[middleRow, NavX];
+			 //	shieldEqpd = shieldEqpd  ^^ inventory[middleRow,NavX];
+			   // inventory[middleRow,NavX] = shieldEqpd ^^ inventory[middleRow, NavX];
 				//shieldEqpd = shieldEqpd ^^ inventory[middleRow,NavX];
-				var swap = -100;
-				swap = shieldEqpd; // C = A 
-				shieldEqpd = inventory[middleRow, NavX]; // A =B
-				inventory[middleRow,NavX] = swap; // B = C = (oldA)
+				//var swap = -100;
+				swap1 = shieldEqpd; // C = A 
+				swap2 = inventory[middleRow,NavX];
+				shieldEqpd = swap2// C = A 
+				inventory[middleRow,NavX] = swap1;
+				
+				//shieldEqpd = inventory[middleRow NavX]; // A =B
+				//inventory[middleRow,NavX] = swap; // B = C = (oldA)
 			}	
 			else if(middleRow == 8 || middleRow == 9)
 			{

@@ -311,6 +311,11 @@ draw_text(240,90, inventory[topRow,NavX])
 draw_text(140,130, "inventory[NavY,NavX]")
 draw_text(240,130, inventory[NavY,NavX])
 
+draw_text(160,170, "Swap1 ")
+draw_text(260,170, swap1)
+draw_text(140,190, "swap2")
+draw_text(240,190, swap2)
+
 draw_text(100,150, "inventory[NavX,NavY]");
 draw_text(240,150, inventory[NavX,NavY]);
 
