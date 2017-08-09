@@ -38,7 +38,7 @@ if(paused)
 		if(selectUp    && NavY == 2 && topRow == 11)
 			NavY -= 1;
 		
-		if(enter && (inventory[NavY,NavX] != -1 || inventory[middleRow,NavX] != -1))
+		if(enter && ((inventory[NavY,NavX] != -1) || (inventory[middleRow,NavX] != -1)))
 		{
 			var swap = -1;
 			if(topRow == 0 || middleRow == 1)
@@ -55,19 +55,20 @@ if(paused)
 			}
 			else if(middleRow == 4 || middleRow == 5)
 			{
+			    mydopevariable= weaponEqpd;
 				swap = weaponEqpd;
 				weaponEqpd = inventory[middleRow, NavX];
-				inventory[middleRow,NavX] = swap;
+				inventory[middleRow,NavX] = mydopevariable;
 			}
 			else if(middleRow == 6 || middleRow == 7)
 			{
 				//shieldEqpd = shieldEqpd  ^^ inventory[middleRow,NavX];
 				//inventory[middleRow,NavX] = shieldEqpd ^^ inventory[middleRow, NavX];
 				//shieldEqpd = shieldEqpd ^^ inventory[middleRow,NavX];
-				
-				swap = shieldEqpd;
-				shieldEqpd = inventory[middleRow, NavX];
-				inventory[middleRow,NavX] = swap;
+				var swap = -100;
+				swap = shieldEqpd; // C = A 
+				shieldEqpd = inventory[middleRow, NavX]; // A =B
+				inventory[middleRow,NavX] = swap; // B = C = (oldA)
 			}	
 			else if(middleRow == 8 || middleRow == 9)
 			{

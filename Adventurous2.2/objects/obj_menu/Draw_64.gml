@@ -301,3 +301,18 @@ switch(menuI)
 	break;
 }
 */
+draw_set_color(c_white)
+draw_text(140,50, "Shield Eqpd")
+draw_text(240,50, shieldEqpd)
+
+draw_text(140,90, "inventory[topRow,NavX]")
+draw_text(240,90, inventory[topRow,NavX])
+
+draw_text(140,130, "inventory[NavY,NavX]")
+draw_text(240,130, inventory[NavY,NavX])
+
+draw_text(100,150, "inventory[NavX,NavY]");
+draw_text(240,150, inventory[NavX,NavY]);
+
+draw_text(100,230, "inventory[middleRow,NavX]");
+draw_text(240,230, inventory[middleRow,NavX]);
