@@ -54,7 +54,7 @@ for(i = 0; i < 1; i++)
 	dashSword[i]   = asset_get_index(("spr_sword_dash_"  + string(i)));
 }
 
-for(i = 0; i <= 4; i++)
+for(i = 0; i < 5; i++)
 {
 
 	shieldShield[i] = asset_get_index(("spr_shield_shield_" + string(i)));

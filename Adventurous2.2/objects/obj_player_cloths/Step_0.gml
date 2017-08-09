@@ -8,7 +8,7 @@ PcMax  = 1; // sam changed this
 Phe    = obj_menu.helmEqpd;
 PheMax = 4; // sam changed this
 Pse    = obj_menu.shieldEqpd;
-PsMax  = 4;
+PsMax  = 5;
 Pswe   = obj_menu.weaponEqpd;
 PswMax = 2;
 

@@ -301,6 +301,10 @@ switch(menuI)
 	break;
 }
 */
+
+
+
+/* Debug Stuff
 draw_set_color(c_white)
 draw_text(140,50, "Shield Eqpd")
 draw_text(240,50, shieldEqpd)
