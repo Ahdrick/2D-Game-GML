@@ -39,66 +39,60 @@ if(paused)
 			NavY -= 1;
 		
 		if(enter && ((inventory[NavY,NavX] != -1) || (inventory[middleRow,NavX] != -1)))
-		{/*
-			var swap = -1;
+		{
 			if(topRow == 0 || middleRow == 1)
 			{
-				swap = helmEqpd;
-				helmEqpd = inventory[topRow,NavX];
-				inventory[topRow,NavX] = swap;
+				swap1 = helmEqpd; // C = A 
+				swap2 = inventory[NavY,NavX];
+				helmEqpd = swap2// C = A 
+				inventory[NavY,NavX] = swap1;
 			}
 			if(middleRow == 2 || middleRow == 3)
 			{
-				swap = cloakEqpd;
-				cloakEqpd = inventory[middleRow,NavX];
-				inventory[middleRow,NavX] = swap;
+				swap1 = cloakEqpd; // C = A 
+				swap2 = inventory[middleRow,NavX];
+				cloakEqpd = swap2// C = A 
+				inventory[middleRow,NavX] = swap1;
 			}
-			else if(middleRow == 4 || middleRow == 5)
+			if(middleRow == 4 || middleRow == 5)
 			{
-			    mydopevariable= weaponEqpd;
-				swap = weaponEqpd;
-				weaponEqpd = inventory[middleRow, NavX];
-				inventory[middleRow,NavX] = mydopevariable;
+				swap1 = weaponEqpd; // C = A 
+				swap2 = inventory[middleRow,NavX];
+				weaponEqpd = swap2// C = A 
+				inventory[middleRow,NavX] = swap1;
 			}
 			
-			else
-			*/
-			 if(middleRow == 6 || middleRow == 7)
+			if(middleRow == 6 || middleRow == 7)
 			{
-			 //	shieldEqpd = shieldEqpd  ^^ inventory[middleRow,NavX];
-			   // inventory[middleRow,NavX] = shieldEqpd ^^ inventory[middleRow, NavX];
-				//shieldEqpd = shieldEqpd ^^ inventory[middleRow,NavX];
-				//var swap = -100;
 				swap1 = shieldEqpd; // C = A 
 				swap2 = inventory[middleRow,NavX];
 				shieldEqpd = swap2// C = A 
 				inventory[middleRow,NavX] = swap1;
-				
-				//shieldEqpd = inventory[middleRow NavX]; // A =B
-				//inventory[middleRow,NavX] = swap; // B = C = (oldA)
 			}
-			/*	
-			else if(middleRow == 8 || middleRow == 9)
+			
+			if(middleRow == 8 || middleRow == 9)
 			{
-				bookdEqpd = bookEqpd  ^^ inventory[middleRow,NavX];
-				inventory[middleRow,NavX] = bookEqpd ^^ inventory[middleRow, NavX];
-				bookEqpd = bookEqpd ^^ inventory[middleRow,NavX];
+				swap1 = bookEqpd; // C = A 
+				swap2 = inventory[middleRow,NavX];
+				bookEqpd = swap2// C = A 
+				inventory[middleRow,NavX] = swap1;
 			}	
-						
-			else if(middleRow == 10 || middleRow == 11)
+			if(middleRow == 10 || middleRow == 11)
 			{
-				potionEqpd = potionEqpd  ^^ inventory[middleRow,NavX];
-				inventory[middleRow,NavX] = potionEqpd ^^ inventory[middleRow, NavX];
-				potionEqpd = potionEqpd ^^ inventory[middleRow,NavX];
+				swap1 = potionEqpd; // C = A 
+				swap2 = inventory[middleRow,NavX];
+				potionEqpd = swap2// C = A 
+				inventory[middleRow,NavX] = swap1;
 			}	
-				
-			else if(middleRow == 12 || NavY == NavMaxY)
-				ringEqpd = ringEqpd  ^^ inventory[middleRow,NavX];
-				inventory[middleRow,NavX] = ringEqpd ^^ inventory[middleRow, NavX];
-				ringEqpd = ringEqpd ^^ inventory[middleRow,NavX];
-				*/
+			if(middleRow == 12 || NavY == NavMaxY)
+			{
+				swap1 = ringEqpd; // C = A 
+				swap2 = inventory[middleRow,NavX];
+				ringEqpd = swap2// C = A 
+				inventory[middleRow,NavX] = swap1;
+			}
+			
 		}
-		
 		middleRow = topRow + 1;
 		bottomRow = topRow + 2;
 		
