@@ -105,10 +105,12 @@ topRow      = 0;
 middleRow   = 1;
 bottomRow   = 2;
 
+selectedItem = spr_helm_stat;
+
 for(i = 0; i < 14; i++)
 	for(j = 0; j < 5; j++)
 		inventory[i,j] = -1;
-
+/*
 inventory[0,0] = 1;
 inventory[2,0] = 1;
 inventory[4,0] = 1;
@@ -130,7 +132,7 @@ inventory[7,1] = 4;
 inventory[9,0] = 0;
 inventory[11,0] = 0;
 inventory[13,0] = 0;
-
+*/
 spr_inventory[0] = spr_helms;
 spr_inventory[1] = spr_cloaks;
 spr_inventory[2] = spr_weapons;
@@ -139,5 +141,3 @@ spr_inventory[4] = spr_books;
 spr_inventory[5] = spr_potions;
 spr_inventory[6] = spr_rings;
 spr_inventory[7] = spr_rings;
-swap1 =0;
-swap2 =0;
