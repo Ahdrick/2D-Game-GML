@@ -386,7 +386,7 @@
             "Key": "178faf79-69a5-47d4-b104-965b2b1f5647",
             "Value": {
                 "id": "68a4a7a3-1c84-4968-9bfa-5b301206d901",
-                "resourcePath": "sprites\\spr_sword_stat\\spr_sword_stat.yy",
+                "resourcePath": "sprites\\spr_weapon_stat\\spr_weapon_stat.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -754,7 +754,7 @@
             "Key": "2cb745f5-ff4c-4aae-8b52-922419b2ae13",
             "Value": {
                 "id": "9b5557a1-a5eb-4d9e-ac28-32578ec5e0a5",
-                "resourcePath": "sprites\\spr_book_Stat\\spr_book_Stat.yy",
+                "resourcePath": "sprites\\spr_book_stat\\spr_book_stat.yy",
                 "resourceType": "GMSprite"
             }
         },

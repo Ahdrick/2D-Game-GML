@@ -37,61 +37,77 @@ if(paused)
 			topRow--;
 		if(selectUp    && NavY == 2 && topRow == 11)
 			NavY -= 1;
-		
-		if(enter && ((inventory[NavY,NavX] != -1) || (inventory[middleRow,NavX] != -1)))
+		switch(floor(middleRow/2))
 		{
-			if(topRow == 0 || middleRow == 1)
-			{
-				swap1 = helmEqpd; // C = A 
-				swap2 = inventory[NavY,NavX];
-				helmEqpd = swap2// C = A 
-				inventory[NavY,NavX] = swap1;
-			}
-			if(middleRow == 2 || middleRow == 3)
-			{
-				swap1 = cloakEqpd; // C = A 
-				swap2 = inventory[middleRow,NavX];
-				cloakEqpd = swap2// C = A 
-				inventory[middleRow,NavX] = swap1;
-			}
-			if(middleRow == 4 || middleRow == 5)
-			{
-				swap1 = weaponEqpd; // C = A 
-				swap2 = inventory[middleRow,NavX];
-				weaponEqpd = swap2// C = A 
-				inventory[middleRow,NavX] = swap1;
-			}
+			case 0: 
+				selectedItem = spr_helm_stat;
+				if(enter && ((inventory[NavY,NavX] != -1) || (inventory[middleRow,NavX] != -1)))
+				{
+					helmEqpd = helmEqpd ^^ inventory[NavY,NavX];
+					inventory[NavY,NavX] = helmEqpd ^^ inventory[NavY,NavX];
+					helmEqpd = helmEqpd ^^ inventory[NavY,NavX];
+				}
+			break;
 			
-			if(middleRow == 6 || middleRow == 7)
-			{
-				swap1 = shieldEqpd; // C = A 
-				swap2 = inventory[middleRow,NavX];
-				shieldEqpd = swap2// C = A 
-				inventory[middleRow,NavX] = swap1;
-			}
+			case 1:
+				selectedItem = spr_cloak_stat;
+				if(enter && ((inventory[NavY,NavX] != -1) || (inventory[middleRow,NavX] != -1)))
+				{
+					cloakEqpd = cloakEqpd ^^ inventory[middleRow,NavX];
+					inventory[middleRow,NavX] = cloakEqpd ^^ inventory[middleRow,NavX];
+					cloakEqpd = cloakEqpd ^^ inventory[middleRow,NavX];
+				}
+			break;
 			
-			if(middleRow == 8 || middleRow == 9)
-			{
-				swap1 = bookEqpd; // C = A 
-				swap2 = inventory[middleRow,NavX];
-				bookEqpd = swap2// C = A 
-				inventory[middleRow,NavX] = swap1;
-			}	
-			if(middleRow == 10 || middleRow == 11)
-			{
-				swap1 = potionEqpd; // C = A 
-				swap2 = inventory[middleRow,NavX];
-				potionEqpd = swap2// C = A 
-				inventory[middleRow,NavX] = swap1;
-			}	
-			if(middleRow == 12 || NavY == NavMaxY)
-			{
-				swap1 = ringEqpd; // C = A 
-				swap2 = inventory[middleRow,NavX];
-				ringEqpd = swap2// C = A 
-				inventory[middleRow,NavX] = swap1;
-			}
+			case 2:
+				selectedItem = spr_weapon_stat; 
+				if(enter && ((inventory[NavY,NavX] != -1) || (inventory[middleRow,NavX] != -1)))
+				{
+					weaponEqpd = weaponEqpd ^^ inventory[middleRow,NavX];
+					inventory[middleRow,NavX] = weaponEqpd ^^ inventory[middleRow,NavX];
+					weaponEqpd = weaponEqpd ^^ inventory[middleRow,NavX];
+				}
+			break;
 			
+			case 3: 
+				selectedItem = spr_shield_stat; 
+				if(enter && ((inventory[NavY,NavX] != -1) || (inventory[middleRow,NavX] != -1)))
+				{
+					shieldEqpd = shieldEqpd ^^ inventory[middleRow,NavX];
+					inventory[middleRow,NavX] = shieldEqpd ^^ inventory[middleRow,NavX];
+					shieldEqpd = shieldEqpd ^^ inventory[middleRow,NavX];
+				}
+			break;
+			
+			case 4: 
+				selectedItem = spr_book_stat;   
+				if(enter && ((inventory[NavY,NavX] != -1) || (inventory[middleRow,NavX] != -1)))
+				{
+					bookEqpd = bookEqpd ^^ inventory[middleRow,NavX];
+					inventory[middleRow,NavX] = bookEqpd ^^ inventory[middleRow,NavX];
+					bookEqpd = bookEqpd ^^ inventory[middleRow,NavX]; 
+				}
+			break;
+			
+			case 5: 
+				selectedItem = spr_potion_stat; 
+				if(enter && ((inventory[NavY,NavX] != -1) || (inventory[middleRow,NavX] != -1)))
+				{
+					potionEqpd = potionEqpd ^^ inventory[middleRow,NavX];
+					inventory[middleRow,NavX] = potionEqpd ^^ inventory[middleRow,NavX];
+					potionEqpd = potionEqpd ^^ inventory[middleRow,NavX]; 
+				}
+			break;
+			
+			case 6: 
+				selectedItem = spr_ring_stat;
+				if(enter && ((inventory[NavY,NavX] != -1) || (inventory[middleRow,NavX] != -1)))
+				{
+					ringEqpd = ringEqpd ^^ inventory[middleRow,NavX];
+					inventory[middleRow,NavX] = ringEqpd ^^ inventory[middleRow,NavX];
+					ringEqpd = ringEqpd ^^ inventory[middleRow,NavX];   
+				}  
+			break;
 		}
 		middleRow = topRow + 1;
 		bottomRow = topRow + 2;
