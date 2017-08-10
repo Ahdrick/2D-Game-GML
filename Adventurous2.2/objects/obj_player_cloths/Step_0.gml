@@ -10,7 +10,7 @@ PheMax = 4; // sam changed this
 Pse    = obj_menu.shieldEqpd;
 PsMax  = 5;
 Pswe   = obj_menu.weaponEqpd;
-PswMax = 2;
+PswMax = 5;
 
 PxS  = obj_player.image_xscale; // PxS = players x scale
 PiS  = obj_player.image_speed; // PiS = player image speed

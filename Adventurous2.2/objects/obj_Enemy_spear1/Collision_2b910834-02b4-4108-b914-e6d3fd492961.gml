@@ -1,5 +1,5 @@
 /// @description Insert description here
-// You can write your code in this editor
+/* You can write your code in this editor
 
 if ((vsp[0] != 0)||	(vsp[1] != 0)){
 	if (x> other.x)

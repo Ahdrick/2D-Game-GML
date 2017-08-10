@@ -13,4 +13,8 @@ else  if (distance_to_object(obj_solid_45) < 10)
 else
 	grounded=false;
 	
-	
+if (grounded == true){
+	image_alpha -= .01;
+		if (image_alpha < .2)
+			instance_destroy();
+}

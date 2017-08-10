@@ -37,7 +37,7 @@ for(i = 0; i < PheMax; i++)
 	deathHelm[i]  = asset_get_index(("spr_helm_death_"  + string(i)));
 }
 
-for(i = 0; i < 1; i++)
+for(i = 0; i < 4; i++)
 {
 	standSword[i]  = asset_get_index(("spr_sword_stand_"  + string(i)));
 	runSword[i]    = asset_get_index(("spr_sword_run_"    + string(i)));
