@@ -43,9 +43,9 @@ if(paused)
 				selectedItem = spr_helm_stat;
 				if(enter && ((inventory[NavY,NavX] != -1) || (inventory[middleRow,NavX] != -1)))
 				{
-					helmEqpd = helmEqpd ^^ inventory[NavY,NavX];
-					inventory[NavY,NavX] = helmEqpd ^^ inventory[NavY,NavX];
-					helmEqpd = helmEqpd ^^ inventory[NavY,NavX];
+					swap = helmEqpd;
+					helmEqpd = inventory[NavY,NavX];
+					inventory[NavY,NavX] = swap;
 				}
 			break;
 			
@@ -53,9 +53,9 @@ if(paused)
 				selectedItem = spr_cloak_stat;
 				if(enter && ((inventory[NavY,NavX] != -1) || (inventory[middleRow,NavX] != -1)))
 				{
-					cloakEqpd = cloakEqpd ^^ inventory[middleRow,NavX];
-					inventory[middleRow,NavX] = cloakEqpd ^^ inventory[middleRow,NavX];
-					cloakEqpd = cloakEqpd ^^ inventory[middleRow,NavX];
+					swap = cloakEqpd;
+					cloakEqpd = inventory[middleRow,NavX];
+					inventory[middleRow,NavX] = swap;
 				}
 			break;
 			
@@ -63,9 +63,9 @@ if(paused)
 				selectedItem = spr_weapon_stat; 
 				if(enter && ((inventory[NavY,NavX] != -1) || (inventory[middleRow,NavX] != -1)))
 				{
-					weaponEqpd = weaponEqpd ^^ inventory[middleRow,NavX];
-					inventory[middleRow,NavX] = weaponEqpd ^^ inventory[middleRow,NavX];
-					weaponEqpd = weaponEqpd ^^ inventory[middleRow,NavX];
+					swap = weaponEqpd;
+					weaponEqpd = inventory[middleRow,NavX];
+					inventory[middleRow,NavX] = swap;
 				}
 			break;
 			
@@ -73,9 +73,9 @@ if(paused)
 				selectedItem = spr_shield_stat; 
 				if(enter && ((inventory[NavY,NavX] != -1) || (inventory[middleRow,NavX] != -1)))
 				{
-					shieldEqpd = shieldEqpd ^^ inventory[middleRow,NavX];
-					inventory[middleRow,NavX] = shieldEqpd ^^ inventory[middleRow,NavX];
-					shieldEqpd = shieldEqpd ^^ inventory[middleRow,NavX];
+					swap = shieldEqpd;
+					shieldEqpd = inventory[middleRow,NavX];
+					inventory[middleRow,NavX] = swap;
 				}
 			break;
 			
@@ -83,9 +83,9 @@ if(paused)
 				selectedItem = spr_book_stat;   
 				if(enter && ((inventory[NavY,NavX] != -1) || (inventory[middleRow,NavX] != -1)))
 				{
-					bookEqpd = bookEqpd ^^ inventory[middleRow,NavX];
-					inventory[middleRow,NavX] = bookEqpd ^^ inventory[middleRow,NavX];
-					bookEqpd = bookEqpd ^^ inventory[middleRow,NavX]; 
+					swap = bookEqpd;
+					bookEqpd = inventory[middleRow,NavX];
+					inventory[middleRow,NavX] = swap;
 				}
 			break;
 			
@@ -93,9 +93,9 @@ if(paused)
 				selectedItem = spr_potion_stat; 
 				if(enter && ((inventory[NavY,NavX] != -1) || (inventory[middleRow,NavX] != -1)))
 				{
-					potionEqpd = potionEqpd ^^ inventory[middleRow,NavX];
-					inventory[middleRow,NavX] = potionEqpd ^^ inventory[middleRow,NavX];
-					potionEqpd = potionEqpd ^^ inventory[middleRow,NavX]; 
+					swap = potionEqpd;
+					potionEqpd = inventory[middleRow,NavX];
+					inventory[middleRow,NavX] = swap;
 				}
 			break;
 			
@@ -103,9 +103,9 @@ if(paused)
 				selectedItem = spr_ring_stat;
 				if(enter && ((inventory[NavY,NavX] != -1) || (inventory[middleRow,NavX] != -1)))
 				{
-					ringEqpd = ringEqpd ^^ inventory[middleRow,NavX];
-					inventory[middleRow,NavX] = ringEqpd ^^ inventory[middleRow,NavX];
-					ringEqpd = ringEqpd ^^ inventory[middleRow,NavX];   
+					swap = ringEqpd;
+					ringEqpd = inventory[middleRow,NavX];
+					inventory[middleRow,NavX] = swap;
 				}  
 			break;
 		}

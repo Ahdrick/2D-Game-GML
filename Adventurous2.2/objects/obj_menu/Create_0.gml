@@ -105,6 +105,8 @@ topRow      = 0;
 middleRow   = 1;
 bottomRow   = 2;
 
+swap = -1;
+
 selectedItem = spr_helm_stat;
 
 for(i = 0; i < 14; i++)
