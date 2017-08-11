@@ -110,7 +110,7 @@ selectedItem = spr_helm_stat;
 for(i = 0; i < 14; i++)
 	for(j = 0; j < 5; j++)
 		inventory[i,j] = -1;
-/*
+
 inventory[0,0] = 1;
 inventory[2,0] = 1;
 inventory[4,0] = 1;
@@ -132,7 +132,7 @@ inventory[7,1] = 4;
 inventory[9,0] = 0;
 inventory[11,0] = 0;
 inventory[13,0] = 0;
-*/
+
 spr_inventory[0] = spr_helms;
 spr_inventory[1] = spr_cloaks;
 spr_inventory[2] = spr_weapons;

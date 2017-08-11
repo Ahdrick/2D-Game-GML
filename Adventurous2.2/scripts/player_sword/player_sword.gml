@@ -32,7 +32,7 @@ if(Pswe < PswMax)
 		break;
 	
 		case spr_player_jump:
-			PSWsI = jumpSword[Pswe];
+			PSWsI = jumpAttackSword[Pswe];
 		break;
 
 		case spr_player_flinch:

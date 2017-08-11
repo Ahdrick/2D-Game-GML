@@ -1319,6 +1319,14 @@
             }
         },
         {
+            "Key": "4a01bc50-bdfc-4dce-9318-8fda65430ae0",
+            "Value": {
+                "id": "c6e45874-9e1b-4e77-9e37-a9e61e07c355",
+                "resourcePath": "views\\4a01bc50-bdfc-4dce-9318-8fda65430ae0.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "4a0a2a2c-2280-4127-a75d-365af5dc1b2b",
             "Value": {
                 "id": "95175ddc-c580-41d0-afe7-0490f6673b39",
@@ -1411,6 +1419,14 @@
             "Value": {
                 "id": "32bb580e-53ff-46f4-8048-03ce4648fb9e",
                 "resourcePath": "sprites\\spr_shield_break_4\\spr_shield_break_4.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "4dd73f56-951c-4e08-8250-1699033f639c",
+            "Value": {
+                "id": "5b830856-fd7d-42a0-97f9-76c6dd24c202",
+                "resourcePath": "sprites\\spr_rotknight_archer_stand\\spr_rotknight_archer_stand.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -1839,6 +1855,14 @@
             }
         },
         {
+            "Key": "65444bcd-3a70-4b7c-ab3f-3d38bed62be5",
+            "Value": {
+                "id": "c5d0d4fa-5b67-41b2-822e-a6ece44ba998",
+                "resourcePath": "sprites\\spr_rotknight_archer_death\\spr_rotknight_archer_death.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "65d92e7a-224a-449f-b066-c6c994492acd",
             "Value": {
                 "id": "31261c71-34ce-47b8-9994-e5837ebc1165",
@@ -2252,6 +2276,14 @@
                 "id": "c61c28fc-938c-42b9-b902-37c80f64ef29",
                 "resourcePath": "scripts\\animation_hit_frame\\animation_hit_frame.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "810040d2-aa4c-4f09-b5f7-cfb4db65f3da",
+            "Value": {
+                "id": "91b5c35d-3678-4c21-8169-ac7e99ab7530",
+                "resourcePath": "sprites\\spr_rotknight_archer_angle2\\spr_rotknight_archer_angle2.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -2879,6 +2911,14 @@
             }
         },
         {
+            "Key": "a266aa6c-bb63-419b-b8b7-4616e7f53aa6",
+            "Value": {
+                "id": "d9bdaae3-f32e-4f8d-83f0-1af25062bff2",
+                "resourcePath": "sprites\\spr_rotknight_archer_walk\\spr_rotknight_archer_walk.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "a297213d-eead-47f4-9ea7-4861a94d6e2b",
             "Value": {
                 "id": "c572a9c0-7d4e-4480-87bb-b7ec919838e5",
@@ -3119,6 +3159,14 @@
             }
         },
         {
+            "Key": "b1cff116-3683-4b93-af42-c738598a7d45",
+            "Value": {
+                "id": "5b38953b-954f-40b3-87c3-9e4db6865f85",
+                "resourcePath": "sprites\\spr_rotknight_archer_idle\\spr_rotknight_archer_idle.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "b1e5ad10-8eae-43ad-8206-90779320c940",
             "Value": {
                 "id": "a41e228d-5e55-462e-bb84-7f63eb5a6cf6",
@@ -3243,6 +3291,22 @@
             "Value": {
                 "id": "6f9d82f4-dcea-42e6-9c4b-8bddbe794816",
                 "resourcePath": "sprites\\spr_enemy_health1\\spr_enemy_health1.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "b9d92680-5cd2-4804-8dca-f76db886dcd5",
+            "Value": {
+                "id": "1f9567f1-08b7-402e-8886-369d273f0df1",
+                "resourcePath": "sprites\\spr_rotknight_archer_angle1\\spr_rotknight_archer_angle1.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "ba16bfbc-85ac-4476-a5a4-ea158ef9dd30",
+            "Value": {
+                "id": "29c0e12c-6be7-4cb7-a84c-1497d8ab50e2",
+                "resourcePath": "sprites\\spr_enmy_arrow\\spr_enmy_arrow.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -3412,6 +3476,14 @@
                 "id": "a624f14e-3a3f-40d8-928f-b545556f4591",
                 "resourcePath": "sprites\\spr_player_run\\spr_player_run.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "c461e50d-844f-4438-934f-59cd51ce5872",
+            "Value": {
+                "id": "bbc0da0a-0d33-41f9-8d09-c7ad7dbf2b71",
+                "resourcePath": "objects\\Enmy_rotarcher\\Enmy_rotarcher.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -4299,6 +4371,14 @@
             "Value": {
                 "id": "b5cfdb84-c53c-4118-958e-af363f568456",
                 "resourcePath": "sprites\\spr_menu_settings_panel\\spr_menu_settings_panel.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "f792bd64-64b6-494b-8d86-b1a1f4e4add2",
+            "Value": {
+                "id": "890248ed-ff4f-41c8-8597-4b1503d12a89",
+                "resourcePath": "sprites\\spr_rotknight_archer_attack1\\spr_rotknight_archer_attack1.yy",
                 "resourceType": "GMSprite"
             }
         },

@@ -4,7 +4,7 @@ if (EnemyState != -1){
 	currentHealth -= round(obj_player.strpow);
 	// Added combo
 	obj_GUI.Combo_stat		  +=1;
-	obj_GUI.Damage_Given_stat += obj_player.strpow;;
+	obj_GUI.Damage_Given_stat += obj_player.strpow;
 		//alarm[1] = 135;
 	if (currentHealth <= 0 ){
 		EnemyState= -1;

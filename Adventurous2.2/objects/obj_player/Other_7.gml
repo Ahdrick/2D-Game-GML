@@ -41,6 +41,10 @@ else
 	{
 		state = move_state;
 	}
+	if(state == jump_attack_state)
+	{
+		state = move_state;
+	}
 	if(state == dash_state)
 	{
 		state = move_state;

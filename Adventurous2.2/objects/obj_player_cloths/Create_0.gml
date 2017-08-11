@@ -52,6 +52,7 @@ for(i = 0; i < 4; i++)
 	flinchSword[i] = asset_get_index(("spr_sword_flinch_" + string(i)));
 	deathSword[i]  = asset_get_index(("spr_sword_death_"  + string(i)));
 	dashSword[i]   = asset_get_index(("spr_sword_dash_"  + string(i)));
+	jumpAttackSword[i]   = asset_get_index(("spr_sword_jump_attack_"  + string(i)));
 }
 
 for(i = 0; i < 5; i++)

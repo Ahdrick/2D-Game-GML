@@ -1,3 +1,10 @@
+if(!instance_exists(obj_attack_mask))
+	instance_create_depth(x,y,depth,obj_attack_mask);
+	
+if(state == jump_attack_state)
+	hspd = hspd/16;
+
+/*
 image_speed =.2; 
 image_index = spr_player_jump_attack;
 

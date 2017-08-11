@@ -45,8 +45,12 @@ if keyboard_check_pressed(vk_tab)
 	if (msg == "Health")
 		obj_player.currentHealth = 50;
 		
-    if (msg == "Godmode")
+    if (msg == "Godmode"){
 		obj_player.currentHealth = 100;
+		obj_player.strpow        = 100;
+		obj_player.curStam       = 100;
+		instance_create_depth(obj_player.x+200,obj_player.y-200,300, obj_double_sword)
+		}
 		
 	if (msg == "Death")
 		obj_player.currentHealth = 0;
@@ -65,6 +69,9 @@ if keyboard_check_pressed(vk_tab)
 		
 	if (msg == "Rotshield")
 		instance_create_depth(obj_player.x+200,obj_player.y-200,300, Enmy_rotshield)	
+		
+	if (msg == "Rotarcher")
+		instance_create_depth(obj_player.x+200,obj_player.y-200,300, Enmy_rotarcher)	
 		
 	if (msg == "Hound")
 		instance_create_depth(obj_player.x+200,obj_player.y-200,300, Enmy_hound1)
@@ -97,7 +104,14 @@ if keyboard_check_pressed(vk_tab)
 		if (instance_exists(obj_enemy_parent))
 		{
 			with (obj_enemy_parent)
-				instance_destroy()
+				instance_destroy();
+				
+		}
+		if (instance_exists(obj_New_Enemy_Parent))
+		{
+			with (obj_New_Enemy_Parent)
+				instance_destroy();
+				
 		}
 	}
 		
