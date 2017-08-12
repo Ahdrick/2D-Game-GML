@@ -40,7 +40,7 @@ if(!obj_menu.paused && (currentHealth > 0))
 }
 
 // if dead apply physics but no player control
-if(currentHealth < 0){
+if(currentHealth <= 0){
 	enable_movement_platform_actions(.6,4,5,0,0,0,0);
 	move_movement_entity();
 }
