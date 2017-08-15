@@ -21,6 +21,9 @@ if (currentHealth > 0) {
 		
 	if (sprite_index = spr_attack2)
 		alarm[1] = 40;
+		
+	if (sprite_index = spr_angle1)
+		alarm[2] = 40;
 	}
 else 
 		sprite_index = spr_death;

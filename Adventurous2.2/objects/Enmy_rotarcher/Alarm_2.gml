@@ -1,0 +1,1 @@
+scr_shoot_arrow(1); 

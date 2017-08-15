@@ -1,8 +1,8 @@
 draw_sprite_ext(sprite_index,image_index,x,y,image_xscale,image_yscale,image_angle,c_white,image_alpha)
 
 // Maybe this is wrong...but fade out through animation?
-if (currentHealth > -1) {
-	scr_Enemy_Collision_WAttack();
+if (currentHealth > 0){
+	scr_enemy_gui(); 
 		if (x > obj_player.x){
 				image_xscale = 1;
 			}

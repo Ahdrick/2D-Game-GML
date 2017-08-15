@@ -16,12 +16,12 @@ image_speed       =	 1.9;
 
 
 // put this in creation event
-sprCombo[0]	  = spr_attack2;
-sprCombo[1]	  = spr_attack2;
+sprCombo[0]	  = spr_angle1;
+sprCombo[1]	  = spr_angle1;
 sprCombo[2]	  = spr_idle2;
 sprCombo[3]	  = spr_idle2;
 sprCombo[4]	  = spr_idle2;
-sprCombo[5]	  = spr_attack2;
+sprCombo[5]	  = spr_attack1;
 
 
 // second near combo 

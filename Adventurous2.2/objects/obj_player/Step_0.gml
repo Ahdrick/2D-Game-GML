@@ -21,7 +21,13 @@ if (flinch == true && state != dead_state)
 		alarm[5] = 3;
 }
 
-//Shake_State = 3; 
+// if dead apply physics but no player control
+if(currentHealth <= 0){
+	enable_movement_platform_actions(.6,4,5,0,0,0,0);
+	move_movement_entity();
+}
+
+//if alive and not paused
 if(!obj_menu.paused && (currentHealth > 0))
 {
 	if(state != dash_state)
@@ -37,22 +43,17 @@ if(!obj_menu.paused && (currentHealth > 0))
 		if(alarm[4] == -1)
 			alarm[4] = 5;
 	
-}
+		}
 
-// if dead apply physics but no player control
-if(currentHealth <= 0){
-	enable_movement_platform_actions(.6,4,5,0,0,0,0);
-	move_movement_entity();
-}
 // Attack
 if(Attack && curStam > (stamDown - 1))
 {
 	if (flinch == false)
 	{
 		//if ((vsp[0] = 0) || (vsp[1] = 0))
-	//		state = attack_state;
+		state = attack_state;
 	//	else 
-			state = jump_attack_state;
+			//state = jump_attack_state;
 		script_execute(state);
 	}
 	if(comboCount == 0 && sprite_index != sprCombo[combo])

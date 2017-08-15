@@ -1,1 +1,1 @@
-scr_shoot_arrow(); 
+scr_shoot_arrow(0); 

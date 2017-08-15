@@ -1562,7 +1562,7 @@
             "Key": "544de062-91ac-4ad0-bd77-2a120fbd9142",
             "Value": {
                 "id": "8f0a7525-cd3f-4457-a889-4b9249a1c7e1",
-                "resourcePath": "sprites\\spr_sword_swing1_0\\spr_sword_swing1_0.yy",
+                "resourcePath": "sprites\\spr_sword_swing2_0\\spr_sword_swing2_0.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -1810,7 +1810,7 @@
             "Key": "629c54fa-4f90-440c-a334-307157af50a1",
             "Value": {
                 "id": "049e0dc3-42b7-4390-a9e5-c6344a405c96",
-                "resourcePath": "sprites\\spr_sword_swing2_0\\spr_sword_swing2_0.yy",
+                "resourcePath": "sprites\\spr_sword_swing3_0\\spr_sword_swing3_0.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -3634,7 +3634,7 @@
             "Key": "cb78c1f8-8954-42ce-a4e2-c6822c171d51",
             "Value": {
                 "id": "1d661ed7-5253-4c85-a6b1-b53db0532bdc",
-                "resourcePath": "sprites\\spr_sword_swing3_0\\spr_sword_swing3_0.yy",
+                "resourcePath": "sprites\\spr_sword_swing1_0\\spr_sword_swing1_0.yy",
                 "resourceType": "GMSprite"
             }
         },
