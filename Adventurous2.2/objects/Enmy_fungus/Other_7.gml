@@ -17,8 +17,8 @@ if (currentHealth > 0) {
 	if (sprite_index = spr_attack1)
 		alarm[0] = 1;
 		
-	//if (sprite_index = spr_stand)
-	//	alarm[1] = 1;
+	if (sprite_index = spr_stand)
+		alarm[1] = 1;
 	}
 else 
 		sprite_index = spr_death;

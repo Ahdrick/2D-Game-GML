@@ -5,6 +5,7 @@ if(!instance_exists(obj_attack_mask))
 if(state == attack_state)
 	hspd = hspd/16;
 
+draw_state = "Attack"
 /*
 if(Attack && canCombo && curStam > (stamDown - 1))
 {

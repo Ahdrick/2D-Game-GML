@@ -49,7 +49,7 @@ luckmulti     = 1;
 
 statMulti     = .03;
 max_run       = 1.5;
-spriteSpeed   = 1.8;
+spriteSpeed   = 1.0;
 
 // initialize movement
 gamepad_set_axis_deadzone(0,0.3);

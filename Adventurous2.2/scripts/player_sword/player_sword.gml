@@ -16,15 +16,24 @@ if(Pswe < PswMax)
 		break;
 
 		case spr_player_swing_1:
-			PSWsI = swing1Sword[Pswe];
+			if ((obj_player.vsp[0] == 0))
+				PSWsI = swing1Sword[Pswe];
+			else 
+				PSWsI = jumpAttackSword[Pswe];
 		break;
 	
 		case spr_player_swing_2:
-			PSWsI = swing2Sword[Pswe];
+			if ((obj_player.vsp[0] == 0))
+				PSWsI = swing2Sword[Pswe];
+			else 
+				PSWsI = jumpAttackSword[Pswe];
 		break;
 	
 		case spr_player_swing_3:
-			PSWsI = swing3Sword[Pswe];
+			if ((obj_player.vsp[0] == 0))
+				PSWsI = swing3Sword[Pswe];
+			else 
+				PSWsI = jumpAttackSword[Pswe];
 		break;
 	
 		case spr_player_potion:
@@ -32,7 +41,11 @@ if(Pswe < PswMax)
 		break;
 	
 		case spr_player_jump:
-			PSWsI = jumpAttackSword[Pswe];
+			PSWsI = jumpSword[Pswe];
+		break;
+		
+		case spr_player_jump_attack:
+			PSWsI = jumpSword[Pswe];
 		break;
 
 		case spr_player_flinch:

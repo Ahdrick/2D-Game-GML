@@ -34,6 +34,10 @@ if(Phe < PheMax)
 		case spr_player_jump:
 			PHsI = jumpHelm[Phe];
 			break;
+			
+		case spr_player_jump_attack:
+			PHsI = jumpHelm[Phe];
+			break;
 
 		case spr_player_flinch:
 			PHsI = flinchHelm[Phe];

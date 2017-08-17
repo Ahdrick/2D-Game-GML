@@ -34,6 +34,10 @@ if(Pce < PcMax)
 		case spr_player_jump:
 			PCsI = jumpCloak[Pce];
 		break;
+		
+		case spr_player_jump_attack:
+			PCsI = jumpCloak[Pce];
+		break;
 	
 		case spr_player_flinch:
 			PCsI = flinchCloak[Pce];
@@ -57,6 +61,10 @@ if(Pce < PcMax)
 	
 		case spr_player_death:
 			PCsI = deathCloak[Pce];
+		break;
+		
+		default: 
+			PCsI = dashCloak[Pce];
 		break;
 	}
 }

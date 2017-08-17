@@ -31,7 +31,7 @@ if(currentHealth <= 0){
 if(!obj_menu.paused && (currentHealth > 0))
 {
 	if(state != dash_state)
-		image_speed = 1.4;
+		image_speed = 1.0;
 	//_platform_actions(acceleration, run_speed, jump_height, right_input, left_input,
 	if (flinch == false ){
 		if(state != dash_state)
@@ -50,10 +50,10 @@ if(Attack && curStam > (stamDown - 1))
 {
 	if (flinch == false)
 	{
-		//if ((vsp[0] = 0) || (vsp[1] = 0))
-		state = attack_state;
-	//	else 
-			//state = jump_attack_state;
+		//if ((vsp[0] == 0))
+			state = attack_state;
+		//else 
+		//	state = jump_attack_state;
 		script_execute(state);
 	}
 	if(comboCount == 0 && sprite_index != sprCombo[combo])
@@ -169,8 +169,11 @@ if (!place_meeting(x, y+1, collision_object))  {
 		if (flinch == false)
 		{
 		if (!place_meeting(x, y+15, collision_object)) {
-			state = jump_state;
-			script_execute(state);
+			//if (state != jump_attack_state){
+				state = jump_state; //I changed this
+				//state = jump_attack_state
+				script_execute(state);
+				//}
 			}
 		}
 		else 
