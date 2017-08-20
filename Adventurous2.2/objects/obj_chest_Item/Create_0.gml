@@ -14,7 +14,7 @@ yy = random (4)
 add_movement_horizontal_vertical_maxspeed(xx*mysign, -xx, yy*mysign, -yy);
 bounce = 1;
 up = choose(false, true);
-itemType = 0//irandom_range(0,6);
+itemType = irandom_range(0,6);
 itemNumber = irandom_range(0,1);
 menu = obj_menu;
 stop = false;
