@@ -20,3 +20,7 @@ else {
 	if (image_index > image_number - 1) 
 		instance_destroy();
 	}
+
+draw_text(x,y-50, image_number)
+draw_text(x,y-60, image_index)
+draw_text(x-100,y-60, "image_index")

@@ -7,3 +7,11 @@ else {
 	else 
 		scr_Enemy_stand();
 }
+
+if (sprite_index == spr_attack2){
+	if ((round (image_index) == 5) ){
+		add_movement_horizontal_vertical((1.3*-image_xscale),0);
+
+		}
+  	
+}

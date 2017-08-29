@@ -2983,6 +2983,14 @@
             }
         },
         {
+            "Key": "a83368b7-e887-40de-9d87-df45f87cbdee",
+            "Value": {
+                "id": "9c347e6f-295c-44f9-8a72-f81f25977a89",
+                "resourcePath": "sprites\\spr_fungusknight_attack3\\spr_fungusknight_attack3.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "a9188620-a624-4a5a-83ae-a1b53faf038b",
             "Value": {
                 "id": "598eb14f-6b92-4db9-998e-d5d12cb91cdc",
@@ -3099,6 +3107,14 @@
             "Value": {
                 "id": "cf5d04d6-aa28-4d2f-9574-830ef37f1650",
                 "resourcePath": "sprites\\spr_sword_swing2_2\\spr_sword_swing2_2.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "af485c8d-766d-4e5b-aad4-98bf7fb08ee2",
+            "Value": {
+                "id": "2890a662-7936-4358-904f-263fd0425925",
+                "resourcePath": "sprites\\spr_fungusknight_attack11\\spr_fungusknight_attack11.yy",
                 "resourceType": "GMSprite"
             }
         },

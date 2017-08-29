@@ -10,7 +10,9 @@
         "4f575be2-721c-4126-a122-3c3340ba6a8e",
         "322c379f-712a-4257-a6d0-291a8d1a529d",
         "ebe45cfb-24e0-4f5c-af1a-8eb655fc260c",
-        "c2b5353a-b7f9-438c-8191-bbf6b8dff621"
+        "c2b5353a-b7f9-438c-8191-bbf6b8dff621",
+        "af485c8d-766d-4e5b-aad4-98bf7fb08ee2",
+        "a83368b7-e887-40de-9d87-df45f87cbdee"
     ],
     "filterType": "GMSprite",
     "folderName": "FungusKnight",
