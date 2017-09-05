@@ -99,7 +99,7 @@ pink1       = make_color_rgb(207,67,90);
 pink2       = make_color_rgb(246,39,99);
 pink3       = make_color_rgb(214,26,104);
 tan0        = make_color_rgb(139,113,113); 
-col         = 0;
+col         = tan0;
 
 topRow      = 0; 
 middleRow   = 1;

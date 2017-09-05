@@ -3999,6 +3999,14 @@
             }
         },
         {
+            "Key": "dab6671c-6af5-4997-a2c6-129632fec85d",
+            "Value": {
+                "id": "a9aa2524-4ad9-4a51-be99-15b2bd1ce39b",
+                "resourcePath": "sprites\\spr_trader_shop\\spr_trader_shop.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "db2f0b9d-ca45-44a8-b470-9f4f58ab1f1f",
             "Value": {
                 "id": "bd01fe39-a6cc-4af6-8607-80cea4083976",

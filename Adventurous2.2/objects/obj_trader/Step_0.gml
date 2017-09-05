@@ -1,11 +1,20 @@
 /// My Daily routine
 get_input();
-if distance_to_object(obj_player) < 50
+if distance_to_object(obj_player) < 15
+{
 	openMenu = true;
-else openMenu = false;
-
-if openMenu
 	if selectDown && selection < 3
-		selection++
+		selection++;
 	else if selectUp && selection > 0
-		selection--
+		selection--;
+	if enter && selection = 0
+		shoppingTime = true;
+	if shoppingTime && Back
+		shoppingTime = false;
+}
+else
+{
+	openMenu = false;
+	selection = 0;
+	shoppingTime = false;
+}
