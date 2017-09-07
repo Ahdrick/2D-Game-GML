@@ -1,8 +1,6 @@
-//helper
-/*
 y =y-1;
-
 if (x > other.x)
-	x+=1;
+	x+=5;
 if (x < other.x)
-	x-=1;
+	x-=5;
+
