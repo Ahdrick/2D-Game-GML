@@ -1,7 +1,7 @@
 // initialize variables
-instance_create_depth(x,y,201,obj_camera_controller)
-instance_create_depth(x,y,401,obj_mask)
+instance_create_depth(x,y,201,obj_camera_controller);
 initialize_movement_entity(.2,.9,0,0,obj_solid);
+
 // state variable set to movement script
 state			 = move_state;
 collision_object = obj_solid;
@@ -63,14 +63,13 @@ canDrink      = true;
 betterPotions = false;
 
 // initialize combos / attacking
-combo		  = 0;
-canCombo	  = true;
-comboCount    = 0;
-combod        = false;
-maxCombo	  = 3;
-Attack		  = 0;
-canAttack	  = true;
-blocking      = false;
-canBlock      = true;
-blockState    = 0;
+weaponType = -1;
+daggerStam = 6;
+swordStam = 8;
+greatStam = 12;
+spearStam = 10;
 
+playerDaggerCombo[0] = 0;
+playerSwordCombo[0] = 0;
+playerGreatCombo[0] = 0;
+playerSpearCombo[0] = 0;

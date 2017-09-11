@@ -46,7 +46,20 @@ if(!obj_menu.paused && (currentHealth > 0))
 		}
 
 // Attack
-
+if Attack
+{
+	if weaponType == 0 && curStam >= daggerStam // daggers
+	{
+		
+		curStam -= daggerStam;
+	}
+	else if weaponType == 1 && curStam >= swordStam // swords
+		curStam -= swordStam;
+	else if weaponType == 2 && curStam >= greatStam // great sword
+		curStam -= greatStam;
+	else if weaponType == 3 && curStam >= spearStam // spears
+		curStam -= spearStam;
+}
 // Potions
 if(Potion && numPotion != 0)
 {
