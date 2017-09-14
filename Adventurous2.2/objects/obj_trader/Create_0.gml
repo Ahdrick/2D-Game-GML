@@ -11,3 +11,4 @@ itemCost[2] = 300
 itemCost[3] = 400
 itemCost[4] = 500
 itemCost[5] = 600
+itemCost[6] = 700

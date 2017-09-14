@@ -65,7 +65,7 @@ NavMaxY     = 2;			   // set max nav edge based on window Y
 paused      = 0;  // is the game paused
 level       = 1;  // your level
 currency    = 0;  // your money
-musicVol    = 5;  // music volume
+musicVol    = 1;  // music volume
 SFXVol      = 5;  // sound effect volume
 
 				  // Sprite Index Variables 			  

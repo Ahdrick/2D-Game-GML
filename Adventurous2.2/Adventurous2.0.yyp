@@ -4391,6 +4391,14 @@
             }
         },
         {
+            "Key": "f20115d6-ff2d-472c-9475-e5e5a7d84848",
+            "Value": {
+                "id": "95cbac78-7180-4a12-a85c-c5cfa6b9fdd0",
+                "resourcePath": "sprites\\spr_trader_stats\\spr_trader_stats.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "f237a3f9-1fba-4c12-8ecc-97a0827b3d7c",
             "Value": {
                 "id": "a0268bad-9dd2-46b9-ad5d-a7b2c1b52d56",

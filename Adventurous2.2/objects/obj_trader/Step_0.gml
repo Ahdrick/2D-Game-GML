@@ -1,6 +1,6 @@
 /// My Daily routine
 get_input();
-if distance_to_object(obj_player) < 15
+if distance_to_object(obj_player) < 10 && !shoppingTime
 {
 	openMenu = true;
 	if selectDown && option < 3
@@ -9,12 +9,18 @@ if distance_to_object(obj_player) < 15
 		option--;
 	if enter && option = 0
 		shoppingTime = true;
-	if shoppingTime && Back
-		shoppingTime = false;
+	
+}
+else if distance_to_object(obj_player) < 10 && shoppingTime
+{
+	openMenu = false;
 	if selectRight && slotSelected < 5
 		slotSelected++;
 	else if selectLeft && slotSelected > 0
 		slotSelected--;
+		
+	if shoppingTime && Back
+		shoppingTime = false;
 }
 else
 {
