@@ -3823,6 +3823,14 @@
             }
         },
         {
+            "Key": "cfe38dc3-8e23-4206-8e97-486ec81dac59",
+            "Value": {
+                "id": "85f9cbd2-841a-4dd0-8643-a677e088a9a9",
+                "resourcePath": "sprites\\spr_trader_items\\spr_trader_items.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "d09c6d8a-490d-49d3-8e41-67b0ec556626",
             "Value": {
                 "id": "77ec0c7f-d9d9-4e46-af25-744618f64fcd",

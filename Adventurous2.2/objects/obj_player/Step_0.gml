@@ -28,7 +28,7 @@ if(currentHealth <= 0){
 }
 
 //if alive and not paused
-if(!obj_menu.paused && (currentHealth > 0))
+if(!obj_menu.paused && !obj_trader.shoppingTime && (currentHealth > 0))
 {
 	if(state != dash_state)
 		image_speed = 1.0;
