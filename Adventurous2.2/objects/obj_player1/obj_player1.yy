@@ -25,16 +25,6 @@
             "m_owner": "8017c281-129c-44a8-9212-518a410c1154"
         },
         {
-            "id": "91de7272-acd8-4f00-80dc-ddcbe3d844eb",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 3,
-            "eventtype": 2,
-            "m_owner": "8017c281-129c-44a8-9212-518a410c1154"
-        },
-        {
             "id": "946fdfdf-9aa1-4fb2-bdce-99796ecfbcfc",
             "modelName": "GMEvent",
             "mvc": "1.0",
@@ -42,56 +32,6 @@
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 7,
             "eventtype": 7,
-            "m_owner": "8017c281-129c-44a8-9212-518a410c1154"
-        },
-        {
-            "id": "cd88dd4a-818b-4dc8-92d7-f2e2beb30db8",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 2,
-            "eventtype": 2,
-            "m_owner": "8017c281-129c-44a8-9212-518a410c1154"
-        },
-        {
-            "id": "82f758d3-f4b6-4655-80af-4570f337e938",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 5,
-            "eventtype": 2,
-            "m_owner": "8017c281-129c-44a8-9212-518a410c1154"
-        },
-        {
-            "id": "8e83563c-3842-48cb-a5af-caba6727c3f7",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "2c4e667f-de37-4f20-9e85-50daa4eb1fda",
-            "enumb": 0,
-            "eventtype": 4,
-            "m_owner": "8017c281-129c-44a8-9212-518a410c1154"
-        },
-        {
-            "id": "36ff4154-c83f-461c-b8d4-d3968e34ee7c",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 6,
-            "eventtype": 2,
-            "m_owner": "8017c281-129c-44a8-9212-518a410c1154"
-        },
-        {
-            "id": "a79ea7a1-152d-481f-bf34-6cacdc336c96",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "40527bba-8638-4e02-8821-d485c7cdcc8d",
-            "enumb": 0,
-            "eventtype": 4,
             "m_owner": "8017c281-129c-44a8-9212-518a410c1154"
         },
         {
@@ -115,27 +55,7 @@
             "m_owner": "8017c281-129c-44a8-9212-518a410c1154"
         },
         {
-            "id": "83ac95a1-fe20-4bb4-bbc5-b57cd45035da",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "685f2334-b51e-41ce-92df-e7ed658c8cb2",
-            "enumb": 0,
-            "eventtype": 4,
-            "m_owner": "8017c281-129c-44a8-9212-518a410c1154"
-        },
-        {
-            "id": "f9e9c5a0-f589-4481-8ed3-39cf79f2832d",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "7c4bb5bc-084b-40cb-a01e-17208c6cb39a",
-            "enumb": 0,
-            "eventtype": 4,
-            "m_owner": "8017c281-129c-44a8-9212-518a410c1154"
-        },
-        {
-            "id": "ee342381-0725-47b3-a2f4-4362ba2a9a86",
+            "id": "2c0455d3-7217-4c77-a212-493df7a05a94",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,

@@ -1,7 +1,7 @@
 ///Player basics
 
 hspd = hsp[0]+hsp[1];
-var vspd = vsp[0]+vsp[1];
+vspd = vsp[0]+vsp[1];
 
 
 // if hero is dead dont grab input...if he is alive grab it
@@ -182,12 +182,3 @@ hsp[1] = approach(hsp[1], 0, air_res);
 vsp[1] = approach(vsp[1], 0, air_res);
 }
 
-
-////////////
-// Cursed Brings back enemies to life
-////////////
-if (Cursed == true ){
-	if (!instance_exists( obj_enemy_parent_1))
-		instance_create_depth(obj_player.x +100,obj_player.y- 100,300, obj_enemy_parent_1)
-		
-}

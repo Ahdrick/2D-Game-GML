@@ -1,9 +1,12 @@
-/// Debug code
-if	obj_menu.paused
-{
-	draw_text(x,y -100, vsp[1])
-	draw_text(x,y -110, vsp[0])
-	draw_text(x+100,y -110, "Ching")
-	draw_text(x,y-120, "heloo")
-	draw_text(x,y-150, draw_state)
-}
+///draw my cloths on me plzzz
+
+// draw helm
+draw_sprite(playerHelm[cHelm],iHelm,x,y)
+// draw cloak
+draw_sprite(playerCloak[cCloak],iCloak,x,y)
+// draw helm overlay
+draw_sprite(playerHelmO[cHelm],iHelm,x,y)
+// draw sword
+draw_sprite(playerWeap[cWeap],iWeap,x,y)
+// draw shield
+draw_sprite(playerShield[cShield],iShield,x,y)

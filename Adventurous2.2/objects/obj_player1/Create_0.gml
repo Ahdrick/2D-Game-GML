@@ -7,6 +7,7 @@ state			 = move_state;
 collision_object = obj_solid;
 fade             = 0;
 hspd             = 0;
+vspd			 = 0;
 draw_state       = "None" // String of state
 Shake_State		 = 0;     // controls camera 
 
@@ -73,3 +74,5 @@ playerDaggerCombo[0] = 0;
 playerSwordCombo[0] = 0;
 playerGreatCombo[0] = 0;
 playerSpearCombo[0] = 0;
+
+// player sprites
