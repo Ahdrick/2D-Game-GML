@@ -8,7 +8,7 @@ collision_object = obj_solid;
 fade             = 0;
 hspd             = 0;
 vspd			 = 0;
-draw_state       = "None" // String of state
+draw_state       = "None"; // String of state
 Shake_State		 = 0;     // controls camera 
 
 // initialize health
@@ -23,6 +23,7 @@ Iced          = 0;
 Fired         = 0;
 Cursed        = false;
 Dead          = false;
+
 //END
 stamCD        = false;
 stamTimer     = 50;
