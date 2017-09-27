@@ -23,15 +23,15 @@ surface_resize(application_surface,ideal_width,ideal_height);
 window_set_size(ideal_width,ideal_height);
 window_center();
 
-
-x = obj_player.x;
-y = obj_player.y;
+player = obj_player// obj_player1
+x = player.x;
+y = player.y;
 
 yoffset = 40;
 dir = 1;
 Shake_State = 0;
 
-follow = obj_player;
+follow = player;
 x2 = x+20;
 y2 = y;
 instance_create_depth(x,y,depth,obj_menu);

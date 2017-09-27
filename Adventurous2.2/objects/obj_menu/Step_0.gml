@@ -6,7 +6,7 @@ if(pause && !paused)
 	paused = 1;
 else if(pause && paused)
 	paused = 0;
-	
+
 if(paused)
 {
 	// Changes the right panel RB and LB
@@ -288,6 +288,13 @@ if(EXP > gap)
 	gap = level*100;
 	gap+= prevGap;
 }
+
+if(0 <= weaponEqpd <= 2) 
+	weaponType = 0
+else if(3 <= weaponEqpd <= 3)
+	weaponType = 1
+else if(4 <= weaponEqpd <= 4)
+	weaponType = 2
 
 //volume control
 audio_master_gain((1/20)*musicVol)

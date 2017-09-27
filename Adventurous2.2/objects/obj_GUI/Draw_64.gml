@@ -6,8 +6,8 @@ draw_text(460,200,obj_player.strpow);
 */
 
 draw_sprite(spr_gui_bar,0,20,20);
-draw_sprite_stretched(spr_health_block,0,24,22, (obj_player.currentHealth),6);	
-draw_sprite_stretched(spr_energy_block,0,24,36, (obj_player.curStam*3),6);
+draw_sprite_stretched(spr_health_block,0,24,22, (player.currentHealth),6);	
+draw_sprite_stretched(spr_energy_block,0,24,36, (player.curStam*3),6);
 draw_set_font(fnt_pixel);
 draw_set_color(gold);
 draw_text(36,44,obj_menu.currency);
@@ -26,7 +26,7 @@ draw_text(6,84,("Time "));
 draw_text(86,84,Time_stat);
 
 draw_text(6,94,("Hero Attack "));
-draw_text(86,94,obj_player.strpow);
+draw_text(86,94,player.strpow);
 
 if (instance_exists(Enmy_hound1)){
 	enemy=instance_nearest(x,y,Enmy_hound1)
@@ -53,7 +53,7 @@ if keyboard_check_pressed(vk_tab)
 		}
 		
 	if (msg == "Death")
-		obj_player.currentHealth = 0;
+		obj_player1.currentHealth = 0;
 		
 	if (msg == "Item")
 		instance_create_depth(obj_player.x+200,obj_player.y-200,300, obj_chest_Item)

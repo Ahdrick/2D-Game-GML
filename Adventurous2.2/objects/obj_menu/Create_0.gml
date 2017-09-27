@@ -78,6 +78,7 @@ shieldEqpd	= 3;  //           \/
 bookEqpd	= 0;  //           \/
 potionEqpd  = 0;  //		   \/
 keyEqpd     = 0;  //           \/
+weaponType  = 0   //           \/
 
 				  // Stat Levels
 HP			= 1;  //     \/

@@ -1,5 +1,5 @@
 gold = make_color_rgb(207,150,83);
-
+player = obj_player // obj_player1
 Combo_stat			= 0;
 Grade_stat			="F";
 Time_stat		    = 0; 

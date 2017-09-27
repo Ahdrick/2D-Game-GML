@@ -8,7 +8,6 @@
     "inheritLayers": false,
     "instanceCreationOrderIDs": [
         "c1d009a2-3271-444f-9d28-56996aa8196c",
-        "bf64dd37-d8b7-489a-8470-21353da9a63a",
         "a6ca16ac-0b92-43d3-a713-f3d078e520e8",
         "890c0880-1aea-42c6-8ec8-80445b36189b",
         "9bcd3a45-d99d-4586-bd99-f2b42f131604",
@@ -61,7 +60,8 @@
         "011ec679-988f-4af1-b41b-708a653ef152",
         "939cea56-459c-44a1-b947-6c9c7e07bf96",
         "fa97bf11-9cba-42ac-8924-aacce6eeb7dc",
-        "987a89c1-50e2-48d1-8abc-2b73befdff62"
+        "987a89c1-50e2-48d1-8abc-2b73befdff62",
+        "e4c135d7-290b-4e69-8068-6baa514dd26b"
     ],
     "IsDnD": false,
     "layers": [
@@ -130,20 +130,20 @@
             "depth": 200,
             "grid_x": 32,
             "grid_y": 32,
-            "hierarchyFrozen": true,
+            "hierarchyFrozen": false,
             "hierarchyVisible": true,
             "inheritLayerDepth": false,
             "inheritLayerSettings": false,
             "inheritSubLayers": false,
             "inheritVisibility": false,
             "instances": [
-                {"name": "inst_605A441B","id": "bf64dd37-d8b7-489a-8470-21353da9a63a","colour": { "Value": 4294967295 },"creationCodeFile": "","creationCodeType": "","ignore": false,"inheritCode": false,"inheritItemSettings": false,"IsDnD": false,"m_originalParentID": "00000000-0000-0000-0000-000000000000","m_serialiseFrozen": false,"modelName": "GMRInstance","name_with_no_file_rename": "inst_605A441B","objId": "ced1cc93-3ff2-4539-9c96-234f03585744","rotation": 0,"scaleX": 1,"scaleY": 1,"mvc": "1.0","x": 1888,"y": 928}
+                {"name": "inst_26CE73EC","id": "e4c135d7-290b-4e69-8068-6baa514dd26b","colour": { "Value": 4294967295 },"creationCodeFile": "","creationCodeType": "","ignore": false,"inheritCode": false,"inheritItemSettings": false,"IsDnD": false,"m_originalParentID": "00000000-0000-0000-0000-000000000000","m_serialiseFrozen": false,"modelName": "GMRInstance","name_with_no_file_rename": "inst_26CE73EC","objId": "ced1cc93-3ff2-4539-9c96-234f03585744","rotation": 0,"scaleX": 1,"scaleY": 1,"mvc": "1.0","x": 224,"y": 832}
             ],
             "layers": [
 
             ],
             "m_parentID": "00000000-0000-0000-0000-000000000000",
-            "m_serialiseFrozen": true,
+            "m_serialiseFrozen": false,
             "modelName": "GMRInstanceLayer",
             "mvc": "1.0",
             "userdefined_depth": false,
