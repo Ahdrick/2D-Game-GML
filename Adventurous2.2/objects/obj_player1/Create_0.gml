@@ -69,6 +69,7 @@ betterPotions = false
 canCombo = false
 comboing = false
 canAttack = true
+attacking = false
 blocking = false
 canBlock = true
 weaponType = -1

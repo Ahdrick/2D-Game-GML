@@ -8,38 +8,51 @@ vspd = vsp[0]+vsp[1]
 y = floor(y)
 
 // controls animations
-if sprIndex < anim_length[anim] - 1
+if sprIndex <= anim_length[anim] - 1
 	sprIndex += anim_speed/60
 else
 	sprIndex = 0
-
+	
+if(keyboard_check_pressed(vk_backspace))
+{
+	currentHealth -= 5
+}
 
 if(currentHealth <= 0 and anim != 8)
 {
 	sprIndex = 0
 	anim = 8
-	anim_speed = anim_speed_default
-	
+	anim_speed = anim_speed_default-2
+	Dead = true
+}
+if(anim == 8 and sprIndex >= anim_length[anim] - 1 and Dead)
+{
+	anim_speed = 0
+	sprIndex = anim_length[anim] - 1
+	if alarm[2] != -1
+		alarm[2] = 120
 }
 
 //if alive and not paused
-if(!obj_menu.paused && currentHealth > 0)
+if(!obj_menu.paused and currentHealth > 0)
 {
-	if(Left)
-		image_xscale = -1
-	if(Right)
-		image_xscale = 1
-		
+	if(!attacking)
+	{
+		if(Left)
+			image_xscale = -1
+		if(Right)
+			image_xscale = 1
+	}
 	//////////////////////////////////////////////////////////
 	//////////// Flinching starts here ///////////////////////
 	
 	if (flinch == false)
 		enable_movement_platform_actions(.6,runSpeed,4.7,Right,Left,Jump,0)
 	if (flinch == true)
-	{/*
-		if(alarm[5] == -1)
+	{
+		if(alarm[3] == -1)
 			alarm[5] = 3
-	*/}
+	}
 	
 	//////////// Flinching ends here /////////////////////////
 	//////////////////////////////////////////////////////////
@@ -170,13 +183,15 @@ if(!obj_menu.paused && currentHealth > 0)
 		canCombo = false
 	else 
 		canCombo = true
-		
+	if(anim >= 2 and anim <= 4)
+		attacking = true
 	// reset to idle after attacking
 	if(anim >= 2 and anim <= 4 and floor(sprIndex) >= anim_length[anim] - 1)
 	{
 		sprIndex = 0
 		anim = 0
 		canAttack = false
+		attacking = false
 		alarm[0] = 16
 	}	
 	

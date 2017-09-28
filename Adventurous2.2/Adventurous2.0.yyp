@@ -1159,6 +1159,14 @@
             }
         },
         {
+            "Key": "3d4c37ca-2d3c-43df-9407-e2ecd6f5069f",
+            "Value": {
+                "id": "5ee9d501-b682-4b60-997e-6f615686103b",
+                "resourcePath": "notes\\Thanks.yy",
+                "resourceType": "GMNotes"
+            }
+        },
+        {
             "Key": "3d9fdd6f-3cfe-4d98-ae11-64f30aff3681",
             "Value": {
                 "id": "0a0dc869-34cc-4bb2-8dc6-7c5e513b7540",
