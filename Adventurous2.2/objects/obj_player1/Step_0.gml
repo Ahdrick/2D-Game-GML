@@ -1,8 +1,8 @@
 ///Player basics
-get_input();
+get_input()
 
-hspd = hsp[0]+hsp[1];
-vspd = vsp[0]+vsp[1];
+hspd = hsp[0]+hsp[1]
+vspd = vsp[0]+vsp[1]
 
 // fixes stupid floor glitch
 y = floor(y)
@@ -14,39 +14,31 @@ else
 	sprIndex = 0
 
 
-/*
-// Check if the hero is dead! 
-if (currentHealth < 1 && state != dead_state){
-	state = dead_state;
-	script_execute(state);
-	if (!instance_exists(obj_death))
-		instance_create_depth(x,y,-10000,obj_death)
+if(currentHealth <= 0 and anim != 8)
+{
+	sprIndex = 0
+	anim = 8
+	anim_speed = anim_speed_default
+	
 }
-
-// if dead apply physics but no player control
-if(currentHealth <= 0){
-	enable_movement_platform_actions(.6,4,5,0,0,0,0);
-	move_movement_entity();
-}
-*/
 
 //if alive and not paused
 if(!obj_menu.paused && currentHealth > 0)
 {
 	if(Left)
-		image_xscale = -1;
+		image_xscale = -1
 	if(Right)
-		image_xscale = 1;
+		image_xscale = 1
 		
 	//////////////////////////////////////////////////////////
 	//////////// Flinching starts here ///////////////////////
 	
 	if (flinch == false)
-		enable_movement_platform_actions(.6,runSpeed,4.7,Right,Left,Jump,0);
+		enable_movement_platform_actions(.6,runSpeed,4.7,Right,Left,Jump,0)
 	if (flinch == true)
 	{/*
 		if(alarm[5] == -1)
-			alarm[5] = 3;
+			alarm[5] = 3
 	*/}
 	
 	//////////// Flinching ends here /////////////////////////
@@ -117,7 +109,7 @@ if(!obj_menu.paused && currentHealth > 0)
 	}
 	
 	if(grounded and anim == 6)
-		anim_speed = anim_speed_default+5
+		anim_speed = anim_speed_default+10
 		
 	if(grounded and anim == 6 and floor(sprIndex) == anim_length[anim] - 1)
 	{
@@ -174,13 +166,13 @@ if(!obj_menu.paused && currentHealth > 0)
 	}
 	
 	// check if its time to combo
-	if(floor(sprIndex) <= anim_length[anim] - 3)
+	if(sprIndex <= anim_length[anim] - 3)
 		canCombo = false
 	else 
 		canCombo = true
 		
 	// reset to idle after attacking
-	if(anim >= 2 and anim <= 4 and floor(sprIndex) == anim_length[anim] - 1)
+	if(anim >= 2 and anim <= 4 and floor(sprIndex) >= anim_length[anim] - 1)
 	{
 		sprIndex = 0
 		anim = 0
@@ -228,14 +220,16 @@ if(!obj_menu.paused && currentHealth > 0)
 			sprIndex = 0
 			anim = 9
 		}
-		if(anim == 9 and floor(sprIndex) == anim_length[anim] - 1)
+		if(anim == 9 and sprIndex >= anim_length[anim] - 1)
 			blocking = true
+		else
+			anim_speed = anim_speed_default + 8
 		if(anim == 9 and blocking)
 		{
 			anim_speed = 0
 			sprIndex = anim_length[anim] - 1
 			if(keyboard_check_pressed(ord("B")) and curStam >= blockStamDown) 
-			{// testing to block add enemy attacks
+			{// swap key inputwith enemy attack
 				sprIndex = 0
 				anim = 10
 				anim_speed = anim_speed_default
@@ -246,19 +240,16 @@ if(!obj_menu.paused && currentHealth > 0)
 				sprIndex = 0
 				anim = 11
 				anim_speed = anim_speed_default
+				blocking = false
+				canBlock = false
+				alarm[1] = 60
 			}
 		}
 		if(anim == 10 and floor(sprIndex) == anim_length[anim] - 1)
 		{
 			sprIndex = 6
 			anim = 9
-			blocking = true
-		}
-		if(anim == 11 and floor(sprIndex) == anim_length[anim] - 1)
-		{// need to fix timing with shield break
-			blocking = false
-			canBlock = false
-			alarm[1] = 20
+			anim_speed = anim_speed_default
 		}
 	}
 	// reset to idle
@@ -268,6 +259,12 @@ if(!obj_menu.paused && currentHealth > 0)
 		anim_speed = anim_speed_default
 		anim = 0
 		blocking = false
+	}
+	if(anim == 11 and sprIndex >= anim_length[anim] - 1 and !canBlock)
+	{
+		sprIndex = 0
+		anim = 0
+		anim_speed = anim_speed_default
 	}
 	
 	//////////////// Blocking stops here ///////////////////////
@@ -283,10 +280,10 @@ if(!obj_menu.paused && currentHealth > 0)
 			anim = 12
 			anim_speed = 12
 			
-			hsp[0] = 0;
-			hsp[1] = 0;
+			hsp[0] = 0
+			hsp[1] = 0
 	
-			hsp[1] -= ((distance)*image_xscale);
+			hsp[1] -= ((distance)*image_xscale)
 		}
 	}
 	// reset to idle from dash
@@ -301,22 +298,22 @@ if(!obj_menu.paused && currentHealth > 0)
 	////////////////////////////////////////////////////////////
 	//////////////// Movement start here ///////////////////////
 	
-	var yslope = 0; // Used to calculate movement along a slope
+	var yslope = 0 // Used to calculate movement along a slope
 
 	// Air jump reset
 	if (place_meeting(x, y+1, collision_object)) {
-	    air_jump = 1;
+	    air_jump = 1
 	}
 
 	// Move down a slope
 	if (!place_meeting(x+hspd, y, collision_object) && abs(hspd) > 0 && place_meeting(x, y+1, collision_object)) {
 	    while (!place_meeting(x+hspd, y-yslope, collision_object) && yslope >= -abs(hspd)) {
-	        yslope--;
+	        yslope--
 	    }
     
 	    // Make sure we actually need to move down
 	    if (yslope != 0 && place_meeting(x+hspd, y-yslope+1, collision_object)) {
-	        y -= yslope;
+	        y -= yslope
 	    }
 	}
 
@@ -324,70 +321,70 @@ if(!obj_menu.paused && currentHealth > 0)
 	if (place_meeting(x+hspd, y, collision_object)) {
 	    // Move up a slope
 	    while (place_meeting(x+hspd, y-yslope, collision_object) && yslope <= abs(hspd)) {
-	        yslope++;
+	        yslope++
 	    }
     
 	    if (place_meeting(x+hspd, y-yslope, collision_object)) {
 	        // Move to contact and bounce
 	        while (!place_meeting(x+sign(hspd), y, collision_object)) {
-	            x+=sign(hspd);
+	            x+=sign(hspd)
 	        }
         
 	        // Update the horizontal speeds
-		    hspd = 0;
-		    hsp[0] = 0;
-		    hsp[1] = -(hsp[1])*bounce*2;
+		    hspd = 0
+		    hsp[0] = 0
+		    hsp[1] = -(hsp[1])*bounce*2
         
 	        // Stop bounce at low values
-	        if (abs(hsp[1]) < 1) hsp[1] = 0;
+	        if (abs(hsp[1]) < 1) hsp[1] = 0
 	    } else {
-	        y-=yslope;
+	        y-=yslope
 	    }
 	}
 	if (!place_meeting(x+hspd, y, collision_object)) {
-	    x += hspd;
+	    x += hspd
 	}
 
 	// Vertical collision check
 	if (place_meeting(x, y+vspd, collision_object)) {
 	    while (!place_meeting(x, y+sign(vspd), collision_object)) {
-	        y+=sign(vspd);
+	        y+=sign(vspd)
 	    }
     
 	    // Update the vertical speeds
-	    vspd = 0;
-	    vsp[0] = 0;
-	    vsp[1] = -vsp[1]*bounce;
+	    vspd = 0
+	    vsp[0] = 0
+	    vsp[1] = -vsp[1]*bounce
     
 	    // Stop bounce at low values
-	    if (abs(vsp[1]) < 1) vsp[1] = 0;
+	    if (abs(vsp[1]) < 1) vsp[1] = 0
 	}
-	y += vspd;
+	y += vspd
 
 	/// Apply gravity
 	if (!place_meeting(x, y+1, collision_object))  {
-	    vsp[0] += grav;
+	    vsp[0] += grav
 	}
 
 	// Apply friction
 	if (place_meeting(x, y+1, collision_object)) {
 	    if (horizontal_move_input == false) {
-	        hsp[0] = approach(hsp[0], 0, fric);
+	        hsp[0] = approach(hsp[0], 0, fric)
 	    }
     
-	    hsp[1] = approach(hsp[1], 0, fric);
+	    hsp[1] = approach(hsp[1], 0, fric)
 	}
 
 	// Air resistance
 	if (horizontal_move_input == false) {
-	    hsp[0] = approach(hsp[0], 0, air_res);
+	    hsp[0] = approach(hsp[0], 0, air_res)
 	}
 	if (vertical_move_input == false && grav == 0) {
-	    vsp[0] = approach(vsp[0], 0, air_res);
+	    vsp[0] = approach(vsp[0], 0, air_res)
 	}
 
-	hsp[1] = approach(hsp[1], 0, air_res);
-	vsp[1] = approach(vsp[1], 0, air_res);
+	hsp[1] = approach(hsp[1], 0, air_res)
+	vsp[1] = approach(vsp[1], 0, air_res)
 	
 	/////////////////////////////////////////////////////////////
 	/////////////// Movement ends here //////////////////////////
