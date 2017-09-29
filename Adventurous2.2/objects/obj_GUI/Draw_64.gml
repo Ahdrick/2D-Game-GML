@@ -1,8 +1,8 @@
 /// draw the GUI
 /*
-draw_text(300,300,obj_player.comboCount);
-draw_text(260,300,obj_player.combo);
-draw_text(460,200,obj_player.strpow);
+draw_text(300,300,player.comboCount);
+draw_text(260,300,player.combo);
+draw_text(460,200,player.strpow);
 */
 
 draw_sprite(spr_gui_bar,0,20,20);
@@ -34,8 +34,8 @@ if (instance_exists(Enmy_hound1)){
 	draw_text(86,104,enemy.currentHealth);
 	
 	}
-//draw_text(20,100,obj_player.hsp[1] +"Hsp[1]")
-//draw_text(20,120,obj_player.hsp[0] +"Hsp[0]")
+//draw_text(20,100,player.hsp[1] +"Hsp[1]")
+//draw_text(20,120,player.hsp[0] +"Hsp[0]")
 
 
 if keyboard_check_pressed(vk_tab)
@@ -43,62 +43,62 @@ if keyboard_check_pressed(vk_tab)
     msg = get_string("What Does your Heart Long for:", "Death");
    
 	if (msg == "Health")
-		obj_player.currentHealth = 50;
+		player.currentHealth = 50;
 		
     if (msg == "Godmode"){
-		obj_player.currentHealth = 100;
-		obj_player.strpow        = 100;
-		obj_player.curStam       = 100;
-		instance_create_depth(obj_player.x+200,obj_player.y-200,300, obj_double_sword)
+		player.currentHealth = 100;
+		player.strpow        = 100;
+		player.curStam       = 100;
+		instance_create_depth(player.x+200,player.y-200,300, obj_double_sword)
 		}
 		
 	if (msg == "Death")
-		obj_player1.currentHealth = 0;
+		player1.currentHealth = 0;
 		
 	if (msg == "Item")
-		instance_create_depth(obj_player.x+200,obj_player.y-200,300, obj_chest_Item)
+		instance_create_depth(player.x+200,player.y-200,300, obj_chest_Item)
 		
 	if (msg == "Chest")
-		instance_create_depth(obj_player.x+200,obj_player.y-200,300, obj_chest1)
+		instance_create_depth(player.x+200,player.y-200,300, obj_chest1)
 		
 	if (msg == "Rotsword")
-		instance_create_depth(obj_player.x+200,obj_player.y-200,300, Enmy_rotsword)	
+		instance_create_depth(player.x+200,player.y-200,300, Enmy_rotsword)	
 		
 	if (msg == "Rotspear")
-		instance_create_depth(obj_player.x+200,obj_player.y-200,300, Enmy_rotspear)	
+		instance_create_depth(player.x+200,player.y-200,300, Enmy_rotspear)	
 		
 	if (msg == "Rotshield")
-		instance_create_depth(obj_player.x+200,obj_player.y-200,300, Enmy_rotshield)	
+		instance_create_depth(player.x+200,player.y-200,300, Enmy_rotshield)	
 		
 	if (msg == "Rotarcher")
-		instance_create_depth(obj_player.x+200,obj_player.y-200,300, Enmy_rotarcher)	
+		instance_create_depth(player.x+200,player.y-200,300, Enmy_rotarcher)	
 		
 	if (msg == "Hound")
-		instance_create_depth(obj_player.x+200,obj_player.y-200,300, Enmy_hound1)
+		instance_create_depth(player.x+200,player.y-200,300, Enmy_hound1)
 		
 	if (msg == "Dblsword")
-		instance_create_depth(obj_player.x+200,obj_player.y-200,300, obj_double_sword)
+		instance_create_depth(player.x+200,player.y-200,300, obj_double_sword)
 		
 	if (msg == "Houndknight")
-		instance_create_depth(obj_player.x+200,obj_player.y-200,300, Enmy_houndknight)
+		instance_create_depth(player.x+200,player.y-200,300, Enmy_houndknight)
 				
 	if (msg == "Enemy")
-		instance_create_depth(obj_player.x,obj_player.y,300, obj_enemy_parent)
+		instance_create_depth(player.x,player.y,300, obj_enemy_parent)
 					
 	if (msg == "Owl")
-		instance_create_depth(obj_player.x+200,obj_player.y-200,300, Enmy_spore)
+		instance_create_depth(player.x+200,player.y-200,300, Enmy_spore)
 		
 	if (msg == "Fungus")
-		instance_create_depth(obj_player.x+200,obj_player.y-200,300, Enmy_fungus)
+		instance_create_depth(player.x+200,player.y-200,300, Enmy_fungus)
 		
 	if (msg == "Antlerhunter")
-		instance_create_depth(obj_player.x+200,obj_player.y-200,300, Enmy_antlerhunter)
+		instance_create_depth(player.x+200,player.y-200,300, Enmy_antlerhunter)
 	
 	if (msg == "Antlermage")
-		instance_create_depth(obj_player.x+200,obj_player.y-200,300, Enmy_antlermage)
+		instance_create_depth(player.x+200,player.y-200,300, Enmy_antlermage)
 		
 	if (msg == "Mold")
-		instance_create_depth(obj_player.x+200,obj_player.y-200,300, Enmy_mold)
+		instance_create_depth(player.x+200,player.y-200,300, Enmy_mold)
 			
 	if (msg == "Genocide"){
 		if (instance_exists(obj_enemy_parent))
@@ -117,29 +117,29 @@ if keyboard_check_pressed(vk_tab)
 		
 	if (msg == "Dark")
 	{
-		instance_create_depth(obj_player.x +30,obj_player.y,300, obj_enemy_parent_1)
-		obj_player.Cursed = true;
+		instance_create_depth(player.x +30,player.y,300, obj_enemy_parent_1)
+		player.Cursed = true;
 	}
 		
 	if (msg == "Pot")
 	{
-		instance_create_depth(obj_player.x,obj_player.y-40,300, Int_back_parent)
-		instance_create_depth(obj_player.x -30,obj_player.y-40,300, Int_back_parent)
-		instance_create_depth(obj_player.x +30,obj_player.y-40,300, Int_back_parent)
-		instance_create_depth(obj_player.x -100,obj_player.y-40,300, Int_back_parent)
-		instance_create_depth(obj_player.x +100,obj_player.y-40,300, Int_back_parent)
+		instance_create_depth(player.x,player.y-40,300, Int_back_parent)
+		instance_create_depth(player.x -30,player.y-40,300, Int_back_parent)
+		instance_create_depth(player.x +30,player.y-40,300, Int_back_parent)
+		instance_create_depth(player.x -100,player.y-40,300, Int_back_parent)
+		instance_create_depth(player.x +100,player.y-40,300, Int_back_parent)
 	}
 		
 	if (msg == "Mob")
 	{
-		instance_create_depth(obj_player.x+100,obj_player.y-100,300, obj_enemy_parent)
-		instance_create_depth(obj_player.x-100,obj_player.y-100,300, obj_enemy_parent)
-		instance_create_depth(obj_player.x+150,obj_player.y-100,300, obj_enemy_parent)
-		instance_create_depth(obj_player.x-150,obj_player.y-100,300, obj_enemy_parent)
+		instance_create_depth(player.x+100,player.y-100,300, obj_enemy_parent)
+		instance_create_depth(player.x-100,player.y-100,300, obj_enemy_parent)
+		instance_create_depth(player.x+150,player.y-100,300, obj_enemy_parent)
+		instance_create_depth(player.x-150,player.y-100,300, obj_enemy_parent)
 	}
 	
 	if (msg == "Sanic")
-		obj_player.max_run= 5;
+		player.max_run= 5;
 		
 	if (msg == "Restart")
 		room_restart();

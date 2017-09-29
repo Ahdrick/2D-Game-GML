@@ -1,7 +1,7 @@
 /// Menu step
-get_input();
-// pause the game
+get_input()
 
+// pause the game
 if(pause && !paused)
 	paused = 1;
 else if(pause && paused)

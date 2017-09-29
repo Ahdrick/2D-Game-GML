@@ -1,48 +1,65 @@
-///Player basics
+//////////////////////////////////////////////////////////
+//////////// Basic sprite control starts here ////////////
+
+// grab all input variables
+// ation words starting with capital letters
+// Attack Jump Block ect. 
+// True if the button was clicked or held
 get_input()
 
-hspd = hsp[0]+hsp[1]
+// always be setting the values of these variables
+hspd = hsp[0]+hsp[1] 
 vspd = vsp[0]+vsp[1]
-
+	
 // fixes stupid floor glitch
 y = floor(y)
 
-// controls animations
+// if your not attacking your able to turn your sprite 
+if(!attacking)
+{
+	if(Left)
+		image_xscale = -1
+	if(Right)
+		image_xscale = 1
+}
+	
+// controls the sprites animation speeds
 if sprIndex <= anim_length[anim] - 1
 	sprIndex += anim_speed/60
 else
 	sprIndex = 0
 	
-if(keyboard_check_pressed(vk_backspace))
-{
-	currentHealth -= 5
-}
+//////////// Basic sprite control ends here //////////////
+//////////////////////////////////////////////////////////
+//////////// Players Actions start here //////////////////
 
-if(currentHealth <= 0 and anim != 8)
-{
-	sprIndex = 0
-	anim = 8
-	anim_speed = anim_speed_default-2
-	Dead = true
-}
-if(anim == 8 and sprIndex >= anim_length[anim] - 1 and Dead)
-{
-	anim_speed = 0
-	sprIndex = anim_length[anim] - 1
-	if alarm[2] != -1
-		alarm[2] = 120
-}
-
-//if alive and not paused
 if(!obj_menu.paused and currentHealth > 0)
 {
-	if(!attacking)
+
+	//////////////////////////////////////////////////////////
+	//////////// Death starts here ///////////////////////////S
+	
+	if(keyboard_check_pressed(vk_backspace))
+	currentHealth -= 10 // testing daamge
+
+	// if you die ... play death animation
+	if(currentHealth <= 0 and anim != 8)
 	{
-		if(Left)
-			image_xscale = -1
-		if(Right)
-			image_xscale = 1
+		sprIndex = 0
+		anim = 8
+		anim_speed = anim_speed_default-2
+		Dead = true
 	}
+	
+	// if the death animation is over pause it at the end
+	if(anim == 8 and sprIndex >= anim_length[anim] - 1 and Dead)
+	{
+		anim_speed = 0
+		sprIndex = anim_length[anim] - 1
+		// handle what happens on death here
+	}
+	
+	//////////// Death ends here /////////////////////////////
 	//////////////////////////////////////////////////////////
 	//////////// Flinching starts here ///////////////////////
 	
@@ -50,20 +67,22 @@ if(!obj_menu.paused and currentHealth > 0)
 		enable_movement_platform_actions(.6,runSpeed,4.7,Right,Left,Jump,0)
 	if (flinch == true)
 	{
-		if(alarm[3] == -1)
-			alarm[5] = 3
+		if(alarm[2] == -1)
+			alarm[2] = 3
 	}
 	
 	//////////// Flinching ends here /////////////////////////
 	//////////////////////////////////////////////////////////
 	//////////// Walking starts here /////////////////////////
 	
-	// idle
+	// idle slow down idle speed default was too fast
 	if(anim == 0)
 		anim_speed = anim_speed_default-4
 	else
 		anim_speed = anim_speed_default
 		
+	// controls the walk and when to walk 
+	// this needs to be altered a lot based on what animatino gets broken by walking inturpting it
 	if(hspd != 0 and (Left or Right) and (anim < 2 or anim > 4) and grounded and anim != 6 and !Block)
 	{
 		if(anim != 1)
@@ -87,20 +106,25 @@ if(!obj_menu.paused and currentHealth > 0)
 	///////////////////////////////////////////////////////////
 	/////////// Jumping starts here ///////////////////////////
 	
+	// if you jumped and could jump 
 	if(Jump and anim != 6 and place_meeting(x,y+1,collision_object))
 	{
 		sprIndex = 0
 		anim = 6
 	}
 	
-	// not grounded
+	// not grounded aka falling of some sort
 	if(!place_meeting(x,y+1,collision_object) and vspd < 0)
 	{
 		sprIndex = 3
 		anim = 6
 		grounded = false
 	}
-		
+	
+	// if your not touching the ground then do stuff in here 
+	// use the grounded variable in the attacking variable for
+	// flying attack combos dont do it here. this is basic jumping
+	// falling and landing
 	if(!grounded)
 	{
 		anim_speed = 0
@@ -121,9 +145,14 @@ if(!obj_menu.paused and currentHealth > 0)
 		}
 	}
 	
+	// if your on the ground and need to finish the landing part
+	// of the animation
+	// play it faster so it looks like he lands smoother and doesnt
+	// drag his feet
 	if(grounded and anim == 6)
 		anim_speed = anim_speed_default+10
-		
+	
+	// if you landed and the animation ends transition to idle
 	if(grounded and anim == 6 and floor(sprIndex) == anim_length[anim] - 1)
 	{
 		sprIndex = 0
@@ -144,11 +173,16 @@ if(!obj_menu.paused and currentHealth > 0)
 	
 	if(Attack and canAttack)
 	{
+		// tells it to combo
 		if(!comboing and canCombo)
 			comboing = true
 			
 		if(obj_menu.weaponType == 0) // if you have a short sword
-		{ 
+		{	
+			// if your not doing attack animation change to 
+			// first swing of combo and each addition else if checks
+			// the combo variable is true showing that you want to combo
+			// then changing to the next swing
 			if(vspd == 0 and (anim < 2 or anim > 4))
 			{
 				sprIndex = 0
@@ -183,15 +217,19 @@ if(!obj_menu.paused and currentHealth > 0)
 		canCombo = false
 	else 
 		canCombo = true
+	
+	// set the attacking variable very useful
 	if(anim >= 2 and anim <= 4)
 		attacking = true
+	else
+		attacking = false
+		
 	// reset to idle after attacking
 	if(anim >= 2 and anim <= 4 and floor(sprIndex) >= anim_length[anim] - 1)
 	{
 		sprIndex = 0
 		anim = 0
 		canAttack = false
-		attacking = false
 		alarm[0] = 16
 	}	
 	
@@ -209,12 +247,14 @@ if(!obj_menu.paused and currentHealth > 0)
 		}		
 	}
 	
+	// stop moving if your drinking .... dont want to spill it do you?
 	if(anim == 5)
 	{
 		hsp[0] = 0
 		hsp[1] = 0
 	}
 	
+	// stop drinking ... when your done drinking
 	if(anim == 5 and floor(sprIndex) == anim_length[anim] - 1)
 	{
 		sprIndex = 0
@@ -227,22 +267,31 @@ if(!obj_menu.paused and currentHealth > 0)
 
 	if(Block and canBlock)
 	{
+		// stops movement during blocking
 		hsp[0] = 0
 		hsp[1] = 0
 		
+		// if your not currently blocking
 		if(anim < 9 or anim > 11)
 		{
 			sprIndex = 0
 			anim = 9
 		}
+		
+		// if you are at the last frame of the plling shield up animation
+		// your concidered to be blocking
 		if(anim == 9 and sprIndex >= anim_length[anim] - 1)
 			blocking = true
 		else
 			anim_speed = anim_speed_default + 8
+			
+		// if your holding your shield up and blocking  
 		if(anim == 9 and blocking)
 		{
 			anim_speed = 0
 			sprIndex = anim_length[anim] - 1
+			
+			// enough stamina to succesfully block so pplay block animation
 			if(keyboard_check_pressed(ord("B")) and curStam >= blockStamDown) 
 			{// swap key inputwith enemy attack
 				sprIndex = 0
@@ -250,16 +299,21 @@ if(!obj_menu.paused and currentHealth > 0)
 				anim_speed = anim_speed_default
 				curStam -= blockStamDown
 			}
+			
+			// not enough stamina so your shield breaks
 			else if(keyboard_check_pressed(ord("B")) and curStam < blockStamDown)
 			{// testing block breaking
 				sprIndex = 0
 				anim = 11
 				anim_speed = anim_speed_default
 				blocking = false
-				canBlock = false
-				alarm[1] = 60
+				canBlock = false 
+				alarm[1] = 60 // alarm sets the canBlock to true
 			}
 		}
+		
+		// if you succesfully block and that animation ends
+		// reset to the blocking animation
 		if(anim == 10 and floor(sprIndex) == anim_length[anim] - 1)
 		{
 			sprIndex = 6
@@ -267,7 +321,8 @@ if(!obj_menu.paused and currentHealth > 0)
 			anim_speed = anim_speed_default
 		}
 	}
-	// reset to idle
+	
+	// reset to idle if you sto blocking
 	else if(anim >= 9 and anim <= 11 and !Block)
 	{
 		sprIndex = 0
@@ -275,6 +330,9 @@ if(!obj_menu.paused and currentHealth > 0)
 		anim = 0
 		blocking = false
 	}
+	
+	// if your block was broken and you're at the end of the animation
+	// and you cant block yet then idle 
 	if(anim == 11 and sprIndex >= anim_length[anim] - 1 and !canBlock)
 	{
 		sprIndex = 0

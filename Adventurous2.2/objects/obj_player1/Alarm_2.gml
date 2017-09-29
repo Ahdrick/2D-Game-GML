@@ -1,1 +1,2 @@
-room_restart()
+flinch = false;
+room_speed = 60;
