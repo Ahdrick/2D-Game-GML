@@ -66,17 +66,17 @@ canDrink      = true
 betterPotions = false
 
 // initialize combos / attacking
-canCombo = false
-comboing = false
-canAttack = true
-attacking = false
-blocking = false
-canBlock = true
+canCombo   = false
+comboing   = false
+canAttack  = true
+attacking  = false
+blocking   = false
+canBlock   = true
 weaponType = -1
 daggerStam = 6
-swordStam = 8
-greatStam = 12
-spearStam = 10
+swordStam  = 8
+greatStam  = 12
+spearStam  = 10
 
 playerDaggerCombo[0] = 0
 playerSwordCombo[0] = 0

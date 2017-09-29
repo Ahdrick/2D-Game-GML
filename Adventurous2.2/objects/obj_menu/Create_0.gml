@@ -114,27 +114,26 @@ for(i = 0; i < 14; i++)
 	for(j = 0; j < 5; j++)
 		inventory[i,j] = -1;
 
-inventory[0,0] = 1;
-inventory[2,0] = 1;
-inventory[4,0] = 1;
-inventory[4,1] = 2;
-inventory[4,2] = 3;
-inventory[6,0] = 1;
-inventory[6,1] = 2;
-inventory[6,2] = 3;
-inventory[6,3] = 4;
-inventory[8,0] = 1;
-inventory[8,1] = 2;
-inventory[10,0] = 1;
-inventory[12,0] = 1;
-inventory[1,0] = 0;
-inventory[3,0] = 0;
-inventory[5,0] = 0;
-inventory[7,0] = 0;
-inventory[7,1] = 4;
-inventory[9,0] = 0;
-inventory[11,0] = 0;
-inventory[13,0] = 0;
+inventory[0,0] = 0
+inventory[0,1] = 1
+inventory[0,2] = 2
+inventory[0,3] = 3
+
+inventory[2,0] = 0
+inventory[2,1] = 1
+inventory[2,2] = 2
+
+inventory[4,0] = 0
+inventory[4,1] = 1
+inventory[4,2] = 2
+inventory[4,3] = 3
+inventory[4,4] = 4
+
+inventory[6,0] = 0
+inventory[6,1] = 1
+inventory[6,2] = 2
+inventory[6,3] = 3
+
 
 spr_inventory[0] = spr_helms;
 spr_inventory[1] = spr_cloaks;

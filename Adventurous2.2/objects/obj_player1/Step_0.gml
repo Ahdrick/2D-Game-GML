@@ -107,7 +107,7 @@ if(!obj_menu.paused and currentHealth > 0)
 	/////////// Jumping starts here ///////////////////////////
 	
 	// if you jumped and could jump 
-	if(Jump and anim != 6 and place_meeting(x,y+1,collision_object))
+	if(Jump and anim != 6 and place_meeting(x,y+1,collision_object) and !blocking)
 	{
 		sprIndex = 0
 		anim = 6
@@ -267,9 +267,12 @@ if(!obj_menu.paused and currentHealth > 0)
 
 	if(Block and canBlock)
 	{
-		// stops movement during blocking
-		hsp[0] = 0
-		hsp[1] = 0
+		// stops movement during blocking not falling
+		if place_meeting(x,y+1,collision_object)
+		{
+			hsp[0] = 0
+			hsp[1] = 0
+		}
 		
 		// if your not currently blocking
 		if(anim < 9 or anim > 11)
