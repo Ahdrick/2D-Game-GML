@@ -1,10 +1,13 @@
 x = player.x;
 y = player.y;
-
-image_index = player.image_index;
-image_speed = player.image_speed;
-//sprite_index = obj_player_cloths.PSWsI;
-image_xscale = player.image_xscale;;
-image_yscale = player.image_yscale;;
-if (player.currentHealth < 0)
-	instance_destroy();
+image_xscale = player.dir
+if(player.attacking and floor(player.sprIndex) == floor((player.anim_length[player.anim] / 2)))
+{
+	if obj_menu.weaponType == 0
+		image_index = 1
+	else if obj_menu.weaponType == 1
+		image_index = 2
+}
+else
+	image_index = 0
+	

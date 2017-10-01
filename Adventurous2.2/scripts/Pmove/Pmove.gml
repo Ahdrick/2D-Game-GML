@@ -8,12 +8,12 @@ else
 // this needs to be altered a lot based on what animation
 // gets broken by walking inturpting it
 if(hspd != 0 and (Left or Right) and not attacking
-	and grounded and (anim != 6 or anim != 26) 
-	and not Block and not dashing)
+   and grounded and (anim != 6 or anim != 26) 
+   and not Block and not dashing)
 {
-	sprIndex = 0
 	if(anim != 1 and anim != 25)
 	{
+		sprIndex = 0
 		if(obj_menu.weaponType == 0)
 			anim = 1
 		else if(obj_menu.weaponType == 1)
@@ -24,6 +24,7 @@ if(hspd != 0 and (Left or Right) and not attacking
 // resets to idle
 if((anim == 1 or anim == 25) and hspd == 0)
 {
+	sprIndex = 0
 	if obj_menu.weaponType == 0
 		anim = 0
 	else if obj_menu.weaponType == 1

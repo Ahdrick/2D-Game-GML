@@ -1111,6 +1111,14 @@
             }
         },
         {
+            "Key": "39f9783d-6408-4c6d-9f5d-7e9694f09c40",
+            "Value": {
+                "id": "c405bcae-f791-45c8-a649-5f7e86cbd7bf",
+                "resourcePath": "objects\\obj_attack_mask\\obj_attack_mask.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "3a37ff45-a27e-41eb-b829-0996eb97a286",
             "Value": {
                 "id": "12f39cfd-727a-4172-a310-ce1b7a40c381",
@@ -2487,6 +2495,14 @@
             }
         },
         {
+            "Key": "7e984a3b-04fe-49c5-83c1-e79439b2cd4c",
+            "Value": {
+                "id": "8bf9c6dc-3527-465f-abc2-350bce4f68b5",
+                "resourcePath": "sprites\\spr_attack_mask\\spr_attack_mask.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "7ece2620-d29e-460e-9a8a-24d86067664e",
             "Value": {
                 "id": "2bccb03c-0153-4e6f-89e6-2b94a76e9342",
@@ -3570,7 +3586,7 @@
             "Key": "b30e8570-b88a-42d2-8b91-01052a2f96f9",
             "Value": {
                 "id": "dfd75829-86ce-461c-a77c-e56380e740b0",
-                "resourcePath": "objects\\obj_attack_mask\\obj_attack_mask.yy",
+                "resourcePath": "objects\\obj_attack_mask2\\obj_attack_mask2.yy",
                 "resourceType": "GMObject"
             }
         },

@@ -8,7 +8,8 @@
         "66965b7b-b799-4a1e-ae25-fcf8116b7012",
         "d09c6d8a-490d-49d3-8e41-67b0ec556626",
         "af7e8c3d-6119-425d-8278-acd991088ba2",
-        "efb984e7-a9b0-469a-9215-f7763da8ee8c"
+        "efb984e7-a9b0-469a-9215-f7763da8ee8c",
+        "39f9783d-6408-4c6d-9f5d-7e9694f09c40"
     ],
     "filterType": "GMObject",
     "folderName": "Armors\/masks",
