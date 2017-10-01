@@ -3,8 +3,8 @@ instance_create_depth(x,y,201,obj_camera_controller)
 initialize_movement_entity(.2,.9,0,0,obj_solid)
 
 // state variable set to movement script
-state			 = move_state
 collision_object = obj_solid
+dir				 = 1
 fade             = 0
 hspd             = 0
 vspd			 = 0
@@ -29,10 +29,11 @@ stamCD        = false
 stamTimer     = 50
 stamina       = 1
 dashStamDown  = 12
+dashing       = false
 blockStamDown = 10
 stamDown      = 7
 stamRegen     = .1
-stamPool      = 20
+stamPool      = 50
 curStam       = stamPool
 distance      = 12
 

@@ -1,10 +1,10 @@
-x = obj_player.x;
-y = obj_player.y;
+x = player.x;
+y = player.y;
 
-image_index = obj_player.image_index;
-image_speed = obj_player.image_speed;
-sprite_index = obj_player_cloths.PSWsI;
-image_xscale = obj_player.image_xscale;;
-image_yscale = obj_player.image_yscale;;
-if (obj_player.currentHealth < 0)
+image_index = player.image_index;
+image_speed = player.image_speed;
+//sprite_index = obj_player_cloths.PSWsI;
+image_xscale = player.image_xscale;;
+image_yscale = player.image_yscale;;
+if (player.currentHealth < 0)
 	instance_destroy();

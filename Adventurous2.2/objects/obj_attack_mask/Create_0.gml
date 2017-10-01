@@ -1,7 +1,9 @@
-x = obj_player.x;
-y = obj_player.y;
+player = obj_player1 // obj_player1
 
-image_index = obj_player.image_index;
-image_speed = obj_player.image_speed;
-sprite_index = obj_player_cloths.PSWsI;
-image_xscale = obj_player.image_xscale;
+x = player.x;
+y = player.y;
+
+image_index = player.image_index;
+image_speed = player.image_speed;
+//sprite_index = obj_player_cloths.PSWsI
+image_xscale = player.image_xscale;
