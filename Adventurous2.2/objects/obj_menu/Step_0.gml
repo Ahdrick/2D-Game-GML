@@ -290,11 +290,11 @@ if(EXP > gap)
 }
 
 // probably a super supid way to do this ... but it works for now
-if(weaponEqpd <= 2) // total swords
+if(weaponEqpd <= 5) // total swords
 	weaponType = 0
-else if(weaponEqpd > 2 and weaponEqpd <= 3) // total great swords
+else if(weaponEqpd > 5 and weaponEqpd <= 6) // total great swords
 	weaponType = 1
-else if(weaponEqpd > 3 and weaponEqpd <= 4) // total daggers 
+else if(weaponEqpd > 6 and weaponEqpd <= 7) // total daggers 
 	weaponType = 2
 
 //volume control

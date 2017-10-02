@@ -4,7 +4,6 @@
     "mvc": "1.1",
     "name": "0e002cd3-96bc-4b25-a6ec-2341d2196ce4",
     "children": [
-        "ceaf0ec4-af2c-47b2-84aa-94f87148eea4",
         "663ce26a-9294-465d-baf3-247592c091fb",
         "00f1e778-23e4-4ede-9f5a-5ae48abc5e50",
         "9435113c-3bb6-470b-abde-604fe0ee98b9",
@@ -15,7 +14,6 @@
         "56b4573c-fa7c-4b15-8698-de35e97947e8",
         "afb1df93-a564-4704-a92c-e45f2371ffdb",
         "efb137ec-0cc9-4300-87d1-1ea7efa37583",
-        "b38972ae-4df0-47de-b234-7aa406de4ff4",
         "ba488eee-da2e-4a4b-b6b8-b596f444d8ca"
     ],
     "filterType": "GMSprite",

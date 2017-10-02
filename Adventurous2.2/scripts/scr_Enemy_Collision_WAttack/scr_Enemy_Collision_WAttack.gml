@@ -1,10 +1,10 @@
 /// 
 if (EnemyState != -1){
 	//sprite_index = spr_SporeOwl_Scream;
-	currentHealth -= round(obj_player.strpow);
+	currentHealth -= round(player.strpow);
 	// Added combo
 	obj_GUI.Combo_stat		  +=1;
-	obj_GUI.Damage_Given_stat += obj_player.strpow;
+	obj_GUI.Damage_Given_stat += player.strpow;
 		//alarm[1] = 135;
 	if (currentHealth <= 0 ){
 		EnemyState= -1;
@@ -13,7 +13,7 @@ if (EnemyState != -1){
 		}
 }
 
-scr_Enemy_knockback(.70*obj_player.strpow,.70*obj_player.strpow,.70*obj_player.strpow,.70*obj_player.strpow,)
+scr_Enemy_knockback(.70*player.strpow,.70*player.strpow,.70*player.strpow,.70*player.strpow,)
 
 // Make the screen slightly shake
 obj_camera_controller.Shake_State = 2;

@@ -3,7 +3,7 @@ draw_sprite_ext(sprite_index,image_index,x,y,image_xscale,image_yscale,image_ang
 // Maybe this is wrong...but fade out through animation?
 if (currentHealth > 0){
 	scr_enemy_gui(); 
-		if (x > obj_player.x){
+		if (x > player.x){
 				image_xscale = 1;
 			}
 		else{

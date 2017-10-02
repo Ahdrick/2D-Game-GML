@@ -3,14 +3,14 @@
 if (currentHealth > 0) {
 		
 	// change direction 
-		if (x > obj_player.x){
+		if (x > player.x){
 				image_xscale = 1;
 			}
 		else{
 				image_xscale = -1;
 			}
 	// Should I enter combo?
-	if (distance_to_object(obj_player) > 100)
+	if (distance_to_object(player) > 100)
 		sprite_index = sprCombo[mycombo];
 	else {
 		sprite_index = sprCombo2[mycombo]	

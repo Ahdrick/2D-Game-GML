@@ -5,7 +5,7 @@ var blood_type = argument[0]; // obj_blood_1
 
 /// knock back
 
-if (obj_player != -1){ 
+if (player != -1){ 
 	if (flinch == false){
 		flinch = true;
 		if(alarm[5] == -1)

@@ -23,7 +23,7 @@ left		  = 0;
 right         = 0;
 jump          = 0;
 follow        = false;
-
+player        = obj_player
 //Things I do.
 FadeOnDeath   = false;
 Stalk         = false; 

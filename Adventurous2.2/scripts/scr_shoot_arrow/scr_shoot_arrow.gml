@@ -5,7 +5,7 @@ if (myangle == 0){
 	with (myweapon){
 		mySpeed   = random_range(10,10);
 		Direction = 1;
-			if (obj_player.x < x ){
+			if (player.x < x ){
 					Direction = 1;
 				}
 			else{
@@ -22,7 +22,7 @@ if (myangle == 1){
 	with (myweapon){
 		mySpeed   = random_range(10,10);
 		Direction = 1;
-			if (obj_player.x < x ){
+			if (player.x < x ){
 					Direction = 1;
 				}
 			else{

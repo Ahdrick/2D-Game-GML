@@ -7,7 +7,7 @@
         "85cd9ae9-32bc-40d3-8b12-fcc9032f02c5"
     ],
     "filterType": "GMSprite",
-    "folderName": "Elder Cloak",
+    "folderName": "Antler Cloak",
     "isDefaultView": false,
     "localisedFolderName": ""
 }

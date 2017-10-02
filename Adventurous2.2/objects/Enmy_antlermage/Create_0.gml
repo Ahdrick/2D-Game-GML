@@ -1,6 +1,7 @@
 /// Create Me;
 scr_Enemy_stats(10,10,1,10);
 scr_enemy_create();
+event_inherited()
 spr_attack1		  =  spr_AntlerMage_attack1;
 spr_attack2		  =  spr_AntlerMage_attack2;
 spr_attack3		  =  spr_AntlerMage_attack1;

@@ -1,4 +1,4 @@
-player = obj_player1 // obj_player1
+player = obj_player
 x = player.x;
 y = player.y;
 image_xscale = player.dir

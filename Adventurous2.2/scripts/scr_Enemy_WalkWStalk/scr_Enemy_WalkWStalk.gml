@@ -7,7 +7,7 @@ if (currentHealth <1 ){
 	EnemyState = -1;
 	}
 	
-if (obj_player.currentHealth >1){
+if (player.currentHealth >1){
 	if(left)
 		image_xscale = 1;
 	if(right)
@@ -18,12 +18,12 @@ if (obj_player.currentHealth >1){
 	enable_movement_platform_actions(.6,1,myspeed,right,left,jump,0);
 	move_movement_entity();
 
-	if (obj_player.x < x && place_meeting(x,y+1, obj_solid))
+	if (player.x < x && place_meeting(x,y+1, obj_solid))
 	{
 		left  = 1;
 		right = 0;
 	}
-	else if(obj_player.x > x && place_meeting(x,y+1, obj_solid))
+	else if(player.x > x && place_meeting(x,y+1, obj_solid))
 	{
 		left  = 0;
 		right = 1;

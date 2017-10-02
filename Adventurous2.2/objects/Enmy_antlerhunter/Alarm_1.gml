@@ -1,1 +1,1 @@
-scr_throw_spear(); 
+scr_throw_spear(player); 

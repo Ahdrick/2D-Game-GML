@@ -2,7 +2,7 @@ myweapon = instance_create_depth(x,y+30,300,obj_Enemy_spear1)
 with (myweapon){
 	mySpeed   = random_range(9,13);
 	Direction = 1;
-		if (obj_player.x < x ){
+		if (player.x < x ){
 				Direction = 1;
 			}
 		else{

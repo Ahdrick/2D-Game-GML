@@ -1,7 +1,7 @@
 // stuff
 if (currentHealth > -1) {
 	if (sprite_index = spr_block){
-		with (obj_player){
+		with (player){
 			if(alarm[5] == -1)
 						alarm[5] = 20;
 						

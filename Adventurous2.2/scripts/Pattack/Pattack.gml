@@ -5,8 +5,6 @@ if(attacking)
 {
 	hsp[0] = 0
 	hsp[1] = 0
-	if !instance_exists(obj_attack_mask)
-		instance_create_depth(x,y,depth, obj_attack_mask)
 }
 	
 if(Attack and canAttack and curStam >=0 )

@@ -7,7 +7,7 @@ draw_text(460,200,player.strpow);
 
 draw_sprite(spr_gui_bar,0,20,20);
 draw_sprite_stretched(spr_health_block,0,24,22, (player.currentHealth),6);	
-draw_sprite_stretched(spr_energy_block,0,24,36, (player.curStam*3),6);
+draw_sprite_stretched(spr_energy_block,0,24,36, (player.curStam),6);
 draw_set_font(fnt_pixel);
 draw_set_color(gold);
 draw_text(36,44,obj_menu.currency);
@@ -53,7 +53,7 @@ if keyboard_check_pressed(vk_tab)
 		}
 		
 	if (msg == "Death")
-		player1.currentHealth = 0;
+		player.currentHealth = 0;
 		
 	if (msg == "Item")
 		instance_create_depth(player.x+200,player.y-200,300, obj_chest_Item)

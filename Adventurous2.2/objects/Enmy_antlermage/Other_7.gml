@@ -5,7 +5,7 @@ if (currentHealth > 0) {
 
 
 	// Should I enter combo?
-	if (distance_to_object(obj_player) > 100)
+	if (distance_to_object(player) > 100)
 		sprite_index = sprCombo[mycombo];
 	else {
 		sprite_index = sprCombo2[mycombo]	

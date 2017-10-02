@@ -1,7 +1,7 @@
 /// This Determine Behahaviour
 
 if (currentHealth > 0) {
-	if (distance_to_object(obj_player) < 300)
+	if (distance_to_object(player) < 300)
 		sprite_index = sprCombo[mycombo];
 	else 
 		sprite_index = spr_idle3; 

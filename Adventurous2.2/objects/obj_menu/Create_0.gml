@@ -128,6 +128,9 @@ inventory[4,1] = 1
 inventory[4,2] = 2
 inventory[4,3] = 3
 inventory[4,4] = 4
+inventory[5,0] = 5
+inventory[5,1] = 6
+inventory[5,2] = 7
 
 inventory[6,0] = 0
 inventory[6,1] = 1

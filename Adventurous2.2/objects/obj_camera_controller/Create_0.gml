@@ -23,7 +23,7 @@ surface_resize(application_surface,ideal_width,ideal_height);
 window_set_size(ideal_width,ideal_height);
 window_center();
 
-player = obj_player1// obj_player1
+player = obj_player
 x = player.x;
 y = player.y;
 

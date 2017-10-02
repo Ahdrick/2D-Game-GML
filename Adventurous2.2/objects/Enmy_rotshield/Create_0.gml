@@ -2,6 +2,7 @@
 
 scr_Enemy_stats(10,1,1,100);
 scr_enemy_create();
+event_inherited()
 spr_attack1		  =  spr_rotknight_shield_attack1;
 spr_attack2		  =  spr_rotknight_shield_attack1;
 spr_attack3		  =  spr_rotknight_shield_attack1;

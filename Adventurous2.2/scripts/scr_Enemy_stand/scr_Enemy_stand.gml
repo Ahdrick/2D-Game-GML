@@ -1,11 +1,11 @@
 /// Enemy Basics
-if (currentHealth <1 ){
+if (currentHealth < 1 ){
 	sprite_index = spr_death;
 	jump =0;
 	EnemyState = -1;
 	}
 	
-if (obj_player.currentHealth >1){
+if (player.currentHealth > 1){
 
 	image_speed = .6;
 
