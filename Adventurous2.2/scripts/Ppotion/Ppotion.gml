@@ -16,7 +16,7 @@ if(anim == 5)
 }
 	
 // stop drinking ... when your done drinking
-if(anim == 5 and floor(sprIndex) == anim_length[anim] - 1)
+if(anim == 5 and animindex == anim_length[anim] - 1)
 {
 	sprIndex = 0
 	anim = 0

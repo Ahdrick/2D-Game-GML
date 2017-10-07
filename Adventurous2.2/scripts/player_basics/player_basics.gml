@@ -10,18 +10,25 @@ vspd = vsp[0]+vsp[1]
 	
 // fixes stupid floor glitch
 y = floor(y)
+animindex = floor(sprIndex)
 
 // if your not attacking your able to turn your sprite 
-if(!attacking)
+if not attacking and not dashing
 {
 	if(Left)
 		dir = -1
 	if(Right)
 		dir = 1
 }
-if !attacking and !blocking
+
+if dashing or flinch
+	enable_movement_platform_actions(.6,runSpeed,4.7,0,0,0,0)
+else
+	enable_movement_platform_actions(.6,runSpeed,4.7,Right,Left,Jump,0)
+	
+if not attacking and  not blocking
 	if curStam < stamPool
-		curStam += stamRegen
+		curStam += stamRegen+1
 	
 // controls the sprites animation speeds
 if sprIndex <= anim_length[anim] - 1

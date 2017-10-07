@@ -1,5 +1,7 @@
 // if you jumped and could jump 
-if(Jump and (anim != 6 or anim != 26) and place_meeting(x,y+1,collision_object) and not blocking and not dashing)
+if(Jump and (anim != 6 or anim != 26) and 
+   place_meeting(x,y+1,collision_object) and 
+   not blocking and not dashing and not attacking)
 {
 	sprIndex = 0
 	if obj_menu.weaponType == 0
@@ -23,7 +25,7 @@ if(!place_meeting(x,y+1,collision_object) and vspd < 0)
 // use the grounded variable in the attacking variable for
 // flying attack combos dont do it here. this is basic jumping
 // falling and landing
-if(!grounded)
+if not grounded
 {
 	anim_speed = 0
 	if(vspd < 0     and vspd < -1)
@@ -51,7 +53,7 @@ if(grounded and (anim == 6 or anim == 26))
 	anim_speed = anim_speed_default+10
 	
 // if you landed and the animation ends transition to idle
-if(grounded and (anim == 6 or anim == 26) and floor(sprIndex) == anim_length[anim] - 1)
+if(grounded and (anim == 6 or anim == 26) and animindex == anim_length[anim] - 1)
 {
 	sprIndex = 0
 	anim_speed = anim_speed_default

@@ -3,11 +3,17 @@
 // stop movement during attack
 if(attacking)
 {
-	hsp[0] = 0
-	hsp[1] = 0
+	if (anim >= 2 and anim <= 4) and animindex == floor(anim_length[anim] / 2)
+		hsp[1] += 1*dir
+	else
+	{
+		hsp[0] = 0
+		hsp[1] = 0
+	}
+	anim_speed = anim_speed_default + 2
 }
 	
-if(Attack and canAttack and curStam >=0 )
+if(Attack and not dashing and canAttack and curStam >=0 )
 {
 	// tells it to combo
 	if(!comboing and canCombo)
@@ -77,7 +83,7 @@ else
 	attacking = false
 		
 // reset to idle after attacking
-if(((anim >= 2 and anim <= 4) or (anim >= 28 and anim <= 29)) and floor(sprIndex) >= anim_length[anim] - 1)
+if(((anim >= 2 and anim <= 4) or (anim >= 28 and anim <= 29)) and animindex >= anim_length[anim] - 1)
 {
 	sprIndex = 0
 	anim = 0

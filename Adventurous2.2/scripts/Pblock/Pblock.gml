@@ -51,7 +51,7 @@ if(Block and canBlock and not attacking and not dashing)
 		
 	// if you succesfully block and that animation ends
 	// reset to the blocking animation
-	if(anim == 10 and floor(sprIndex) == anim_length[anim] - 1)
+	if(anim == 10 and animindex == anim_length[anim] - 1)
 	{
 		sprIndex = 6
 		anim = 9

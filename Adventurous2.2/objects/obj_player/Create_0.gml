@@ -138,7 +138,8 @@ anim_length[27] = 9  // V jump / fall / attack
 anim_length[28] = 8  // V swing 1
 anim_length[29] = 6  // V swing 2
 
-
+get_input()
+enable_movement_platform_actions(.6,runSpeed,4.7,Right,Left,Jump,0)
 instance_create_depth(x,y,201,obj_camera_controller)
 instance_create_depth(x,y,depth, obj_attack_mask)
 instance_create_depth(x,y,depth, obj_shield_mask)
